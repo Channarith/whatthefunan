@@ -1,0 +1,9 @@
+# Cinematics Directory
+# Subdirectories:
+# - Timeline/         (Unity Timeline assets for in-engine cutscenes)
+# - Videos/           (Pre-rendered video files - MP4/WebM)
+#   - ChapterIntros/
+#   - StoryBeats/
+# - Storyboards/      (Planning frames)
+# - Transitions/      (Transition effect prefabs)
+

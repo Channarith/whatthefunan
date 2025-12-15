@@ -1,0 +1,297 @@
+================================================================================
+WHAT THE FUNAN - LEGAL COMPLIANCE CHECKLIST
+================================================================================
+VERSION: 1.0
+LAST UPDATED: December 2024
+================================================================================
+
+This checklist must be completed before any release. All items must be checked
+and signed off by the appropriate team member.
+
+================================================================================
+PRE-DEVELOPMENT PHASE
+================================================================================
+
+[ ] Hire Cultural Consultant - Cambodia (native speaker, cultural expert)
+[ ] Hire Cultural Consultant - Thailand (native speaker, cultural expert)
+[ ] Hire Cultural Consultant - Laos (native speaker, cultural expert)
+[ ] Engage Thai Legal Counsel with lèse-majesté expertise
+[ ] Create internal Content Guidelines Document
+[ ] Brief ALL team members on compliance rules
+[ ] Set up compliance review workflow in project management
+[ ] Create content approval process with required sign-offs
+
+================================================================================
+CONTENT CREATION PHASE
+================================================================================
+
+CHARACTER DESIGN REVIEW
+--------------------------------------------------------------------------------
+[ ] All character names are FICTIONAL (no historical rulers)
+[ ] No resemblance to Thai royal family members (any era)
+[ ] No monks as playable or combat characters
+[ ] Apsara designs are respectful, not sexualized
+[ ] Animal characters avoid ethnic stereotypes
+[ ] No ethnic caricatures or offensive designs
+[ ] All character designs reviewed by cultural consultants
+
+ENVIRONMENT ART REVIEW
+--------------------------------------------------------------------------------
+[ ] All temples are FICTIONAL "Funan-inspired" designs
+[ ] NO direct replicas of Angkor Wat
+[ ] NO replicas of Preah Vihear Temple
+[ ] NO replicas of any Thai royal palaces
+[ ] Buddha statues shown in respectful contexts ONLY
+[ ] Buddha images NOT in combat zones or battle arenas
+[ ] NO destruction of sacred architecture in gameplay
+[ ] All environments reviewed by cultural consultants
+
+NARRATIVE & DIALOGUE REVIEW
+--------------------------------------------------------------------------------
+[ ] All king/ruler names are FICTIONAL
+[ ] NO references to Thai royal family (any era) - CRITICAL
+[ ] NO references to Khmer Rouge or genocide
+[ ] NO references to Cambodia-Thailand border disputes
+[ ] NO political commentary about any country
+[ ] Cultural elements framed as "Funan" (shared heritage)
+[ ] NO claims of cultural origin favoring one country
+[ ] Educational content is factually accurate
+[ ] All narrative reviewed by cultural consultants
+
+RELIGIOUS CONTENT REVIEW
+--------------------------------------------------------------------------------
+[ ] Buddha images ALWAYS respectful
+[ ] NO Buddha images in combat zones
+[ ] NO Buddha images being damaged or destroyed
+[ ] NO monks in violent or inappropriate situations
+[ ] Hindu deities depicted respectfully
+[ ] Nagas/dragons depicted as mythological (SAFE)
+[ ] Religious ceremonies shown respectfully
+[ ] NO mockery of religious practices
+[ ] All religious content reviewed by consultants
+
+GAMEPLAY MECHANICS REVIEW
+--------------------------------------------------------------------------------
+[ ] NO real-money gambling mechanics
+[ ] NO gacha system with real money purchases
+[ ] Virtual currency has clear "no real value" disclaimer
+[ ] NO slot machines or casino simulations
+[ ] Parental gate implemented for ALL purchases
+[ ] Age gate implemented at first launch
+[ ] Combat does NOT target religious figures or sacred sites
+
+AUDIO CONTENT REVIEW
+--------------------------------------------------------------------------------
+[ ] Traditional music used respectfully
+[ ] NO sacred Buddhist chants used inappropriately
+[ ] Voice acting avoids offensive accents/stereotypes
+[ ] NO offensive stereotypical portrayals
+
+UI/UX & TEXT REVIEW
+--------------------------------------------------------------------------------
+[ ] Legal disclaimers included in game loading screen
+[ ] Privacy policy accessible from main menu
+[ ] Terms of service accessible from main menu
+[ ] Age-appropriate content warnings displayed
+[ ] Parental controls easily accessible
+[ ] All disclaimers reviewed by legal counsel
+
+================================================================================
+DATA PROTECTION COMPLIANCE
+================================================================================
+
+COPPA (Children Under 13)
+--------------------------------------------------------------------------------
+[ ] No data collection from children under 13 without parental consent
+[ ] Verifiable parental consent system implemented
+[ ] Privacy policy specifically addresses children
+[ ] No behavioral advertising to children
+[ ] Data deletion capability for parent requests
+[ ] Annual COPPA compliance audit scheduled
+
+GDPR (European Union)
+--------------------------------------------------------------------------------
+[ ] Clear consent before data collection
+[ ] Right to access personal data implemented
+[ ] Right to data deletion implemented
+[ ] Right to data portability implemented
+[ ] Data processing documentation maintained
+[ ] DPO (Data Protection Officer) designated if required
+
+THAILAND PDPA
+--------------------------------------------------------------------------------
+[ ] Obtain explicit consent before collecting personal data
+[ ] For users under 20: require parental/guardian consent
+[ ] Clear privacy policy in Thai language
+[ ] Data localization requirements reviewed
+[ ] Cross-border data transfer compliance verified
+
+================================================================================
+LOCALIZATION COMPLIANCE
+================================================================================
+
+THAI VERSION
+--------------------------------------------------------------------------------
+[ ] Native Thai speaker review completed
+[ ] ALL content reviewed for potential lèse-majesté issues - CRITICAL
+[ ] PDPA consent flows implemented in Thai
+[ ] Thai Film and Video Committee classification obtained
+[ ] Age rating appropriate for Thai market
+
+KHMER VERSION
+--------------------------------------------------------------------------------
+[ ] Native Khmer speaker review completed
+[ ] Funan heritage celebrated positively
+[ ] No content that could be seen as anti-Thailand
+[ ] Ministry of Culture and Fine Arts consulted
+[ ] Appropriate for Cambodian cultural sensibilities
+
+LAO VERSION
+--------------------------------------------------------------------------------
+[ ] Native Lao speaker review completed
+[ ] No political content whatsoever
+[ ] Decree 327 compliance verified
+[ ] Respectful cultural representation
+[ ] Government content review if required
+
+================================================================================
+PRE-RELEASE LEGAL REVIEW
+================================================================================
+
+THAILAND REQUIREMENTS - HIGHEST PRIORITY
+--------------------------------------------------------------------------------
+[ ] Thai legal counsel has reviewed ENTIRE game content
+[ ] Written confirmation: no lèse-majesté concerns
+[ ] Thai Film and Video Committee submission completed
+[ ] Classification certificate obtained
+[ ] All marketing materials approved for Thailand
+
+CAMBODIA REQUIREMENTS
+--------------------------------------------------------------------------------
+[ ] Ministry of Culture and Fine Arts notified
+[ ] Content celebrates shared heritage appropriately
+[ ] No controversial historical claims
+[ ] Local partnership considered if required
+
+LAOS REQUIREMENTS
+--------------------------------------------------------------------------------
+[ ] Content review for political sensitivities
+[ ] Decree 327 compliance confirmed
+[ ] No criticism of government or officials
+[ ] Appropriate cultural representation verified
+
+GENERAL LEGAL REQUIREMENTS
+--------------------------------------------------------------------------------
+[ ] All disclaimers verified in all languages
+[ ] Age ratings obtained for each market (ESRB, PEGI, GRAC, etc.)
+[ ] Privacy policies approved by legal in all languages
+[ ] Terms of service approved by legal in all languages
+[ ] COPPA compliance certified (if applicable)
+[ ] GDPR compliance certified (if applicable)
+[ ] PDPA compliance certified (Thailand)
+
+================================================================================
+APP STORE COMPLIANCE
+================================================================================
+
+APPLE APP STORE
+--------------------------------------------------------------------------------
+[ ] Age rating accurately reflects content
+[ ] In-app purchase descriptions accurate
+[ ] Privacy nutrition labels completed
+[ ] Apple's children's category guidelines if applicable
+[ ] Sign in with Apple implemented if required
+
+GOOGLE PLAY STORE
+--------------------------------------------------------------------------------
+[ ] Content rating questionnaire completed accurately
+[ ] Designed for Families program compliance if applicable
+[ ] Teacher Approved program consideration
+[ ] Privacy policy linked in listing
+[ ] Data safety section completed
+
+================================================================================
+RELEASE STRATEGY
+================================================================================
+
+SOFT LAUNCH (Recommended Order)
+--------------------------------------------------------------------------------
+[ ] 1. Philippines - less restrictive, good test market
+[ ] 2. Malaysia - moderate restrictions, diverse population
+[ ] 3. Indonesia - large market, cultural similarities
+[ ] 4. Monitor for any compliance issues
+[ ] 5. Address any cultural feedback immediately
+
+MAIN LAUNCH
+--------------------------------------------------------------------------------
+[ ] Thailand release ONLY after Film Committee approval
+[ ] Cambodia release after Ministry consultation
+[ ] Laos release after full legal review
+[ ] Global release after soft launch learnings applied
+
+================================================================================
+POST-RELEASE MONITORING
+================================================================================
+
+ONGOING REQUIREMENTS
+--------------------------------------------------------------------------------
+[ ] Monitor user feedback for cultural concerns daily
+[ ] Monitor social media in all target languages
+[ ] Rapid response plan documented for compliance issues
+[ ] Cultural consultant on retainer for content updates
+[ ] Legal counsel on retainer for any legal issues
+[ ] Quarterly compliance review scheduled
+[ ] Annual full audit scheduled
+
+INCIDENT RESPONSE PLAN
+--------------------------------------------------------------------------------
+[ ] Immediate content removal capability ready
+[ ] Emergency contact list for legal counsel
+[ ] PR response templates prepared
+[ ] Escalation matrix documented
+[ ] Communication plan for each market
+
+================================================================================
+SIGN-OFF SECTION
+================================================================================
+
+All items above have been reviewed and completed:
+
+Cultural Consultant (Cambodia):
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Cultural Consultant (Thailand):
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Cultural Consultant (Laos):
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Legal Counsel (Thailand - Lèse-Majesté Expert):
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Legal Counsel (General):
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Project Lead:
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+Studio Head / Executive:
+Name: _________________________________ 
+Signature: _____________________________ 
+Date: _________
+
+================================================================================
+END OF CHECKLIST
+================================================================================

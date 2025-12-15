@@ -1,0 +1,249 @@
+# What the Funan - Legal & Cultural Compliance Rules
+
+## Overview
+These rules MUST be followed at ALL times when developing "What the Funan" to ensure legal compliance and cultural sensitivity for Cambodia, Thailand, and Laos markets.
+
+---
+
+## CRITICAL RESTRICTIONS (VIOLATION = LEGAL RISK)
+
+### Thailand Lèse-Majesté (Section 112) - PRISON RISK
+- NEVER depict, reference, or include ANY Thai royalty (historical or modern)
+- NEVER include imagery that could be interpreted as Thai royal symbols
+- NEVER use names of Thai kings, queens, princes, or princesses
+- NEVER create content that could be seen as mocking Thai monarchy
+- This applies to ALL eras of Thai history
+
+### Buddhist Content Restrictions
+- NEVER place Buddha statues or images in combat scenarios
+- NEVER show Buddha images being damaged, destroyed, or disrespected
+- NEVER use monks as playable characters or combatants
+- NEVER depict monks in violent or inappropriate situations
+- NEVER sexualize any religious figures (apsaras in religious context)
+- Buddha images must ALWAYS be shown respectfully and reverently
+- Temple interiors with Buddha statues should not be battle arenas
+
+### Gambling Restrictions
+- NEVER implement real-money gambling mechanics
+- NEVER create gacha/loot boxes with real money (virtual currency OK with disclosure)
+- NEVER simulate casino games (slots, roulette, card gambling)
+- Virtual currency systems must clearly state "no real-world value"
+- Avoid mechanics that could be classified as gambling in these jurisdictions
+
+### Political Content Restrictions
+- NEVER reference modern political figures from Cambodia, Thailand, or Laos
+- NEVER depict Khmer Rouge or genocide-related content
+- NEVER reference current border disputes (especially Preah Vihear Temple)
+- NEVER take sides in Cambodia-Thailand cultural disputes
+- NEVER include content critical of Lao government or Communist Party
+
+---
+
+## MANDATORY CONTENT GUIDELINES
+
+### Cultural Heritage
+- Present Funan Kingdom as SHARED Southeast Asian heritage
+- NEVER claim specific cultural elements belong to one country
+- Use fictional names for all locations (not real temple names)
+- Use fictional names for all historical figures (not real king names)
+- Frame cultural elements as "ancient Funan" not "Khmer" or "Thai"
+
+### Temple and Sacred Site Depiction
+- DO NOT use exact replicas of Angkor Wat, Preah Vihear, or other UNESCO sites
+- Create "inspired by" architecture, not copies
+- Temples in game should be fictional "Funan Temple" style
+- No destruction of temple structures in gameplay
+- Respectful exploration only
+
+### Character Design
+- Animal characters avoid ethnic representation issues (GOOD)
+- If human characters, use diverse/neutral skin tones
+- Avoid ethnic stereotypes
+- Apsara dancers: elegant and respectful, not sexualized
+- Traditional dress: respectful representation
+
+### Religious Elements
+- Hindu-Buddhist blend is historically accurate for Funan (GOOD)
+- Nagas, dragons, mythological creatures are safe
+- Deities should be depicted respectfully
+- Religious ceremonies shown as beautiful/educational
+- No mockery of religious practices
+
+---
+
+## REQUIRED DISCLAIMERS
+
+### Main Disclaimer (Required in game)
+Include this text in the game's opening, about section, and app store description:
+
+```
+"What the Funan" is a work of fiction inspired by the ancient Funan Kingdom 
+(1st-9th Century CE). All characters, events, and locations are fictional. 
+Any resemblance to real historical figures is coincidental. This game 
+celebrates the shared cultural heritage of Southeast Asia and is created 
+with respect for all cultures and traditions depicted.
+```
+
+### Educational Disclaimer
+```
+This game contains educational content about ancient Southeast Asian history. 
+Representations of religious and cultural elements are intended to be 
+respectful and educational.
+```
+
+---
+
+## DATA PROTECTION REQUIREMENTS
+
+### Thailand PDPA Compliance
+- Obtain explicit consent before collecting personal data
+- For users under 20: require parental/guardian consent
+- Provide clear privacy policy in Thai language
+- Allow data export and deletion requests
+- Secure storage of all personal data
+
+### COPPA Compliance (Children's Game)
+- No collection of personal data from children under 13 without parental consent
+- Implement age gate at first launch
+- Parental gate for purchases
+- No behavioral advertising to children
+
+### GDPR Compliance
+- Right to be forgotten
+- Data portability
+- Clear consent mechanisms
+- Privacy by design
+
+---
+
+## CONTENT REVIEW CHECKPOINTS
+
+Before any content is finalized, it must pass these checks:
+
+### Art Assets
+- [ ] No Thai royal imagery
+- [ ] Buddha images are respectful
+- [ ] No monks in inappropriate contexts
+- [ ] Temples are fictional/inspired, not replicas
+- [ ] Character designs avoid stereotypes
+- [ ] Religious symbols used appropriately
+
+### Narrative/Dialogue
+- [ ] No references to real kings or royalty
+- [ ] No political commentary
+- [ ] No claims of cultural origin/ownership
+- [ ] Fictional location names used
+- [ ] No sensitive historical events referenced
+
+### Gameplay Mechanics
+- [ ] No gambling mechanics
+- [ ] No destruction of sacred sites
+- [ ] Combat avoids religious figures
+- [ ] Virtual currency clearly has no real value
+
+### Audio
+- [ ] Traditional music used respectfully
+- [ ] No sacred chants used inappropriately
+- [ ] Voice acting avoids offensive accents/stereotypes
+
+---
+
+## LOCALIZATION REQUIREMENTS
+
+### Thai Version
+- Review by native Thai speaker for unintended meanings
+- Ensure no content could be misinterpreted as lèse-majesté
+- PDPA-compliant consent flows
+- Submit to Film and Video Committee
+
+### Khmer Version
+- Review by native Khmer speaker
+- Celebrate Funan/Khmer heritage positively
+- Avoid any anti-Thai sentiment
+
+### Lao Version
+- Review by native Lao speaker
+- No political content
+- Respectful cultural representation
+
+---
+
+## RELEASE CHECKLIST
+
+### Before Thailand Release
+- [ ] Submit to Thai Film and Video Committee
+- [ ] Legal review by Thai counsel
+- [ ] PDPA compliance verified
+- [ ] Age rating obtained
+- [ ] Parental consent system implemented
+
+### Before Cambodia Release
+- [ ] Ministry of Culture consultation
+- [ ] Cultural advisor review
+- [ ] No gambling mechanics confirmed
+- [ ] Heritage sites not directly replicated
+
+### Before Laos Release
+- [ ] Legal review for Decree 327 compliance
+- [ ] No political content verified
+- [ ] Cultural consultant review
+
+---
+
+## ENFORCEMENT
+
+When writing any code, creating any assets, or designing any features:
+
+1. ALWAYS check against these rules before implementing
+2. When in doubt, choose the more conservative option
+3. Flag any potential issues for cultural consultant review
+4. Document all cultural/religious content decisions
+5. Maintain audit trail of compliance reviews
+
+## CONSEQUENCES OF VIOLATION
+
+- Thailand: Lèse-majesté = 3-15 years imprisonment per offense
+- Thailand: Content ban and company blacklist
+- Cambodia: Content ban, potential legal action
+- Laos: Criminal prosecution for anti-state content
+- All regions: Reputation damage, market exclusion
+
+---
+
+## SAFE CONTENT EXAMPLES
+
+### SAFE: Mythological Creatures
+- Nagas (serpent deities) ✓
+- Dragons (shared mythology) ✓
+- Garudas (bird deity) ✓
+- Yakshas (nature spirits) ✓
+
+### SAFE: Animal Characters
+- Elephants ✓
+- Monkeys ✓
+- Serpents/snakes ✓
+- Tigers/lions ✓
+- Pandas ✓
+
+### SAFE: Settings
+- Fictional "Funan City" ✓
+- Generic jungle temples ✓
+- River/water kingdoms ✓
+- Ancient trade ports ✓
+
+### SAFE: Cultural Elements
+- Traditional dance (as "Funan dance") ✓
+- Traditional music (as "ancient instruments") ✓
+- Traditional clothing (as "Funan era dress") ✓
+- Water festivals ✓
+- Harvest celebrations ✓
+
+---
+
+## CONTACT FOR COMPLIANCE QUESTIONS
+
+Before implementing any questionable content:
+1. Document the specific content/feature
+2. Reference which rule it may affect
+3. Seek cultural consultant review
+4. Obtain written approval before proceeding

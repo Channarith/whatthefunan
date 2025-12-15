@@ -1,0 +1,247 @@
+================================================================================
+WHAT THE FUNAN - AI ART GENERATION PROMPTS
+================================================================================
+For use with: Midjourney, Leonardo.ai, DALL-E, Stable Diffusion
+Style Reference: Fortnite-style cute 3D, Angkorian/Southeast Asian theme
+================================================================================
+
+GENERAL STYLE GUIDELINES
+================================================================================
+- Style: Cute, stylized 3D like Fortnite
+- Proportions: Slightly exaggerated heads, expressive faces
+- Color palette: Warm golds, deep greens, temple stone grays, vibrant ceremonial colors
+- Mood: Playful, adventurous, kid-friendly
+- Setting: Ancient Southeast Asian kingdom, jungle temples, rivers
+
+Add these to all prompts:
+"fortnite style, cute stylized 3d render, vibrant colors, soft lighting, 
+ancient southeast asian fantasy, unreal engine 5, octane render"
+
+================================================================================
+PLAYABLE CHARACTERS
+================================================================================
+
+DOMREY - ELEPHANT WARRIOR (Tank Class)
+--------------------------------------------------------------------------------
+"Cute stylized 3D elephant warrior character, Fortnite style, 
+standing heroically with trunk raised, wearing ancient Khmer-inspired 
+golden armor with temple motifs, red and gold color scheme,
+expressive cartoon eyes, muscular but adorable proportions,
+holding a large ornate hammer, jungle temple background,
+game character art, full body portrait, octane render, 8k"
+
+"Domrey the elephant warrior concept art sheet, multiple poses,
+idle stance, attack pose, victory pose, running animation reference,
+cute 3D Fortnite style, Angkorian gold armor with gems,
+character turnaround, game asset reference, white background"
+
+SVAA - MONKEY SCOUT (Agile Class)
+--------------------------------------------------------------------------------
+"Cute stylized 3D monkey character, Fortnite style,
+agile acrobatic pose, wearing ancient temple guardian outfit,
+green and brown leather armor with leaf motifs,
+mischievous grin, big expressive eyes, fluffy tail,
+wielding an ornate bo staff with gold engravings,
+jungle canopy background, dynamic action pose,
+game character art, full body, octane render"
+
+"Svaa the monkey scout character design, playful expression,
+traditional Southeast Asian inspired outfit, rope and cloth wraps,
+temple guardian aesthetics, cute proportions like Fortnite,
+character concept art, multiple expressions sheet"
+
+KRAHORM - PANDA MONK (Balanced Class)
+--------------------------------------------------------------------------------
+"Cute stylized 3D red panda monk character, Fortnite style,
+serene martial arts stance, wearing traditional monk robes,
+orange and saffron colored robes with gold trim,
+prayer beads around neck, calm wise expression,
+fighting stance with open palms, temple courtyard background,
+game character art, soft lighting, full body render"
+
+"Krahorm the panda monk, zen master aesthetic,
+cute rotund body like Fortnite characters,
+ancient Buddhist temple inspired outfit,
+peaceful but powerful warrior monk design,
+character turnaround sheet, multiple poses"
+
+NEAK - NAGA MAGE (Magic Class)
+--------------------------------------------------------------------------------
+"Cute stylized 3D naga serpent mage character, Fortnite style,
+upper body humanoid with serpent lower body,
+wearing ornate jewelry and ceremonial headdress,
+blue and silver color scheme with water motifs,
+holding magical staff with glowing orb,
+mystical water effects, underwater temple background,
+elegant but cute proportions, wise expression,
+game character art, fantasy creature design"
+
+"Neak the naga water mage, serpent deity aesthetics,
+traditional Cambodian naga design made cute,
+seven-headed hood ornament on headdress,
+magical water swirling around, bioluminescent scales,
+character concept art, full body portrait"
+
+MEAS - APSARA DANCER (Support/Healer Class)
+--------------------------------------------------------------------------------
+"Cute stylized 3D apsara celestial dancer character, Fortnite style,
+graceful dance pose, wearing traditional Khmer dancer costume,
+golden tiered crown with temple spires, elegant hand gestures,
+pink and gold flowing fabrics, flower petal effects,
+ethereal glowing aura, temple relief background,
+respectful artistic interpretation, beautiful but cute,
+game character art, fantasy healer design"
+
+"Meas the apsara dancer healer, celestial being aesthetics,
+traditional Cambodian royal dance costume inspired,
+intricate gold jewelry and accessories,
+healing magic emanating from hands,
+supportive character design, elegant poses sheet"
+
+================================================================================
+MYTHOLOGICAL CREATURES
+================================================================================
+
+NAGA (Water Serpent)
+--------------------------------------------------------------------------------
+"Cute stylized 3D naga water serpent, Fortnite art style,
+seven-headed serpent with friendly expressions,
+blue and green iridescent scales, gold crown decorations,
+coiled around temple pillar, mystical water effects,
+traditional Cambodian naga design made adorable,
+game creature art, fantasy water dragon, soft render"
+
+GARUDA (Bird Deity)
+--------------------------------------------------------------------------------
+"Cute stylized 3D garuda bird creature, Fortnite style,
+majestic eagle-like humanoid with wings spread,
+red and gold feathers, ornate crown headdress,
+powerful but friendly expression, ancient warrior aesthetic,
+temple sky background with clouds,
+Southeast Asian mythology inspired, game character art"
+
+DRAGON (Eastern Style)
+--------------------------------------------------------------------------------
+"Cute stylized 3D Chinese/Southeast Asian dragon, Fortnite style,
+long serpentine body with small legs, whisker tendrils,
+golden scales with red accents, friendly wise expression,
+cloud and mist effects, floating in sky,
+pearl in claws, auspicious dragon design,
+fantasy creature art, game asset"
+
+SILLY STEGOSAURUS (Ta Prohm Tribute)
+--------------------------------------------------------------------------------
+"Cute stylized 3D stegosaurus dinosaur, Fortnite style,
+confused adorable expression, overgrown with jungle vines,
+ancient stone texture mixed with scales,
+wearing crumbling temple ruins on back,
+lost prehistoric creature in jungle setting,
+comic relief character design, endearing and silly,
+game creature art, unique design"
+
+================================================================================
+ENVIRONMENTS
+================================================================================
+
+FUNAN CITY HUB
+--------------------------------------------------------------------------------
+"Ancient Southeast Asian fantasy city, Fortnite game environment style,
+wooden stilt houses on water, grand temple in background,
+busy marketplace with colorful awnings, palm trees,
+golden temple spires, traditional architecture,
+warm sunset lighting, vibrant and welcoming,
+game level concept art, isometric view"
+
+JUNGLE TEMPLE RUINS
+--------------------------------------------------------------------------------
+"Mysterious jungle temple ruins, Fortnite game environment,
+ancient stone structures overgrown with roots and vines,
+carved faces on towers, moss-covered stone blocks,
+atmospheric fog, dappled sunlight through canopy,
+adventure game setting, Indiana Jones meets Angkor Wat,
+game level concept art, explorable environment"
+
+NAGA WATER KINGDOM
+--------------------------------------------------------------------------------
+"Underwater fantasy palace, Fortnite game style,
+magical air bubbles, bioluminescent plants,
+serpent-themed architecture with naga statues,
+coral and seashell decorations, blue-green lighting,
+mystical underwater temple, game environment art,
+dreamy fantasy setting, playable game level"
+
+================================================================================
+UI AND ICONS
+================================================================================
+
+CURRENCY ICONS
+--------------------------------------------------------------------------------
+"Game currency icon set, Fortnite UI style,
+Funan Coin: golden ancient coin with temple embossing,
+Dragon Gem: purple glowing crystal with dragon inside,
+stylized 2D game icons, clean design, vibrant colors"
+
+MINI-GAME ICONS
+--------------------------------------------------------------------------------
+"Game activity icons set, cute Fortnite style,
+Fishing: cartoon fish on hook,
+Cooking: steaming pot with chopsticks,
+Racing: cute elephant running,
+Puzzle: temple block puzzle,
+Dance: apsara dancer silhouette,
+colorful game UI icons, 2D stylized"
+
+================================================================================
+MOUNTS
+================================================================================
+
+BABY ELEPHANT MOUNT
+--------------------------------------------------------------------------------
+"Cute baby elephant mount, Fortnite style rideable creature,
+small adorable elephant with big eyes, saddle on back,
+golden decorative blanket and headpiece,
+running pose, happy expression,
+game mount design, collectible creature"
+
+CLOUD SERPENT MOUNT
+--------------------------------------------------------------------------------
+"Cute Eastern dragon mount, Fortnite style,
+long serpentine flying dragon, small rider on back,
+fluffy mane, whiskers, friendly face,
+cloud trail effects, flying through sky,
+legendary mount design, fantasy creature"
+
+================================================================================
+NOTES FOR AI ART GENERATION
+================================================================================
+
+1. Always add "child-friendly, appropriate for all ages" to prompts
+2. Avoid any violent or scary imagery
+3. Keep cultural elements respectful and celebratory
+4. Buddha images should NOT be generated (legal compliance)
+5. No Thai royal imagery (legal compliance)
+6. Focus on MYTHOLOGICAL creatures, not religious figures
+7. Use "Fortnite style" consistently for cohesive look
+8. Add "game art, game character, video game asset" for cleaner results
+
+STYLE KEYWORDS TO INCLUDE:
+- fortnite style
+- cute stylized 3d
+- vibrant colors
+- soft lighting
+- game character art
+- octane render / unreal engine 5
+- full body portrait
+- character concept art
+
+AVOID:
+- realistic
+- photorealistic
+- scary
+- horror
+- violent
+- religious symbols
+- Buddha statues
+- royal figures
+================================================================================
+

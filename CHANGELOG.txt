@@ -1,0 +1,151 @@
+================================================================================
+WHAT THE FUNAN - CHANGELOG
+================================================================================
+
+VERSION 0.1.0 (Development Start) - December 15, 2024
+================================================================================
+
+INITIAL PROJECT SETUP
+---------------------
+- Created Unity project structure for "What the Funan" RPG
+- Set up folder hierarchy: Scripts, Assets, Resources, Plugins
+- Established namespace conventions: WhatTheFunan.*
+
+CORE SYSTEMS IMPLEMENTED
+------------------------
+[Core]
+- GameManager: Central game state management with pause, loading, state machine
+- AudioManager: Music, SFX, and ambient audio with pooling and volume controls
+- SaveSystem: Local and cloud save with compression and slot management
+- HapticManager: Tactile feedback for iOS/Android with intensity levels
+
+[Economy]
+- CurrencyManager: Coins and Gems with persistence and validation
+
+[Character/RPG]
+- CharacterStats: Level, XP, stats with events and progression
+- CharacterController: Basic 3D movement with ground detection
+- QuestSystem: Quest tracking, objectives, rewards, chains
+- DialogueSystem: Branching conversations with choices
+- InventorySystem: Items, equipment, consumables
+
+[Combat]
+- CombatController: Multi-mode combat (free-flow, paired, automated)
+- BossBattle: Epic boss fights with phases and attack patterns
+
+[Mini-Games]
+- FishingGame: Cast, hook, reel mechanics with fish database
+- CookingGame: Recipe-based cooking with timing mechanics
+- RhythmGame: Music/dance game with note timing
+- RacingGame: Mount racing with lanes and power-ups
+
+[Educational]
+- CodexSystem: Historical encyclopedia with categories
+  - History, Culture, Architecture, Religion, Trade, etc.
+
+[Social]
+- FriendSystem: Friend codes (child-safe), online status
+- GiftSystem: Daily gift sending between friends
+- ReferralSystem: Invite friends with rewards
+
+[Monetization]
+- IAPManager: In-app purchases with parental gate
+- AdManager: Rewarded and interstitial ads (COPPA compliant)
+- ParentalGate: Math problems for purchase protection
+
+[Live Ops]
+- DailyRewards: 7-day reward cycles with streak bonuses
+
+[Collection]
+- CollectionManager: Collectible albums with completion rewards
+
+[Achievements]
+- AchievementSystem: Progress tracking, platform sync
+
+[Gameplay]
+- MountSystem: Rideable creatures with skins
+- WeatherSystem: Day/night cycle and weather effects
+
+[Backend]
+- FirebaseManager: Auth, Cloud Save, Remote Config, Analytics
+
+[Notifications]
+- NotificationManager: Local notifications (engagement, daily rewards)
+
+LEGAL COMPLIANCE
+----------------
+- Created comprehensive legal compliance checklist
+- Created Cursor Rule for legal/cultural requirements
+- Documented restrictions for Cambodia, Thailand, Laos
+- Implemented parental controls and age gates
+
+AI ART DOCUMENTATION
+--------------------
+- Created AI art prompts for all main characters:
+  - Domrey (Elephant Warrior)
+  - Svaa (Monkey Scout)
+  - Krahorm (Panda Monk)
+  - Neak (Naga Mage)
+  - Meas (Apsara Dancer)
+- Created prompts for mythological creatures
+- Created prompts for environments and UI
+
+FILES CREATED
+-------------
+Total scripts created: 30+
+Total documentation files: 3
+
+--------------------------------------------------------------------------------
+VERSION 0.2.0 (Feature Complete) - December 15, 2024
+--------------------------------------------------------------------------------
+
+ADDITIONAL SYSTEMS IMPLEMENTED
+------------------------------
+[UI]
+- UIManager: Screen navigation, popups, overlays, transitions
+- HUDController: Health, currency, quest tracker, combat UI
+
+[Tutorial]
+- TutorialSystem: Step-by-step onboarding with highlights and triggers
+
+[Live Ops]
+- SeasonalEvents: Water Festival, Harvest Festival, special events
+- Event challenges with point rewards and milestones
+
+[Features]
+- PhotoMode: In-game screenshots with filters, frames, sharing
+- EmoteSystem: Character expressions and apsara dances
+- CinematicsManager: Video, Timeline, and slideshow cutscenes
+
+[Accessibility]
+- AccessibilityManager: Text scaling, colorblind modes, subtitles
+- Reduced motion, auto-aim, one-handed mode
+- Screen reader support
+
+[Localization]
+- LocalizationManager: Multi-language support
+- English, Khmer, Thai, Lao, and more
+- RTL support, custom fonts for Southeast Asian scripts
+
+[Unity Project]
+- Package manifest with all required dependencies
+- Project settings configured for mobile (Android/iOS)
+- URP rendering pipeline setup
+
+TOTAL FILES CREATED: 50+
+TOTAL LINES OF CODE: 15,000+
+
+NEXT STEPS
+----------
+- [ ] Open project in Unity 2022 LTS
+- [ ] Generate character models with AI tools
+- [ ] Create temple and jungle environments
+- [ ] Record/generate cinematics
+- [ ] Implement audio (music and SFX)
+- [ ] Build and test on devices
+- [ ] Submit to soft launch markets
+
+================================================================================
+REMINDER: Check code into GitLab weekly!
+================================================================================
+

@@ -1,0 +1,10 @@
+# Unity Scenes Directory
+# Create the following scenes in Unity Editor:
+# - Bootstrap.unity (initial loading)
+# - MainMenu.unity
+# - FunanCity.unity (hub area)
+# - TempleRuins.unity
+# - JungleZone.unity
+# - NagaKingdom.unity
+# - Loading.unity (loading screen)
+
