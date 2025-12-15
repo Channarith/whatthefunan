@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Codex_Creatures
+  m_EditorClassIdentifier: 
+  category: Creatures
+  entries:
+    - entryId: codex_naga
+      title: Naga - The Serpent Deity
+      content: |
+        Nagas are powerful serpent beings in Southeast Asian mythology. They are 
+        protectors of water, guardians of treasure, and bringers of rain.
+        
+        In Khmer tradition, nagas have 1, 3, 5, 7, or 9 heads - with more heads 
+        meaning greater power. The Naga King is said to have seven heads!
+        
+        Many temples feature naga railings along staircases, symbolizing the 
+        rainbow bridge between heaven and earth.
+      unlockMethod: default
+      
+    - entryId: codex_apsara
+      title: Apsara - Celestial Dancers
+      content: |
+        Apsaras are divine dancers from Hindu-Buddhist mythology. They are beautiful 
+        beings who dance in the palaces of the gods, bringing joy and blessings.
+        
+        The famous Apsara carvings at Angkor Wat show thousands of unique dancers, 
+        each with different poses, costumes, and expressions!
+        
+        Apsara dance remains a treasured art form in Cambodia today.
+      unlockMethod: discover
+      
+    - entryId: codex_makara
+      title: Makara - The Sea Dragon
+      content: |
+        The Makara is a mythical sea creature combining features of a crocodile, 
+        elephant, and fish. It guards temple entrances and represents the ocean.
+        
+        In art, makaras often have their mouths open with nagas emerging from them, 
+        symbolizing the connection between water creatures.
+      unlockMethod: discover
+      
+    - entryId: codex_singha
+      title: Singha - The Guardian Lion
+      content: |
+        Singha (or Singh) means lion in Sanskrit. These lion guardians protect 
+        temples and palaces throughout Southeast Asia.
+        
+        Interestingly, real lions never lived in this region! The image came from 
+        India through trade and religious connections.
+        
+        Singha statues often guard temple entrances in pairs.
+      unlockMethod: discover
+      
+    - entryId: codex_taprohm_creature
+      title: The Mystery of Ta Prohm
+      content: |
+        At the real Ta Prohm temple in Cambodia, there is a carving that some people 
+        think looks like a stegosaurus dinosaur! 
+        
+        Scientists say it's probably a rhinoceros or boar, but the mystery has 
+        captured people's imagination. In our game, Prohm is our friendly 
+        stegosaurus-like guardian!
+        
+        (Real dinosaurs lived millions of years before humans - this is just for fun!)
+      unlockMethod: discover
+

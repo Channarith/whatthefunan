@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Items_Consumables
+  m_EditorClassIdentifier: 
+  items:
+    - itemId: item_health_fruit
+      itemName: Golden Mango
+      description: A sweet mango that restores 50 health points.
+      itemType: 0
+      rarity: 0
+      healAmount: 50
+      buyPrice: 25
+      sellPrice: 10
+    - itemId: item_stamina_drink
+      itemName: Coconut Water
+      description: Refreshing coconut water that restores 30 stamina.
+      itemType: 0
+      rarity: 0
+      staminaAmount: 30
+      buyPrice: 20
+      sellPrice: 8
+    - itemId: item_power_boost
+      itemName: Dragon Fruit Elixir
+      description: Temporarily increases attack power by 25% for 60 seconds.
+      itemType: 0
+      rarity: 1
+      buffType: attack
+      buffAmount: 25
+      duration: 60
+      buyPrice: 100
+      sellPrice: 40
+    - itemId: item_shield_potion
+      itemName: Naga Scale Brew
+      description: Temporarily increases defense by 30% for 60 seconds.
+      itemType: 0
+      rarity: 1
+      buffType: defense
+      buffAmount: 30
+      duration: 60
+      buyPrice: 100
+      sellPrice: 40
+    - itemId: item_revive
+      itemName: Apsara's Blessing
+      description: Revives fallen character with 50% health.
+      itemType: 0
+      rarity: 2
+      revivePercent: 50
+      buyPrice: 500
+      sellPrice: 200
+

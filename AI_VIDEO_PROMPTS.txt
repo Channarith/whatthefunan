@@ -1,0 +1,284 @@
+================================================================================
+WHAT THE FUNAN - AI VIDEO GENERATION PROMPTS
+================================================================================
+For use with: Runway ML, Pika Labs, Luma Dream Machine, Kling AI
+Style Reference: Fortnite-meets-Pixar with Southeast Asian aesthetics
+================================================================================
+
+GENERAL STYLE GUIDELINES
+================================================================================
+- Cute, stylized 3D characters (NOT realistic)
+- Vibrant colors inspired by Khmer art (golds, jungle greens, water blues)
+- Soft lighting with warm golden hour tones
+- Ancient Southeast Asian temple architecture
+- Lush tropical jungle environments
+- Magical particle effects (gold sparkles, water droplets)
+- Child-friendly, no violence or scary imagery
+
+================================================================================
+INTRO CINEMATIC VIDEOS
+================================================================================
+
+SCENE 1: AERIAL KINGDOM VIEW
+--------------------------------------------------------------------------------
+Prompt for Runway/Pika:
+"Breathtaking aerial shot flying through clouds revealing a golden ancient temple 
+in lush tropical jungle, Angkor Wat inspired architecture, morning mist, golden 
+sunlight streaming through trees, birds flying, cinematic drone shot descending 
+slowly, Pixar animation style, vibrant colors, 4K quality"
+
+Motion: Slow forward and downward camera movement
+Duration: 8-10 seconds
+Transitions: Fade from black at start
+
+--------------------------------------------------------------------------------
+
+SCENE 2: BUSTLING PORT CITY
+--------------------------------------------------------------------------------
+Prompt:
+"Ancient Southeast Asian port city, wooden boats with colorful sails on river, 
+merchants trading goods, elephants carrying cargo, busy marketplace, golden 
+temple spires in background, sunset lighting, Pixar animation style, cute 
+stylized characters, warm golden tones, cinematic wide shot panning left"
+
+Motion: Slow pan from right to left
+Duration: 8-10 seconds
+
+--------------------------------------------------------------------------------
+
+SCENE 3: GUARDIAN CREATURES MONTAGE
+--------------------------------------------------------------------------------
+Prompt 1 - Elephant:
+"Cute cartoon elephant character wearing golden royal Thai/Khmer jewelry and 
+crown, gentle expression, standing proudly in jungle clearing, Fortnite character 
+style, stylized 3D, golden sunlight, magical gold sparkles, heroic pose"
+
+Prompt 2 - Monkey:
+"Playful cartoon monkey character doing acrobatic flip, wearing simple vest, 
+mischievous happy expression, jungle vines background, Fortnite/Pixar style, 
+bright colors, motion blur on movement, dynamic action shot"
+
+Prompt 3 - Naga Serpent:
+"Majestic seven-headed naga serpent rising from water, Khmer style serpent design, 
+friendly cute face, scales shimmer with blue and green, water droplets and mist, 
+magical glow, Pixar animation style, underwater palace in background"
+
+Prompt 4 - Apsara Dancer:
+"Beautiful stylized Apsara celestial dancer, traditional Cambodian dance pose, 
+golden crown and jewelry, flowing silk costume, floating gracefully, golden 
+particles and lotus petals falling, soft ethereal lighting, Pixar style"
+
+Motion: Each creature reveal with subtle camera push-in
+Duration: 3-4 seconds each
+
+--------------------------------------------------------------------------------
+
+SCENE 4: SHADOW THREAT
+--------------------------------------------------------------------------------
+Prompt:
+"Dramatic sky darkening over ancient temple, purple and black shadows creeping 
+across jungle, ominous but NOT scary, stylized like Disney villain entrance, 
+silhouette of giant serpent in storm clouds, lightning flashes, Pixar animation 
+style, dramatic but child-appropriate"
+
+Motion: Slow zoom out as darkness spreads
+Duration: 8-10 seconds
+Color grading: Desaturate, add purple/blue tints
+
+--------------------------------------------------------------------------------
+
+SCENE 5: PROPHECY TABLET
+--------------------------------------------------------------------------------
+Prompt:
+"Ancient stone tablet glowing with golden magical light, Khmer script inscriptions 
+lighting up one by one, floating in mystical cave, dust particles in light beams, 
+magical atmosphere, warm golden tones, Pixar style, hope and wonder feeling"
+
+Motion: Slow push in on tablet
+Duration: 6-8 seconds
+
+================================================================================
+CHAPTER TRANSITION VIDEOS
+================================================================================
+
+CHAPTER 1 - VILLAGE
+--------------------------------------------------------------------------------
+"Peaceful Khmer village at sunrise, wooden stilt houses, rice paddies, friendly 
+villagers, cute elephants, golden morning light, birds singing, Pixar animation 
+style, establishing shot, peaceful atmosphere, smoke from cooking fires"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 2 - UNDERWATER PALACE
+--------------------------------------------------------------------------------
+"Magical underwater palace with Khmer architecture, coral and sea plants, schools 
+of colorful fish, bioluminescent lights, Naga serpent statues, blue and green 
+colors, Pixar style, swimming camera movement, mystical underwater kingdom"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 3 - ANCIENT TEMPLE
+--------------------------------------------------------------------------------
+"Ancient temple ruins overgrown with massive tree roots, Ta Prohm inspired, 
+mysterious atmosphere, shafts of light through canopy, stone faces carved in 
+walls, moss and vines, Pixar animation style, exploring adventure feeling"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 4 - CELESTIAL REALM
+--------------------------------------------------------------------------------
+"Heavenly temple floating in clouds, Apsara dancers, lotus flowers, golden 
+architecture, pink and gold sunset colors, ethereal atmosphere, Pixar style, 
+magical and peaceful, floating lanterns, soft dreamy lighting"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 5 - SHADOW LANDS
+--------------------------------------------------------------------------------
+"Dark corrupted forest, twisted trees with glowing eyes, purple fog, but still 
+stylized and not truly scary, Pixar villain aesthetic, mysterious but exciting, 
+hero silhouette walking forward, determination"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 6 - GATHERING
+--------------------------------------------------------------------------------
+"All cute animal guardian characters assembled together on mountain peak, sunrise 
+behind them, heroic group pose, Fortnite style character lineup, golden light, 
+inspiring and epic feeling, team ready for adventure"
+
+--------------------------------------------------------------------------------
+
+CHAPTER 7 - FINAL BATTLE ARENA
+--------------------------------------------------------------------------------
+"Epic arena in volcano caldera, ancient Khmer architecture, dramatic lighting, 
+lava glow but stylized and safe looking, final boss stage feeling, dramatic 
+clouds, golden and red colors, Pixar epic finale style"
+
+================================================================================
+CHARACTER UNLOCK VIDEOS
+================================================================================
+
+NAGA PRINCE UNLOCK
+--------------------------------------------------------------------------------
+"Naga serpent prince emerging majestically from glowing water portal, seven 
+heads with kind expression, royal blue and gold colors, water magic swirling, 
+underwater palace throne room, Pixar style, character introduction shot, 
+dramatic but friendly reveal"
+
+--------------------------------------------------------------------------------
+
+APSARA UNLOCK
+--------------------------------------------------------------------------------
+"Celestial Apsara dancer descending from heavens on golden light beam, 
+traditional dance pose, flower petals and sparkles falling, silk costume flowing, 
+temple courtyard, soft pink and gold lighting, Pixar magical style"
+
+--------------------------------------------------------------------------------
+
+PROHM DINOSAUR UNLOCK
+--------------------------------------------------------------------------------
+"Friendly stegosaurus-like creature awakening from stone sleep inside ancient 
+temple, cracking stone revealing cute face, golden eyes opening, dust and 
+particles, magical awakening, temple rumbling gently, Pixar style"
+
+--------------------------------------------------------------------------------
+
+MAKARA DRAGON UNLOCK
+--------------------------------------------------------------------------------
+"Cute dragon-crocodile creature (Makara) emerging from ocean waves, friendly 
+face, green and gold scales, water splashing dramatically, sunrise behind, 
+Southeast Asian dragon design, Pixar style heroic entrance"
+
+--------------------------------------------------------------------------------
+
+SINGHA LION UNLOCK
+--------------------------------------------------------------------------------
+"Noble lion guardian breaking free from shadow corruption, transformation from 
+dark to golden, royal roar (silent video), mane flowing, temple guardian statue 
+coming to life, magical sparkles, Pixar heroic reveal"
+
+================================================================================
+ENDING CINEMATICS
+================================================================================
+
+GOOD ENDING
+--------------------------------------------------------------------------------
+"Celebration in Khmer kingdom, all cute animal characters dancing and celebrating, 
+fireworks and lanterns, restored golden temples, happy villagers, Pixar party 
+scene style, joyful atmosphere, camera pulling back to reveal whole kingdom"
+
+--------------------------------------------------------------------------------
+
+PERFECT ENDING (100%)
+--------------------------------------------------------------------------------
+"All seven guardian creatures standing together at restored palace, golden 
+sunset, camera slowly rising to reveal entire kingdom at peace, magical rainbow, 
+floating lanterns releasing into sky, Pixar emotional finale style, credits ready"
+
+================================================================================
+BOSS CINEMATICS
+================================================================================
+
+SHADOW SERPENT INTRO
+--------------------------------------------------------------------------------
+"Giant shadow serpent villain emerging from dark portal, intimidating but stylized 
+like Disney villain, purple and black colors, swirling darkness, dramatic but NOT 
+scary, child-friendly villain design, epic scale, Pixar villain reveal"
+
+Note: Keep child-friendly! Think Maleficent dragon, not realistic horror.
+
+--------------------------------------------------------------------------------
+
+BOSS DEFEAT
+--------------------------------------------------------------------------------
+"Shadow serpent dissolving into light particles, darkness fading to golden 
+sunrise, kingdom restoration time-lapse, flowers blooming, color returning, 
+triumphant music moment, Pixar redemption scene style"
+
+================================================================================
+TECHNICAL SPECIFICATIONS
+================================================================================
+
+Resolution: 1920x1080 minimum, 4K preferred
+Frame Rate: 24fps for cinematic, 30fps acceptable
+Duration: As specified per scene
+Format: MP4 H.264 for game integration
+Color Space: sRGB
+Aspect Ratio: 16:9
+
+For Runway ML:
+- Use "Cinematic" motion preset
+- Medium motion intensity
+- 4 seconds per generation, stitch together
+
+For Pika Labs:
+- Use "Animate" feature for still images
+- "Cinematic" style tag
+- Moderate motion strength
+
+For Luma Dream Machine:
+- "Film quality" option
+- Smooth camera movements
+- 5 second clips
+
+================================================================================
+INTEGRATION NOTES
+================================================================================
+
+1. All videos will be imported as VideoClip assets in Unity
+2. Use RenderTexture for playback on UI or 3D surfaces  
+3. Crossfade between scenes using CinematicSequence.cs
+4. Sync with AudioManager for music/voiceover
+5. Subtitles handled by LocalizationManager
+
+File Naming Convention:
+- VID_INTRO_01_Aerial.mp4
+- VID_INTRO_02_Port.mp4
+- VID_CHAPTER_01_Village.mp4
+- VID_UNLOCK_Naga.mp4
+- VID_BOSS_Intro.mp4
+- VID_ENDING_Good.mp4
+
+================================================================================
+

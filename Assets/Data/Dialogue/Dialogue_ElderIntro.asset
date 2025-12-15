@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Dialogue_ElderIntro
+  m_EditorClassIdentifier: 
+  dialogueId: dialogue_elder_intro
+  speakerId: npc_elder_elephant
+  speakerName: Elder Thongchai
+  
+  nodes:
+    - nodeId: 0
+      speaker: Elder Thongchai
+      text: "Ah, young one! The winds of fate have brought you to our village at last."
+      emotion: wise_smile
+      nextNode: 1
+      
+    - nodeId: 1
+      speaker: Elder Thongchai
+      text: "I am Thongchai, Elder of this village. I have waited many monsoons for your arrival."
+      emotion: proud
+      nextNode: 2
+      
+    - nodeId: 2
+      speaker: Elder Thongchai
+      text: "The ancient prophecy speaks of a hero who will unite the creatures of Funan..."
+      emotion: mysterious
+      nextNode: 3
+      
+    - nodeId: 3
+      speaker: Elder Thongchai
+      text: "But first, you must learn our ways. Are you ready to begin your training?"
+      emotion: encouraging
+      choices:
+        - choiceText: "Yes, I'm ready to learn!"
+          nextNode: 4
+          relationship: +5
+        - choiceText: "What prophecy? Tell me more!"
+          nextNode: 5
+          relationship: +2
+        - choiceText: "Maybe later..."
+          nextNode: 6
+          relationship: -2
+          
+    - nodeId: 4
+      speaker: Elder Thongchai
+      text: "Ha ha! Such enthusiasm! Come, let us begin with the basics of combat."
+      emotion: laughing
+      triggerTutorial: combat_basics
+      endDialogue: true
+      
+    - nodeId: 5
+      speaker: Elder Thongchai
+      text: "Curious, are we? Good! A true hero asks questions. Long ago, the Shadow Serpents threatened our land..."
+      emotion: storytelling
+      codexUnlock: codex_prophecy
+      nextNode: 7
+      
+    - nodeId: 6
+      speaker: Elder Thongchai
+      text: "Hmm, perhaps the prophecy was mistaken... Return when you are ready, young one."
+      emotion: disappointed
+      endDialogue: true
+      
+    - nodeId: 7
+      speaker: Elder Thongchai
+      text: "But that is a story for another time. First, you must grow strong. Let us train!"
+      emotion: determined
+      triggerTutorial: combat_basics
+      endDialogue: true
+

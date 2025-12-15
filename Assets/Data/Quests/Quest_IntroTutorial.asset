@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Quest_IntroTutorial
+  m_EditorClassIdentifier: 
+  questId: quest_intro_001
+  questName: Welcome to Funan
+  description: Learn the ways of the ancient kingdom and discover your destiny.
+  questType: 0
+  chapter: 1
+  objectives:
+    - objectiveId: obj_001
+      description: Talk to the Elder Elephant
+      targetCount: 1
+    - objectiveId: obj_002
+      description: Practice combat moves
+      targetCount: 3
+    - objectiveId: obj_003
+      description: Explore the village
+      targetCount: 1
+  rewardCoins: 100
+  rewardXP: 50
+  rewardItems: []
+

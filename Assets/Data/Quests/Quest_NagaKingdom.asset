@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Quest_NagaKingdom
+  m_EditorClassIdentifier: 
+  questId: quest_naga_001
+  questName: The Naga Prince's Request
+  description: Help the Naga Prince recover the stolen Water Crystal from the Shadow Serpents.
+  questType: 1
+  chapter: 2
+  objectives:
+    - objectiveId: obj_naga_001
+      description: Travel to the Underwater Palace
+      targetCount: 1
+    - objectiveId: obj_naga_002
+      description: Defeat Shadow Serpent Guards
+      targetCount: 5
+    - objectiveId: obj_naga_003
+      description: Retrieve the Water Crystal
+      targetCount: 1
+    - objectiveId: obj_naga_004
+      description: Return to the Naga Prince
+      targetCount: 1
+  rewardCoins: 500
+  rewardXP: 200
+  rewardItems:
+    - item_naga_amulet
+

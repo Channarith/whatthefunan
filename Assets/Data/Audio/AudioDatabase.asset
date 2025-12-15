@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: AudioDatabase
+  m_EditorClassIdentifier: 
+  
+  # ============================================================================
+  # MUSIC TRACKS
+  # Using authentic Cambodian/Southeast Asian instruments:
+  # - Roneat (xylophone), Skor (drums), Khim (hammered dulcimer)
+  # - Tro (fiddle), Khloy (flute), Chapei (lute)
+  # ============================================================================
+  
+  musicTracks:
+    - trackId: music_main_menu
+      trackName: Echoes of Funan
+      description: Majestic theme with Roneat xylophone and Skor drums
+      mood: epic, welcoming
+      bpm: 90
+      looping: true
+      fadeIn: 2.0
+      
+    - trackId: music_village
+      trackName: River Village Dawn
+      description: Peaceful morning theme with Khloy flute and soft Skor
+      mood: peaceful, cheerful
+      bpm: 72
+      looping: true
+      
+    - trackId: music_exploration
+      trackName: Jungle Adventure
+      description: Playful exploration with Chapei lute and light percussion
+      mood: adventurous, curious
+      bpm: 100
+      looping: true
+      
+    - trackId: music_combat
+      trackName: Warriors of the Kingdom
+      description: Intense battle with driving Skor drums and Roneat
+      mood: intense, heroic
+      bpm: 140
+      looping: true
+      combatIntensity: dynamic
+      
+    - trackId: music_mystery
+      trackName: Temple Whispers
+      description: Mysterious ambience with Tro fiddle and ethereal pads
+      mood: mysterious, ancient
+      bpm: 60
+      looping: true
+      
+    - trackId: music_underwater
+      trackName: Naga's Domain
+      description: Flowing underwater theme with Khim dulcimer and water sounds
+      mood: magical, serene
+      bpm: 80
+      looping: true
+      
+    - trackId: music_market
+      trackName: Óc Eo Bazaar
+      description: Lively market music with multiple cultural instruments
+      mood: busy, festive
+      bpm: 120
+      looping: true
+      
+    - trackId: music_sacred
+      trackName: Apsara's Blessing
+      description: Sacred temple theme with ceremonial bells and chanting
+      mood: spiritual, powerful
+      bpm: 66
+      looping: true
+      
+    - trackId: music_boss
+      trackName: Shadow Serpent Rises
+      description: Epic boss battle with full orchestra and traditional instruments
+      mood: epic, dangerous
+      bpm: 150
+      looping: true
+      phases: [intro, battle, desperate, victory]
+      
+    - trackId: music_victory
+      trackName: Champions of Funan
+      description: Triumphant victory fanfare
+      mood: triumphant, joyful
+      bpm: 120
+      looping: false
+      duration: 15
+      
+  # ============================================================================
+  # SOUND EFFECTS
+  # ============================================================================
+  
+  sfxCategories:
+    - category: Combat
+      sounds:
+        - sfx_punch_light
+        - sfx_punch_heavy
+        - sfx_kick
+        - sfx_block
+        - sfx_dodge
+        - sfx_combo_hit
+        - sfx_special_attack
+        - sfx_critical_hit
+        - sfx_enemy_hit
+        - sfx_enemy_defeat
+        
+    - category: Character
+      sounds:
+        - sfx_footstep_grass
+        - sfx_footstep_stone
+        - sfx_footstep_water
+        - sfx_jump
+        - sfx_land
+        - sfx_swim
+        - sfx_mount
+        - sfx_dismount
+        - sfx_level_up
+        
+    - category: UI
+      sounds:
+        - sfx_button_click
+        - sfx_menu_open
+        - sfx_menu_close
+        - sfx_coin_collect
+        - sfx_gem_collect
+        - sfx_item_pickup
+        - sfx_quest_complete
+        - sfx_achievement
+        - sfx_notification
+        
+    - category: Environment
+      sounds:
+        - sfx_door_open
+        - sfx_chest_open
+        - sfx_puzzle_solve
+        - sfx_temple_rumble
+        - sfx_water_splash
+        - sfx_fire_crackle
+        - sfx_wind_gust
+        
+    - category: MiniGames
+      sounds:
+        - sfx_fishing_cast
+        - sfx_fishing_reel
+        - sfx_fishing_catch
+        - sfx_cooking_chop
+        - sfx_cooking_sizzle
+        - sfx_cooking_complete
+        - sfx_rhythm_perfect
+        - sfx_rhythm_good
+        - sfx_rhythm_miss
+        - sfx_racing_start
+        - sfx_racing_boost
+

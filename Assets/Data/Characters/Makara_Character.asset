@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Makara_Character
+  m_EditorClassIdentifier: 
+  characterId: makara_dragon
+  displayName: Makara
+  description: Ancient sea dragon protector. Combines earth and water powers in devastating attacks.
+  species: Dragon
+  baseHealth: 120
+  baseAttack: 45
+  baseDefense: 35
+  baseSpeed: 25
+  attackType: 0
+  specialAbility: Dragon Breath
+  unlockMethod: 1
+  unlockCost: 1000
+

@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: CinematicsList
+  m_EditorClassIdentifier: 
+  
+  # ============================================================================
+  # WHAT THE FUNAN - CINEMATICS DATABASE
+  # ============================================================================
+  
+  cinematics:
+  
+    # ==========================================================================
+    # INTRO CINEMATIC
+    # ==========================================================================
+    - cinematicId: intro_game
+      displayName: "The Legend of Funan"
+      type: hybrid
+      duration: 90
+      isSkippable: true
+      skipHoldTime: 1.5
+      playOnce: true
+      triggerPoint: game_first_launch
+      description: |
+        Opening cinematic introducing the world of Funan, the guardian creatures,
+        and the Shadow Serpent threat. Sets up the prophecy and player's destiny.
+      assets:
+        timeline: Timeline_Intro
+        voiceover: VO_Intro_Narration
+        music: Music_Intro_Epic
+        backgrounds:
+          - BG_Intro_01_AerialJungle
+          - BG_Intro_02_Port
+          - BG_Intro_03_Guardians
+          - BG_Intro_04_Shadow
+          - BG_Intro_05_Prophecy
+      subtitles:
+        - time: 2.0
+          duration: 10.0
+          key: intro_narration_1
+        - time: 17.0
+          duration: 11.0
+          key: intro_narration_2
+        - time: 32.0
+          duration: 16.0
+          key: intro_narration_3
+        - time: 52.0
+          duration: 16.0
+          key: intro_narration_4
+        - time: 72.0
+          duration: 12.0
+          key: intro_narration_5
+  
+    # ==========================================================================
+    # CHAPTER TRANSITIONS
+    # ==========================================================================
+    - cinematicId: chapter_1_start
+      displayName: "Chapter I: The Awakening"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: after_intro
+      
+    - cinematicId: chapter_2_start
+      displayName: "Chapter II: Waters of the Naga"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_1_complete
+      
+    - cinematicId: chapter_3_start
+      displayName: "Chapter III: Temple of Secrets"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_2_complete
+      
+    - cinematicId: chapter_4_start
+      displayName: "Chapter IV: Dance of the Apsara"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_3_complete
+      
+    - cinematicId: chapter_5_start
+      displayName: "Chapter V: Shadows Gather"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_4_complete
+      
+    - cinematicId: chapter_6_start
+      displayName: "Chapter VI: United We Stand"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_5_complete
+      
+    - cinematicId: chapter_7_start
+      displayName: "Chapter VII: Light of Funan"
+      type: transition
+      duration: 5
+      isSkippable: true
+      triggerPoint: chapter_6_complete
+      
+    # ==========================================================================
+    # CHARACTER UNLOCK CINEMATICS
+    # ==========================================================================
+    - cinematicId: unlock_naga
+      displayName: "The Naga Prince Joins"
+      type: timeline
+      duration: 20
+      isSkippable: true
+      triggerPoint: naga_quest_complete
+      description: |
+        The Naga Prince pledges allegiance after being saved. 
+        Dramatic underwater throne room scene.
+      assets:
+        timeline: Timeline_Unlock_Naga
+        music: Music_Naga_Theme
+        
+    - cinematicId: unlock_apsara
+      displayName: "Mealea's Blessing"
+      type: timeline
+      duration: 25
+      isSkippable: true
+      triggerPoint: apsara_quest_complete
+      description: |
+        The Apsara dancer Mealea descends from the heavens.
+        Beautiful dance sequence with particle effects.
+      assets:
+        timeline: Timeline_Unlock_Apsara
+        music: Music_Apsara_Dance
+        
+    - cinematicId: unlock_prohm
+      displayName: "Awakening of the Ancient"
+      type: timeline
+      duration: 30
+      isSkippable: true
+      triggerPoint: temple_puzzle_complete
+      description: |
+        Prohm the dinosaur guardian awakens from stone sleep.
+        Temple rumbles, dramatic reveal.
+      assets:
+        timeline: Timeline_Unlock_Prohm
+        music: Music_Temple_Awakening
+        
+    - cinematicId: unlock_makara
+      displayName: "Dragon of the Deep"
+      type: timeline
+      duration: 25
+      isSkippable: true
+      triggerPoint: makara_quest_complete
+      description: |
+        The Makara dragon emerges from the ocean depths.
+        Epic water effects and dramatic reveal.
+      assets:
+        timeline: Timeline_Unlock_Makara
+        music: Music_Dragon_Rise
+        
+    - cinematicId: unlock_singha
+      displayName: "The Lion's Roar"
+      type: timeline
+      duration: 20
+      isSkippable: true
+      triggerPoint: singha_quest_complete
+      description: |
+        Singha the guardian lion breaks free from corruption.
+        Noble roar echoes across the land.
+      assets:
+        timeline: Timeline_Unlock_Singha
+        music: Music_Lion_Triumph
+  
+    # ==========================================================================
+    # BOSS ENCOUNTER CINEMATICS
+    # ==========================================================================
+    - cinematicId: boss_shadow_serpent_intro
+      displayName: "Shadow Serpent Rises"
+      type: timeline
+      duration: 30
+      isSkippable: false
+      triggerPoint: boss_arena_enter
+      description: |
+        The Shadow Serpent reveals its true terrifying form.
+        Ground shakes, sky darkens, epic confrontation begins.
+      assets:
+        timeline: Timeline_Boss_Intro
+        music: Music_Boss_Intro
+        
+    - cinematicId: boss_shadow_serpent_defeat
+      displayName: "Light Triumphant"
+      type: timeline
+      duration: 45
+      isSkippable: true
+      triggerPoint: boss_defeated
+      description: |
+        The Shadow Serpent is defeated. Light returns to Funan.
+        All guardians celebrate victory.
+      assets:
+        timeline: Timeline_Boss_Victory
+        music: Music_Victory_Epic
+  
+    # ==========================================================================
+    # ENDING CINEMATICS
+    # ==========================================================================
+    - cinematicId: ending_good
+      displayName: "Peace Returns"
+      type: hybrid
+      duration: 120
+      isSkippable: true
+      triggerPoint: game_complete_good
+      description: |
+        The kingdom is restored. All guardians united.
+        Celebration across Funan. Credits roll.
+      assets:
+        timeline: Timeline_Ending_Good
+        video: Video_Ending_Celebration
+        music: Music_Credits
+        
+    - cinematicId: ending_perfect
+      displayName: "The Golden Age Returns"
+      type: hybrid
+      duration: 150
+      isSkippable: true
+      triggerPoint: game_complete_100_percent
+      description: |
+        Special extended ending for 100% completion.
+        Additional story revelations and teaser for future content.
+      assets:
+        timeline: Timeline_Ending_Perfect
+        video: Video_Ending_Extended
+        music: Music_Credits_Extended
+

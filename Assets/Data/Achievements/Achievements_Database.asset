@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Achievements_Database
+  m_EditorClassIdentifier: 
+  
+  achievements:
+    # Story Achievements
+    - achievementId: ach_welcome
+      title: Welcome to Funan!
+      description: Complete the tutorial
+      icon: icon_ach_welcome
+      rewardCoins: 100
+      rewardXP: 50
+      
+    - achievementId: ach_chapter1
+      title: Chapter 1 Complete
+      description: Complete all Chapter 1 quests
+      icon: icon_ach_chapter1
+      rewardCoins: 500
+      rewardXP: 200
+      
+    - achievementId: ach_naga_friend
+      title: Friend of the Nagas
+      description: Complete the Naga Prince questline
+      icon: icon_ach_naga
+      rewardCoins: 750
+      rewardXP: 300
+      unlockCharacter: naga_serpent
+      
+    - achievementId: ach_temple_explorer
+      title: Temple Explorer
+      description: Discover the secrets of the Ancient Temple
+      icon: icon_ach_temple
+      rewardCoins: 750
+      rewardXP: 300
+      unlockCharacter: taprohm_dino
+      
+    # Combat Achievements
+    - achievementId: ach_first_combo
+      title: Combo Starter
+      description: Perform your first 5-hit combo
+      icon: icon_ach_combo
+      rewardCoins: 50
+      
+    - achievementId: ach_combo_master
+      title: Combo Master
+      description: Perform a 20-hit combo
+      icon: icon_ach_combo_gold
+      rewardCoins: 200
+      rewardGems: 10
+      
+    - achievementId: ach_pacifist
+      title: Peaceful Warrior
+      description: Complete a level without attacking (stealth only)
+      icon: icon_ach_peace
+      rewardCoins: 300
+      
+    - achievementId: ach_boss_slayer
+      title: Shadow Slayer
+      description: Defeat the Shadow Serpent King
+      icon: icon_ach_boss
+      rewardCoins: 1000
+      rewardGems: 50
+      
+    # Collection Achievements
+    - achievementId: ach_collector_10
+      title: Budding Collector
+      description: Collect 10 unique items
+      icon: icon_ach_collect
+      rewardCoins: 100
+      
+    - achievementId: ach_collector_100
+      title: Master Collector
+      description: Collect 100 unique items
+      icon: icon_ach_collect_gold
+      rewardCoins: 500
+      rewardGems: 25
+      
+    - achievementId: ach_codex_scholar
+      title: Scholar of Funan
+      description: Unlock all Codex entries
+      icon: icon_ach_codex
+      rewardCoins: 1000
+      rewardGems: 100
+      
+    # Mini-Game Achievements
+    - achievementId: ach_fisher
+      title: Master Angler
+      description: Catch every type of fish
+      icon: icon_ach_fish
+      rewardCoins: 300
+      
+    - achievementId: ach_chef
+      title: Royal Chef
+      description: Cook all recipes perfectly
+      icon: icon_ach_cook
+      rewardCoins: 300
+      
+    - achievementId: ach_rhythm_king
+      title: Apsara Dancer
+      description: Get perfect score on any rhythm level
+      icon: icon_ach_rhythm
+      rewardCoins: 300
+      
+    - achievementId: ach_speed_demon
+      title: Speed Demon
+      description: Win 10 racing challenges
+      icon: icon_ach_race
+      rewardCoins: 300
+      
+    # Social Achievements  
+    - achievementId: ach_friend_maker
+      title: Friend Maker
+      description: Add 5 friends
+      icon: icon_ach_friends
+      rewardCoins: 100
+      
+    - achievementId: ach_generous
+      title: Generous Spirit
+      description: Send 10 gifts to friends
+      icon: icon_ach_gift
+      rewardCoins: 200
+

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Codex_History
+  m_EditorClassIdentifier: 
+  category: History
+  entries:
+    - entryId: codex_funan_kingdom
+      title: The Kingdom of Funan
+      content: |
+        Funan was one of the earliest kingdoms in Southeast Asia, flourishing from 
+        the 1st to 6th century CE. Located in the Mekong Delta region, it was a 
+        powerful maritime trading empire that connected China with India.
+        
+        The name "Funan" comes from Chinese records. The local people likely called 
+        their kingdom "Bnam" meaning "mountain" - referring to their sacred mountain 
+        temples.
+      unlockMethod: default
+      
+    - entryId: codex_oc_eo
+      title: Óc Eo - The Great Port
+      content: |
+        Óc Eo was Funan's greatest port city, located in present-day Vietnam. 
+        Archaeologists have discovered Roman coins, Indian jewelry, and Chinese 
+        artifacts here - proving Funan's role in ancient global trade!
+        
+        Ships from across the known world docked at Óc Eo, bringing silk, spices, 
+        gold, and precious gems.
+      unlockMethod: discover
+      
+    - entryId: codex_water_management
+      title: Masters of Water
+      content: |
+        The Funan people were incredible engineers! They built massive canal systems 
+        to control flooding and irrigate rice paddies. These canals also served as 
+        highways for boats carrying goods.
+        
+        This knowledge was passed down to later kingdoms like Angkor, which built 
+        even larger water management systems.
+      unlockMethod: discover
+      
+    - entryId: codex_religion
+      title: Faith of Funan
+      content: |
+        Funan embraced both Hinduism and Buddhism, with temples dedicated to Shiva, 
+        Vishnu, and Buddha. The Naga (serpent deity) was especially important as a 
+        protector of water and fertility.
+        
+        Kings often claimed divine ancestry and built mountain temples to connect 
+        heaven and earth.
+      unlockMethod: discover
+

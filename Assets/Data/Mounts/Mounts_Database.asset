@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Mounts_Database
+  m_EditorClassIdentifier: 
+  mounts:
+    - mountId: mount_ox
+      mountName: Water Buffalo
+      description: A sturdy water buffalo. Slow but strong.
+      speed: 1.2
+      stamina: 100
+      rarity: 0
+      unlockMethod: default
+      unlockCost: 0
+    - mountId: mount_horse
+      mountName: Khmer Stallion
+      description: A fast and noble Khmer horse.
+      speed: 2.0
+      stamina: 80
+      rarity: 1
+      unlockMethod: coins
+      unlockCost: 500
+    - mountId: mount_elephant_baby
+      mountName: Baby Elephant
+      description: An adorable baby elephant. Your loyal friend!
+      speed: 1.5
+      stamina: 120
+      rarity: 1
+      unlockMethod: quest
+      unlockCost: 0
+    - mountId: mount_tiger
+      mountName: Temple Tiger
+      description: A majestic tiger from the temple grounds.
+      speed: 2.5
+      stamina: 70
+      rarity: 2
+      unlockMethod: gems
+      unlockCost: 100
+    - mountId: mount_naga_serpent
+      mountName: Naga Serpent
+      description: A mystical water serpent. Can swim at high speeds!
+      speed: 2.0
+      stamina: 100
+      canSwim: true
+      rarity: 2
+      unlockMethod: quest
+      unlockCost: 0
+    - mountId: mount_dragon
+      mountName: Makara Dragon
+      description: The legendary dragon mount. Fastest on land and water!
+      speed: 3.0
+      stamina: 150
+      canSwim: true
+      canFly: false
+      rarity: 3
+      unlockMethod: special
+      unlockCost: 0
+

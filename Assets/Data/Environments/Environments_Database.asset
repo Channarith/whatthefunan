@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Environments_Database
+  m_EditorClassIdentifier: 
+  environments:
+    - envId: env_funan_village
+      envName: Funan Village
+      description: The peaceful starting village near the great river. Home to Champa and the Elder.
+      sceneFile: FunanVillage
+      musicTrack: music_village
+      ambience: birds, water, villagers
+      timeOfDay: dynamic
+      weatherAllowed: [clear, rain]
+      
+    - envId: env_jungle_path
+      envName: Jungle Path
+      description: Dense tropical jungle connecting the village to the temple ruins.
+      sceneFile: JunglePath
+      musicTrack: music_exploration
+      ambience: jungle, insects, monkeys
+      timeOfDay: dynamic
+      weatherAllowed: [clear, rain, mist]
+      hazards: [snakes, quicksand, fallen_trees]
+      
+    - envId: env_temple_ruins
+      envName: Ancient Temple Ruins
+      description: Mysterious stone temple overgrown with massive tree roots.
+      sceneFile: TempleRuins
+      musicTrack: music_mystery
+      ambience: wind, dripping_water, distant_echoes
+      timeOfDay: always_twilight
+      weatherAllowed: [mist]
+      puzzles: [stone_blocks, pressure_plates, symbol_match]
+      
+    - envId: env_naga_palace
+      envName: Naga Underwater Palace
+      description: The magnificent underwater kingdom of the Naga Prince.
+      sceneFile: NagaPalace
+      musicTrack: music_underwater
+      ambience: bubbles, whale_songs, currents
+      timeOfDay: always_blue
+      weatherAllowed: [underwater]
+      specialMovement: swimming
+      
+    - envId: env_market_hub
+      envName: Óc Eo Trading Port
+      description: Bustling port city with merchants from across the ancient world.
+      sceneFile: OcEoPort
+      musicTrack: music_market
+      ambience: crowds, boats, merchants
+      timeOfDay: day_only
+      weatherAllowed: [clear]
+      features: [shops, minigames, quests]
+      
+    - envId: env_mountain_temple
+      envName: Sacred Mountain Temple
+      description: High mountain temple where Apsaras dance and the final boss awaits.
+      sceneFile: MountainTemple
+      musicTrack: music_sacred
+      ambience: chanting, bells, wind
+      timeOfDay: always_sunset
+      weatherAllowed: [clear, clouds]
+      bossArena: true
+
