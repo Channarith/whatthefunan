@@ -132,8 +132,13 @@ ADDITIONAL SYSTEMS IMPLEMENTED
 - Project settings configured for mobile (Android/iOS)
 - URP rendering pipeline setup
 
-TOTAL FILES CREATED: 50+
-TOTAL LINES OF CODE: 15,000+
+TOTAL FILES CREATED: 66
+TOTAL LINES OF CODE: 21,995
+
+GIT REPOSITORY
+--------------
+- Pushed to GitHub: https://github.com/Channarith/whatthefunan
+- Initial commit: dd6b987
 
 NEXT STEPS
 ----------
