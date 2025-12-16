@@ -1,0 +1,495 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Challenges_Database
+  m_EditorClassIdentifier: 
+
+# ============================================================================
+# WHAT THE FUNAN - ROTATING CHALLENGES DATABASE
+# Weekly & Monthly Competitions to Keep Things Fresh!
+# ============================================================================
+
+# ============================================================================
+# WEEKLY CHALLENGES (Rotate Every Monday!)
+# ============================================================================
+
+_weeklyChallenges:
+
+  # WEEK 1 - MUSIC MAKER
+  - challengeId: weekly_music_week
+    displayName: "🎵 MUSIC MAKER WEEK! 🎵"
+    description: |
+      Create your own Funan beats! Use traditional Khmer instruments 
+      like the Skor Thom drums, Roneat xylophone, and Chapei lute!
+      The catchiest song wins!
+    challengeType: MusicCreation
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 500
+      gems: 25
+      specialItem: "Golden Gong"
+      xpBonus: 200
+    judgingCriteria:
+      - "Creativity (40%)"
+      - "Use of Khmer instruments (30%)"
+      - "Catchiness (30%)"
+    tips:
+      - "Mix traditional and silly instruments!"
+      - "Try different tempos!"
+      - "Add some funny sounds for bonus points!"
+
+  # WEEK 2 - KINGDOM BEAUTY
+  - challengeId: weekly_prettiest_kingdom
+    displayName: "🏰 PRETTIEST KINGDOM WEEK! 🏰"
+    description: |
+      Decorate your kingdom and make it BEAUTIFUL! 
+      Use flowers, statues, and creative layouts!
+      Most gorgeous kingdom wins!
+    challengeType: KingdomCreation
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 750
+      gems: 50
+      specialItem: "Royal Garden Set"
+      xpBonus: 300
+    judgingCriteria:
+      - "Beauty (40%)"
+      - "Creativity (30%)"
+      - "Theme cohesion (30%)"
+    tips:
+      - "Symmetry is satisfying!"
+      - "Add water features!"
+      - "Mix colors thoughtfully!"
+
+  # WEEK 3 - DANCE PARTY
+  - challengeId: weekly_dance_fever
+    displayName: "💃 APSARA DANCE WEEK! 💃"
+    description: |
+      Learn new dances and show off your moves!
+      Perfect the graceful Apsara dance or go silly with Kavi's Monkey Funk!
+      Best dancer gets the crown!
+    challengeType: DanceChallenge
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 400
+      gems: 20
+      specialItem: "Dance Ribbon"
+      xpBonus: 250
+    judgingCriteria:
+      - "Accuracy (40%)"
+      - "Style (30%)"
+      - "Combo length (30%)"
+
+  # WEEK 4 - MASTER CHEF
+  - challengeId: weekly_master_chef
+    displayName: "🍜 MASTER CHEF WEEK! 🍜"
+    description: |
+      Cook the most delicious Khmer dishes!
+      Make Fish Amok, Lok Lak, Num Banh Chok, and more!
+      Tastiest dish wins!
+    challengeType: CookingChallenge
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 450
+      gems: 20
+      specialItem: "Golden Wok"
+      xpBonus: 200
+    judgingCriteria:
+      - "Taste (40%)"
+      - "Presentation (30%)"
+      - "Creativity (30%)"
+
+  # WEEK 5 - PHOTO CONTEST
+  - challengeId: weekly_photo_master
+    displayName: "📸 BEST PHOTO WEEK! 📸"
+    description: |
+      Capture the most amazing moments in Funan!
+      Funny, beautiful, action-packed - show us your best shots!
+    challengeType: PhotoContest
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 350
+      gems: 15
+      specialItem: "Golden Camera"
+      xpBonus: 150
+    categories:
+      - "Funniest"
+      - "Most Beautiful"
+      - "Best Action"
+      - "Weirdest"
+
+  # WEEK 6 - FISHING TOURNAMENT
+  - challengeId: weekly_big_catch
+    displayName: "🐟 BIG FISH WEEK! 🐟"
+    description: |
+      Cast your line in the Mekong River!
+      Catch the BIGGEST fish to win!
+      Watch out for the legendary Golden Catfish!
+    challengeType: FishingTournament
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 400
+      gems: 20
+      specialItem: "Lucky Fishing Rod"
+      xpBonus: 200
+    fishTargets:
+      - fishType: "Giant Catfish"
+        points: 100
+      - fishType: "Golden Carp"
+        points: 150
+      - fishType: "Legendary Naga Fish"
+        points: 500
+
+  # WEEK 7 - RACING CHAMPIONSHIP
+  - challengeId: weekly_speed_demon
+    displayName: "🏃 SPEED DEMON WEEK! 🏃"
+    description: |
+      Race your mounts across Funan!
+      Elephants, Nagas, and more - who's the fastest?
+    challengeType: RacingChampionship
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 500
+      gems: 25
+      specialItem: "Speed Saddle"
+      xpBonus: 250
+
+  # WEEK 8 - FRIENDSHIP WEEK
+  - challengeId: weekly_best_friends
+    displayName: "💝 FRIENDSHIP WEEK! 💝"
+    description: |
+      Spread kindness! Send gifts, help friends, and be awesome!
+      The most helpful friend wins, but EVERYONE gets rewards!
+    challengeType: FriendshipChallenge
+    durationDays: 7
+    isCompetitive: false
+    rewards:
+      coins: 300
+      gems: 30
+      specialItem: "Friendship Bracelet"
+      xpBonus: 300
+    bonusActions:
+      - "Send a gift (+10 points)"
+      - "Help a friend's kingdom (+25 points)"
+      - "Play together (+15 points)"
+
+  # WEEK 9 - TREASURE HUNT
+  - challengeId: weekly_treasure_hunter
+    displayName: "🗺️ TREASURE HUNT WEEK! 🗺️"
+    description: |
+      Hidden treasures are scattered across Funan!
+      Solve riddles and find them all!
+    challengeType: TreasureHunt
+    durationDays: 7
+    isCompetitive: false
+    rewards:
+      coins: 600
+      gems: 35
+      specialItem: "Treasure Map"
+      xpBonus: 350
+    treasureCount: 10
+
+  # WEEK 10 - COSTUME PARTY
+  - challengeId: weekly_fashion_show
+    displayName: "👗 COSTUME PARTY WEEK! 👗"
+    description: |
+      Dress up your characters in the SILLIEST outfits!
+      Fashion show competition - strut your stuff!
+    challengeType: CostumeContest
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 400
+      gems: 20
+      specialItem: "Fancy Hat"
+      xpBonus: 200
+    categories:
+      - "Most Elegant"
+      - "Silliest"
+      - "Most Creative"
+      - "Best Theme Match"
+
+  # WEEK 11 - SILLY KINGDOM
+  - challengeId: weekly_chaos_kingdom
+    displayName: "🤪 MAXIMUM SILLINESS WEEK! 🤪"
+    description: |
+      Build the SILLIEST kingdom possible!
+      Whoopee cushions, upside-down buildings, CHAOS!
+      Most laughs wins!
+    challengeType: KingdomCreation
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 500
+      gems: 30
+      specialItem: "Chaos Crown"
+      xpBonus: 250
+    judgingCriteria:
+      - "Silliness (50%)"
+      - "Creativity (30%)"
+      - "Surprise factor (20%)"
+
+  # WEEK 12 - STORY WEEK
+  - challengeId: weekly_storyteller
+    displayName: "📖 STORYTELLER WEEK! 📖"
+    description: |
+      Create your own Funan legend!
+      Use the story creator to make tales of adventure!
+    challengeType: StoryCreation
+    durationDays: 7
+    isCompetitive: true
+    rewards:
+      coins: 450
+      gems: 25
+      specialItem: "Storyteller's Scroll"
+      xpBonus: 300
+
+# ============================================================================
+# MONTHLY CHALLENGES (BIG competitions with BIG rewards!)
+# ============================================================================
+
+_monthlyChallenges:
+
+  # JANUARY - Grand Kingdom Championship
+  - challengeId: monthly_january_kingdom
+    displayName: "👑 GRAND KINGDOM CHAMPIONSHIP! 👑"
+    description: |
+      Build the most AMAZING kingdom over the whole month!
+      Plan, build, decorate - create your masterpiece!
+      LEGENDARY prizes for top builders!
+    challengeType: KingdomCreation
+    durationDays: 30
+    isCompetitive: true
+    rewards:
+      coins: 5000
+      gems: 500
+      specialItem: "Royal Crown"
+      legendaryUnlock: "Golden Palace"
+      xpBonus: 1000
+    milestones:
+      - day: 7
+        reward: "Progress Bonus: 500 coins"
+      - day: 14
+        reward: "Halfway Bonus: 1000 coins"
+      - day: 21
+        reward: "Almost There: 1500 coins"
+
+  # FEBRUARY - Valentine's Friendship Festival
+  - challengeId: monthly_february_friendship
+    displayName: "💕 FRIENDSHIP FESTIVAL MONTH! 💕"
+    description: |
+      Celebrate friendship all month long!
+      Help friends, send gifts, spread love!
+    challengeType: FriendshipChallenge
+    durationDays: 28
+    isCompetitive: false
+    rewards:
+      coins: 3000
+      gems: 300
+      specialItem: "Heart of Funan"
+      legendaryUnlock: "Friendship Garden"
+      xpBonus: 750
+
+  # MARCH - Music Festival
+  - challengeId: monthly_march_music
+    displayName: "🎶 FUNAN MUSIC FESTIVAL! 🎶"
+    description: |
+      Create songs, perform concerts, collaborate!
+      Become a MUSIC LEGEND of Funan!
+    challengeType: MusicCreation
+    durationDays: 31
+    isCompetitive: true
+    rewards:
+      coins: 3500
+      gems: 350
+      specialItem: "Legendary Instrument"
+      legendaryUnlock: "Concert Stage"
+      xpBonus: 800
+
+  # APRIL - Khmer New Year Celebration
+  - challengeId: monthly_april_newyear
+    displayName: "🎊 KHMER NEW YEAR CELEBRATION! 🎊"
+    description: |
+      Celebrate Chaul Chnam Thmey with games, dances, and festivities!
+      Special cultural activities and traditional fun!
+    challengeType: SeasonalFestival
+    durationDays: 30
+    isCompetitive: false
+    rewards:
+      coins: 4000
+      gems: 400
+      specialItem: "New Year Dragon"
+      legendaryUnlock: "Festival Plaza"
+      xpBonus: 1000
+    specialActivities:
+      - "Water splashing games"
+      - "Traditional dances"
+      - "Sand castle building"
+      - "Offering ceremonies"
+
+  # OCTOBER - Pchum Ben Festival
+  - challengeId: monthly_october_pchumben
+    displayName: "🙏 PCHUM BEN MONTH! 🙏"
+    description: |
+      Honor ancestors with offerings and good deeds!
+      A peaceful, respectful celebration.
+    challengeType: SeasonalFestival
+    durationDays: 31
+    isCompetitive: false
+    rewards:
+      coins: 3000
+      gems: 300
+      specialItem: "Ancestral Blessing"
+      legendaryUnlock: "Ancestor Shrine"
+      xpBonus: 600
+
+  # NOVEMBER - Water Festival
+  - challengeId: monthly_november_water
+    displayName: "💧 BON OM TOUK WATER FESTIVAL! 💧"
+    description: |
+      Boat races on the Mekong! Water games everywhere!
+      Celebrate the reversing of the Tonle Sap!
+    challengeType: SeasonalFestival
+    durationDays: 30
+    isCompetitive: true
+    rewards:
+      coins: 4000
+      gems: 400
+      specialItem: "Racing Boat"
+      legendaryUnlock: "River Parade Float"
+      xpBonus: 900
+    boatRaceLeagues:
+      - "Beginner Paddlers"
+      - "Swift Currents"
+      - "Champion Fleet"
+
+  # DECEMBER - Funan's Got Talent
+  - challengeId: monthly_december_talent
+    displayName: "⭐ FUNAN'S GOT TALENT! ⭐"
+    description: |
+      Year-end talent show! Dance, music, cooking, building!
+      Show off ANY talent! Multiple categories!
+      Be the STAR of Funan!
+    challengeType: TalentShow
+    durationDays: 31
+    isCompetitive: true
+    rewards:
+      coins: 5000
+      gems: 500
+      specialItem: "Star Trophy"
+      legendaryUnlock: "Talent Stage"
+      xpBonus: 1200
+    categories:
+      - "Best Dancer"
+      - "Best Musician"
+      - "Best Chef"
+      - "Best Builder"
+      - "Funniest"
+      - "Most Creative"
+
+# ============================================================================
+# DAILY CHALLENGES (Quick fun every day!)
+# ============================================================================
+
+_dailyChallenges:
+  - challengeId: daily_catch_fish
+    displayName: "🐟 Catch 5 Fish!"
+    rewards: { coins: 50 }
+    
+  - challengeId: daily_cook_meal
+    displayName: "🍳 Cook 3 Meals!"
+    rewards: { coins: 50 }
+    
+  - challengeId: daily_dance
+    displayName: "💃 Dance Once!"
+    rewards: { coins: 30 }
+    
+  - challengeId: daily_photo
+    displayName: "📸 Take a Silly Photo!"
+    rewards: { coins: 30 }
+    
+  - challengeId: daily_gift
+    displayName: "🎁 Send a Gift!"
+    rewards: { coins: 40, gems: 5 }
+    
+  - challengeId: daily_build
+    displayName: "🏗️ Build Something!"
+    rewards: { coins: 60 }
+    
+  - challengeId: daily_race
+    displayName: "🏃 Win a Race!"
+    rewards: { coins: 50 }
+    
+  - challengeId: daily_music
+    displayName: "🎵 Make a Beat!"
+    rewards: { coins: 40 }
+    
+  - challengeId: daily_friend
+    displayName: "💕 Visit a Friend!"
+    rewards: { coins: 35, gems: 3 }
+    
+  - challengeId: daily_quest
+    displayName: "📜 Complete a Quest!"
+    rewards: { coins: 75 }
+
+# ============================================================================
+# REWARD TIERS (For competitive challenges)
+# ============================================================================
+
+_rewardTiers:
+  - placement: 1
+    title: "🥇 CHAMPION!"
+    multiplier: 1.0
+    bonusItems: true
+    legendaryAccess: true
+    
+  - placement: 2
+    title: "🥈 Runner-Up!"
+    multiplier: 0.7
+    bonusItems: true
+    legendaryAccess: false
+    
+  - placement: 3
+    title: "🥉 Third Place!"
+    multiplier: 0.5
+    bonusItems: true
+    legendaryAccess: false
+    
+  - placement: 10
+    title: "🌟 Top 10!"
+    multiplier: 0.3
+    bonusItems: false
+    legendaryAccess: false
+    
+  - placement: 100
+    title: "✨ Top 100!"
+    multiplier: 0.2
+    bonusItems: false
+    legendaryAccess: false
+    
+  - placement: -1  # Participation
+    title: "🎮 Participant!"
+    multiplier: 0.1
+    bonusItems: false
+    legendaryAccess: false
+
+# ============================================================================
+# END OF CHALLENGE DATABASE
+# ============================================================================
+

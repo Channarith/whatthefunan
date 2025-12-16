@@ -2,6 +2,91 @@
 WHAT THE FUNAN - CHANGELOG
 ================================================================================
 
+VERSION 0.6.0 (Rotating Challenges System) - December 15, 2024
+================================================================================
+
+ROTATING CHALLENGES SYSTEM
+--------------------------
+[Challenge Management]
+- RotatingChallengeManager: Weekly and monthly challenge rotation
+- Automatic challenge scheduling (Mondays for weekly, 1st for monthly)
+- Challenge participation, voting, and leaderboard systems
+- Reward distribution based on placement
+
+[Music Creation Challenge] 🎵
+- MusicCreationChallenge: Full music composition system
+- Traditional Khmer instruments:
+  * Skor Thom (Big Drum)
+  * Skor Touch (Small Drum)
+  * Chhing (Finger Cymbals)
+  * Kong Thom/Touch (Gongs)
+  * Roneat Ek/Thung (Xylophones)
+  * Chapei (Long-Necked Lute)
+  * Tro Sau (Two-String Fiddle)
+  * Sralai (Quadruple-Reed Oboe)
+  * Khloy (Bamboo Flute)
+- Silly bonus instruments: Whoopee Drum, Giggle Bells, Elephant Trumpet
+- Multi-track composition with playback
+- Submit songs to challenges
+
+[Kingdom Creation Challenge] 🏰
+- KingdomCreationChallenge: Build competition system
+- 10+ rotating themes:
+  * Traditional Temple Kingdom
+  * Jungle Paradise
+  * Maximum Silliness
+  * Floating Water Kingdom
+  * Festival Kingdom
+  * Rainbow Color Kingdom
+  * And more!
+- Scoring categories: Creativity, Beauty, Theme Match, Silliness, Detail
+- Community voting system
+- Kingdom snapshots and thumbnails
+
+[Additional Challenges]
+- DanceChallenge: Rhythm-based dancing with ratings (Perfect/Good/Miss)
+  * Apsara Classic, Monkey Funk, Elephant Stomp, Naga Slither
+- CookingCompetition: Judge dishes on taste, presentation, creativity
+  * Fish Amok, Lok Lak, Num Banh Chok, Kuy Teav
+- PhotoContest: Screenshot competitions in multiple categories
+- TreasureHuntChallenge: Riddle-based treasure hunting
+
+[Challenge UI]
+- ChallengeUI: Full challenge hub interface
+- Weekly/Monthly challenge displays with countdown timers
+- Daily challenge list (3 random challenges per day)
+- Leaderboard display with rank emojis
+- Entry gallery for voting
+- Reward celebration animations
+
+[Challenge Database]
+- 12 weekly challenge types rotating throughout year
+- 7 monthly mega-challenges with legendary rewards
+- 10 daily quick challenges
+- Reward tiers: Champion, Runner-Up, Top 10, Top 100, Participant
+- Cultural events: Khmer New Year, Pchum Ben, Bon Om Touk
+
+WEEKLY CHALLENGE ROTATION:
+1. 🎵 Music Maker Week
+2. 🏰 Prettiest Kingdom Week
+3. 💃 Apsara Dance Week
+4. 🍜 Master Chef Week
+5. 📸 Best Photo Week
+6. 🐟 Big Fish Week
+7. 🏃 Speed Demon Week
+8. 💝 Friendship Week
+9. 🗺️ Treasure Hunt Week
+10. 👗 Costume Party Week
+11. 🤪 Maximum Silliness Week
+12. 📖 Storyteller Week
+
+BUG FIXES
+---------
+- Renamed "Singha" character to "Sena" to avoid Thai beer trademark issues
+  * Sena = Khmer word for "soldier/warrior" - fitting for guardian lion
+
+================================================================================
+
 VERSION 0.1.0 (Development Start) - December 15, 2024
 ================================================================================
 
