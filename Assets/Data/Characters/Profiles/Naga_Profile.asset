@@ -1,0 +1,323 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Naga_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # NAGA PRINCE - THE SERPENT GUARDIAN
+  # Guardian of Water and Wisdom
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: naga_serpent
+  _displayName: Naga Prince
+  _title: Crown Prince of the Depths
+  _species: Seven-Headed Royal Naga
+  _shortDescription: |
+    The mystical prince of the underwater Naga Kingdom. Each of his seven 
+    heads represents a different aspect of water's wisdom.
+  _fullBiography: |
+    In the sapphire depths beneath Funan lies a kingdom of impossible beauty - 
+    the realm of the Nagas. And there, destined to rule, was born a prince 
+    with seven magnificent heads, each crowned with a different gemstone.
+    
+    But the young prince was troubled. Each of his seven heads had its own 
+    personality: one was wise, one was playful, one was serious, one was 
+    kind, one was fierce, one was curious, and one was always sleepy. 
+    Ruling a kingdom when you can't even agree with yourself? Challenging.
+    
+    His father, the ancient Naga King, sent him to the surface world to 
+    learn unity. "Only when all your heads think as one heart can you 
+    truly lead," the King said.
+    
+    On the surface, the Prince discovered something unexpected: friends. 
+    Champa taught him about kindness that transcends water and land. Kavi 
+    showed him that disagreement can lead to creativity. Slowly, his seven 
+    heads began to work together, united by a common purpose.
+    
+    When the Shadow Serpent attacked, the Naga Prince realized this dark 
+    creature was what he could have become - a being of division and hate. 
+    He vowed to fight, not just for Funan, but for the unity he'd found.
+    
+  _role: Support
+  _element: Water
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0, g: 0.5, b: 0.8, a: 1}
+  _accentColor: {r: 0.4, g: 0.9, b: 0.9, a: 1}
+
+  # BASE STATS (Support - Balanced with high utility)
+  _baseHealth: 110
+  _baseAttack: 25
+  _baseDefense: 22
+  _baseSpeed: 28
+  _baseStamina: 130
+  _attackRange: 3.0
+  _moveSpeed: 5.5
+  
+  _healthGrowth: 10
+  _attackGrowth: 3
+  _defenseGrowth: 2.5
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: naga_water_whip
+    abilityName: Tidal Whip
+    description: A tendril of water lashes out at enemies with serpentine grace.
+    damage: 22
+    cooldown: 0
+    staminaCost: 5
+    range: 3.5
+    type: Ranged
+    element: Water
+
+  _specialAbility:
+    abilityId: naga_healing_rain
+    abilityName: Monsoon Blessing
+    description: |
+      The Prince calls upon the rain spirits to heal all allies in an area. 
+      The rain also slows enemies caught within.
+    damage: 0
+    cooldown: 10
+    staminaCost: 35
+    range: 8
+    type: Heal
+    element: Water
+    statusEffects:
+      - heal_over_time_5s
+      - enemy_slow_30
+
+  _ultimateAbility:
+    abilityId: naga_tidal_wave
+    abilityName: Wrath of Seven Tides
+    description: |
+      All seven heads combine their power to summon a massive tidal wave 
+      that crashes through the battlefield. Enemies are swept away and 
+      allies ride the wave to safety.
+    damage: 100
+    cooldown: 55
+    staminaCost: 80
+    range: 15
+    type: AoE
+    element: Water
+    statusEffects:
+      - knockback_large
+      - ally_reposition
+
+  _passiveAbility:
+    abilityId: naga_water_affinity
+    abilityName: Child of the Waters
+    description: |
+      Near water sources, the Prince's abilities are enhanced. He can also 
+      breathe underwater (obviously) and swim at incredible speeds.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Water
+
+  _comboMoves:
+    - abilityId: naga_coil_strike
+      abilityName: Serpent's Coil
+      description: Wrap an enemy in water and squeeze, dealing damage over time.
+      damage: 40
+      cooldown: 0
+      staminaCost: 20
+      type: Melee
+      
+    - abilityId: naga_water_shield
+      abilityName: Bubble Guard
+      description: Encase an ally in a protective water bubble.
+      damage: 0
+      cooldown: 12
+      staminaCost: 25
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 70
+    kindness: 80
+    wisdom: 95
+    humor: 50
+    loyalty: 85
+    curiosity: 90
+
+  _likes:
+    - Philosophy and deep conversations
+    - Surface world customs (fascinating!)
+    - Pearls and shiny things
+    - Rainy days
+    - Spicy food (surprisingly)
+
+  _dislikes:
+    - Dry heat
+    - Internal disagreements (with himself)
+    - Being judged by appearance
+    - Pollution
+    - Having to choose one answer
+
+  _favoriteFood: Spiced kelp rolls with pearl sauce
+  _hobby: Collecting surface world objects and guessing their purpose
+  _fear: That his seven heads will never truly agree, and he'll fail as a ruler
+  _dream: To bridge the gap between the underwater and surface kingdoms
+
+  # VOICE LINES (Some lines spoken by different heads!)
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Greetings, surface friend. We are pleased to meet you."
+      - type: Greeting
+        text: "The waters speak well of you." / "They do?" / "Shh!"
+      - type: Selection
+        text: "All seven heads agree - let us proceed!"
+      - type: Selection
+        text: "We are ready." / "Mostly ready." / "Five out of seven, anyway."
+      - type: BattleStart
+        text: "The tide turns in our favor."
+      - type: BattleStart
+        text: "By the depths, we shall prevail!"
+      - type: Attack
+        text: "Flow like water!"
+      - type: Attack
+        text: "Strike!" / "Now!" / "Wait, not yet!" / "Too late!"
+      - type: SpecialAttack
+        text: "May the rains heal your wounds!"
+      - type: Ultimate
+        text: "SEVEN TIDES AS ONE! RISE, GREAT WAVE!"
+      - type: Hurt
+        text: "We felt that!" / "All seven of us!"
+      - type: LowHealth
+        text: "We must... retreat to the waters..."
+      - type: Victory
+        text: "The tide has turned. Victory is ours."
+      - type: Victory
+        text: "Excellent!" / "Indeed!" / "Quite!" / "Splendid!" / "..." / "zzz..." / "Wake up!"
+      - type: Defeat
+        text: "The waters... will remember us..."
+      - type: LevelUp
+        text: "Our wisdom grows deeper, like the ocean itself."
+      - type: Idle
+        text: "*heads quietly argue about what to do next*"
+      - type: Idle
+        text: "I wonder what that cloud tastes like." / "Clouds have no taste." / "Have you tried one?"
+      - type: Funny
+        text: "Why did the naga go to therapy? Too many heads, too many problems!"
+      - type: Funny
+        text: "Being a seven-headed serpent means never losing an argument... with others."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Champa's gentle wisdom reminds the Prince of his mother. They discuss 
+        philosophy together, and she helps him mediate his internal debates.
+      specialDialogue:
+        - "Princess Champa sees us as one. That means more than she knows."
+        - "Her wisdom rivals that of the ancient seas."
+
+    - characterId: makara_dragon
+      characterName: Makara
+      type: Rival
+      affinity: 45
+      relationshipDescription: |
+        A complex relationship. Both are water royalty, leading to competition. 
+        But deep down, they respect each other's power. Classic rivals.
+      specialDialogue:
+        - "The dragon thinks fire makes him special. Water always wins."
+        - "...We acknowledge his strength. Grudgingly."
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 65
+      relationshipDescription: |
+        Kavi's chaos initially baffled the Prince. But over time, he learned 
+        that disagreement can be... creative. Kavi taught him not to take 
+        himself so seriously.
+      specialDialogue:
+        - "The monkey is... exhausting." / "But fun!" / "Shh!"
+        - "His chaos has a strange wisdom to it."
+
+  # BACKSTORY
+  _birthplace: Crystal Palace, Underwater Naga Kingdom
+  _occupation: Crown Prince / Guardian of Water
+  _familyBackground: |
+    Son of the Naga King (seven-headed) and Naga Queen (five-headed).
+    Has several siblings, but as the seven-headed heir, he is crown prince.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Father sending me to the surface, and feeling terrified but excited."
+    - "The first time all seven heads laughed at the same joke (Kavi's)."
+    - "Seeing the Shadow Serpent and recognizing what division leads to."
+    - "When Champa said 'You're not seven beings - you're one being with seven perspectives.'"
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_naga_001
+  _isStarterCharacter: false
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: naga_default
+      costumeName: Royal Scales
+      description: Traditional Naga royal attire with gemstone crowns.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: naga_warrior
+      costumeName: Serpent Warrior
+      description: Battle-ready armor forged in underwater volcanoes.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: naga_coral
+      costumeName: Coral King
+      description: Living coral grows beautifully on this mystical armor.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1200
+
+    - costumeId: naga_rainbow
+      costumeName: Rainbow Serpent
+      description: Each head shimmers with a different color of the rainbow.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: naga_bow
+      emoteName: Royal Bow
+      isDefault: true
+
+    - emoteId: naga_splash
+      emoteName: Water Splash
+      isDefault: true
+
+    - emoteId: naga_heads_chat
+      emoteName: Head Conference
+      isDefault: false
+
+    - emoteId: naga_sleep
+      emoteName: One Head Napping
+      isDefault: false
+

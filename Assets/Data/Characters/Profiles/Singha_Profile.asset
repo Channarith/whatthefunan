@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Singha_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # SINGHA - THE GUARDIAN LION
+  # Guardian of Honor and Duty
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: singha_lion
+  _displayName: Singha
+  _title: The Unbreaking Shield
+  _species: Temple Guardian Lion (Singha)
+  _shortDescription: |
+    A noble lion guardian bound by duty and honor. He takes his role as 
+    protector very, VERY seriously. Too seriously, some might say.
+  _fullBiography: |
+    For seven generations, Singha's family has guarded the great gates of 
+    Funan. His father guarded the gates. His father's father guarded the 
+    gates. Singha was born knowing one truth: he would guard those gates, 
+    and nothing - NOTHING - would get through.
+    
+    He trained from birth. While other lion cubs played, Singha practiced 
+    formations. While they napped, he did patrol exercises. By age five, 
+    he could recite the entire Guardian Code from memory. He was perfect.
+    
+    Perfectly serious.
+    
+    "You need to relax," his mother would say. "Smile sometimes!" But Singha 
+    couldn't relax. Lives depended on his vigilance. If he smiled, he might 
+    miss something. If he laughed, he might—
+    
+    Then the Shadow Serpent came. And despite everything - every training, 
+    every vigil, every sacrifice - the gates fell. Singha failed. The one 
+    thing he was born to prevent happened anyway.
+    
+    Broken, he nearly gave up. But Champa found him. "You didn't fail," she 
+    said. "The gates fell so we could find each other. Now we guard something 
+    bigger together."
+    
+    Now Singha learns that duty isn't about never failing - it's about always 
+    getting back up. And maybe, just maybe, he's learning to smile.
+    
+  _role: AllRounder
+  _element: None
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.9, g: 0.7, b: 0.2, a: 1}
+  _accentColor: {r: 0.6, g: 0.1, b: 0.1, a: 1}
+
+  # BASE STATS (AllRounder - Balanced across all stats)
+  _baseHealth: 130
+  _baseAttack: 30
+  _baseDefense: 28
+  _baseSpeed: 25
+  _baseStamina: 110
+  _attackRange: 1.8
+  _moveSpeed: 5.5
+  
+  _healthGrowth: 13
+  _attackGrowth: 3.5
+  _defenseGrowth: 3
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: singha_claw_combo
+    abilityName: Guardian's Claws
+    description: Disciplined claw strikes with perfect form.
+    damage: 28
+    cooldown: 0
+    staminaCost: 5
+    range: 2
+    type: Melee
+    element: None
+
+  _specialAbility:
+    abilityId: singha_roar
+    abilityName: Lion's Roar
+    description: |
+      Singha unleashes a powerful roar that inspires allies and terrifies 
+      enemies. Allies gain increased attack, enemies are feared and flee.
+    damage: 20
+    cooldown: 12
+    staminaCost: 30
+    range: 10
+    type: Debuff
+    element: None
+    statusEffects:
+      - ally_attack_up_20
+      - enemy_fear_3s
+
+  _ultimateAbility:
+    abilityId: singha_guardian_form
+    abilityName: Temple Guardian Awakening
+    description: |
+      Singha channels the spirits of all guardian lions before him. He becomes 
+      golden, invincible, and his attacks deal massive damage. For his 
+      ancestors. For his duty. FOR FUNAN!
+    damage: 200
+    cooldown: 55
+    staminaCost: 70
+    range: 3
+    type: Buff
+    element: None
+    statusEffects:
+      - invincible_5s
+      - damage_triple
+      - speed_double
+
+  _passiveAbility:
+    abilityId: singha_vigilance
+    abilityName: Eternal Vigilance
+    description: |
+      Singha is always alert. Cannot be ambushed or surprised. Also receives 
+      less damage when protecting an ally (standing between them and enemy).
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: None
+
+  _comboMoves:
+    - abilityId: singha_pounce
+      abilityName: Guardian Pounce
+      description: Leap at an enemy with claws extended.
+      damage: 45
+      cooldown: 0
+      staminaCost: 18
+      type: Melee
+      
+    - abilityId: singha_shield_stance
+      abilityName: Defensive Stance
+      description: Reduce incoming damage and protect nearby allies.
+      damage: 0
+      cooldown: 10
+      staminaCost: 20
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 100
+    kindness: 70
+    wisdom: 75
+    humor: 25
+    loyalty: 100
+    curiosity: 40
+
+  _likes:
+    - Order and discipline
+    - Clear rules
+    - Protecting others
+    - Early mornings
+    - Being useful
+
+  _dislikes:
+    - Chaos and disorder
+    - Jokes during serious moments
+    - Feeling useless
+    - Breaking rules (even when necessary)
+    - His own inability to relax
+
+  _favoriteFood: Simply grilled meat - nothing fancy
+  _hobby: Patrol training and maintaining equipment
+  _fear: Failing to protect those who depend on him again
+  _dream: To be worthy of the Guardian legacy
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "State your business. ...Sorry, habit. Hello."
+      - type: Greeting
+        text: "Guardian Singha, at your service."
+      - type: Selection
+        text: "I will not fail."
+      - type: Selection
+        text: "My life for my duty."
+      - type: BattleStart
+        text: "Stand behind me. I will be your shield."
+      - type: BattleStart
+        text: "For honor! For Funan!"
+      - type: Attack
+        text: "Discipline!"
+      - type: Attack
+        text: "Form! Precision!"
+      - type: SpecialAttack
+        text: "HEAR MY ROAR!"
+      - type: Ultimate
+        text: "ANCESTORS, GIVE ME STRENGTH! GUARDIAN AWAKENING!"
+      - type: Hurt
+        text: "I... can still fight!"
+      - type: LowHealth
+        text: "Not... yet... Must... protect..."
+      - type: Victory
+        text: "Victory. Good. Let us prepare for the next battle."
+      - type: Victory
+        text: "*allows himself a small smile* ...We did well."
+      - type: Defeat
+        text: "I... failed again... Forgive me..."
+      - type: LevelUp
+        text: "Stronger. Now I can protect them better."
+      - type: Idle
+        text: "*doing standing guard even during rest time*"
+      - type: Idle
+        text: "Is that a threat? No? ...Is THAT a threat? Also no? Good. Good."
+      - type: Funny
+        text: "Kavi told me to 'lighten up.' I do not understand. My armor is regulation weight."
+      - type: Funny
+        text: "*tries to tell a joke* Why did the guardian cross the road? ...For patrol. *confused by lack of laughter*"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Mentor
+      affinity: 90
+      relationshipDescription: |
+        Champa is the one who helped Singha after his failure. He owes her 
+        everything. He would die for her without hesitation - she's trying 
+        to teach him there are better ways to show loyalty.
+      specialDialogue:
+        - "Princess Champa saved me from despair. I owe her my life."
+        - "She tells me to smile. I am... practicing."
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Acquaintance
+      affinity: 45
+      relationshipDescription: |
+        Kavi's chaos drives Singha absolutely insane. And yet... the monkey's 
+        joy is something Singha secretly wishes he understood.
+      specialDialogue:
+        - "The monkey is a security liability." *watches Kavi with hidden fondness*
+        - "His 'jokes' are... not entirely without merit. Do not tell him I said that."
+
+    - characterId: mealea_apsara
+      characterName: Mealea
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Mealea's grace and light remind Singha of what he's fighting for. 
+        She often dances just to make him smile. It's slowly working.
+      specialDialogue:
+        - "Lady Mealea's dance is... aesthetically optimal for morale."
+        - "She made me almost laugh once. It was... not unpleasant."
+
+  # BACKSTORY
+  _birthplace: Great Gate Guardhouse, Funan Capital
+  _occupation: Gate Guardian / Warrior
+  _familyBackground: |
+    Seven generations of guardians. Father (retired after the gates fell), 
+    mother (worried about him constantly), younger sister (thinks he needs 
+    to have more fun).
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Father teaching me the Guardian Code. 'The gate stands because we stand.'"
+    - "The day the gates fell. I remember every second. I always will."
+    - "Champa finding me broken, and telling me failure is not the end."
+    - "The first time Kavi made me almost laugh. I was furious at myself. Then... not."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_singha_001
+  _isStarterCharacter: false
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: singha_default
+      costumeName: Guardian Armor
+      description: Traditional golden guardian armor.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: singha_ceremonial
+      costumeName: Ceremonial Regalia
+      description: Full formal guardian dress uniform.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: singha_relaxed
+      costumeName: Off-Duty
+      description: Casual clothes. He looks deeply uncomfortable.
+      rarity: Uncommon
+      unlockMethod: Achievement
+      unlockCost: 0
+
+    - costumeId: singha_ancestor
+      costumeName: First Guardian
+      description: Armor of the very first Singha guardian.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: singha_salute
+      emoteName: Guardian Salute
+      isDefault: true
+
+    - emoteId: singha_roar_emote
+      emoteName: Mighty Roar
+      isDefault: true
+
+    - emoteId: singha_awkward_wave
+      emoteName: Awkward Wave
+      isDefault: false
+
+    - emoteId: singha_small_smile
+      emoteName: Tiny Smile
+      isDefault: false
+

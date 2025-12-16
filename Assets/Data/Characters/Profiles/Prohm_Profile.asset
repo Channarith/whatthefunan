@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Prohm_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # PROHM - THE ANCIENT GUARDIAN
+  # Guardian of Earth and Time
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: prohm_dino
+  _displayName: Prohm
+  _title: The Last of the Ancients
+  _species: Temple Guardian (Stegosaurus-like)
+  _shortDescription: |
+    An ancient creature who has guarded the temple ruins for millennia. 
+    He speaks rarely but sees everything with timeless wisdom.
+  _fullBiography: |
+    Long before the Funan Kingdom rose, before the first humans walked these 
+    lands, there were the Ancients. Massive, gentle creatures who tended the 
+    world like a garden. Prohm is the last of them.
+    
+    He remembers when the mountains were young. He watched the first trees 
+    grow. He saw civilizations rise and fall like seasons. Through it all, 
+    he guarded his temple - not because anyone asked him to, but because 
+    it was home.
+    
+    Centuries alone changed him. He stopped speaking, then stopped thinking 
+    in words altogether. He became like the temple itself - ancient, still, 
+    patient. Some thought he was just another statue.
+    
+    Then the children came.
+    
+    Village children, playing hide-and-seek in the ruins, discovered Prohm. 
+    They weren't afraid. They climbed on him, told him stories, shared their 
+    lunches. Slowly, painfully, Prohm remembered what it meant to feel.
+    
+    When the Shadow Serpent threatened those children, Prohm moved for the 
+    first time in centuries. The earth shook. The temple stones sang. And 
+    the darkness learned that some things are too ancient to fear.
+    
+    Now Prohm walks among the new guardians, learning to be alive again. 
+    He doesn't talk much. But when he does, everyone listens.
+    
+  _role: Tank
+  _element: Earth
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.5, g: 0.4, b: 0.3, a: 1}
+  _accentColor: {r: 0.4, g: 0.6, b: 0.3, a: 1}
+
+  # BASE STATS (Tank - VERY high HP and Defense, very slow)
+  _baseHealth: 220
+  _baseAttack: 20
+  _baseDefense: 45
+  _baseSpeed: 8
+  _baseStamina: 150
+  _attackRange: 2.5
+  _moveSpeed: 3.5
+  
+  _healthGrowth: 25
+  _attackGrowth: 2
+  _defenseGrowth: 5
+  _speedGrowth: 0.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: prohm_tail_sweep
+    abilityName: Ancient Tail Sweep
+    description: A slow but devastating tail swipe that hits multiple enemies.
+    damage: 30
+    cooldown: 0
+    staminaCost: 8
+    range: 3
+    type: Melee
+    element: Earth
+
+  _specialAbility:
+    abilityId: prohm_stone_form
+    abilityName: Stone Guardian
+    description: |
+      Prohm becomes like stone - immovable and nearly invincible. While active, 
+      enemies who attack him take damage from his sharp back plates.
+    damage: 0
+    cooldown: 15
+    staminaCost: 40
+    range: 0
+    type: Buff
+    element: Earth
+    statusEffects:
+      - damage_reduction_90
+      - reflect_damage_50
+      - immobile
+
+  _ultimateAbility:
+    abilityId: prohm_earth_shatter
+    abilityName: Primordial Quake
+    description: |
+      Prohm channels the power of the ancient earth itself. The ground 
+      shatters, creating massive fissures that swallow enemies and 
+      raise protective stone walls for allies.
+    damage: 90
+    cooldown: 60
+    staminaCost: 80
+    range: 15
+    type: AoE
+    element: Earth
+    statusEffects:
+      - terrain_destruction
+      - ally_stone_walls
+      - stun_3s
+
+  _passiveAbility:
+    abilityId: prohm_ancient_endurance
+    abilityName: Eternal Patience
+    description: |
+      Prohm has waited millennia. He can wait a bit more. Regenerates health 
+      slowly over time, and cannot be killed in one hit - will always 
+      survive with 1 HP from a fatal blow (once per battle).
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: prohm_headbutt
+      abilityName: Mountain Headbutt
+      description: A slow charge that knocks enemies into next week.
+      damage: 65
+      cooldown: 0
+      staminaCost: 25
+      type: Melee
+      
+    - abilityId: prohm_plate_shield
+      abilityName: Plate Shelter
+      description: Prohm crouches, creating a shelter for allies behind him.
+      damage: 0
+      cooldown: 18
+      staminaCost: 30
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 95
+    kindness: 90
+    wisdom: 100
+    humor: 30
+    loyalty: 100
+    curiosity: 45
+
+  _likes:
+    - Children
+    - Silence
+    - Sunbathing on warm rocks
+    - Watching things grow
+    - The feeling of rain
+
+  _dislikes:
+    - Loud noises
+    - Being rushed
+    - Those who destroy without purpose
+    - Being reminded of loneliness
+    - Cold nights
+
+  _favoriteFood: He doesn't need to eat, but he enjoys the company of meals
+  _hobby: Watching clouds and counting seasons
+  _fear: Outliving everyone again
+  _dream: To finally rest, but not before seeing this new family safe
+
+  # VOICE LINES (Prohm speaks rarely and slowly)
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "..."  # Sometimes silence is greeting enough
+      - type: Greeting
+        text: "...Friend."
+      - type: Selection
+        text: "*slow, rumbling nod*"
+      - type: Selection
+        text: "...I will protect."
+      - type: BattleStart
+        text: "...The earth... remembers."
+      - type: BattleStart
+        text: "...I stood before the mountains. I can stand before you."
+      - type: Attack
+        text: "*rumble*"
+      - type: Attack
+        text: "...Move."
+      - type: SpecialAttack
+        text: "...Like stone."
+      - type: Ultimate
+        text: "...THE EARTH... ANSWERS..."
+      - type: Hurt
+        text: "*ancient groan*"
+      - type: LowHealth
+        text: "...Not yet..."
+      - type: Victory
+        text: "...Rest now."
+      - type: Victory
+        text: "*content rumble*"
+      - type: Defeat
+        text: "...Finally... rest..."
+      - type: LevelUp
+        text: "...Still growing... even now."
+      - type: Idle
+        text: "*watches a beetle crawl by with infinite patience*"
+      - type: Idle
+        text: "...That cloud... looks like my sister. She would have liked this age."
+      - type: Funny
+        text: "...Why rush?... I have... *long pause* ...time."
+      - type: Funny
+        text: "...Kavi asked my age... I started counting... he fell asleep."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 90
+      relationshipDescription: |
+        Champa and Prohm understand each other without words. Both are gentle 
+        giants who carry more than their size suggests. They share comfortable 
+        silences.
+      specialDialogue:
+        - "...She understands."
+        - "...Gentle heart... in great body. Like me... once."
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Kavi's chaos exhausts Prohm, but the monkey's joy is infectious. Kavi 
+        uses Prohm as a jungle gym. Prohm pretends to mind.
+      specialDialogue:
+        - "...He is very... loud." *allows Kavi to climb on him*
+        - "...Like a flea. But... a good flea."
+
+    - characterId: makara_dragon
+      characterName: Makara
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Two ancient creatures from before recorded history. They share memories 
+        of a world long gone. Prohm appreciates warm rocks; Makara provides.
+      specialDialogue:
+        - "...He cooks. I eat... to be polite. It is... actually good."
+        - "...We remember... the same stars."
+
+  # BACKSTORY
+  _birthplace: The First Garden (no longer exists)
+  _occupation: Temple Guardian / Last Ancient
+  _familyBackground: |
+    Had a sister, brothers, a whole herd of Ancients. All gone now.
+    The temple children have become his new family.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The day I realized I was the last one. I slept for a century."
+    - "A child named Srey who called me 'Grandpa Rock.' She is grown with children now. I watched over all of them."
+    - "Moving for the first time in ages to protect the village children. Everything hurt. Everything felt wonderful."
+    - "Champa sitting beside me in silence. First time in eons I didn't feel alone."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_temple_001
+  _isStarterCharacter: false
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: prohm_default
+      costumeName: Temple Stone
+      description: Moss-covered ancient form. The temple grows on him.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: prohm_restored
+      costumeName: Restored Ancient
+      description: Prohm in his prime, without the moss and weathering.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: prohm_crystal
+      costumeName: Crystal Guardian
+      description: Crystal formations have grown through his ancient body.
+      rarity: Epic
+      unlockMethod: Achievement
+      unlockCost: 0
+
+    - costumeId: prohm_primordial
+      costumeName: First Garden Guardian
+      description: His original form, wreathed in ancient flowers.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: prohm_nod
+      emoteName: Slow Nod
+      isDefault: true
+
+    - emoteId: prohm_tail_wag
+      emoteName: Tiny Tail Wag
+      isDefault: true
+
+    - emoteId: prohm_yawn
+      emoteName: Ancient Yawn
+      isDefault: false
+
+    - emoteId: prohm_sunbathe
+      emoteName: Enjoying Sun
+      isDefault: false
+

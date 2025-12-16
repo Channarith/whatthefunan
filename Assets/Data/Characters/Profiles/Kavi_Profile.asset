@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Kavi_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # KAVI - THE MONKEY TRICKSTER
+  # Guardian of Wind and Mischief
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: kavi_monkey
+  _displayName: Kavi
+  _title: The Laughing Storm
+  _species: Golden Jungle Monkey
+  _shortDescription: |
+    A hyperactive monkey with a heart of gold hidden behind endless pranks. 
+    He learned that laughter is the best way to fight darkness.
+  _fullBiography: |
+    Kavi was the smallest monkey born to the jungle tribe, and the others 
+    never let him forget it. "Too small to swing," they teased. "Too weak 
+    to climb." But what Kavi lacked in size, he made up for in speed, wit, 
+    and an absolutely unshakeable sense of humor.
+    
+    While other monkeys trained in traditional combat, Kavi invented his 
+    own style - a chaotic blend of acrobatics, pranks, and misdirection. 
+    He could make you laugh so hard you forgot to fight back. The elders 
+    called it "The Way of the Laughing Wind."
+    
+    When the Shadow Serpent came, Kavi's tribe fled in terror. But not Kavi. 
+    He danced circles around the shadows, pelting them with banana peels 
+    and terrible jokes until they retreated in confusion. The darkness 
+    couldn't understand something so... ridiculous.
+    
+    Now Kavi joins Champa on her quest, providing comic relief and chaos 
+    in equal measure. Behind his goofy exterior, though, is a fierce 
+    loyalty to his friends and a deep fear of ever being alone again.
+    
+  _role: Speedster
+  _element: Wind
+  _rarity: Common
+
+  # VISUALS
+  _themeColor: {r: 1, g: 0.6, b: 0, a: 1}
+  _accentColor: {r: 0.4, g: 0.8, b: 0.2, a: 1}
+
+  # BASE STATS (Speedster - High Speed, Low HP)
+  _baseHealth: 70
+  _baseAttack: 28
+  _baseDefense: 10
+  _baseSpeed: 45
+  _baseStamina: 90
+  _attackRange: 1.2
+  _moveSpeed: 7.5
+  
+  _healthGrowth: 8
+  _attackGrowth: 3.5
+  _defenseGrowth: 1
+  _speedGrowth: 3
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: kavi_quick_slap
+    abilityName: Monkey Slap Combo
+    description: Rapid slaps that build up combo meter. More hits = more damage!
+    damage: 12
+    cooldown: 0
+    staminaCost: 3
+    range: 1.5
+    type: Melee
+    element: Wind
+
+  _specialAbility:
+    abilityId: kavi_banana_barrage
+    abilityName: Banana Barrage
+    description: |
+      Kavi throws a volley of enchanted bananas that bounce between enemies, 
+      causing chaos and confusion. Enemies hit have a chance to slip and fall!
+    damage: 35
+    cooldown: 8
+    staminaCost: 25
+    range: 10
+    type: Ranged
+    element: Wind
+    statusEffects:
+      - slip_chance_30
+      - confusion_2s
+
+  _ultimateAbility:
+    abilityId: kavi_monkey_mayhem
+    abilityName: Monkey King Mayhem
+    description: |
+      Kavi creates multiple wind clones of himself that attack all enemies 
+      simultaneously. It's absolute chaos! Enemies can't tell which Kavi 
+      is real until it's too late.
+    damage: 120
+    cooldown: 50
+    staminaCost: 70
+    range: 12
+    type: AoE
+    element: Wind
+    statusEffects:
+      - clone_distraction
+      - speed_boost_ally
+
+  _passiveAbility:
+    abilityId: kavi_slippery
+    abilityName: Can't Touch This
+    description: |
+      Kavi's ridiculous agility gives him a chance to completely dodge 
+      any attack. Dodging successfully builds his combo meter and makes 
+      him faster temporarily.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Wind
+
+  _comboMoves:
+    - abilityId: kavi_spin_attack
+      abilityName: Tail Tornado
+      description: Kavi spins rapidly, hitting all nearby enemies multiple times.
+      damage: 50
+      cooldown: 0
+      staminaCost: 20
+      type: AoE
+      
+    - abilityId: kavi_aerial_dive
+      abilityName: Cannonball!
+      description: Leap high into the air and crash down on enemies. BONK!
+      damage: 40
+      cooldown: 6
+      staminaCost: 18
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 70
+    kindness: 75
+    wisdom: 40
+    humor: 100
+    loyalty: 90
+    curiosity: 95
+
+  _likes:
+    - Pranks and jokes
+    - Bananas (obviously)
+    - Making Champa laugh
+    - High places
+    - Shiny objects
+    - Inventing new tricks
+
+  _dislikes:
+    - Being called small
+    - Serious conversations
+    - Standing still
+    - Being alone
+    - Vegetables
+
+  _favoriteFood: Ripe bananas dipped in honey
+  _hobby: Inventing new pranks and practicing acrobatics
+  _fear: Being abandoned or forgotten by his friends
+  _dream: To make the whole world laugh and forget their troubles
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Hiya! Ready for some FUN?!"
+      - type: Greeting
+        text: "What's up, what's up, WHAT'S UP!"
+      - type: Selection
+        text: "You picked ME? Best decision EVER!"
+      - type: Selection
+        text: "Let's GO GO GO!"
+      - type: BattleStart
+        text: "Oh boy oh boy oh boy! Here we gooooo!"
+      - type: BattleStart
+        text: "Time to monkey around! Hehe!"
+      - type: Attack
+        text: "Bonk!"
+      - type: Attack
+        text: "Slap slap slap!"
+      - type: Attack
+        text: "Can't catch me!"
+      - type: SpecialAttack
+        text: "BANANA STORM!"
+      - type: Ultimate
+        text: "Bet you can't hit the REAL me! MONKEY MAYHEM!"
+      - type: Hurt
+        text: "Ow ow ow! Not cool!"
+      - type: LowHealth
+        text: "Okay okay, that actually hurt..."
+      - type: Victory
+        text: "WOO! Did you SEE that?! I was amazing!"
+      - type: Victory
+        text: "Haha! Better luck next time, slowpokes!"
+      - type: Defeat
+        text: "Aww... I was just getting started..."
+      - type: LevelUp
+        text: "I'm SO FAST NOW! Wait, was I talking? Can't stop, gotta go!"
+      - type: Idle
+        text: "Booooored... Let's DO something!"
+      - type: Idle
+        text: "*does backflip for no reason*"
+      - type: Funny
+        text: "Why don't scientists trust atoms? Because they make up EVERYTHING! Get it?"
+      - type: Funny
+        text: "I'm not hyper, YOU'RE just slow!"
+      - type: Funny
+        text: "Knock knock! ...Hey, why isn't anyone answering?!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: BestFriend
+      affinity: 95
+      relationshipDescription: |
+        Champa is Kavi's anchor. When he gets too wild, she calms him down. 
+        When he feels scared or alone, she's there. He calls her "Big Sis Champ" 
+        and would do anything for her - even be serious for five whole minutes.
+      specialDialogue:
+        - "Big Sis Champ is the BEST! Don't tell anyone I said that."
+        - "She's the only one who laughs at ALL my jokes!"
+        - "I'll protect her smile, no matter what."
+
+    - characterId: mealea_apsara
+      characterName: Mealea
+      type: RomanticInterest
+      affinity: 75
+      relationshipDescription: |
+        Kavi has a huge crush on Mealea but is too shy to admit it. Instead, 
+        he shows off constantly around her, usually resulting in embarrassing 
+        failures. She finds him... amusing.
+      specialDialogue:
+        - "W-what? I don't act weird around Mealea! You're weird!"
+        - "*trips trying to impress her* I MEANT to do that!"
+        - "She's so graceful... I'm so... me."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Kavi loves climbing on Prohm and using him as a living jungle gym. 
+        Prohm tolerates this with ancient patience. They have an odd friendship 
+        based on comfortable silence and gentle chaos.
+      specialDialogue:
+        - "Prohm is the best nap spot. So comfy!"
+        - "He doesn't talk much, but he gets me."
+
+  # BACKSTORY
+  _birthplace: The High Canopy, Jungle of Whispers
+  _occupation: Self-Proclaimed Chaos Agent / Guardian of Wind
+  _familyBackground: |
+    Born the runt of a large monkey tribe. Parents unknown - raised communally.
+    The tribe was scattered by the Shadow Serpent; Kavi searches for survivors.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Learning to make the grumpy elder laugh for the first time."
+    - "The day I outran a tiger - and then went back to make faces at it."
+    - "Meeting Champa when I tried to steal her mango. She GAVE me one instead."
+    - "Watching my tribe scatter in fear... and swearing I'd find them again."
+
+  # UNLOCK
+  _unlockMethod: Starter
+  _isStarterCharacter: true
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: kavi_default
+      costumeName: Jungle Rascal
+      description: Simple vest and headband. Easy to move in!
+      rarity: Common
+      isDefault: true
+
+    - costumeId: kavi_ninja
+      costumeName: Shadow Monkey
+      description: Black ninja outfit. For STEALTH pranks!
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: kavi_pirate
+      costumeName: Banana Buccaneer
+      description: Pirate outfit with a banana sword. Arrr!
+      rarity: Uncommon
+      unlockMethod: Purchase
+      unlockCost: 400
+
+    - costumeId: kavi_king
+      costumeName: Monkey King
+      description: Legendary armor of the mythical Monkey King. Cloud not included.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: kavi_backflip
+      emoteName: Show Off Flip
+      isDefault: true
+
+    - emoteId: kavi_laugh
+      emoteName: Pointing Laugh
+      isDefault: true
+
+    - emoteId: kavi_banana
+      emoteName: Banana Snack
+      isDefault: false
+
+    - emoteId: kavi_dance
+      emoteName: Monkey Dance
+      isDefault: false
+

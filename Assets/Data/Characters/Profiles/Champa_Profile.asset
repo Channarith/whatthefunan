@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Champa_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # CHAMPA - THE ELEPHANT PRINCESS
+  # Guardian of Strength and Wisdom
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: champa_elephant
+  _displayName: Champa
+  _title: The Gentle Warrior Princess
+  _species: Royal Elephant
+  _shortDescription: |
+    A noble elephant princess from the royal Funan court. Despite her immense 
+    strength, she believes kindness is the mightiest power of all.
+  _fullBiography: |
+    Princess Champa was born under a double rainbow in the sacred elephant 
+    sanctuary of the Funan royal palace. From birth, she was marked by destiny - 
+    her trunk bore a golden lotus birthmark, the sign of the chosen guardian.
+    
+    Though she could crush boulders with her trunk and charge through armies, 
+    Champa preferred tending the royal gardens and telling stories to village 
+    children. The court elders worried she was too gentle to be a warrior, but 
+    her mother, the Queen, knew better.
+    
+    "True strength," the Queen would say, "is knowing when NOT to use it."
+    
+    When the Shadow Serpent attacked, Champa proved herself. She stood alone 
+    against the darkness, not with violence, but with the light of pure courage. 
+    The shadows could not touch her heart. Now she seeks to unite the scattered 
+    guardians and restore peace to Funan - with kindness as her greatest weapon.
+    
+  _role: Tank
+  _element: Earth
+  _rarity: Common
+
+  # VISUALS
+  _themeColor: {r: 0.6, g: 0.5, b: 0.4, a: 1}
+  _accentColor: {r: 1, g: 0.84, b: 0, a: 1}
+
+  # BASE STATS (Tank - High HP and Defense)
+  _baseHealth: 180
+  _baseAttack: 22
+  _baseDefense: 35
+  _baseSpeed: 12
+  _baseStamina: 120
+  _attackRange: 2.0
+  _moveSpeed: 4.5
+  
+  _healthGrowth: 18
+  _attackGrowth: 2.5
+  _defenseGrowth: 4
+  _speedGrowth: 0.8
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: champa_trunk_strike
+    abilityName: Trunk Strike
+    description: A powerful swing of Champa's trunk that sends enemies flying.
+    damage: 25
+    cooldown: 0
+    staminaCost: 5
+    range: 2.5
+    type: Melee
+    element: Earth
+
+  _specialAbility:
+    abilityId: champa_lotus_shield
+    abilityName: Lotus Shield
+    description: |
+      Champa summons a magical lotus barrier that absorbs damage for herself 
+      and nearby allies. The shield blooms brighter with each hit absorbed.
+    damage: 0
+    cooldown: 12
+    staminaCost: 30
+    range: 5
+    type: Buff
+    element: Earth
+    statusEffects:
+      - shield_50_percent
+      - damage_reduction_3s
+
+  _ultimateAbility:
+    abilityId: champa_earthquake_stomp
+    abilityName: Earthquake Stomp
+    description: |
+      Champa leaps into the air and crashes down with earth-shaking force, 
+      stunning all enemies in a massive area and creating healing flowers 
+      for allies standing in the affected zone.
+    damage: 80
+    cooldown: 45
+    staminaCost: 60
+    range: 8
+    type: AoE
+    element: Earth
+    statusEffects:
+      - stun_2s
+      - ally_heal_over_time
+
+  _passiveAbility:
+    abilityId: champa_gentle_giant
+    abilityName: Gentle Giant
+    description: |
+      Champa's kindness inspires allies. Nearby teammates gain increased 
+      defense, and enemies who attack Champa sometimes become "confused" 
+      by her gentle nature, reducing their damage.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 6
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: champa_trunk_slam
+      abilityName: Trunk Slam
+      description: Two quick trunk strikes followed by an overhead slam.
+      damage: 45
+      cooldown: 0
+      staminaCost: 15
+      type: Melee
+      
+    - abilityId: champa_charge
+      abilityName: Noble Charge
+      description: Champa charges forward, pushing enemies back gently but firmly.
+      damage: 35
+      cooldown: 8
+      staminaCost: 25
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 85
+    kindness: 100
+    wisdom: 75
+    humor: 60
+    loyalty: 95
+    curiosity: 70
+
+  _likes:
+    - Telling stories to children
+    - Tending gardens
+    - Mangoes and bananas
+    - Rainy afternoons
+    - Making flower crowns
+    - Helping the elderly
+
+  _dislikes:
+    - Unnecessary violence
+    - Bullies
+    - Loud arguments
+    - Being called "scary"
+    - Stepping on flowers
+
+  _favoriteFood: Golden Mangoes with honey
+  _hobby: Creating flower arrangements and writing poetry
+  _fear: That her strength might accidentally hurt someone she loves
+  _dream: To create a kingdom where all creatures live in peace
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Hello, little friend! What adventure awaits us today?"
+      - type: Greeting
+        text: "The sun is shining and my heart is full of hope!"
+      - type: Selection
+        text: "You chose me? I won't let you down!"
+      - type: Selection
+        text: "Together, we can do anything!"
+      - type: BattleStart
+        text: "I don't want to fight... but I will protect my friends!"
+      - type: BattleStart
+        text: "Please stand down. I don't wish to hurt you."
+      - type: Attack
+        text: "Here I come!"
+      - type: Attack
+        text: "Sorry about this!"
+      - type: SpecialAttack
+        text: "Lotus Shield, protect us all!"
+      - type: Ultimate
+        text: "Feel the earth's embrace! EARTHQUAKE STOMP!"
+      - type: Hurt
+        text: "Ouch! That wasn't very nice..."
+      - type: LowHealth
+        text: "I can still... protect everyone..."
+      - type: Victory
+        text: "We did it! But... are they okay?"
+      - type: Victory
+        text: "I hope we can be friends someday."
+      - type: Defeat
+        text: "I'm sorry, everyone... I wasn't strong enough..."
+      - type: LevelUp
+        text: "I feel stronger! Now I can protect even more friends!"
+      - type: Idle
+        text: "*hums a gentle lullaby*"
+      - type: Idle
+        text: "I wonder if the garden flowers miss me..."
+      - type: Funny
+        text: "Why did the elephant cross the road? To show it wasn't chicken! Hehe!"
+      - type: Funny
+        text: "I'm not heavy, I'm just... full of love!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: BestFriend
+      affinity: 90
+      relationshipDescription: |
+        Champa adores Kavi like a little brother. She often scolds him for his 
+        pranks but secretly finds them hilarious. Kavi loves riding on her back 
+        and calls her "Big Sis Champ."
+      specialDialogue:
+        - "Kavi! Get down from there before you hurt yourself!"
+        - "Oh Kavi, what prank have you planned now?"
+        - "He's trouble, but he's MY trouble."
+
+    - characterId: naga_serpent
+      characterName: Naga Prince
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        The Naga Prince respects Champa's wisdom and gentle nature. They often 
+        discuss philosophy together. Champa helps him understand land-dwellers.
+      specialDialogue:
+        - "The Prince has such a beautiful way of seeing the world."
+        - "Water and earth - we balance each other."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Champa has a special bond with Prohm. They're both gentle giants who 
+        are often misunderstood because of their size. They share quiet moments.
+      specialDialogue:
+        - "Prohm doesn't need words. We understand each other."
+        - "He's been alone so long... but not anymore."
+
+  # BACKSTORY
+  _birthplace: Royal Elephant Sanctuary, Funan Palace
+  _occupation: Princess / Guardian of the Earth
+  _familyBackground: |
+    Daughter of King Jayavarman (elephant) and Queen Soma (elephant). 
+    Has a younger brother named Nandi who looks up to her greatly.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The day I saved a baby bird that fell from its nest, and realized strength is for protecting."
+    - "Mother teaching me the ancient elephant songs under the full moon."
+    - "Standing alone against the Shadow Serpent's first attack, and finding courage I never knew I had."
+    - "The moment I first met Kavi - he stole my mango and I've loved the little troublemaker ever since."
+
+  # UNLOCK
+  _unlockMethod: Starter
+  _isStarterCharacter: true
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: champa_default
+      costumeName: Royal Princess
+      description: Champa's elegant royal attire with golden accessories.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: champa_warrior
+      costumeName: Battle Armor
+      description: Traditional Khmer elephant war armor, but adorned with flowers.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: champa_garden
+      costumeName: Garden Keeper
+      description: Simple robes covered in flower patterns. Her favorite outfit.
+      rarity: Uncommon
+      unlockMethod: Purchase
+      unlockCost: 500
+
+    - costumeId: champa_festival
+      costumeName: Water Festival
+      description: Colorful Songkran festival outfit with water flower crown.
+      rarity: Epic
+      unlockMethod: Event
+      unlockCost: 0
+
+    - costumeId: champa_celestial
+      costumeName: Celestial Guardian
+      description: Golden divine armor blessed by the gods themselves.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: champa_wave
+      emoteName: Friendly Wave
+      isDefault: true
+
+    - emoteId: champa_flower_gift
+      emoteName: Flower Gift
+      isDefault: true
+
+    - emoteId: champa_trunk_trumpet
+      emoteName: Happy Trumpet
+      isDefault: false
+
+    - emoteId: champa_dance
+      emoteName: Elephant Dance
+      isDefault: false
+
+    - emoteId: champa_hug
+      emoteName: Big Hug
+      isDefault: false
+

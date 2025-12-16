@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Mealea_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # MEALEA - THE APSARA DANCER
+  # Guardian of Light and Grace
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: mealea_apsara
+  _displayName: Mealea
+  _title: The Celestial Dancer
+  _species: Apsara (Celestial Being)
+  _shortDescription: |
+    A divine dancer from the celestial realm. Her graceful movements can 
+    heal allies and mesmerize enemies alike.
+  _fullBiography: |
+    In the heavenly palace above the clouds, Apsaras dance eternally for the 
+    gods. Among them, young Mealea was different. While others danced to please, 
+    she danced to feel - every movement expressing an emotion she couldn't name.
+    
+    The elder Apsaras worried. "You dance with too much... feeling," they said. 
+    "You're supposed to be divine and detached." But Mealea couldn't help it. 
+    When she saw the mortal world below - the laughter, the tears, the love - 
+    she felt something stir in her immortal heart.
+    
+    When the Shadow Serpent's darkness reached even the heavens, the gods 
+    needed a champion. "Send someone who doesn't care about the mortals," 
+    advised the council. But the youngest god, impressed by Mealea's 
+    compassionate heart, chose her instead.
+    
+    "You feel too much to be a proper Apsara," he said, "but perhaps that's 
+    exactly what makes you perfect for this mission."
+    
+    Now Mealea walks among mortals for the first time, experiencing everything 
+    she'd only watched from above. Every sunset, every friendship, every silly 
+    joke from Kavi - it's all miraculous to her. She'll fight to protect this 
+    beautiful, chaotic, emotional world.
+    
+  _role: Support
+  _element: Light
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 1, g: 0.75, b: 0.8, a: 1}
+  _accentColor: {r: 1, g: 0.9, b: 0.5, a: 1}
+
+  # BASE STATS (Support - Focused on healing and buffs)
+  _baseHealth: 85
+  _baseAttack: 18
+  _baseDefense: 15
+  _baseSpeed: 32
+  _baseStamina: 140
+  _attackRange: 2.5
+  _moveSpeed: 5.8
+  
+  _healthGrowth: 9
+  _attackGrowth: 2
+  _defenseGrowth: 1.5
+  _speedGrowth: 2.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: mealea_ribbon_strike
+    abilityName: Silk Ribbon Dance
+    description: Graceful ribbon attacks that flow from one enemy to the next.
+    damage: 15
+    cooldown: 0
+    staminaCost: 4
+    range: 3
+    type: Melee
+    element: Light
+
+  _specialAbility:
+    abilityId: mealea_healing_dance
+    abilityName: Dance of Restoration
+    description: |
+      Mealea performs a sacred dance that heals all allies and removes negative 
+      status effects. The more injured the ally, the more they're healed.
+    damage: 0
+    cooldown: 14
+    staminaCost: 40
+    range: 10
+    type: Heal
+    element: Light
+    statusEffects:
+      - heal_percentage_30
+      - cleanse_debuffs
+
+  _ultimateAbility:
+    abilityId: mealea_divine_performance
+      abilityName: Divine Apsara Performance
+    description: |
+      Mealea ascends and performs the legendary Dance of Creation. Time seems 
+      to slow as lotus petals rain down. All allies are fully healed and 
+      empowered, while enemies are mesmerized, unable to attack.
+    damage: 0
+    cooldown: 60
+    staminaCost: 90
+    range: 20
+    type: Buff
+    element: Light
+    statusEffects:
+      - full_heal_allies
+      - attack_boost_50
+      - enemy_mesmerize_4s
+
+  _passiveAbility:
+    abilityId: mealea_grace
+    abilityName: Celestial Grace
+    description: |
+      Mealea's divine nature means she floats slightly above ground and cannot 
+      be slowed. Her mere presence gradually heals nearby allies.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 8
+    type: Buff
+    element: Light
+
+  _comboMoves:
+    - abilityId: mealea_petal_storm
+      abilityName: Lotus Petal Storm
+      description: Razor-sharp flower petals spin around Mealea, damaging nearby enemies.
+      damage: 35
+      cooldown: 0
+      staminaCost: 18
+      type: AoE
+      
+    - abilityId: mealea_blessing
+      abilityName: Individual Blessing
+      description: Touch an ally to grant them temporary invincibility.
+      damage: 0
+      cooldown: 20
+      staminaCost: 35
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 65
+    kindness: 100
+    wisdom: 70
+    humor: 55
+    loyalty: 85
+    curiosity: 100
+
+  _likes:
+    - Watching mortals live their lives
+    - New experiences (everything is new!)
+    - Dancing (of course)
+    - Flowers and gardens
+    - Kavi's jokes (she doesn't understand them but laughs anyway)
+
+  _dislikes:
+    - The cold detachment of some celestials
+    - Seeing others in pain
+    - Not understanding mortal customs
+    - Being treated as divine and untouchable
+    - Spicy food (too overwhelming!)
+
+  _favoriteFood: Sweet rice with mango (her first mortal food - life-changing!)
+  _hobby: Learning mortal customs and trying new experiences
+  _fear: That she'll have to return to heaven and leave her friends behind
+  _dream: To understand what it truly means to be "alive"
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Oh! Hello, dear friend! Is this how mortals greet? *waves enthusiastically*"
+      - type: Greeting
+        text: "Every meeting is a blessing. The gods say so!"
+      - type: Selection
+        text: "You chose me? I'm... honored! Is 'honored' the right word?"
+      - type: Selection
+        text: "Let us dance through this challenge together!"
+      - type: BattleStart
+        text: "I do not wish to fight, but I will protect those I love!"
+      - type: BattleStart
+        text: "My dance... can be a weapon too."
+      - type: Attack
+        text: "With grace!"
+      - type: Attack
+        text: "Forgive me!"
+      - type: SpecialAttack
+        text: "Let my dance heal your wounds!"
+      - type: Ultimate
+        text: "Witness the Dance of Creation! DIVINE PERFORMANCE!"
+      - type: Hurt
+        text: "Ah! So this is... pain?"
+      - type: LowHealth
+        text: "Is this what mortals call... fear?"
+      - type: Victory
+        text: "We prevailed! I feel... happiness? Yes, happiness!"
+      - type: Victory
+        text: "The dance is complete. *bows gracefully*"
+      - type: Defeat
+        text: "I have... failed? This feeling is unpleasant..."
+      - type: LevelUp
+        text: "I grow stronger! The gods would never believe this!"
+      - type: Idle
+        text: "*practices dance moves* One and two and three and..."
+      - type: Idle
+        text: "That cloud looks like Kavi! ...Every cloud looks like Kavi to me now."
+      - type: Funny
+        text: "Kavi told me a 'knock knock joke.' Who is knocking? Should I answer?"
+      - type: Funny
+        text: "I tried 'sleeping' last night. Mortals do this EVERY day?! Remarkable!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Mealea finds Kavi utterly fascinating. His chaos is so... alive! She 
+        doesn't understand his jokes but laughs because his joy is contagious.
+        She's oblivious to his crush on her.
+      specialDialogue:
+        - "Kavi makes strange sounds with his mouth. 'Jokes,' he calls them. Delightful!"
+        - "Why does he trip whenever I look at him? Is he unwell?"
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Champa is like a mother figure to Mealea, teaching her about the mortal 
+        world. They share a love of gentleness and protecting others.
+      specialDialogue:
+        - "Champa explains mortal things without making me feel foolish."
+        - "She has such a beautiful heart. Even the gods would admire her."
+
+    - characterId: singha_lion
+      characterName: Singha
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Singha's noble nature reminds Mealea of the divine guardians in heaven. 
+        She respects his sense of duty and often dances to soothe his serious mood.
+      specialDialogue:
+        - "Singha is so... serious. I shall teach him to smile more!"
+        - "His roar is like celestial music. Powerful and beautiful."
+
+  # BACKSTORY
+  _birthplace: Celestial Palace Above the Clouds
+  _occupation: Celestial Dancer / Guardian of Light
+  _familyBackground: |
+    Apsaras don't have families in the mortal sense. Mealea was "created" rather 
+    than born. But she considers her fellow Apsaras as sisters, even if they 
+    find her too emotional.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The first time I tasted food. Sweet rice with mango. I cried. I'd never cried before."
+    - "Dancing for the gods and feeling... nothing. Then watching a mortal wedding and feeling... everything."
+    - "Being chosen for this mission and feeling terrified and thrilled."
+    - "Kavi making me laugh until my stomach hurt. I didn't know stomachs could do that!"
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_apsara_001
+  _isStarterCharacter: false
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: mealea_default
+      costumeName: Celestial Silk
+      description: Traditional Apsara dancing costume of heavenly silk.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: mealea_traditional
+      costumeName: Temple Dancer
+      description: Classic Khmer Apsara costume from temple carvings.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: mealea_lotus
+      costumeName: Lotus Bloom
+      description: A dress that blooms like a lotus flower as she dances.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1500
+
+    - costumeId: mealea_mortal
+      costumeName: Village Girl
+      description: Simple mortal clothing. Her favorite - she feels "real."
+      rarity: Uncommon
+      unlockMethod: Achievement
+      unlockCost: 0
+
+    - costumeId: mealea_divine
+      costumeName: True Divine Form
+      description: Her full celestial form with wings of pure light.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: mealea_bow
+      emoteName: Graceful Bow
+      isDefault: true
+
+    - emoteId: mealea_twirl
+      emoteName: Joyful Twirl
+      isDefault: true
+
+    - emoteId: mealea_blessing_pose
+      emoteName: Blessing Pose
+      isDefault: false
+
+    - emoteId: mealea_confused
+      emoteName: Confused Tilt
+      isDefault: false
+
+    - emoteId: mealea_first_time
+      emoteName: "First Time?" Wonder
+      isDefault: false
+

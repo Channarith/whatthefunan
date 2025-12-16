@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Makara_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # MAKARA - THE DRAGON GUARDIAN
+  # Guardian of Fire and Passion
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: makara_dragon
+  _displayName: Makara
+  _title: The Flame of the Deep
+  _species: Makara (Sea Dragon-Crocodile)
+  _shortDescription: |
+    A mighty sea dragon who breathes underwater fire. Despite his fearsome 
+    appearance, he's actually a gentle soul who loves cooking.
+  _fullBiography: |
+    Makara are legendary creatures - part dragon, part crocodile, part 
+    elephant, part fish. They guard the boundaries between worlds. But young 
+    Makara was different from his fire-breathing brethren. While others 
+    enjoyed destruction, he discovered something wonderful about his flames:
+    
+    They could cook really, REALLY good food.
+    
+    "You waste your gift on... CUISINE?!" the elder Makaras roared. But Makara 
+    didn't care. He opened an underwater restaurant in an volcanic vent, using 
+    his fire breath to create dishes that made even the grumpiest sea monsters 
+    smile. His specialty? Perfectly flame-seared fish, medium-rare.
+    
+    When the Shadow Serpent attacked, Makara tried to reason with it - even 
+    offered it a meal. "Darkness cannot taste deliciousness," the serpent 
+    hissed. And attacked.
+    
+    That's when Makara learned his flames could do more than cook. Protecting 
+    his restaurant - his dream - awakened the warrior within. Now he fights 
+    with the intensity of a thousand suns, not for glory, but so that someday, 
+    when peace returns, everyone can share a meal together.
+    
+  _role: DPS
+  _element: Fire
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 1, g: 0.3, b: 0.1, a: 1}
+  _accentColor: {r: 1, g: 0.7, b: 0, a: 1}
+
+  # BASE STATS (DPS - High attack, good HP for a damage dealer)
+  _baseHealth: 120
+  _baseAttack: 40
+  _baseDefense: 18
+  _baseSpeed: 22
+  _baseStamina: 100
+  _attackRange: 2.5
+  _moveSpeed: 5.2
+  
+  _healthGrowth: 12
+  _attackGrowth: 5
+  _defenseGrowth: 2
+  _speedGrowth: 1.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: makara_claw_swipe
+    abilityName: Dragon Claw
+    description: A devastating claw swipe that leaves burning marks.
+    damage: 35
+    cooldown: 0
+    staminaCost: 6
+    range: 2
+    type: Melee
+    element: Fire
+    statusEffects:
+      - burn_damage_3s
+
+  _specialAbility:
+    abilityId: makara_fire_breath
+    abilityName: Flame Breath
+    description: |
+      Makara unleashes a cone of searing flames. The longer he breathes, 
+      the hotter it gets! Hold to charge, release to fire.
+    damage: 60
+    cooldown: 10
+    staminaCost: 35
+    range: 8
+    type: Ranged
+    element: Fire
+    statusEffects:
+      - burn_damage_5s
+      - armor_melt
+
+  _ultimateAbility:
+    abilityId: makara_volcanic_eruption
+    abilityName: Volcanic Fury
+    description: |
+      Makara channels the power of underwater volcanoes, erupting in a 
+      massive explosion of fire and steam. Creates a zone of constant 
+      fire damage that lasts for several seconds.
+    damage: 150
+    cooldown: 50
+    staminaCost: 75
+    range: 12
+    type: AoE
+    element: Fire
+    statusEffects:
+      - fire_zone_8s
+      - steam_blind
+
+  _passiveAbility:
+    abilityId: makara_thick_scales
+    abilityName: Ancient Scales
+    description: |
+      Makara's legendary scales provide natural armor and fire immunity. 
+      The more damage he takes, the hotter his attacks become!
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Fire
+
+  _comboMoves:
+    - abilityId: makara_tail_slam
+      abilityName: Tail Devastation
+      description: Massive tail slam that causes shockwaves.
+      damage: 55
+      cooldown: 0
+      staminaCost: 22
+      type: AoE
+      
+    - abilityId: makara_fire_chomp
+      abilityName: Inferno Bite
+      description: Grab an enemy in flaming jaws. Extra crispy!
+      damage: 70
+      cooldown: 8
+      staminaCost: 30
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 90
+    kindness: 80
+    wisdom: 60
+    humor: 70
+    loyalty: 85
+    curiosity: 75
+
+  _likes:
+    - Cooking (especially flame-grilled dishes)
+    - Sharing meals with friends
+    - Hot springs and volcanic areas
+    - Compliments on his cooking
+    - Trying new recipes
+
+  _dislikes:
+    - Cold food
+    - People who don't appreciate good food
+    - The Naga Prince (friendly rivalry)
+    - Being called "scary"
+    - Wasted ingredients
+
+  _favoriteFood: The perfect flame-seared fish - his own recipe
+  _hobby: Developing new recipes and cooking for friends
+  _fear: That his power will hurt someone he's trying to protect
+  _dream: To open a restaurant where all creatures - predator and prey - can share meals in peace
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Hungry? I just made fresh grilled fish! Extra crispy!"
+      - type: Greeting
+        text: "A friend! Come, come! You must be starving!"
+      - type: Selection
+        text: "Finally! Let's heat things up!"
+      - type: Selection
+        text: "My flames burn for justice! ...And also cooking."
+      - type: BattleStart
+        text: "I didn't want to fight, but you threatened my kitchen!"
+      - type: BattleStart
+        text: "FEEL THE HEAT!"
+      - type: Attack
+        text: "TOO HOT TO HANDLE!"
+      - type: Attack
+        text: "SIZZLE!"
+      - type: SpecialAttack
+        text: "DRAGON FIRE! Medium-rare or well-done?"
+      - type: Ultimate
+        text: "VOLCANIC! FURY! ERUPTION!"
+      - type: Hurt
+        text: "Gah! That actually stung!"
+      - type: LowHealth
+        text: "My flame... grows weak..."
+      - type: Victory
+        text: "Now THAT'S what I call well-done! Haha!"
+      - type: Victory
+        text: "Who's hungry? Victory feast!"
+      - type: Defeat
+        text: "My fire... goes out..."
+      - type: LevelUp
+        text: "My flames burn HOTTER! Time for a new recipe!"
+      - type: Idle
+        text: "*quietly plans dinner menu*"
+      - type: Idle
+        text: "Hmm, would this enemy taste good grilled? ...Just kidding! ...Mostly."
+      - type: Funny
+        text: "Why did the dragon chef get fired? His food was TOO lit! Hahaha!"
+      - type: Funny
+        text: "The Naga Prince thinks he's cool. I'm HOT. I win."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: naga_serpent
+      characterName: Naga Prince
+      type: Rival
+      affinity: 50
+      relationshipDescription: |
+        Fire and water - eternal rivals. They constantly argue about who's more 
+        powerful, but it's all in good fun. Deep down, they respect each other.
+      specialDialogue:
+        - "Seven heads and still can't appreciate good barbecue. Tragic."
+        - "We'll settle this with a cooking competition someday!"
+        - "...He's actually not bad. Don't tell him I said that."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Champa was the first to try his cooking without fear. She said it was 
+        "wonderful." He's been loyal to her ever since.
+      specialDialogue:
+        - "Champa believed in me when no one else did."
+        - "I would burn worlds for her. But she'd prefer I make her mango dessert."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Two ancient creatures finding friendship. They don't talk much, but 
+        they share a bond of understanding. Plus, Prohm appreciates warm rocks.
+      specialDialogue:
+        - "Prohm gets it. Sometimes you just need a warm rock and silence."
+        - "His ancestors and mine probably knew each other. Cool."
+
+  # BACKSTORY
+  _birthplace: Volcanic Trenches beneath the Eastern Sea
+  _occupation: Dragon Guardian / Chef Extraordinaire
+  _familyBackground: |
+    Son of two ancient Makaras. His parents are proud warriors who still don't 
+    understand his "cooking phase" but support him anyway.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Discovering I could control the temperature of my flames. Culinary revelation!"
+    - "Opening my restaurant. The first customer was a terrified fish. We're friends now."
+    - "Champa eating my cooking and asking for seconds. Best day ever."
+    - "Standing against the Shadow Serpent to protect my dream."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_makara_001
+  _isStarterCharacter: false
+  _unlockLevel: 1
+
+  # COSTUMES
+  _costumes:
+    - costumeId: makara_default
+      costumeName: Sea Dragon
+      description: Natural green scales with fiery highlights.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: makara_chef
+      costumeName: Master Chef
+      description: Chef's hat and apron. The most fearsome chef alive.
+      rarity: Uncommon
+      unlockMethod: Purchase
+      unlockCost: 600
+
+    - costumeId: makara_volcanic
+      costumeName: Volcanic Form
+      description: Molten magma flows through cracks in his scales.
+      rarity: Epic
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: makara_golden
+      costumeName: Golden Dragon
+      description: Legendary golden scales from ancient tales.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: makara_roar
+      emoteName: Dragon Roar
+      isDefault: true
+
+    - emoteId: makara_flame_show
+      emoteName: Flame Show
+      isDefault: true
+
+    - emoteId: makara_chef_kiss
+      emoteName: Chef's Kiss
+      isDefault: false
+
+    - emoteId: makara_nap
+      emoteName: Fire Nap
+      isDefault: false
+
