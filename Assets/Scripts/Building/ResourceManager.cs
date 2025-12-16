@@ -47,30 +47,60 @@ namespace WhatTheFunan.Building
         [Header("Resource Definitions")]
         [SerializeField] private List<ResourceDefinition> _resourceDefinitions = new List<ResourceDefinition>
         {
-            // Basic
-            new ResourceDefinition { resourceId = "wood", displayName = "Wood", type = ResourceType.Basic },
-            new ResourceDefinition { resourceId = "stone", displayName = "Stone", type = ResourceType.Basic },
-            new ResourceDefinition { resourceId = "bamboo", displayName = "Bamboo", type = ResourceType.Basic },
-            new ResourceDefinition { resourceId = "clay", displayName = "Clay", type = ResourceType.Basic },
-            new ResourceDefinition { resourceId = "palm_leaves", displayName = "Palm Leaves", type = ResourceType.Basic },
-            new ResourceDefinition { resourceId = "rope", displayName = "Rope", type = ResourceType.Basic },
+            // =================================================================
+            // SACRED PLANT MATERIALS
+            // =================================================================
+            new ResourceDefinition { resourceId = "spirit_bamboo", displayName = "Spirit Bamboo", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "blessed_lotus_fiber", displayName = "Blessed Lotus Fiber", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "moonlit_palm", displayName = "Moonlit Palm Frond", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "sacred_banyan_root", displayName = "Sacred Banyan Root", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "whisper_vine", displayName = "Whisper Vine", type = ResourceType.Basic },
             
-            // Refined
-            new ResourceDefinition { resourceId = "plank", displayName = "Wooden Plank", type = ResourceType.Refined },
-            new ResourceDefinition { resourceId = "brick", displayName = "Brick", type = ResourceType.Refined },
-            new ResourceDefinition { resourceId = "carved_stone", displayName = "Carved Stone", type = ResourceType.Refined },
-            new ResourceDefinition { resourceId = "silk", displayName = "Silk", type = ResourceType.Refined },
-            new ResourceDefinition { resourceId = "lacquer", displayName = "Lacquer", type = ResourceType.Refined },
+            // =================================================================
+            // MYSTICAL EARTH MATERIALS
+            // =================================================================
+            new ResourceDefinition { resourceId = "sacred_mud", displayName = "Sacred Temple Mud", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "blessed_clay", displayName = "Blessed Riverside Clay", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "ancestor_ash", displayName = "Ancestor Ash", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "blessed_thatch", displayName = "Blessed Temple Straw", type = ResourceType.Basic },
             
-            // Precious
-            new ResourceDefinition { resourceId = "gold_ingot", displayName = "Gold Ingot", type = ResourceType.Precious },
-            new ResourceDefinition { resourceId = "jade", displayName = "Jade", type = ResourceType.Precious },
-            new ResourceDefinition { resourceId = "pearl", displayName = "Pearl", type = ResourceType.Precious },
+            // =================================================================
+            // CELESTIAL STONES
+            // =================================================================
+            new ResourceDefinition { resourceId = "star_stone", displayName = "Star Stone", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "temple_granite", displayName = "Temple Granite", type = ResourceType.Basic },
+            new ResourceDefinition { resourceId = "naga_pearl_stone", displayName = "Naga Pearl Stone", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "volcano_obsidian", displayName = "Dragon's Obsidian", type = ResourceType.Refined },
             
-            // Special
-            new ResourceDefinition { resourceId = "naga_scale", displayName = "Naga Scale", type = ResourceType.Special },
-            new ResourceDefinition { resourceId = "apsara_feather", displayName = "Apsara Feather", type = ResourceType.Special },
-            new ResourceDefinition { resourceId = "ancient_relic", displayName = "Ancient Relic", type = ResourceType.Special }
+            // =================================================================
+            // CREATURE MATERIALS (Gifted, never harmed)
+            // =================================================================
+            new ResourceDefinition { resourceId = "naga_scale", displayName = "Shed Naga Scale", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "makara_hide", displayName = "Makara Dragon Hide", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "singha_mane_thread", displayName = "Singha Mane Thread", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "elephant_blessing_ivory", displayName = "Blessed Ivory Fragment", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "apsara_feather", displayName = "Apsara Celestial Feather", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "prohm_fossil_shard", displayName = "Prohm's Fossil Shard", type = ResourceType.Special },
+            
+            // =================================================================
+            // ENCHANTED MATERIALS
+            // =================================================================
+            new ResourceDefinition { resourceId = "sunforged_bronze", displayName = "Sunforged Bronze", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "moonwoven_silk", displayName = "Moonwoven Silk", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "spirit_lacquer", displayName = "Spirit Lacquer", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "spirit_rope", displayName = "Spirit-Woven Rope", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "sacred_plank", displayName = "Sacred Spirit Planks", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "temple_brick", displayName = "Temple Brick", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "celestial_tile", displayName = "Celestial Roof Tile", type = ResourceType.Refined },
+            new ResourceDefinition { resourceId = "carved_relic_stone", displayName = "Carved Relic Stone", type = ResourceType.Refined },
+            
+            // =================================================================
+            // LEGENDARY MATERIALS
+            // =================================================================
+            new ResourceDefinition { resourceId = "celestial_jade", displayName = "Celestial Jade", type = ResourceType.Precious },
+            new ResourceDefinition { resourceId = "dragon_gold", displayName = "Dragon-Touched Gold", type = ResourceType.Precious },
+            new ResourceDefinition { resourceId = "ancient_relic_shard", displayName = "Ancient Relic Shard", type = ResourceType.Precious },
+            new ResourceDefinition { resourceId = "naga_king_tear", displayName = "Tear of the Naga King", type = ResourceType.Precious }
         };
         
         [Header("Storage")]
@@ -351,43 +381,86 @@ namespace WhatTheFunan.Building
         /// </summary>
         public CraftingRecipe GetCraftingRecipe(string outputId)
         {
-            // Define basic recipes
+            // Mystical crafting recipes
             return outputId switch
             {
-                "plank" => new CraftingRecipe
+                "sacred_plank" => new CraftingRecipe
                 {
-                    outputId = "plank",
-                    outputAmount = 4,
+                    outputId = "sacred_plank",
+                    outputAmount = 6,
                     inputs = new List<ResourceCost>
                     {
-                        new ResourceCost { resourceId = "wood", amount = 2 }
+                        new ResourceCost { resourceId = "spirit_bamboo", amount = 4 }
                     }
                 },
-                "brick" => new CraftingRecipe
+                "temple_brick" => new CraftingRecipe
                 {
-                    outputId = "brick",
-                    outputAmount = 4,
+                    outputId = "temple_brick",
+                    outputAmount = 8,
                     inputs = new List<ResourceCost>
                     {
-                        new ResourceCost { resourceId = "clay", amount = 3 }
+                        new ResourceCost { resourceId = "blessed_clay", amount = 4 },
+                        new ResourceCost { resourceId = "ancestor_ash", amount = 1 }
                     }
                 },
-                "carved_stone" => new CraftingRecipe
+                "carved_relic_stone" => new CraftingRecipe
                 {
-                    outputId = "carved_stone",
+                    outputId = "carved_relic_stone",
                     outputAmount = 1,
                     inputs = new List<ResourceCost>
                     {
-                        new ResourceCost { resourceId = "stone", amount = 4 }
+                        new ResourceCost { resourceId = "temple_granite", amount = 4 },
+                        new ResourceCost { resourceId = "star_stone", amount = 2 }
                     }
                 },
-                "rope" => new CraftingRecipe
+                "spirit_rope" => new CraftingRecipe
                 {
-                    outputId = "rope",
+                    outputId = "spirit_rope",
+                    outputAmount = 4,
+                    inputs = new List<ResourceCost>
+                    {
+                        new ResourceCost { resourceId = "whisper_vine", amount = 3 },
+                        new ResourceCost { resourceId = "blessed_lotus_fiber", amount = 2 }
+                    }
+                },
+                "celestial_tile" => new CraftingRecipe
+                {
+                    outputId = "celestial_tile",
+                    outputAmount = 4,
+                    inputs = new List<ResourceCost>
+                    {
+                        new ResourceCost { resourceId = "blessed_clay", amount = 3 },
+                        new ResourceCost { resourceId = "star_stone", amount = 1 }
+                    }
+                },
+                "moonwoven_silk" => new CraftingRecipe
+                {
+                    outputId = "moonwoven_silk",
                     outputAmount = 2,
                     inputs = new List<ResourceCost>
                     {
-                        new ResourceCost { resourceId = "palm_leaves", amount = 3 }
+                        new ResourceCost { resourceId = "blessed_lotus_fiber", amount = 6 },
+                        new ResourceCost { resourceId = "apsara_feather", amount = 1 }
+                    }
+                },
+                "sunforged_bronze" => new CraftingRecipe
+                {
+                    outputId = "sunforged_bronze",
+                    outputAmount = 3,
+                    inputs = new List<ResourceCost>
+                    {
+                        new ResourceCost { resourceId = "star_stone", amount = 2 },
+                        new ResourceCost { resourceId = "volcano_obsidian", amount = 1 }
+                    }
+                },
+                "spirit_lacquer" => new CraftingRecipe
+                {
+                    outputId = "spirit_lacquer",
+                    outputAmount = 4,
+                    inputs = new List<ResourceCost>
+                    {
+                        new ResourceCost { resourceId = "sacred_banyan_root", amount = 2 },
+                        new ResourceCost { resourceId = "ancestor_ash", amount = 1 }
                     }
                 },
                 _ => null
@@ -439,11 +512,14 @@ namespace WhatTheFunan.Building
             }
             else
             {
-                // Starting resources
-                _resources["wood"] = 50;
-                _resources["stone"] = 30;
-                _resources["bamboo"] = 20;
-                _resources["palm_leaves"] = 15;
+                // Starting resources - mystical materials!
+                _resources["spirit_bamboo"] = 50;
+                _resources["temple_granite"] = 30;
+                _resources["blessed_lotus_fiber"] = 25;
+                _resources["sacred_mud"] = 40;
+                _resources["moonlit_palm"] = 20;
+                _resources["whisper_vine"] = 15;
+                _resources["blessed_thatch"] = 30;
             }
         }
 

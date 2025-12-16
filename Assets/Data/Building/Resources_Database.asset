@@ -1,0 +1,444 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Resources_Database
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # WHAT THE FUNAN - MAGICAL BUILDING RESOURCES
+  # Ancient mystical materials from the Funan Kingdom
+  # ============================================================================
+
+  resourceCategories:
+
+    # ==========================================================================
+    # SACRED PLANT MATERIALS
+    # ==========================================================================
+    - category: Sacred Plants
+      description: Plants blessed by ancient spirits and temple guardians
+      resources:
+
+        - resourceId: spirit_bamboo
+          displayName: Spirit Bamboo
+          description: |
+            Bamboo infused with ancient forest spirits. Glows faintly at night 
+            and hums with mystical energy. Harvested only during full moons.
+          type: Basic
+          rarity: Common
+          maxStack: 200
+          gatherSound: sfx_spirit_bamboo
+          particleColor: "#7CFC00"
+          lore: "The spirits of the forest live within each stalk."
+
+        - resourceId: blessed_lotus_fiber
+          displayName: Blessed Lotus Fiber
+          description: |
+            Sacred fibers from temple lotus ponds. Woven by Apsara hands in 
+            ancient times. Stronger than rope, light as silk.
+          type: Basic
+          rarity: Common
+          maxStack: 150
+          gatherSound: sfx_lotus_harvest
+          particleColor: "#FFB6C1"
+          lore: "Each strand carries the blessing of celestial dancers."
+
+        - resourceId: moonlit_palm
+          displayName: Moonlit Palm Frond
+          description: |
+            Palm leaves that absorb moonlight and release it slowly. Perfect 
+            for roofing - keeps homes cool by day, softly lit by night.
+          type: Basic
+          rarity: Common
+          maxStack: 200
+          gatherSound: sfx_palm_rustle
+          particleColor: "#E6E6FA"
+          lore: "Harvested under the silver light of the moon goddess."
+
+        - resourceId: sacred_banyan_root
+          displayName: Sacred Banyan Root
+          description: |
+            Twisted roots from the great banyan trees where nagas rest. 
+            Impossibly strong and said to ward off evil spirits.
+          type: Refined
+          rarity: Uncommon
+          maxStack: 100
+          gatherSound: sfx_root_pull
+          particleColor: "#8B4513"
+          lore: "The nagas gift these roots to worthy builders."
+
+        - resourceId: whisper_vine
+          displayName: Whisper Vine
+          description: |
+            Enchanted vines that rustle with ancient secrets. Used for 
+            binding and rope-making. Some say they guide lost travelers.
+          type: Basic
+          rarity: Common
+          maxStack: 150
+          gatherSound: sfx_vine_cut
+          particleColor: "#228B22"
+          lore: "Listen closely - they speak of forgotten paths."
+
+    # ==========================================================================
+    # MYSTICAL EARTH MATERIALS  
+    # ==========================================================================
+    - category: Mystical Earth
+      description: Earth and clay blessed by the land spirits
+      resources:
+
+        - resourceId: sacred_mud
+          displayName: Sacred Temple Mud
+          description: |
+            Clay from the banks where ancient temples rose. Infused with 
+            centuries of prayers and offerings. Hardens stronger than stone.
+          type: Basic
+          rarity: Common
+          maxStack: 200
+          gatherSound: sfx_mud_squelch
+          particleColor: "#D2691E"
+          lore: "Every grain holds a thousand prayers."
+
+        - resourceId: blessed_clay
+          displayName: Blessed Riverside Clay
+          description: |
+            Red clay from the Mekong blessed by river spirits. Shapes 
+            easily but becomes unbreakable when fired with dragon breath.
+          type: Basic
+          rarity: Common
+          maxStack: 200
+          gatherSound: sfx_clay_dig
+          particleColor: "#CD5C5C"
+          lore: "The river spirits approve of those who build with respect."
+
+        - resourceId: ancestor_ash
+          displayName: Ancestor Ash
+          description: |
+            Sacred ash from ceremonial fires. Mixed with clay to create 
+            building materials that honor those who came before.
+          type: Refined
+          rarity: Uncommon
+          maxStack: 80
+          gatherSound: sfx_ash_collect
+          particleColor: "#808080"
+          lore: "Our ancestors guide our hands through this sacred dust."
+
+    # ==========================================================================
+    # CELESTIAL STONES
+    # ==========================================================================
+    - category: Celestial Stones
+      description: Stones from the heavens and sacred mountains
+      resources:
+
+        - resourceId: star_stone
+          displayName: Star Stone
+          description: |
+            Meteorite fragments that fell during the kingdom's founding. 
+            Impossibly dense and shimmer with cosmic energy.
+          type: Basic
+          rarity: Uncommon
+          maxStack: 100
+          gatherSound: sfx_stone_ring
+          particleColor: "#4169E1"
+          lore: "Gifts from the celestial realm above."
+
+        - resourceId: temple_granite
+          displayName: Temple Granite
+          description: |
+            Sacred stone quarried from holy mountains. Each block is 
+            blessed by monks before being shaped.
+          type: Basic
+          rarity: Common
+          maxStack: 150
+          gatherSound: sfx_granite_chip
+          particleColor: "#A9A9A9"
+          lore: "Mountains gift their bones to those who ask respectfully."
+
+        - resourceId: naga_pearl_stone
+          displayName: Naga Pearl Stone
+          description: |
+            Smooth, iridescent stones from the Naga underwater palace. 
+            Warm to the touch and glow near water.
+          type: Refined
+          rarity: Rare
+          maxStack: 50
+          gatherSound: sfx_pearl_chime
+          particleColor: "#ADD8E6"
+          lore: "Treasures from the seven-headed serpent king's domain."
+
+        - resourceId: volcano_obsidian
+          displayName: Dragon's Obsidian
+          description: |
+            Black volcanic glass from Makara's volcanic home. Sharp, 
+            beautiful, and resistant to all elements.
+          type: Refined
+          rarity: Rare
+          maxStack: 60
+          gatherSound: sfx_obsidian_crack
+          particleColor: "#1C1C1C"
+          lore: "Forged in the dragon's fiery breath."
+
+    # ==========================================================================
+    # CREATURE MATERIALS
+    # ==========================================================================
+    - category: Creature Materials
+      description: Gifts from the magical creatures of Funan
+      resources:
+
+        - resourceId: naga_scale
+          displayName: Shed Naga Scale
+          description: |
+            Scales naturally shed by friendly nagas. Iridescent blue-green 
+            and waterproof. Never taken by force - always gifted.
+          type: Rare
+          rarity: Rare
+          maxStack: 30
+          gatherSound: sfx_scale_shimmer
+          particleColor: "#00CED1"
+          lore: "A gift of friendship from the serpent people."
+
+        - resourceId: makara_hide
+          displayName: Makara Dragon Hide
+          description: |
+            Tough hide patches shed by Makara dragons during growth. 
+            Fire-resistant and incredibly durable.
+          type: Rare
+          rarity: Rare
+          maxStack: 25
+          gatherSound: sfx_leather_stretch
+          particleColor: "#006400"
+          lore: "Dragons shed their old skin to grow - we honor their gift."
+
+        - resourceId: singha_mane_thread
+          displayName: Singha Mane Thread
+          description: |
+            Golden threads from the temple lions' manes, collected from 
+            brushings. Weaves into the strongest fabric known.
+          type: Rare
+          rarity: Rare
+          maxStack: 40
+          gatherSound: sfx_thread_weave
+          particleColor: "#FFD700"
+          lore: "The noble lions share their golden strength."
+
+        - resourceId: elephant_blessing_ivory
+          displayName: Blessed Ivory Fragment
+          description: |
+            Ancient ivory naturally shed by sacred elephants, blessed by 
+            the elephant elders. Never harmed - only offered freely.
+          type: Epic
+          rarity: Epic
+          maxStack: 15
+          gatherSound: sfx_ivory_glow
+          particleColor: "#FFFFF0"
+          lore: "A blessing from the gentle giants who remember all."
+
+        - resourceId: apsara_feather
+          displayName: Apsara Celestial Feather
+          description: |
+            Ethereal feathers dropped by dancing Apsaras. Float slightly 
+            and carry blessings of grace and beauty.
+          type: Epic
+          rarity: Epic
+          maxStack: 20
+          gatherSound: sfx_feather_flutter
+          particleColor: "#FFB7C5"
+          lore: "Where they fall, beauty blooms eternal."
+
+        - resourceId: prohm_fossil_shard
+          displayName: Prohm's Fossil Shard
+          description: |
+            Ancient fossilized bone fragments from Prohm's ancestors. 
+            Contain primordial power from before time.
+          type: Epic
+          rarity: Epic
+          maxStack: 15
+          gatherSound: sfx_fossil_hum
+          particleColor: "#DEB887"
+          lore: "Echoes of creatures who walked when the world was young."
+
+    # ==========================================================================
+    # ENCHANTED MATERIALS
+    # ==========================================================================
+    - category: Enchanted Materials
+      description: Materials transformed by ancient magic
+      resources:
+
+        - resourceId: sunforged_bronze
+          displayName: Sunforged Bronze
+          description: |
+            Bronze smelted at sunrise during sacred ceremonies. Holds 
+            warmth of the sun and never tarnishes.
+          type: Refined
+          rarity: Uncommon
+          maxStack: 80
+          gatherSound: sfx_bronze_ring
+          particleColor: "#CD7F32"
+          lore: "Forged in the first light of a hundred sunrises."
+
+        - resourceId: moonwoven_silk
+          displayName: Moonwoven Silk
+          description: |
+            Silk woven by temple weavers only under full moons. Shimmers 
+            with silver light and is impossibly soft.
+          type: Refined
+          rarity: Rare
+          maxStack: 50
+          gatherSound: sfx_silk_rustle
+          particleColor: "#C0C0C0"
+          lore: "Each thread captures a moonbeam's blessing."
+
+        - resourceId: spirit_lacquer
+          displayName: Spirit Lacquer
+          description: |
+            Sacred lacquer made from tree sap and ground temple incense. 
+            Preserves wood for centuries and wards off decay.
+          type: Refined
+          rarity: Uncommon
+          maxStack: 60
+          gatherSound: sfx_lacquer_pour
+          particleColor: "#8B0000"
+          lore: "Applied with prayers, it protects for a thousand years."
+
+        - resourceId: blessed_thatch
+          displayName: Blessed Temple Straw
+          description: |
+            Rice straw blessed during harvest festivals. When bundled for 
+            roofing, it keeps rain out and blessings in.
+          type: Basic
+          rarity: Common
+          maxStack: 200
+          gatherSound: sfx_straw_bundle
+          particleColor: "#F5DEB3"
+          lore: "Every strand carries gratitude for the harvest."
+
+    # ==========================================================================
+    # LEGENDARY MATERIALS
+    # ==========================================================================
+    - category: Legendary Materials
+      description: The rarest and most powerful building materials
+      resources:
+
+        - resourceId: celestial_jade
+          displayName: Celestial Jade
+          description: |
+            Jade infused with the essence of the heavens. Glows with inner 
+            light and is said to grant wisdom to those nearby.
+          type: Legendary
+          rarity: Legendary
+          maxStack: 10
+          gatherSound: sfx_jade_hum
+          particleColor: "#00FF7F"
+          lore: "A fragment of the jade palace above the clouds."
+
+        - resourceId: dragon_gold
+          displayName: Dragon-Touched Gold
+          description: |
+            Gold purified in Makara's breath. Never dulls, never scratches, 
+            and radiates gentle warmth.
+          type: Legendary
+          rarity: Legendary
+          maxStack: 10
+          gatherSound: sfx_gold_chime
+          particleColor: "#FFD700"
+          lore: "Touched by dragon fire, blessed for eternity."
+
+        - resourceId: ancient_relic_shard
+          displayName: Ancient Relic Shard
+          description: |
+            Fragments from artifacts of the First Funan Kingdom. Pulse with 
+            the power of forgotten gods.
+          type: Legendary
+          rarity: Legendary
+          maxStack: 5
+          gatherSound: sfx_relic_pulse
+          particleColor: "#9400D3"
+          lore: "The gods who built the first temples left these behind."
+
+        - resourceId: naga_king_tear
+          displayName: Tear of the Naga King
+          description: |
+            Crystallized tears of joy from the seven-headed Naga King. 
+            Each one contains the blessing of all water spirits.
+          type: Legendary
+          rarity: Legendary
+          maxStack: 3
+          gatherSound: sfx_tear_shimmer
+          particleColor: "#00BFFF"
+          lore: "Shed when the Naga King witnessed true kindness."
+
+  # ============================================================================
+  # CRAFTING RECIPES
+  # ============================================================================
+  
+  craftingRecipes:
+    - recipeId: craft_sacred_plank
+      displayName: Sacred Spirit Planks
+      inputs:
+        - resourceId: spirit_bamboo
+          amount: 4
+      output:
+        resourceId: sacred_plank
+        amount: 6
+      craftingStation: spirit_workbench
+      craftTime: 3
+      
+    - recipeId: craft_temple_brick
+      displayName: Temple Brick
+      inputs:
+        - resourceId: blessed_clay
+          amount: 4
+        - resourceId: ancestor_ash
+          amount: 1
+      output:
+        resourceId: temple_brick
+        amount: 8
+      craftingStation: sacred_kiln
+      craftTime: 5
+      
+    - recipeId: craft_celestial_tile
+      displayName: Celestial Roof Tile
+      inputs:
+        - resourceId: blessed_clay
+          amount: 3
+        - resourceId: star_stone
+          amount: 1
+      output:
+        resourceId: celestial_tile
+        amount: 4
+      craftingStation: sacred_kiln
+      craftTime: 8
+      
+    - recipeId: craft_spirit_rope
+      displayName: Spirit-Woven Rope
+      inputs:
+        - resourceId: whisper_vine
+          amount: 3
+        - resourceId: blessed_lotus_fiber
+          amount: 2
+      output:
+        resourceId: spirit_rope
+        amount: 4
+      craftingStation: weaving_altar
+      craftTime: 2
+
+    - recipeId: craft_carved_relic_stone
+      displayName: Carved Relic Stone
+      inputs:
+        - resourceId: temple_granite
+          amount: 4
+        - resourceId: star_stone
+          amount: 2
+      output:
+        resourceId: carved_relic_stone
+        amount: 1
+      craftingStation: stone_shrine
+      craftTime: 10
+

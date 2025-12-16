@@ -14,406 +14,575 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   
   # ============================================================================
-  # WHAT THE FUNAN - BUILDING DATABASE
-  # Khmer-inspired architecture with Southeast Asian aesthetics
+  # WHAT THE FUNAN - MAGICAL BUILDING DATABASE
+  # Ancient mystical structures using enchanted materials
   # ============================================================================
   
   buildings:
   
     # ==========================================================================
-    # FOUNDATIONS
+    # FOUNDATIONS - Sacred Platforms
     # ==========================================================================
-    - objectId: foundation_wood
-      displayName: Wooden Platform
-      description: Basic wooden floor platform. A good start for any structure.
+    - objectId: foundation_spirit_bamboo
+      displayName: Spirit Bamboo Platform
+      description: |
+        A floating platform of spirit bamboo that glows faintly at night. 
+        The bamboo spirits keep it level and strong.
       category: Foundation
       rarity: Common
       gridSize: [2, 1, 2]
       isFoundation: true
       unlockLevel: 1
       buildCost:
-        - resourceId: wood
-          amount: 4
-          
-    - objectId: foundation_bamboo
-      displayName: Bamboo Platform
-      description: Light and flexible bamboo flooring.
-      category: Foundation
-      rarity: Common
-      gridSize: [2, 1, 2]
-      isFoundation: true
-      unlockLevel: 1
-      buildCost:
-        - resourceId: bamboo
+        - resourceId: spirit_bamboo
           amount: 6
           
-    - objectId: foundation_stone
-      displayName: Stone Platform
-      description: Sturdy stone foundation. Perfect for important buildings.
+    - objectId: foundation_sacred_mud
+      displayName: Sacred Earth Platform
+      description: |
+        Foundation of blessed riverside clay, dried with sun and prayer. 
+        So strong that temples have stood on it for centuries.
+      category: Foundation
+      rarity: Common
+      gridSize: [2, 1, 2]
+      isFoundation: true
+      unlockLevel: 1
+      buildCost:
+        - resourceId: sacred_mud
+          amount: 8
+        - resourceId: blessed_clay
+          amount: 4
+          
+    - objectId: foundation_star_stone
+      displayName: Celestial Stone Platform
+      description: |
+        Foundation of fallen star stones, pulsing with cosmic energy. 
+        Meteors that chose to become part of your kingdom.
       category: Foundation
       rarity: Uncommon
       gridSize: [2, 1, 2]
       isFoundation: true
       unlockLevel: 3
       buildCost:
-        - resourceId: stone
+        - resourceId: star_stone
           amount: 8
+        - resourceId: temple_granite
+          amount: 4
           
-    - objectId: foundation_carved
-      displayName: Carved Stone Platform
-      description: Beautifully carved stone with Khmer patterns.
+    - objectId: foundation_naga_pearl
+      displayName: Naga Pearl Platform
+      description: |
+        Iridescent platform made from Naga pearl stones. Glows near water 
+        and hums with the blessing of the serpent people.
       category: Foundation
       rarity: Rare
       gridSize: [2, 1, 2]
       isFoundation: true
       unlockLevel: 5
       buildCost:
-        - resourceId: carved_stone
-          amount: 4
+        - resourceId: naga_pearl_stone
+          amount: 6
+        - resourceId: naga_scale
+          amount: 2
           
     # ==========================================================================
-    # WALLS
+    # WALLS - Sacred Barriers
     # ==========================================================================
-    - objectId: wall_bamboo
-      displayName: Bamboo Wall
-      description: Simple bamboo wall. Provides basic privacy.
+    - objectId: wall_spirit_bamboo
+      displayName: Spirit Bamboo Wall
+      description: |
+        Walls woven from spirit bamboo that whisper protective chants. 
+        Forest spirits dance within the stalks.
       category: Walls
       rarity: Common
       gridSize: [1, 2, 1]
       canStack: true
       unlockLevel: 1
       buildCost:
-        - resourceId: bamboo
-          amount: 3
+        - resourceId: spirit_bamboo
+          amount: 4
+        - resourceId: whisper_vine
+          amount: 2
           
-    - objectId: wall_wood
-      displayName: Wooden Wall
-      description: Solid wooden wall with carved details.
+    - objectId: wall_sacred_plank
+      displayName: Sacred Plank Wall
+      description: |
+        Solid walls of sacred planks, blessed and lacquered. Ancient 
+        patterns carved into the wood ward off evil.
       category: Walls
       rarity: Common
       gridSize: [1, 2, 1]
       canStack: true
       unlockLevel: 2
       buildCost:
-        - resourceId: plank
-          amount: 4
+        - resourceId: sacred_plank
+          amount: 6
+        - resourceId: spirit_lacquer
+          amount: 1
           
-    - objectId: wall_stone
-      displayName: Stone Wall
-      description: Strong stone wall. Built to last generations.
+    - objectId: wall_temple_brick
+      displayName: Temple Brick Wall
+      description: |
+        Walls of temple bricks infused with ancestor ash. Each brick 
+        carries the strength of those who came before.
       category: Walls
       rarity: Uncommon
       gridSize: [1, 2, 1]
       canStack: true
       unlockLevel: 4
       buildCost:
-        - resourceId: stone
-          amount: 6
+        - resourceId: temple_brick
+          amount: 8
+        - resourceId: ancestor_ash
+          amount: 2
           
-    - objectId: wall_temple
-      displayName: Temple Wall
-      description: Ornate temple wall with carved deities.
+    - objectId: wall_dragon_obsidian
+      displayName: Dragon's Obsidian Wall
+      description: |
+        Gleaming black walls of volcanic glass from Makara's domain. 
+        Fire cannot touch them, enemies fear their reflection.
       category: Walls
       rarity: Rare
       gridSize: [1, 3, 1]
       canStack: true
       unlockLevel: 6
       buildCost:
-        - resourceId: carved_stone
-          amount: 6
-        - resourceId: lacquer
+        - resourceId: volcano_obsidian
+          amount: 8
+        - resourceId: makara_hide
           amount: 2
           
+    - objectId: wall_relic_stone
+      displayName: Carved Relic Wall
+      description: |
+        Walls of intricately carved relic stone depicting the old gods. 
+        Their eyes seem to follow, their blessings protect.
+      category: Walls
+      rarity: Epic
+      gridSize: [1, 3, 1]
+      canStack: true
+      unlockLevel: 8
+      buildCost:
+        - resourceId: carved_relic_stone
+          amount: 8
+        - resourceId: ancient_relic_shard
+          amount: 1
+          
     # ==========================================================================
-    # ROOFS
+    # ROOFS - Celestial Covers
     # ==========================================================================
-    - objectId: roof_thatch
-      displayName: Thatched Roof
-      description: Traditional palm leaf roofing. Cool in summer.
+    - objectId: roof_blessed_thatch
+      displayName: Blessed Straw Roof
+      description: |
+        Traditional roofing of harvest-blessed straw. Keeps monsoons out 
+        and blessings in. Glows gold during sunsets.
       category: Roofs
       rarity: Common
       gridSize: [3, 1, 3]
       unlockLevel: 1
       buildCost:
-        - resourceId: palm_leaves
-          amount: 8
-        - resourceId: rope
-          amount: 2
+        - resourceId: blessed_thatch
+          amount: 12
+        - resourceId: spirit_rope
+          amount: 3
           
-    - objectId: roof_tile
-      displayName: Clay Tile Roof
-      description: Durable clay tiles in traditional style.
+    - objectId: roof_moonlit_palm
+      displayName: Moonlit Palm Roof
+      description: |
+        Roofing of moon-soaked palm fronds. Absorbs moonlight by night, 
+        releases it as soft glow. Cool even in tropical heat.
+      category: Roofs
+      rarity: Common
+      gridSize: [3, 1, 3]
+      unlockLevel: 2
+      buildCost:
+        - resourceId: moonlit_palm
+          amount: 15
+        - resourceId: whisper_vine
+          amount: 4
+          
+    - objectId: roof_celestial_tile
+      displayName: Celestial Tile Roof
+      description: |
+        Tiles infused with star stone essence. Shimmer with cosmic light 
+        and protect against both rain and evil spirits.
       category: Roofs
       rarity: Uncommon
       gridSize: [3, 1, 3]
-      unlockLevel: 3
+      unlockLevel: 4
       buildCost:
-        - resourceId: brick
-          amount: 12
+        - resourceId: celestial_tile
+          amount: 16
+        - resourceId: star_stone
+          amount: 2
           
-    - objectId: roof_temple
-      displayName: Temple Spire
-      description: Golden temple spire reaching to the heavens.
+    - objectId: roof_dragon_gold_spire
+      displayName: Dragon Gold Temple Spire
+      description: |
+        A magnificent spire of dragon-touched gold reaching to the heavens. 
+        Said to attract celestial attention and divine favor.
       category: Roofs
-      rarity: Rare
-      gridSize: [2, 4, 2]
-      unlockLevel: 7
+      rarity: Legendary
+      gridSize: [2, 5, 2]
+      unlockLevel: 9
       buildCost:
-        - resourceId: carved_stone
+        - resourceId: dragon_gold
+          amount: 5
+        - resourceId: sunforged_bronze
           amount: 8
-        - resourceId: gold_ingot
+        - resourceId: celestial_jade
           amount: 2
           
     # ==========================================================================
-    # STRUCTURES (Complete Buildings)
+    # STRUCTURES - Complete Magical Buildings
     # ==========================================================================
-    - objectId: structure_hut
-      displayName: Village Hut
-      description: Simple stilt house. Home for 2 villagers.
+    - objectId: structure_spirit_hut
+      displayName: Spirit Keeper's Hut
+      description: |
+        A humble stilt house where forest spirits visit. Home for 2 
+        villagers who will be blessed with good dreams.
       category: Structures
       rarity: Common
       gridSize: [3, 3, 3]
       housingCapacity: 2
+      happinessBonus: 5
       unlockLevel: 1
       buildCost:
-        - resourceId: wood
-          amount: 20
-        - resourceId: palm_leaves
-          amount: 10
-        - resourceId: rope
-          amount: 4
-          
-    - objectId: structure_house
-      displayName: Family House
-      description: Larger house with carved details. Home for 4 villagers.
+        - resourceId: spirit_bamboo
+          amount: 25
+        - resourceId: blessed_thatch
+          amount: 15
+        - resourceId: spirit_rope
+          amount: 6
+
+    - objectId: structure_blessed_house
+      displayName: Ancestor's Blessed Home
+      description: |
+        A larger home built with ancestor ash bricks. The spirits of 
+        family past watch over 4 villagers within.
       category: Structures
       rarity: Uncommon
       gridSize: [4, 3, 4]
       housingCapacity: 4
+      happinessBonus: 8
       unlockLevel: 3
       buildCost:
-        - resourceId: plank
+        - resourceId: temple_brick
           amount: 30
-        - resourceId: brick
+        - resourceId: sacred_plank
           amount: 20
-        - resourceId: rope
-          amount: 6
-          
-    - objectId: structure_temple_small
-      displayName: Small Shrine
-      description: A small temple shrine. Increases kingdom happiness.
+        - resourceId: moonlit_palm
+          amount: 15
+        - resourceId: ancestor_ash
+          amount: 4
+
+    - objectId: structure_naga_shrine
+      displayName: Naga Water Shrine
+      description: |
+        A small shrine blessed by the Naga people. Villagers come to 
+        pray for rain, safe fishing, and protection from floods.
       category: Structures
       rarity: Rare
-      gridSize: [4, 5, 4]
-      happinessBonus: 10
+      gridSize: [4, 4, 4]
+      happinessBonus: 15
+      specialEffect: water_blessing
       unlockLevel: 5
       buildCost:
-        - resourceId: carved_stone
-          amount: 20
-        - resourceId: gold_ingot
-          amount: 3
-          
-    - objectId: structure_temple_large
-      displayName: Grand Temple
-      description: A magnificent temple. Major happiness boost!
+        - resourceId: naga_pearl_stone
+          amount: 15
+        - resourceId: naga_scale
+          amount: 4
+        - resourceId: carved_relic_stone
+          amount: 6
+        - resourceId: blessed_lotus_fiber
+          amount: 10
+
+    - objectId: structure_apsara_pavilion
+      displayName: Apsara Dancing Pavilion
+      description: |
+        An ethereal pavilion where celestial dancers perform. Villagers 
+        who visit receive blessings of grace and joy.
       category: Structures
       rarity: Epic
-      gridSize: [8, 8, 8]
+      gridSize: [5, 5, 5]
       happinessBonus: 25
-      unlockLevel: 8
+      specialEffect: dance_blessing
+      unlockLevel: 7
       buildCost:
-        - resourceId: carved_stone
-          amount: 50
-        - resourceId: gold_ingot
-          amount: 10
-        - resourceId: jade
-          amount: 5
-          
-    - objectId: structure_market
-      displayName: Market Stall
-      description: Villagers can trade goods here.
+        - resourceId: moonwoven_silk
+          amount: 12
+        - resourceId: apsara_feather
+          amount: 6
+        - resourceId: celestial_jade
+          amount: 3
+        - resourceId: sacred_plank
+          amount: 20
+
+    - objectId: structure_grand_temple
+      displayName: Grand Temple of Funan
+      description: |
+        A magnificent temple honoring the old gods. Its spires touch 
+        the clouds, its foundations reach the nagas' realm below.
       category: Structures
-      rarity: Uncommon
-      gridSize: [3, 2, 3]
-      unlockLevel: 4
+      rarity: Legendary
+      gridSize: [10, 12, 10]
+      happinessBonus: 50
+      housingCapacity: 0
+      specialEffect: divine_presence
+      unlockLevel: 10
       buildCost:
-        - resourceId: wood
+        - resourceId: dragon_gold
           amount: 15
-        - resourceId: silk
-          amount: 4
-          
+        - resourceId: celestial_jade
+          amount: 8
+        - resourceId: carved_relic_stone
+          amount: 30
+        - resourceId: ancient_relic_shard
+          amount: 3
+        - resourceId: naga_king_tear
+          amount: 1
+
+    - objectId: structure_makara_forge
+      displayName: Makara's Dragon Forge
+      description: |
+        A forge heated by dragon fire essence. Here, star stones become 
+        bronze and the impossible becomes possible.
+      category: Structures
+      rarity: Epic
+      gridSize: [4, 4, 4]
+      specialEffect: dragon_crafting
+      unlockLevel: 6
+      buildCost:
+        - resourceId: volcano_obsidian
+          amount: 20
+        - resourceId: makara_hide
+          amount: 6
+        - resourceId: star_stone
+          amount: 15
+        - resourceId: sunforged_bronze
+          amount: 8
+
     # ==========================================================================
-    # DECORATIONS
+    # DECORATIONS - Mystical Adornments
     # ==========================================================================
-    - objectId: decor_naga_statue
-      displayName: Naga Statue
-      description: A majestic seven-headed Naga guardian.
+    - objectId: decor_naga_guardian
+      displayName: Seven-Headed Naga Guardian
+      description: |
+        A majestic statue of the seven-headed Naga King. Its scales 
+        shimmer with real naga offerings. Wards off all evil.
       category: Decorations
       rarity: Rare
-      gridSize: [2, 3, 1]
-      beautyBonus: 15
+      gridSize: [2, 4, 1]
+      beautyBonus: 20
+      happinessBonus: 10
+      specialEffect: evil_ward
       unlockLevel: 4
       buildCost:
-        - resourceId: carved_stone
-          amount: 8
-          
-    - objectId: decor_lion_statue
-      displayName: Singha Guardian
-      description: Temple lion guardian statue.
+        - resourceId: naga_pearl_stone
+          amount: 10
+        - resourceId: naga_scale
+          amount: 6
+        - resourceId: carved_relic_stone
+          amount: 4
+
+    - objectId: decor_singha_guardian
+      displayName: Golden Singha Guardian
+      description: |
+        A noble lion guardian woven with real singha mane threads. Its 
+        roar echoes in the spirit realm, protecting the kingdom.
       category: Decorations
       rarity: Uncommon
       gridSize: [1, 2, 1]
-      beautyBonus: 8
+      beautyBonus: 12
+      specialEffect: protection
       unlockLevel: 3
       buildCost:
-        - resourceId: stone
-          amount: 10
-          
-    - objectId: decor_lotus_pond
-      displayName: Lotus Pond
-      description: Peaceful lotus pond. Villagers love to relax here.
+        - resourceId: temple_granite
+          amount: 12
+        - resourceId: singha_mane_thread
+          amount: 3
+        - resourceId: sunforged_bronze
+          amount: 2
+
+    - objectId: decor_lotus_spirit_pond
+      displayName: Sacred Lotus Spirit Pond
+      description: |
+        A pond where lotus spirits dwell. At night, spirit lights dance 
+        on the water. Villagers find peace here.
       category: Decorations
       rarity: Uncommon
-      gridSize: [3, 1, 3]
-      beautyBonus: 12
-      happinessBonus: 5
+      gridSize: [4, 1, 4]
+      beautyBonus: 18
+      happinessBonus: 12
       unlockLevel: 2
       buildCost:
-        - resourceId: stone
+        - resourceId: blessed_lotus_fiber
           amount: 15
-        - resourceId: clay
-          amount: 10
-          
-    - objectId: decor_lantern
-      displayName: Stone Lantern
-      description: Traditional stone lantern. Lights up at night.
-      category: Decorations
-      rarity: Common
-      gridSize: [1, 2, 1]
-      beautyBonus: 3
-      unlockLevel: 1
-      buildCost:
-        - resourceId: stone
+        - resourceId: sacred_mud
+          amount: 20
+        - resourceId: naga_pearl_stone
           amount: 4
-          
-    - objectId: decor_elephant_statue
-      displayName: Elephant Statue
-      description: A noble elephant figure symbolizing wisdom.
+
+    - objectId: decor_prohm_fossil
+      displayName: Ancient Prohm Fossil Display
+      description: |
+        Fossils from Prohm's ancestors displayed with reverence. They 
+        pulse with primordial energy and ancient wisdom.
+      category: Decorations
+      rarity: Epic
+      gridSize: [3, 2, 2]
+      beautyBonus: 25
+      specialEffect: ancient_wisdom
+      unlockLevel: 6
+      buildCost:
+        - resourceId: prohm_fossil_shard
+          amount: 5
+        - resourceId: star_stone
+          amount: 8
+        - resourceId: temple_granite
+          amount: 10
+
+    - objectId: decor_apsara_lantern
+      displayName: Apsara Blessing Lantern
+      description: |
+        A floating lantern lit with celestial feather essence. Never 
+        burns out, guides lost spirits to peace.
       category: Decorations
       rarity: Rare
-      gridSize: [2, 2, 2]
+      gridSize: [1, 3, 1]
       beautyBonus: 10
-      unlockLevel: 5
+      specialEffect: spirit_guide
+      unlockLevel: 4
       buildCost:
-        - resourceId: carved_stone
-          amount: 12
-          
-    - objectId: decor_flag
-      displayName: Kingdom Banner
-      description: Fly your kingdom's colors!
+        - resourceId: apsara_feather
+          amount: 2
+        - resourceId: moonwoven_silk
+          amount: 3
+        - resourceId: sunforged_bronze
+          amount: 2
+
+    - objectId: decor_elephant_blessing_fountain
+      displayName: Elephant Blessing Fountain
+      description: |
+        A fountain with blessed ivory spouts. The water carries the 
+        memory and wisdom of the great elephants.
+      category: Decorations
+      rarity: Epic
+      gridSize: [3, 3, 3]
+      beautyBonus: 30
+      happinessBonus: 20
+      unlockLevel: 7
+      buildCost:
+        - resourceId: elephant_blessing_ivory
+          amount: 4
+        - resourceId: naga_pearl_stone
+          amount: 8
+        - resourceId: blessed_lotus_fiber
+          amount: 10
+
+    - objectId: decor_spirit_bamboo_grove
+      displayName: Sacred Spirit Bamboo Grove
+      description: |
+        A grove of spirit bamboo that sways without wind. Forest 
+        spirits gather here to share ancient secrets.
       category: Decorations
       rarity: Common
-      gridSize: [1, 3, 1]
-      beautyBonus: 2
-      isPaintable: true
+      gridSize: [3, 4, 3]
+      beautyBonus: 8
+      resourceGeneration: spirit_bamboo
       unlockLevel: 1
       buildCost:
-        - resourceId: bamboo
-          amount: 2
-        - resourceId: silk
-          amount: 1
-          
+        - resourceId: spirit_bamboo
+          amount: 20
+        - resourceId: sacred_mud
+          amount: 10
+
+    - objectId: decor_whisper_vine_arch
+      displayName: Whisper Vine Archway
+      description: |
+        An archway grown from whisper vines. Those who pass through 
+        may hear secrets of the past on the wind.
+      category: Decorations
+      rarity: Uncommon
+      gridSize: [2, 3, 1]
+      beautyBonus: 10
+      specialEffect: whispers
+      unlockLevel: 3
+      buildCost:
+        - resourceId: whisper_vine
+          amount: 15
+        - resourceId: sacred_banyan_root
+          amount: 4
+
     # ==========================================================================
-    # FUNCTIONAL BUILDINGS
+    # FUNCTIONAL - Mystical Workshops
     # ==========================================================================
-    - objectId: func_storage
-      displayName: Storage Chest
-      description: Store your resources safely.
+    - objectId: func_spirit_storage
+      displayName: Spirit-Guarded Chest
+      description: |
+        A chest protected by minor spirits. They keep your treasures 
+        safe and count them when you're away.
       category: Functional
       rarity: Common
       gridSize: [1, 1, 1]
-      storageBonus: 100
+      storageBonus: 150
       unlockLevel: 1
       buildCost:
-        - resourceId: wood
-          amount: 10
-          
-    - objectId: func_workbench
-      displayName: Crafting Workbench
-      description: Craft refined materials here.
+        - resourceId: spirit_bamboo
+          amount: 8
+        - resourceId: spirit_lacquer
+          amount: 2
+
+    - objectId: func_ancestor_altar
+      displayName: Ancestor Crafting Altar
+      description: |
+        A workbench blessed by ancestor spirits. Their guidance makes 
+        your crafting faster and sometimes magical.
       category: Functional
       rarity: Common
       gridSize: [2, 1, 1]
+      specialEffect: crafting_speed
       unlockLevel: 2
       buildCost:
-        - resourceId: wood
-          amount: 15
-        - resourceId: stone
-          amount: 5
-          
-    - objectId: func_forge
-      displayName: Stone Forge
-      description: Craft metal items and refine materials.
-      category: Functional
-      rarity: Uncommon
-      gridSize: [2, 2, 2]
-      unlockLevel: 4
-      buildCost:
-        - resourceId: stone
-          amount: 25
-        - resourceId: clay
-          amount: 15
-          
-    # ==========================================================================
-    # NATURE
-    # ==========================================================================
-    - objectId: nature_tree_palm
-      displayName: Palm Tree
-      description: A swaying palm tree.
-      category: Nature
-      rarity: Common
-      gridSize: [1, 4, 1]
-      beautyBonus: 2
-      unlockLevel: 1
-      buildCost:
-        - resourceId: wood
-          amount: 3
-          
-    - objectId: nature_tree_banyan
-      displayName: Banyan Tree
-      description: Ancient banyan with spreading roots.
-      category: Nature
-      rarity: Uncommon
-      gridSize: [4, 5, 4]
-      beautyBonus: 8
-      happinessBonus: 3
-      unlockLevel: 3
-      buildCost:
-        - resourceId: wood
+        - resourceId: sacred_plank
           amount: 10
-          
-    - objectId: nature_flowers
-      displayName: Flower Garden
-      description: Beautiful tropical flowers.
-      category: Nature
-      rarity: Common
-      gridSize: [2, 1, 2]
-      beautyBonus: 4
-      unlockLevel: 1
-      buildCost:
-        - resourceId: palm_leaves
-          amount: 5
-          
-    - objectId: nature_bamboo_grove
-      displayName: Bamboo Grove
-      description: A peaceful bamboo grove.
-      category: Nature
-      rarity: Common
-      gridSize: [2, 3, 2]
-      beautyBonus: 5
-      resourceGeneration: bamboo
-      unlockLevel: 2
-      buildCost:
-        - resourceId: bamboo
-          amount: 15
+        - resourceId: ancestor_ash
+          amount: 4
+        - resourceId: spirit_lacquer
+          amount: 2
 
+    - objectId: func_moonweaver_loom
+      displayName: Moonweaver's Loom
+      description: |
+        A loom that can only work under moonlight. Creates the finest 
+        moonwoven silk and fabrics of legend.
+      category: Functional
+      rarity: Rare
+      gridSize: [2, 2, 2]
+      specialEffect: silk_crafting
+      unlockLevel: 5
+      buildCost:
+        - resourceId: sacred_banyan_root
+          amount: 8
+        - resourceId: blessed_lotus_fiber
+          amount: 12
+        - resourceId: moonwoven_silk
+          amount: 3
+
+    - objectId: func_star_smelter
+      displayName: Star Stone Smelter
+      description: |
+        A forge that burns with star fire. Can smelt meteoric metals 
+        and create sunforged bronze of legendary quality.
+      category: Functional
+      rarity: Epic
+      gridSize: [3, 3, 3]
+      specialEffect: metal_crafting
+      unlockLevel: 6
+      buildCost:
+        - resourceId: star_stone
+          amount: 20
+        - resourceId: volcano_obsidian
+          amount: 10
+        - resourceId: sunforged_bronze
+          amount: 6
