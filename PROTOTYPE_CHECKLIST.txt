@@ -1,0 +1,281 @@
+================================================================================
+WHAT THE FUNAN - PLAYABLE PROTOTYPE CHECKLIST 🎮
+================================================================================
+Target: Minimum Viable Demo (3-4 months)
+Goal: One playable level showcasing core gameplay
+
+Legend:
+  ✅ = Complete (code ready)
+  ⬜ = Needs Asset/Implementation
+  🎯 = Critical Priority
+
+================================================================================
+1. PLAYABLE CHARACTERS (Pick 3-5 to start)
+================================================================================
+
+Choose from existing profiles (code complete):
+
+🎯 [ ] Champa (Elephant) - Easy to animate, iconic
+🎯 [ ] Kavi (Monkey) - Fast, fun gameplay
+🎯 [ ] Naga Prince - Unique serpent movement
+   [ ] Mealea (Dancer) - Flying mechanics
+   [ ] Sena (Lion) - Power character
+
+For each character you need:
+  ⬜ 3D model OR 2D sprite
+  ⬜ Idle animation
+  ⬜ Walk/run animation
+  ⬜ 3 attack animations (basic, special, ultimate)
+  ⬜ Hit reaction animation
+  ⬜ Death animation
+
+================================================================================
+2. ONE ENVIRONMENT (Angkor Temple)
+================================================================================
+
+🎯 ⬜ Temple courtyard arena (playable area)
+🎯 ⬜ Ground texture/material
+🎯 ⬜ Temple walls/pillars (can be simple)
+   ⬜ Skybox
+   ⬜ Basic lighting setup
+   ⬜ Camera boundaries
+
+================================================================================
+3. COMBAT SYSTEM (Core Loop)
+================================================================================
+
+✅ Combat controller script ready
+✅ Character stats system ready
+✅ Attack definitions ready
+
+🎯 ⬜ Basic attack (tap to attack)
+🎯 ⬜ Special attack (hold/swipe)
+🎯 ⬜ Health bar UI
+🎯 ⬜ Energy bar UI
+   ⬜ Damage numbers popup
+   ⬜ Hit effects (particles)
+   ⬜ Screen shake on hit
+
+================================================================================
+4. ENEMIES (2-3 types)
+================================================================================
+
+🎯 ⬜ Basic enemy (shadow creature)
+      - Simple AI: walk toward player, attack
+      - 3D model or 2D sprite
+      - Idle, walk, attack, death animations
+
+🎯 ⬜ Ranged enemy (shadow archer)
+      - Shoots projectiles
+      - Keeps distance
+
+   ⬜ Mini-boss (shadow giant)
+      - More HP, bigger attacks
+
+================================================================================
+5. USER INTERFACE (Essential only)
+================================================================================
+
+✅ UI manager script ready
+
+🎯 ⬜ Main menu screen
+      - Play button
+      - Character select button
+      - Settings button
+
+🎯 ⬜ Character select screen
+      - Show 3-5 characters
+      - Select and confirm
+
+🎯 ⬜ Gameplay HUD
+      - Health bar
+      - Energy bar
+      - Attack buttons (mobile)
+      - Pause button
+
+🎯 ⬜ Pause menu
+      - Resume
+      - Restart
+      - Quit
+
+   ⬜ Victory screen
+   ⬜ Defeat screen
+
+================================================================================
+6. CONTROLS (Mobile First)
+================================================================================
+
+🎯 ⬜ Virtual joystick (movement)
+🎯 ⬜ Attack button
+🎯 ⬜ Special attack button
+   ⬜ Dodge/roll button
+
+OR for prototype: Simple tap-to-move, tap-enemy-to-attack
+
+================================================================================
+7. AUDIO (Minimum)
+================================================================================
+
+✅ Audio manager ready
+
+🎯 ⬜ 1 background music track
+🎯 ⬜ Attack sound effect (1-2 sounds)
+🎯 ⬜ Hit sound effect
+🎯 ⬜ Enemy death sound
+   ⬜ Menu click sound
+   ⬜ Victory jingle
+   ⬜ Defeat jingle
+
+================================================================================
+8. GAME FLOW
+================================================================================
+
+🎯 ⬜ Main Menu → Character Select → Gameplay → Win/Lose → Main Menu
+
+Simple level structure:
+  1. Player spawns in arena
+  2. Waves of enemies appear (3 waves)
+  3. Defeat all enemies = Victory
+  4. Player dies = Defeat
+
+================================================================================
+SIMPLIFIED TASK LIST (Do in this order)
+================================================================================
+
+WEEK 1-2: FOUNDATION
+  [ ] Set up Unity project structure
+  [ ] Import/create 1 character model + animations
+  [ ] Create simple test arena
+  [ ] Basic character movement working
+
+WEEK 3-4: COMBAT
+  [ ] Attack system working
+  [ ] Create 1 enemy type
+  [ ] Enemy AI (chase + attack)
+  [ ] Health system + death
+
+WEEK 5-6: UI & FLOW
+  [ ] Main menu
+  [ ] Character select (even with 1 character)
+  [ ] Gameplay HUD
+  [ ] Win/lose conditions
+
+WEEK 7-8: POLISH
+  [ ] Add 1-2 more characters
+  [ ] Add 1-2 more enemy types
+  [ ] Sound effects
+  [ ] Music
+  [ ] Bug fixes
+
+WEEK 9-10: TESTING
+  [ ] Mobile build test
+  [ ] Performance check
+  [ ] Playtest feedback
+  [ ] Final polish
+
+================================================================================
+ASSET SHOPPING LIST (What to create/buy)
+================================================================================
+
+OPTION A: 2D SPRITES (Faster)
+  - 5 character sprites with animations
+  - 3 enemy sprites with animations
+  - Temple background/tileset
+  - UI kit (buttons, bars, panels)
+  Total: Can use asset store or commission
+
+OPTION B: 3D LOW-POLY (Recommended for your vision)
+  - 5 character models + rigs + animations
+  - 3 enemy models + animations
+  - Temple environment kit
+  - UI kit
+  Total: More work but matches game vision
+
+OPTION C: 3D STYLIZED (Best quality)
+  - Full character models with detailed textures
+  - Fully decorated temple environment
+  - Custom UI design
+  Total: Most expensive/time-consuming
+
+================================================================================
+MINIMUM VIABLE PROTOTYPE REQUIREMENTS
+================================================================================
+
+✅ = Already have code for this
+⬜ = Still need
+
+Characters:
+  ✅ Stats system
+  ✅ Ability definitions
+  ⬜ 1 playable character with model + animations
+
+Combat:
+  ✅ Combat controller
+  ⬜ Working attack → damage → death flow
+
+Environment:
+  ⬜ 1 playable arena
+
+Enemies:
+  ⬜ 1 enemy type that can fight back
+
+UI:
+  ✅ UI framework
+  ⬜ Functional menus + HUD
+
+Audio:
+  ✅ Audio system
+  ⬜ Basic sounds (5-10 total)
+
+================================================================================
+SKIP FOR PROTOTYPE (Do Later)
+================================================================================
+
+❌ Kingdom building
+❌ Robot system
+❌ Pet fusion
+❌ Daily challenges
+❌ Physical challenges (shake, slice)
+❌ Mini-games
+❌ Cinematics
+❌ Story/quests
+❌ Multiplayer
+❌ IAP/Monetization
+❌ Social features
+❌ 21 characters (start with 3-5)
+❌ Educational codex
+❌ Seasonal events
+❌ Achievements
+❌ Cloud saves
+❌ Analytics
+
+================================================================================
+PROTOTYPE SUCCESS CRITERIA
+================================================================================
+
+The prototype is DONE when:
+
+  ☐ Player can select a character
+  ☐ Player can move around the arena
+  ☐ Player can attack enemies
+  ☐ Enemies can attack back
+  ☐ Someone can die (player or enemy)
+  ☐ Game shows win or lose screen
+  ☐ Player can restart or return to menu
+  ☐ Runs on mobile device at 30+ FPS
+  ☐ Fun to play for at least 5 minutes
+
+================================================================================
+QUICK START: TODAY
+================================================================================
+
+1. [ ] Decide: 2D or 3D art style?
+2. [ ] Find/commission 1 character asset
+3. [ ] Create empty Unity scene "PrototypeArena"
+4. [ ] Get character moving with joystick
+5. [ ] Make character attack (even without animation)
+
+That's it. Start there! 🚀
+
+================================================================================
+
