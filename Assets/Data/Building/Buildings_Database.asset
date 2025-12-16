@@ -1,0 +1,419 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Buildings_Database
+  m_EditorClassIdentifier: 
+  
+  # ============================================================================
+  # WHAT THE FUNAN - BUILDING DATABASE
+  # Khmer-inspired architecture with Southeast Asian aesthetics
+  # ============================================================================
+  
+  buildings:
+  
+    # ==========================================================================
+    # FOUNDATIONS
+    # ==========================================================================
+    - objectId: foundation_wood
+      displayName: Wooden Platform
+      description: Basic wooden floor platform. A good start for any structure.
+      category: Foundation
+      rarity: Common
+      gridSize: [2, 1, 2]
+      isFoundation: true
+      unlockLevel: 1
+      buildCost:
+        - resourceId: wood
+          amount: 4
+          
+    - objectId: foundation_bamboo
+      displayName: Bamboo Platform
+      description: Light and flexible bamboo flooring.
+      category: Foundation
+      rarity: Common
+      gridSize: [2, 1, 2]
+      isFoundation: true
+      unlockLevel: 1
+      buildCost:
+        - resourceId: bamboo
+          amount: 6
+          
+    - objectId: foundation_stone
+      displayName: Stone Platform
+      description: Sturdy stone foundation. Perfect for important buildings.
+      category: Foundation
+      rarity: Uncommon
+      gridSize: [2, 1, 2]
+      isFoundation: true
+      unlockLevel: 3
+      buildCost:
+        - resourceId: stone
+          amount: 8
+          
+    - objectId: foundation_carved
+      displayName: Carved Stone Platform
+      description: Beautifully carved stone with Khmer patterns.
+      category: Foundation
+      rarity: Rare
+      gridSize: [2, 1, 2]
+      isFoundation: true
+      unlockLevel: 5
+      buildCost:
+        - resourceId: carved_stone
+          amount: 4
+          
+    # ==========================================================================
+    # WALLS
+    # ==========================================================================
+    - objectId: wall_bamboo
+      displayName: Bamboo Wall
+      description: Simple bamboo wall. Provides basic privacy.
+      category: Walls
+      rarity: Common
+      gridSize: [1, 2, 1]
+      canStack: true
+      unlockLevel: 1
+      buildCost:
+        - resourceId: bamboo
+          amount: 3
+          
+    - objectId: wall_wood
+      displayName: Wooden Wall
+      description: Solid wooden wall with carved details.
+      category: Walls
+      rarity: Common
+      gridSize: [1, 2, 1]
+      canStack: true
+      unlockLevel: 2
+      buildCost:
+        - resourceId: plank
+          amount: 4
+          
+    - objectId: wall_stone
+      displayName: Stone Wall
+      description: Strong stone wall. Built to last generations.
+      category: Walls
+      rarity: Uncommon
+      gridSize: [1, 2, 1]
+      canStack: true
+      unlockLevel: 4
+      buildCost:
+        - resourceId: stone
+          amount: 6
+          
+    - objectId: wall_temple
+      displayName: Temple Wall
+      description: Ornate temple wall with carved deities.
+      category: Walls
+      rarity: Rare
+      gridSize: [1, 3, 1]
+      canStack: true
+      unlockLevel: 6
+      buildCost:
+        - resourceId: carved_stone
+          amount: 6
+        - resourceId: lacquer
+          amount: 2
+          
+    # ==========================================================================
+    # ROOFS
+    # ==========================================================================
+    - objectId: roof_thatch
+      displayName: Thatched Roof
+      description: Traditional palm leaf roofing. Cool in summer.
+      category: Roofs
+      rarity: Common
+      gridSize: [3, 1, 3]
+      unlockLevel: 1
+      buildCost:
+        - resourceId: palm_leaves
+          amount: 8
+        - resourceId: rope
+          amount: 2
+          
+    - objectId: roof_tile
+      displayName: Clay Tile Roof
+      description: Durable clay tiles in traditional style.
+      category: Roofs
+      rarity: Uncommon
+      gridSize: [3, 1, 3]
+      unlockLevel: 3
+      buildCost:
+        - resourceId: brick
+          amount: 12
+          
+    - objectId: roof_temple
+      displayName: Temple Spire
+      description: Golden temple spire reaching to the heavens.
+      category: Roofs
+      rarity: Rare
+      gridSize: [2, 4, 2]
+      unlockLevel: 7
+      buildCost:
+        - resourceId: carved_stone
+          amount: 8
+        - resourceId: gold_ingot
+          amount: 2
+          
+    # ==========================================================================
+    # STRUCTURES (Complete Buildings)
+    # ==========================================================================
+    - objectId: structure_hut
+      displayName: Village Hut
+      description: Simple stilt house. Home for 2 villagers.
+      category: Structures
+      rarity: Common
+      gridSize: [3, 3, 3]
+      housingCapacity: 2
+      unlockLevel: 1
+      buildCost:
+        - resourceId: wood
+          amount: 20
+        - resourceId: palm_leaves
+          amount: 10
+        - resourceId: rope
+          amount: 4
+          
+    - objectId: structure_house
+      displayName: Family House
+      description: Larger house with carved details. Home for 4 villagers.
+      category: Structures
+      rarity: Uncommon
+      gridSize: [4, 3, 4]
+      housingCapacity: 4
+      unlockLevel: 3
+      buildCost:
+        - resourceId: plank
+          amount: 30
+        - resourceId: brick
+          amount: 20
+        - resourceId: rope
+          amount: 6
+          
+    - objectId: structure_temple_small
+      displayName: Small Shrine
+      description: A small temple shrine. Increases kingdom happiness.
+      category: Structures
+      rarity: Rare
+      gridSize: [4, 5, 4]
+      happinessBonus: 10
+      unlockLevel: 5
+      buildCost:
+        - resourceId: carved_stone
+          amount: 20
+        - resourceId: gold_ingot
+          amount: 3
+          
+    - objectId: structure_temple_large
+      displayName: Grand Temple
+      description: A magnificent temple. Major happiness boost!
+      category: Structures
+      rarity: Epic
+      gridSize: [8, 8, 8]
+      happinessBonus: 25
+      unlockLevel: 8
+      buildCost:
+        - resourceId: carved_stone
+          amount: 50
+        - resourceId: gold_ingot
+          amount: 10
+        - resourceId: jade
+          amount: 5
+          
+    - objectId: structure_market
+      displayName: Market Stall
+      description: Villagers can trade goods here.
+      category: Structures
+      rarity: Uncommon
+      gridSize: [3, 2, 3]
+      unlockLevel: 4
+      buildCost:
+        - resourceId: wood
+          amount: 15
+        - resourceId: silk
+          amount: 4
+          
+    # ==========================================================================
+    # DECORATIONS
+    # ==========================================================================
+    - objectId: decor_naga_statue
+      displayName: Naga Statue
+      description: A majestic seven-headed Naga guardian.
+      category: Decorations
+      rarity: Rare
+      gridSize: [2, 3, 1]
+      beautyBonus: 15
+      unlockLevel: 4
+      buildCost:
+        - resourceId: carved_stone
+          amount: 8
+          
+    - objectId: decor_lion_statue
+      displayName: Singha Guardian
+      description: Temple lion guardian statue.
+      category: Decorations
+      rarity: Uncommon
+      gridSize: [1, 2, 1]
+      beautyBonus: 8
+      unlockLevel: 3
+      buildCost:
+        - resourceId: stone
+          amount: 10
+          
+    - objectId: decor_lotus_pond
+      displayName: Lotus Pond
+      description: Peaceful lotus pond. Villagers love to relax here.
+      category: Decorations
+      rarity: Uncommon
+      gridSize: [3, 1, 3]
+      beautyBonus: 12
+      happinessBonus: 5
+      unlockLevel: 2
+      buildCost:
+        - resourceId: stone
+          amount: 15
+        - resourceId: clay
+          amount: 10
+          
+    - objectId: decor_lantern
+      displayName: Stone Lantern
+      description: Traditional stone lantern. Lights up at night.
+      category: Decorations
+      rarity: Common
+      gridSize: [1, 2, 1]
+      beautyBonus: 3
+      unlockLevel: 1
+      buildCost:
+        - resourceId: stone
+          amount: 4
+          
+    - objectId: decor_elephant_statue
+      displayName: Elephant Statue
+      description: A noble elephant figure symbolizing wisdom.
+      category: Decorations
+      rarity: Rare
+      gridSize: [2, 2, 2]
+      beautyBonus: 10
+      unlockLevel: 5
+      buildCost:
+        - resourceId: carved_stone
+          amount: 12
+          
+    - objectId: decor_flag
+      displayName: Kingdom Banner
+      description: Fly your kingdom's colors!
+      category: Decorations
+      rarity: Common
+      gridSize: [1, 3, 1]
+      beautyBonus: 2
+      isPaintable: true
+      unlockLevel: 1
+      buildCost:
+        - resourceId: bamboo
+          amount: 2
+        - resourceId: silk
+          amount: 1
+          
+    # ==========================================================================
+    # FUNCTIONAL BUILDINGS
+    # ==========================================================================
+    - objectId: func_storage
+      displayName: Storage Chest
+      description: Store your resources safely.
+      category: Functional
+      rarity: Common
+      gridSize: [1, 1, 1]
+      storageBonus: 100
+      unlockLevel: 1
+      buildCost:
+        - resourceId: wood
+          amount: 10
+          
+    - objectId: func_workbench
+      displayName: Crafting Workbench
+      description: Craft refined materials here.
+      category: Functional
+      rarity: Common
+      gridSize: [2, 1, 1]
+      unlockLevel: 2
+      buildCost:
+        - resourceId: wood
+          amount: 15
+        - resourceId: stone
+          amount: 5
+          
+    - objectId: func_forge
+      displayName: Stone Forge
+      description: Craft metal items and refine materials.
+      category: Functional
+      rarity: Uncommon
+      gridSize: [2, 2, 2]
+      unlockLevel: 4
+      buildCost:
+        - resourceId: stone
+          amount: 25
+        - resourceId: clay
+          amount: 15
+          
+    # ==========================================================================
+    # NATURE
+    # ==========================================================================
+    - objectId: nature_tree_palm
+      displayName: Palm Tree
+      description: A swaying palm tree.
+      category: Nature
+      rarity: Common
+      gridSize: [1, 4, 1]
+      beautyBonus: 2
+      unlockLevel: 1
+      buildCost:
+        - resourceId: wood
+          amount: 3
+          
+    - objectId: nature_tree_banyan
+      displayName: Banyan Tree
+      description: Ancient banyan with spreading roots.
+      category: Nature
+      rarity: Uncommon
+      gridSize: [4, 5, 4]
+      beautyBonus: 8
+      happinessBonus: 3
+      unlockLevel: 3
+      buildCost:
+        - resourceId: wood
+          amount: 10
+          
+    - objectId: nature_flowers
+      displayName: Flower Garden
+      description: Beautiful tropical flowers.
+      category: Nature
+      rarity: Common
+      gridSize: [2, 1, 2]
+      beautyBonus: 4
+      unlockLevel: 1
+      buildCost:
+        - resourceId: palm_leaves
+          amount: 5
+          
+    - objectId: nature_bamboo_grove
+      displayName: Bamboo Grove
+      description: A peaceful bamboo grove.
+      category: Nature
+      rarity: Common
+      gridSize: [2, 3, 2]
+      beautyBonus: 5
+      resourceGeneration: bamboo
+      unlockLevel: 2
+      buildCost:
+        - resourceId: bamboo
+          amount: 15
+

@@ -172,8 +172,57 @@ Scenes:
 Documentation:
 - AI_VIDEO_PROMPTS.txt - Prompts for Runway/Pika video generation
 
-TOTAL FILES CREATED: 90+
-TOTAL LINES OF CODE: 30,000+
+================================================================================
+VERSION 0.4.0 - Kingdom Builder Update
+================================================================================
+Date: December 15, 2024
+
+NEW FEATURE: KINGDOM BUILDER (Minecraft/Roblox Style)
+-----------------------------------------------------
+Players can now build their own Funan kingdom!
+
+Core Systems:
+- Assets/Scripts/Building/BuildingSystem.cs - Grid-based placement (Minecraft-style)
+- Assets/Scripts/Building/BuildableObject.cs - Component for placeable objects
+- Assets/Scripts/Building/KingdomManager.cs - Kingdom progression and stats
+- Assets/Scripts/Building/ResourceManager.cs - Resource gathering and crafting
+- Assets/Scripts/Building/ResourceSource.cs - Gatherable world objects
+- Assets/Scripts/Building/BuildingDatabase.cs - All building definitions
+- Assets/Scripts/Building/VillagerAI.cs - AI for kingdom villagers
+- Assets/Scripts/Building/KingdomSaveManager.cs - Multi-slot save system
+
+UI:
+- Assets/Scripts/UI/Screens/BuildModeUI.cs - Full building mode interface
+
+Data:
+- Assets/Data/Building/Buildings_Database.asset - 40+ building types
+
+Building Categories:
+- Foundations (wood, bamboo, stone, carved stone)
+- Walls (bamboo, wood, stone, temple walls)
+- Roofs (thatch, tile, temple spires)
+- Complete Structures (huts, houses, temples, markets)
+- Decorations (Naga statues, lion guardians, lotus ponds)
+- Functional (storage, workbenches, forges)
+- Nature (palm trees, banyan trees, flower gardens)
+
+Resources:
+- Basic: Wood, Stone, Bamboo, Clay, Palm Leaves, Rope
+- Refined: Planks, Bricks, Carved Stone, Silk, Lacquer
+- Precious: Gold Ingots, Jade, Pearls
+- Special: Naga Scales, Apsara Feathers, Ancient Relics
+
+Kingdom Features:
+- 10 kingdom levels with unlock progression
+- Villager population with AI behaviors
+- Happiness system affecting productivity
+- Offline earnings based on villagers
+- Resource generation from buildings
+- Multi-slot save system with cloud sync
+- Export/import kingdoms for sharing
+
+TOTAL FILES CREATED: 100+
+TOTAL LINES OF CODE: 38,000+
 
 GIT REPOSITORY
 --------------
