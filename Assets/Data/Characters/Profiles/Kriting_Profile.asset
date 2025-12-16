@@ -247,13 +247,13 @@ MonoBehaviour:
         - "She doesn't see a monster. She sees family."
         - "My elephant heart beats stronger near her."
 
-    - characterId: singha_lion
-      characterName: Singha
+    - characterId: sena_lion
+      characterName: Sena
       type: Friend
       affinity: 80
       relationshipDescription: |
-        Singha understands Kriting's lion nature. They hunt together 
-        sometimes, and Singha teaches him to embrace his fierce side.
+        Sena understands Kriting's lion nature. They hunt together 
+        sometimes, and Sena teaches him to embrace his fierce side.
       specialDialogue:
         - "The lion understands my rage. He helps me control it."
         - "We speak in roars. It's... simpler."
@@ -274,7 +274,7 @@ MonoBehaviour:
   _occupation: Threshold Guardian / Sacred Protector
   _familyBackground: |
     Born from stone and prayer, he has no traditional family. He considers 
-    the guardians his family now - especially Champa and Singha who 
+    the guardians his family now - especially Champa and Sena who 
     understand his two natures.
   _backstory: |
     See full biography above.
@@ -282,7 +282,7 @@ MonoBehaviour:
     - "My first breath as stone became flesh. The confusion of two minds."
     - "Years of isolation, watching travelers pray to my statue while I stood silent."
     - "Champa's trunk-greeting - the first time anyone spoke to my elephant self."
-    - "Singha's accepting roar - the first time my lion self felt kinship."
+    - "Sena's accepting roar - the first time my lion self felt kinship."
     - "Achieving perfect balance for the first time - both natures as one."
 
   # UNLOCK

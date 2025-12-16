@@ -253,12 +253,12 @@ MonoBehaviour:
         - "Princess... why do you not fear me?"
         - "Your forgiveness is a gift I have not earned."
 
-    - characterId: singha_lion
-      characterName: Singha
+    - characterId: sena_lion
+      characterName: Sena
       type: Friend
       affinity: 75
       relationshipDescription: |
-        Two ancient guardians bound by duty. Garuda and Singha understand 
+        Two ancient guardians bound by duty. Garuda and Sena understand 
         each other's burden of protecting others for eternity.
       specialDialogue:
         - "Lion. You know the weight of eternal duty."

@@ -77,7 +77,7 @@ namespace WhatTheFunan.Building
             // =================================================================
             new ResourceDefinition { resourceId = "naga_scale", displayName = "Shed Naga Scale", type = ResourceType.Special },
             new ResourceDefinition { resourceId = "makara_hide", displayName = "Makara Dragon Hide", type = ResourceType.Special },
-            new ResourceDefinition { resourceId = "singha_mane_thread", displayName = "Singha Mane Thread", type = ResourceType.Special },
+            new ResourceDefinition { resourceId = "sena_mane_thread", displayName = "Sena Mane Thread", type = ResourceType.Special },
             new ResourceDefinition { resourceId = "elephant_blessing_ivory", displayName = "Blessed Ivory Fragment", type = ResourceType.Special },
             new ResourceDefinition { resourceId = "apsara_feather", displayName = "Apsara Celestial Feather", type = ResourceType.Special },
             new ResourceDefinition { resourceId = "prohm_fossil_shard", displayName = "Prohm's Fossil Shard", type = ResourceType.Special },

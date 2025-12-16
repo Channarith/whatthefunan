@@ -282,7 +282,7 @@ namespace WhatTheFunan.Cinematics
             Debug.Log("[IntroCinematic] Scene 3: The Guardian Creatures");
             
             // Would show montage of guardians
-            // Champa, Kavi, Naga, Apsara, Makara, Prohm, Singha
+            // Champa, Kavi, Naga, Apsara, Makara, Prohm, Sena
             
             yield return CrossfadeBackground();
             

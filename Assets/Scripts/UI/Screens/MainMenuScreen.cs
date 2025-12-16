@@ -46,7 +46,7 @@ namespace WhatTheFunan.UI.Screens
         #region State
         private bool _hasSaveData;
         private int _selectedCharacterIndex;
-        private string[] _showcaseCharacters = { "champa", "kavi", "naga", "mealea", "makara", "prohm", "singha" };
+        private string[] _showcaseCharacters = { "champa", "kavi", "naga", "mealea", "makara", "prohm", "sena" };
         #endregion
 
         #region Unity Lifecycle

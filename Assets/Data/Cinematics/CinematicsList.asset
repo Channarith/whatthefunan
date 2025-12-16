@@ -167,17 +167,17 @@ MonoBehaviour:
         timeline: Timeline_Unlock_Makara
         music: Music_Dragon_Rise
         
-    - cinematicId: unlock_singha
+    - cinematicId: unlock_sena
       displayName: "The Lion's Roar"
       type: timeline
       duration: 20
       isSkippable: true
-      triggerPoint: singha_quest_complete
+      triggerPoint: sena_quest_complete
       description: |
-        Singha the guardian lion breaks free from corruption.
+        Sena the guardian lion breaks free from corruption.
         Noble roar echoes across the land.
       assets:
-        timeline: Timeline_Unlock_Singha
+        timeline: Timeline_Unlock_Sena
         music: Music_Lion_Triumph
   
     # ==========================================================================

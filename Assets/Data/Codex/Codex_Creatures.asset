@@ -49,16 +49,16 @@ MonoBehaviour:
         symbolizing the connection between water creatures.
       unlockMethod: discover
       
-    - entryId: codex_singha
-      title: Singha - The Guardian Lion
+    - entryId: codex_sena
+      title: Sena - The Guardian Lion
       content: |
-        Singha (or Singh) means lion in Sanskrit. These lion guardians protect 
+        Sena means warrior or soldier in Khmer. These lion guardians protect 
         temples and palaces throughout Southeast Asia.
         
         Interestingly, real lions never lived in this region! The image came from 
         India through trade and religious connections.
         
-        Singha statues often guard temple entrances in pairs.
+        Sena statues often guard temple entrances in pairs.
       unlockMethod: discover
       
     - entryId: codex_taprohm_creature

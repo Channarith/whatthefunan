@@ -266,7 +266,7 @@ ORIGINAL 7 GUARDIANS (Starters):
 4. MEALEA - Celestial Dancer/Apsara (Support, Light)
 5. MAKARA - Sea Dragon Chef (DPS, Fire)
 6. PROHM - Ancient Guardian/Dinosaur (Tank, Earth)
-7. SINGHA - Guardian Lion (AllRounder, None)
+7. SENA - Guardian Lion (AllRounder, None)
 
 NEW 14 GUARDIANS:
 -----------------

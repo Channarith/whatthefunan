@@ -10,47 +10,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
-  m_Name: Singha_Profile
+  m_Name: Sena_Profile
   m_EditorClassIdentifier: 
 
   # ============================================================================
-  # SINGHA - THE GUARDIAN LION
-  # Guardian of Honor and Duty
+  # SENA - THE GUARDIAN LION
+  # Guardian of Honor and Duty (Khmer: Soldier/Warrior)
   # ============================================================================
 
   # IDENTITY
-  _characterId: singha_lion
-  _displayName: Singha
+  _characterId: sena_lion
+  _displayName: Sena
   _title: The Unbreaking Shield
-  _species: Temple Guardian Lion (Singha)
+  _species: Temple Guardian Lion (Khmer Guardian)
   _shortDescription: |
     A noble lion guardian bound by duty and honor. He takes his role as 
     protector very, VERY seriously. Too seriously, some might say.
   _fullBiography: |
-    For seven generations, Singha's family has guarded the great gates of 
+    For seven generations, Sena's family has guarded the great gates of 
     Funan. His father guarded the gates. His father's father guarded the 
-    gates. Singha was born knowing one truth: he would guard those gates, 
+    gates. Sena was born knowing one truth: he would guard those gates, 
     and nothing - NOTHING - would get through.
     
-    He trained from birth. While other lion cubs played, Singha practiced 
+    He trained from birth. While other lion cubs played, Sena practiced 
     formations. While they napped, he did patrol exercises. By age five, 
     he could recite the entire Guardian Code from memory. He was perfect.
     
     Perfectly serious.
     
-    "You need to relax," his mother would say. "Smile sometimes!" But Singha 
+    "You need to relax," his mother would say. "Smile sometimes!" But Sena 
     couldn't relax. Lives depended on his vigilance. If he smiled, he might 
     miss something. If he laughed, he might—
     
     Then the Shadow Serpent came. And despite everything - every training, 
-    every vigil, every sacrifice - the gates fell. Singha failed. The one 
+    every vigil, every sacrifice - the gates fell. Sena failed. The one 
     thing he was born to prevent happened anyway.
     
     Broken, he nearly gave up. But Champa found him. "You didn't fail," she 
     said. "The gates fell so we could find each other. Now we guard something 
     bigger together."
     
-    Now Singha learns that duty isn't about never failing - it's about always 
+    Now Sena learns that duty isn't about never failing - it's about always 
     getting back up. And maybe, just maybe, he's learning to smile.
     
   _role: AllRounder
@@ -77,10 +77,10 @@ MonoBehaviour:
 
   # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: singha_cat_scratch
+    abilityId: sena_cat_scratch
     abilityName: Big Kitty Scratches
     description: |
-      Singha scratches enemies like a cat scratching furniture! 
+      Sena scratches enemies like a cat scratching furniture! 
       SCRITCH SCRATCH! "This is NOT undignified! It's COMBAT!"
     damage: 28
     cooldown: 0
@@ -90,10 +90,10 @@ MonoBehaviour:
     element: None
 
   _specialAbility:
-    abilityId: singha_lion_yawn
+    abilityId: sena_lion_yawn
     abilityName: CONTAGIOUS LION YAWN
     description: |
-      Singha yawns SO WIDE and SO LONG that it's contagious! 
+      Sena yawns SO WIDE and SO LONG that it's contagious! 
       Everyone starts yawning! Enemies can't attack while yawning!
       "YAAAWWWN... wait, now YOU'RE yawning! YAWN ATTACK!"
     damage: 20
@@ -108,10 +108,10 @@ MonoBehaviour:
       - lion_nap_time
 
   _ultimateAbility:
-    abilityId: singha_hairball_fury
+    abilityId: sena_hairball_fury
     abilityName: LEGENDARY HAIRBALL
     description: |
-      Singha hacks up the BIGGEST HAIRBALL in recorded history! 
+      Sena hacks up the BIGGEST HAIRBALL in recorded history! 
       Years of grooming result in a MASSIVE fur-ball projectile! 
       "HACK HACK HACK... BLEEEURGH!" It's disgusting AND devastating!
     damage: 200
@@ -126,10 +126,10 @@ MonoBehaviour:
       - fur_everywhere
 
   _passiveAbility:
-    abilityId: singha_cat_curiosity
+    abilityId: sena_cat_curiosity
     abilityName: Distracted by Movement
     description: |
-      Singha can't help but chase anything that moves quickly! 
+      Sena can't help but chase anything that moves quickly! 
       He pounces on enemies who try to run! "I am a DIGNIFIED 
       guardian! I do NOT chase... okay maybe just this once..."
     damage: 0
@@ -140,20 +140,20 @@ MonoBehaviour:
     element: None
 
   _comboMoves:
-    - abilityId: singha_mane_shake
+    - abilityId: sena_mane_shake
       abilityName: Dramatic Mane Shake
       description: |
-        Singha shakes his glorious mane and loose FUR flies everywhere! 
+        Sena shakes his glorious mane and loose FUR flies everywhere! 
         Enemies get fur in their eyes, mouth, and everywhere! "Fabulous!"
       damage: 45
       cooldown: 0
       staminaCost: 18
       type: AoE
       
-    - abilityId: singha_butt_wiggle
+    - abilityId: sena_butt_wiggle
       abilityName: Pounce Preparation Wiggle
       description: |
-        Before pouncing, Singha does that adorable cat butt-wiggle! 
+        Before pouncing, Sena does that adorable cat butt-wiggle! 
         It's SO distracting enemies forget to defend! *wiggle wiggle*
       damage: 0
       cooldown: 10
@@ -194,7 +194,7 @@ MonoBehaviour:
       - type: Greeting
         text: "State your business. ...Sorry, habit. Hello."
       - type: Greeting
-        text: "Guardian Singha, at your service."
+        text: "Guardian Sena, at your service."
       - type: Selection
         text: "I will not fail."
       - type: Selection
@@ -239,7 +239,7 @@ MonoBehaviour:
       type: Mentor
       affinity: 90
       relationshipDescription: |
-        Champa is the one who helped Singha after his failure. He owes her 
+        Champa is the one who helped Sena after his failure. He owes her 
         everything. He would die for her without hesitation - she's trying 
         to teach him there are better ways to show loyalty.
       specialDialogue:
@@ -251,8 +251,8 @@ MonoBehaviour:
       type: Acquaintance
       affinity: 45
       relationshipDescription: |
-        Kavi's chaos drives Singha absolutely insane. And yet... the monkey's 
-        joy is something Singha secretly wishes he understood.
+        Kavi's chaos drives Sena absolutely insane. And yet... the monkey's 
+        joy is something Sena secretly wishes he understood.
       specialDialogue:
         - "The monkey is a security liability." *watches Kavi with hidden fondness*
         - "His 'jokes' are... not entirely without merit. Do not tell him I said that."
@@ -262,7 +262,7 @@ MonoBehaviour:
       type: Friend
       affinity: 70
       relationshipDescription: |
-        Mealea's grace and light remind Singha of what he's fighting for. 
+        Mealea's grace and light remind Sena of what he's fighting for. 
         She often dances just to make him smile. It's slowly working.
       specialDialogue:
         - "Lady Mealea's dance is... aesthetically optimal for morale."
@@ -285,54 +285,55 @@ MonoBehaviour:
 
   # UNLOCK
   _unlockMethod: Quest
-  _unlockQuestId: quest_singha_001
+  _unlockQuestId: quest_sena_001
   _isStarterCharacter: false
   _unlockLevel: 1
 
   # COSTUMES
   _costumes:
-    - costumeId: singha_default
+    - costumeId: sena_default
       costumeName: Guardian Armor
       description: Traditional golden guardian armor.
       rarity: Common
       isDefault: true
 
-    - costumeId: singha_ceremonial
+    - costumeId: sena_ceremonial
       costumeName: Ceremonial Regalia
       description: Full formal guardian dress uniform.
       rarity: Rare
       unlockMethod: Quest
       unlockCost: 0
 
-    - costumeId: singha_relaxed
+    - costumeId: sena_relaxed
       costumeName: Off-Duty
       description: Casual clothes. He looks deeply uncomfortable.
       rarity: Uncommon
       unlockMethod: Achievement
       unlockCost: 0
 
-    - costumeId: singha_ancestor
+    - costumeId: sena_ancestor
       costumeName: First Guardian
-      description: Armor of the very first Singha guardian.
+      description: Armor of the very first Sena guardian.
       rarity: Legendary
       unlockMethod: Achievement
       unlockCost: 0
 
   # EMOTES
   _emotes:
-    - emoteId: singha_salute
+    - emoteId: sena_salute
       emoteName: Guardian Salute
       isDefault: true
 
-    - emoteId: singha_roar_emote
+    - emoteId: sena_roar_emote
       emoteName: Mighty Roar
       isDefault: true
 
-    - emoteId: singha_awkward_wave
+    - emoteId: sena_awkward_wave
       emoteName: Awkward Wave
       isDefault: false
 
-    - emoteId: singha_small_smile
+    - emoteId: sena_small_smile
       emoteName: Tiny Smile
       isDefault: false
+
 

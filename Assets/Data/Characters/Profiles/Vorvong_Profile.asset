@@ -260,12 +260,12 @@ MonoBehaviour:
         - "Princess, you embody true royalty."
         - "If all rulers were like you, we'd have no battles to fight."
 
-    - characterId: singha_lion
-      characterName: Singha
+    - characterId: sena_lion
+      characterName: Sena
       type: Friend
       affinity: 75
       relationshipDescription: |
-        Both understand duty and sacrifice. Singha guards temples, Vorvong 
+        Both understand duty and sacrifice. Sena guards temples, Vorvong 
         guards the innocent - different duties, same devotion.
       specialDialogue:
         - "Guardian, your dedication honors us all."

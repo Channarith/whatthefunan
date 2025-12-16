@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
-  m_Name: Singha_Character
+  m_Name: Sena_Character
   m_EditorClassIdentifier: 
-  characterId: singha_lion
-  displayName: Singha
+  characterId: sena_lion
+  displayName: Sena
   description: Noble lion guardian of the sacred temples. Royal pride and fierce loyalty.
   species: Lion
   baseHealth: 130
@@ -24,4 +24,5 @@ MonoBehaviour:
   specialAbility: Royal Roar
   unlockMethod: 1
   unlockCost: 750
+
 

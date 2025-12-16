@@ -259,8 +259,8 @@ MonoBehaviour:
         - "She... she called me gentle. Nobody ever..."
         - "Princess Champa makes me feel... like it's okay to be me."
 
-    - characterId: singha_lion
-      characterName: Singha
+    - characterId: sena_lion
+      characterName: Sena
       type: Friend
       affinity: 75
       relationshipDescription: |

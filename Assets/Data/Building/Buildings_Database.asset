@@ -385,10 +385,10 @@ MonoBehaviour:
         - resourceId: carved_relic_stone
           amount: 4
 
-    - objectId: decor_singha_guardian
-      displayName: Golden Singha Guardian
+    - objectId: decor_sena_guardian
+      displayName: Golden Sena Guardian
       description: |
-        A noble lion guardian woven with real singha mane threads. Its 
+        A noble lion guardian woven with real sena mane threads. Its 
         roar echoes in the spirit realm, protecting the kingdom.
       category: Decorations
       rarity: Uncommon
@@ -399,7 +399,7 @@ MonoBehaviour:
       buildCost:
         - resourceId: temple_granite
           amount: 12
-        - resourceId: singha_mane_thread
+        - resourceId: sena_mane_thread
           amount: 3
         - resourceId: sunforged_bronze
           amount: 2

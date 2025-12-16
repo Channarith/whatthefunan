@@ -216,8 +216,8 @@ MonoBehaviour:
           particleColor: "#006400"
           lore: "Dragons shed their old skin to grow - we honor their gift."
 
-        - resourceId: singha_mane_thread
-          displayName: Singha Mane Thread
+        - resourceId: sena_mane_thread
+          displayName: Sena Mane Thread
           description: |
             Golden threads from the temple lions' manes, collected from 
             brushings. Weaves into the strongest fabric known.

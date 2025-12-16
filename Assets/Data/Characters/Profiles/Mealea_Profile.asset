@@ -252,15 +252,15 @@ MonoBehaviour:
         - "Champa explains mortal things without making me feel foolish."
         - "She has such a beautiful heart. Even the gods would admire her."
 
-    - characterId: singha_lion
-      characterName: Singha
+    - characterId: sena_lion
+      characterName: Sena
       type: Friend
       affinity: 75
       relationshipDescription: |
-        Singha's noble nature reminds Mealea of the divine guardians in heaven. 
+        Sena's noble nature reminds Mealea of the divine guardians in heaven. 
         She respects his sense of duty and often dances to soothe his serious mood.
       specialDialogue:
-        - "Singha is so... serious. I shall teach him to smile more!"
+        - "Sena is so... serious. I shall teach him to smile more!"
         - "His roar is like celestial music. Powerful and beautiful."
 
   # BACKSTORY
