@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Garuda_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # GARUDA - THE DIVINE EAGLE
+  # Guardian of the Skies and Ancient Rival of the Nagas
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: garuda_eagle
+  _displayName: Garuda
+  _title: King of Birds, Devourer of Serpents
+  _species: Divine Eagle
+  _shortDescription: |
+    A legendary bird deity with golden wings that span the heavens. Once the 
+    mortal enemy of all Nagas, Garuda now seeks redemption through protecting 
+    the innocent rather than pursuing ancient vendettas.
+  _fullBiography: |
+    Garuda was born from a cosmic egg that incubated for five hundred years 
+    atop Mount Meru. When he hatched, his radiance was so intense that the 
+    gods themselves mistook him for the fire of creation.
+    
+    For millennia, Garuda waged war against the Naga race - a blood feud born 
+    from an ancient slight against his mother. He devoured serpents by the 
+    thousands, his name becoming synonymous with terror in the underwater kingdoms.
+    
+    But when the Shadow Serpent emerged - a darkness that threatened both sky 
+    and sea - Garuda witnessed something that changed him forever: the Naga Prince 
+    shielding human children from the shadow's attack. In that moment, Garuda saw 
+    not an enemy, but a fellow guardian.
+    
+    Now Garuda fights alongside his former enemies, though the tension between 
+    him and the Naga Prince remains palpable. He struggles daily with centuries 
+    of hatred, slowly learning that true strength lies in choosing peace over 
+    vengeance.
+    
+  _role: DPS
+  _element: Wind
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 1, g: 0.84, b: 0, a: 1}
+  _accentColor: {r: 0.8, g: 0.2, b: 0.1, a: 1}
+
+  # BASE STATS (DPS - High Attack, Medium Speed)
+  _baseHealth: 95
+  _baseAttack: 42
+  _baseDefense: 18
+  _baseSpeed: 38
+  _baseStamina: 100
+  _attackRange: 3.0
+  _moveSpeed: 7.0
+  
+  _healthGrowth: 10
+  _attackGrowth: 5
+  _defenseGrowth: 1.5
+  _speedGrowth: 2.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: garuda_talon_strike
+    abilityName: Divine Talons
+    description: Razor-sharp talons infused with celestial light tear through enemies.
+    damage: 32
+    cooldown: 0
+    staminaCost: 5
+    range: 2.5
+    type: Melee
+    element: Wind
+
+  _specialAbility:
+    abilityId: garuda_wind_shear
+    abilityName: Typhoon Wings
+    description: |
+      Garuda beats his mighty wings, creating a devastating wind shear that 
+      damages all enemies in a cone and pushes them back. Airborne enemies 
+      take double damage.
+    damage: 55
+    cooldown: 10
+    staminaCost: 30
+    range: 8
+    type: AoE
+    element: Wind
+    statusEffects:
+      - knockback_strong
+      - airborne_bonus_damage
+
+  _ultimateAbility:
+    abilityId: garuda_solar_dive
+    abilityName: Wrath of the Sun
+    description: |
+      Garuda soars into the sky and becomes wreathed in solar flames, then 
+      dives at terminal velocity into the battlefield. The impact creates a 
+      massive explosion of light and wind that devastates all enemies.
+    damage: 150
+    cooldown: 55
+    staminaCost: 75
+    range: 10
+    type: AoE
+    element: Wind
+    statusEffects:
+      - burn_3s
+      - blind_2s
+
+  _passiveAbility:
+    abilityId: garuda_sky_sovereign
+    abilityName: Sovereign of the Sky
+    description: |
+      Garuda takes reduced damage while airborne and deals bonus damage to 
+      enemies below him. His presence intimidates serpentine enemies, 
+      reducing their attack power.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Wind
+
+  _comboMoves:
+    - abilityId: garuda_aerial_combo
+      abilityName: Sky Rend
+      description: A flurry of aerial slashes that juggles enemies in the air.
+      damage: 65
+      cooldown: 0
+      staminaCost: 22
+      type: Melee
+      
+    - abilityId: garuda_feather_storm
+      abilityName: Golden Feather Storm
+      description: Launches razor-sharp golden feathers in all directions.
+      damage: 45
+      cooldown: 12
+      staminaCost: 28
+      type: Ranged
+
+  # PERSONALITY
+  _personality:
+    bravery: 95
+    kindness: 45
+    wisdom: 70
+    humor: 25
+    loyalty: 80
+    curiosity: 50
+
+  _likes:
+    - Soaring through clouds at dawn
+    - The silence of high altitudes
+    - Honorable combat
+    - Protecting the innocent
+    - Ancient hymns sung in his honor
+
+  _dislikes:
+    - His own past cruelty
+    - Being reminded of the feud
+    - Confined spaces
+    - Dishonor
+    - Those who prey on the weak
+
+  _favoriteFood: Sacred nectar from Mount Meru's flowers
+  _hobby: Meditating on mountain peaks at sunrise
+  _fear: That he can never truly atone for his past
+  _dream: To end the ancient feud and find peace with the Nagas
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "The wind carries word of your deeds. You have my respect."
+      - type: Greeting
+        text: "I am Garuda. My wings shall shield the innocent."
+      - type: Selection
+        text: "You call upon the King of Birds? So be it."
+      - type: Selection
+        text: "My talons are yours to command."
+      - type: BattleStart
+        text: "Face the fury of the heavens!"
+      - type: BattleStart
+        text: "I fight now for redemption, not revenge."
+      - type: Attack
+        text: "By wind and flame!"
+      - type: Attack
+        text: "Fall before me!"
+      - type: SpecialAttack
+        text: "Typhoon Wings! Scatter before me!"
+      - type: Ultimate
+        text: "Witness the WRATH OF THE SUN!"
+      - type: Hurt
+        text: "A worthy strike..."
+      - type: LowHealth
+        text: "I will not... fall here..."
+      - type: Victory
+        text: "The battle is won. May the fallen find peace."
+      - type: Victory
+        text: "This victory brings me no joy... only relief."
+      - type: Defeat
+        text: "Perhaps... this is my penance..."
+      - type: LevelUp
+        text: "My wings grow stronger. I shall protect more."
+      - type: Idle
+        text: "*gazes at the horizon with ancient, tired eyes*"
+      - type: Idle
+        text: "The wind whispers of battles long past..."
+      - type: InteractFriendly
+        text: "Your heart is pure. Fight alongside me."
+      - type: InteractRival
+        text: "Naga... we need not be enemies. Not anymore."
+      - type: Funny
+        text: "They say I'm 'bird-brained.' I ate the last one who said that."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: naga_serpent
+      characterName: Naga Prince
+      type: Rival
+      affinity: 20
+      relationshipDescription: |
+        The ancient enmity between Garudas and Nagas runs deep, but both 
+        struggle to move past it. Garuda respects the Prince's courage but 
+        cannot forget centuries of war. They fight together in tense alliance.
+      specialDialogue:
+        - "Serpent... I do not expect forgiveness. Only... coexistence."
+        - "Your ancestors and mine... perhaps we were both wrong."
+        - "I will protect you as I protect any innocent. Do not expect more."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Champa's gentle nature confuses Garuda. She treats him with kindness 
+        despite knowing his dark past. He finds her presence... healing.
+      specialDialogue:
+        - "Princess... why do you not fear me?"
+        - "Your forgiveness is a gift I have not earned."
+
+    - characterId: singha_lion
+      characterName: Singha
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Two ancient guardians bound by duty. Garuda and Singha understand 
+        each other's burden of protecting others for eternity.
+      specialDialogue:
+        - "Lion. You know the weight of eternal duty."
+        - "We are kindred spirits, you and I."
+
+  # BACKSTORY
+  _birthplace: The Summit of Mount Meru
+  _occupation: Divine Guardian / Former Naga Hunter
+  _familyBackground: |
+    Son of Vinata (goddess) and Kashyapa (sage). His mother was enslaved by 
+    the Nagas, which sparked his eternal vendetta. He freed her by stealing 
+    the nectar of immortality from the gods.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Hatching from my cosmic egg and seeing the world for the first time."
+    - "The rage I felt when I learned of my mother's enslavement."
+    - "The first Naga I killed... and the emptiness that followed."
+    - "Seeing the Naga Prince protect those children... and questioning everything."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_sky_temple
+  _isStarterCharacter: false
+  _unlockLevel: 15
+
+  # COSTUMES
+  _costumes:
+    - costumeId: garuda_default
+      costumeName: Divine Regalia
+      description: Golden armor befitting the King of Birds.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: garuda_war
+      costumeName: Serpent Hunter
+      description: Ancient war armor from the Naga Wars. A painful reminder.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: garuda_temple
+      costumeName: Temple Guardian
+      description: Ceremonial robes worn when guarding sacred temples.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1200
+
+    - costumeId: garuda_solar
+      costumeName: Solar Phoenix
+      description: Wreathed in eternal flames, reborn as a being of pure light.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: garuda_spread
+      emoteName: Wing Spread
+      isDefault: true
+
+    - emoteId: garuda_screech
+      emoteName: Eagle Cry
+      isDefault: true
+
+    - emoteId: garuda_bow
+      emoteName: Respectful Bow
+      isDefault: false
+
+    - emoteId: garuda_soar
+      emoteName: Victory Soar
+      isDefault: false
+
+

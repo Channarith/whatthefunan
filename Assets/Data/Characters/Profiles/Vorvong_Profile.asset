@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Vorvong_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # VORVONG - THE EXILED PRINCE
+  # Twin Warrior, Seeker of Justice
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: vorvong_prince
+  _displayName: Vorvong
+  _title: The Wandering Prince
+  _species: Human (Royal Lineage)
+  _shortDescription: |
+    An exiled prince who wanders the land seeking to right wrongs and 
+    prove his worth. His twin brother Sorvong fights beside him, their 
+    bond unbreakable despite the betrayal that cast them out.
+  _fullBiography: |
+    Prince Vorvong was born seven minutes before his twin Sorvong, making 
+    him heir to a powerful kingdom. The brothers were inseparable - where 
+    one went, the other followed. They trained together, studied together, 
+    and swore they would rule together someday.
+    
+    Their stepmother had other plans.
+    
+    Through lies and manipulation, she convinced the King that the twins 
+    were plotting against him. Heartbroken, the King exiled his own sons 
+    rather than execute them. Vorvong and Sorvong left with nothing but 
+    their swords and each other.
+    
+    Years of wandering hardened them into legendary warriors. They became 
+    known as champions of the common people, fighting bandits and corrupt 
+    officials. Stories spread of twin swordsmen who appeared like ghosts 
+    and vanished like dreams.
+    
+    Vorvong carries the burden of being the elder. Every decision weighs 
+    on him - he feels responsible for Sorvong, for their exile, for 
+    everyone they meet. He masks his worry with stoic determination.
+    
+    When the Shadow Serpent's corruption reached their former kingdom, 
+    the twins faced a choice: let the father who exiled them fall, or 
+    return to save a home that rejected them. They chose to return.
+    
+  _role: AllRounder
+  _element: None
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.2, g: 0.3, b: 0.6, a: 1}
+  _accentColor: {r: 0.8, g: 0.8, b: 0.9, a: 1}
+
+  # BASE STATS (AllRounder - Balanced with combo focus)
+  _baseHealth: 115
+  _baseAttack: 32
+  _baseDefense: 25
+  _baseSpeed: 30
+  _baseStamina: 105
+  _attackRange: 2.0
+  _moveSpeed: 6.0
+  
+  _healthGrowth: 12
+  _attackGrowth: 3.5
+  _defenseGrowth: 2.5
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: vorvong_sword_strike
+    abilityName: Royal Blade
+    description: Precise sword strikes trained in royal academies.
+    damage: 28
+    cooldown: 0
+    staminaCost: 4
+    range: 2.5
+    type: Melee
+    element: None
+
+  _specialAbility:
+    abilityId: vorvong_twin_assault
+    abilityName: Twin Assault
+    description: |
+      Vorvong and Sorvong attack in perfect synchronization, striking 
+      from opposite directions. If Sorvong is in the party, damage is 
+      doubled and enemies are confused.
+    damage: 50
+    cooldown: 10
+    staminaCost: 30
+    range: 4
+    type: Melee
+    element: None
+    statusEffects:
+      - twin_sync_bonus
+      - confusion_2s
+
+  _ultimateAbility:
+    abilityId: vorvong_princes_justice
+    abilityName: The Princes' Justice
+    description: |
+      Vorvong unleashes years of frustration and determination in a 
+      devastating combo. If Sorvong is present, they perform their 
+      legendary "Twin Dragon" technique that devastates the battlefield.
+    damage: 160
+    cooldown: 55
+    staminaCost: 75
+    range: 6
+    type: Melee
+    element: None
+    statusEffects:
+      - twin_dragon_if_together
+      - justice_mark
+
+  _passiveAbility:
+    abilityId: vorvong_elder_burden
+    abilityName: Elder's Burden
+    description: |
+      Vorvong's protective instincts activate when allies are in danger. 
+      He gains increased defense when nearby allies are low on health 
+      and deals bonus damage to enemies who have hurt his friends.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 8
+    type: Buff
+    element: None
+
+  _comboMoves:
+    - abilityId: vorvong_quick_draw
+      abilityName: Flash Draw
+      description: Lightning-fast slash that can hit multiple enemies in a line.
+      damage: 35
+      cooldown: 0
+      staminaCost: 15
+      type: Melee
+      
+    - abilityId: vorvong_parry_strike
+      abilityName: Royal Riposte
+      description: Perfect parry followed by devastating counter.
+      damage: 55
+      cooldown: 8
+      staminaCost: 22
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 90
+    kindness: 75
+    wisdom: 70
+    humor: 35
+    loyalty: 95
+    curiosity: 50
+
+  _likes:
+    - Justice being served
+    - Protecting the innocent
+    - Training with Sorvong
+    - Simple meals after long journeys
+    - Starry nights on the road
+
+  _dislikes:
+    - Injustice
+    - Betrayal
+    - Being separated from Sorvong
+    - Nobility who abuse their power
+    - Dwelling on the past
+
+  _favoriteFood: Simple rice and grilled fish - food of common folk
+  _hobby: Training and teaching sword techniques to those who need protection
+  _fear: Failing to protect Sorvong
+  _dream: To restore his family's honor and be reunited with his father
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "I am Vorvong. My blade serves justice."
+      - type: Greeting
+        text: "Have you seen injustice? Point me to it."
+      - type: Selection
+        text: "My sword is yours to command."
+      - type: Selection
+        text: "Together, we are unstoppable."
+      - type: BattleStart
+        text: "For those who cannot fight for themselves!"
+      - type: BattleStart
+        text: "Sorvong! Are you ready, brother?"
+      - type: Attack
+        text: "Strike!"
+      - type: Attack
+        text: "Justice!"
+      - type: SpecialAttack
+        text: "Together, brother! TWIN ASSAULT!"
+      - type: Ultimate
+        text: "This is our legacy! PRINCES' JUSTICE!"
+      - type: Hurt
+        text: "I've endured worse..."
+      - type: LowHealth
+        text: "I cannot fall... not while others need me..."
+      - type: Victory
+        text: "Justice prevails."
+      - type: Victory
+        text: "Sorvong, we did it."
+      - type: Defeat
+        text: "Sorvong... forgive me..."
+      - type: LevelUp
+        text: "Stronger. To protect more."
+      - type: Idle
+        text: "*practices sword forms*"
+      - type: Idle
+        text: "Father... I hope you're safe."
+      - type: InteractFriendly
+        text: "Your heart is true. Fight beside us."
+      - type: InteractRival
+        text: "Change your ways, or face my blade."
+      - type: Funny
+        text: "Sorvong thinks he's funnier than me. He's wrong. ...Probably."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: sorvong_prince
+      characterName: Sorvong
+      type: Family
+      affinity: 100
+      relationshipDescription: |
+        Twin brothers bound by blood, exile, and unbreakable love. They 
+        finish each other's sentences, fight in perfect sync, and would 
+        die for each other without hesitation.
+      specialDialogue:
+        - "Sorvong, as always, I'm glad you're beside me."
+        - "My brother is my strength. I am his shield."
+        - "Seven minutes apart in birth, but one soul."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Champa's royal bearing reminds Vorvong of what nobility SHOULD be. 
+        Her kindness inspires him to be a better prince.
+      specialDialogue:
+        - "Princess, you embody true royalty."
+        - "If all rulers were like you, we'd have no battles to fight."
+
+    - characterId: singha_lion
+      characterName: Singha
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Both understand duty and sacrifice. Singha guards temples, Vorvong 
+        guards the innocent - different duties, same devotion.
+      specialDialogue:
+        - "Guardian, your dedication honors us all."
+        - "We both know what it means to serve something greater."
+
+  # BACKSTORY
+  _birthplace: The Royal Palace of a now-distant kingdom
+  _occupation: Exiled Prince / Wandering Champion
+  _familyBackground: |
+    Son of a king, betrayed by a scheming stepmother. His father still 
+    lives, believing the lies. Vorvong hopes to clear their names someday.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The day Sorvong and I first held swords - we knew we were warriors."
+    - "Father's face when he exiled us... the pain in his eyes."
+    - "Our first night in the wilderness, holding each other, swearing to survive."
+    - "The village we saved from bandits - they called us heroes."
+    - "Hearing that the Shadow threatened our homeland... and choosing to return."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_twin_princes
+  _isStarterCharacter: false
+  _unlockLevel: 16
+
+  # COSTUMES
+  _costumes:
+    - costumeId: vorvong_default
+      costumeName: Wandering Prince
+      description: Travel-worn but dignified royal attire.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: vorvong_royal
+      costumeName: Crown Prince
+      description: His original palace regalia, kept hidden all these years.
+      rarity: Epic
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: vorvong_warrior
+      costumeName: People's Champion
+      description: Practical armor adopted during his wandering years.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 700
+
+    - costumeId: vorvong_restored
+      costumeName: Restored Prince
+      description: New royal attire for a prince who earned his crown.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: vorvong_salute
+      emoteName: Royal Salute
+      isDefault: true
+
+    - emoteId: vorvong_sword_flourish
+      emoteName: Blade Flourish
+      isDefault: true
+
+    - emoteId: vorvong_bow
+      emoteName: Princely Bow
+      isDefault: false
+
+    - emoteId: vorvong_twin_pose
+      emoteName: Twin Stance (with Sorvong)
+      isDefault: false
+
+

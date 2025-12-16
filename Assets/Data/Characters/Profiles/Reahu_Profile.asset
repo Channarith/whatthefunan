@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Reahu_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # REAHU - THE ECLIPSE DEMON
+  # The Severed One, Devourer of Light
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: reahu_eclipse
+  _displayName: Reahu
+  _title: The Eternal Eclipse
+  _species: Asura (Demon) - Severed Head
+  _shortDescription: |
+    An ancient demon whose head was severed by the gods, yet lives on 
+    eternally. Once consumed by rage and hunger for the sun, Reahu has 
+    learned that darkness need not be evil.
+  _fullBiography: |
+    In the beginning, when gods and demons churned the cosmic ocean for the 
+    nectar of immortality, Reahu disguised himself among the divine and 
+    drank from the sacred cup. The Sun and Moon saw through his deception 
+    and exposed him.
+    
+    The god Vishnu's divine discus severed Reahu's head from his body - but 
+    the nectar had already touched his lips. His head became immortal, forever 
+    separated from his body, forever hungry, forever in darkness.
+    
+    For eons, Reahu chased the Sun and Moon across the sky, swallowing them 
+    in his rage only for them to pass through his severed neck. Each eclipse 
+    was his futile attempt at revenge.
+    
+    But immortality changes perspective. After millions of years, Reahu's 
+    rage cooled to acceptance, then curiosity. He began to wonder: what if 
+    he used his power over darkness to protect rather than destroy?
+    
+    When the Shadow Serpent emerged, Reahu recognized a kindred darkness - 
+    but one without conscience. For the first time, Reahu chose to fight 
+    FOR the light, not against it. Even demons can change.
+    
+  _role: DPS
+  _element: Shadow
+  _rarity: Legendary
+
+  # VISUALS
+  _themeColor: {r: 0.1, g: 0.05, b: 0.15, a: 1}
+  _accentColor: {r: 0.6, g: 0, b: 0.8, a: 1}
+
+  # BASE STATS (DPS - Glass Cannon with unique mechanics)
+  _baseHealth: 85
+  _baseAttack: 52
+  _baseDefense: 12
+  _baseSpeed: 35
+  _baseStamina: 90
+  _attackRange: 3.5
+  _moveSpeed: 6.0
+  
+  _healthGrowth: 8
+  _attackGrowth: 6
+  _defenseGrowth: 1
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: reahu_void_bite
+    abilityName: Void Bite
+    description: Reahu's massive jaws chomp down, draining life from enemies.
+    damage: 35
+    cooldown: 0
+    staminaCost: 5
+    range: 3.0
+    type: Melee
+    element: Shadow
+    statusEffects:
+      - lifesteal_10_percent
+
+  _specialAbility:
+    abilityId: reahu_darkness_pulse
+    abilityName: Pulse of the Void
+    description: |
+      Reahu releases a wave of pure darkness that damages enemies and 
+      creates zones of shadow. Enemies in shadow take continuous damage 
+      and have reduced vision.
+    damage: 45
+    cooldown: 12
+    staminaCost: 35
+    range: 7
+    type: AoE
+    element: Shadow
+    statusEffects:
+      - darkness_zone_5s
+      - blind_3s
+
+  _ultimateAbility:
+    abilityId: reahu_eclipse
+    abilityName: Total Eclipse
+    description: |
+      Reahu swallows the very light of the battlefield, creating a total 
+      eclipse. All enemies are trapped in darkness, taking massive damage 
+      over time while Reahu becomes invisible and empowered.
+    damage: 200
+    cooldown: 65
+    staminaCost: 85
+    range: 20
+    type: AoE
+    element: Shadow
+    statusEffects:
+      - total_darkness_8s
+      - self_invisible
+      - damage_boost_50
+
+  _passiveAbility:
+    abilityId: reahu_hunger
+    abilityName: Eternal Hunger
+    description: |
+      Reahu heals when standing in darkness or shadow. Killing enemies 
+      grants a stacking damage buff. However, he takes increased damage 
+      from Light-element attacks.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Shadow
+
+  _comboMoves:
+    - abilityId: reahu_shadow_dash
+      abilityName: Through the Dark
+      description: Dash through shadows, appearing behind the target.
+      damage: 40
+      cooldown: 0
+      staminaCost: 18
+      type: Melee
+      
+    - abilityId: reahu_devour
+      abilityName: Consume
+      description: Attempt to swallow a weakened enemy whole, executing if low HP.
+      damage: 100
+      cooldown: 20
+      staminaCost: 45
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 75
+    kindness: 35
+    wisdom: 85
+    humor: 60
+    loyalty: 55
+    curiosity: 70
+
+  _likes:
+    - Eclipses (obviously)
+    - The quiet of deep darkness
+    - Philosophical discussions about morality
+    - Being proven wrong about himself
+    - Second chances
+
+  _dislikes:
+    - Bright sunlight (painful)
+    - Being called a monster
+    - His own past
+    - Those who believe evil is permanent
+    - Pity
+
+  _favoriteFood: He doesn't need to eat... but misses the sensation
+  _hobby: Stargazing and contemplating existence
+  _fear: Reverting to his old, hateful self
+  _dream: To be remembered as a protector, not a demon
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Do not fear the darkness. Fear what hides within it."
+      - type: Greeting
+        text: "I am Reahu. Yes, THAT Reahu. Things have... changed."
+      - type: Selection
+        text: "You would ally with a demon? Bold."
+      - type: Selection
+        text: "The shadows answer your call."
+      - type: BattleStart
+        text: "I spent eons destroying. Now I protect."
+      - type: BattleStart
+        text: "Let me show you productive darkness."
+      - type: Attack
+        text: "Into the void!"
+      - type: Attack
+        text: "Darkness consumes!"
+      - type: SpecialAttack
+        text: "Let shadow embrace you!"
+      - type: Ultimate
+        text: "WITNESS TOTAL ECLIPSE! THE LIGHT... DIES!"
+      - type: Hurt
+        text: "I have endured worse... for eternity..."
+      - type: LowHealth
+        text: "I cannot die... but I can still fall..."
+      - type: Victory
+        text: "Even demons can be heroes. Remember that."
+      - type: Victory
+        text: "The darkness protected you today. Ironic."
+      - type: Defeat
+        text: "Perhaps... I was always meant to fail..."
+      - type: LevelUp
+        text: "My darkness grows... but so does my control."
+      - type: Idle
+        text: "*floats silently, contemplating infinity*"
+      - type: Idle
+        text: "I wonder... do the Sun and Moon remember me?"
+      - type: InteractFriendly
+        text: "You see past what I was. Thank you."
+      - type: InteractRival
+        text: "Judge me by my actions, not my nature."
+      - type: Funny
+        text: "I tried to eat the Sun once. Bad idea. Very hot."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: mealea_apsara
+      characterName: Mealea
+      type: Rival
+      affinity: 40
+      relationshipDescription: |
+        As a being of Light, Mealea's presence is literally painful for Reahu. 
+        Yet she's one of the few who believes in his redemption. Their 
+        relationship is complex - respect mixed with fundamental opposition.
+      specialDialogue:
+        - "Apsara... your light burns, but I endure."
+        - "You believe I can be good. I'm still not sure you're right."
+        - "Perhaps light and dark need not be enemies."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Two ancient beings who have existed since before recorded history. 
+        Prohm doesn't judge Reahu for his past - he's seen too much to 
+        judge anyone.
+      specialDialogue:
+        - "Ancient One, you have seen much. As have I."
+        - "We are both relics. Perhaps that makes us kin."
+
+    - characterId: naga_serpent
+      characterName: Naga Prince
+      type: Acquaintance
+      affinity: 50
+      relationshipDescription: |
+        The Naga Prince is wary of Reahu but respects his choice to change. 
+        Both know what it's like to be feared for what you are.
+      specialDialogue:
+        - "Serpent Prince, we both know the burden of being... monstrous."
+        - "You rule shadows underwater. I rule them everywhere else."
+
+  # BACKSTORY
+  _birthplace: The Cosmic Ocean, during the churning of Amrita
+  _occupation: Reformed Demon / Eclipse Bringer
+  _familyBackground: |
+    Originally a powerful Asura (demon). His body still exists somewhere, 
+    wandering mindlessly - known as Ketu in some legends.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Drinking the nectar of immortality and the brief moment of triumph."
+    - "The burning pain as Vishnu's discus severed my head."
+    - "My first eclipse - swallowing the Sun in rage."
+    - "The moment, after a million years, when rage finally faded to sadness."
+    - "Choosing to fight the Shadow Serpent - choosing to be more than a demon."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_eclipse_redemption
+  _isStarterCharacter: false
+  _unlockLevel: 30
+
+  # COSTUMES
+  _costumes:
+    - costumeId: reahu_default
+      costumeName: Severed One
+      description: Reahu's head in its normal, terrifying state.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: reahu_demon
+      costumeName: Demon King
+      description: How Reahu appeared before his punishment - with body.
+      rarity: Legendary
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: reahu_celestial
+      costumeName: Star Devourer
+      description: Wreathed in consumed starlight.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1500
+
+    - costumeId: reahu_guardian
+      costumeName: Shadow Guardian
+      description: Armor of solidified darkness, worn with new purpose.
+      rarity: Rare
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: reahu_float
+      emoteName: Ominous Float
+      isDefault: true
+
+    - emoteId: reahu_laugh
+      emoteName: Dark Chuckle
+      isDefault: true
+
+    - emoteId: reahu_consume
+      emoteName: Mock Bite
+      isDefault: false
+
+    - emoteId: reahu_eclipse_emote
+      emoteName: Mini Eclipse
+      isDefault: false
+
+

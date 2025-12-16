@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Kinnari_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # KINNARI - THE SONGBIRD MAIDEN
+  # Voice of the Heavens, Healer of Hearts
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: kinnari_bird
+  _displayName: Kinnari
+  _title: The Golden Voice
+  _species: Kinnara (Half-Bird, Half-Human)
+  _shortDescription: |
+    A graceful bird-maiden whose songs can heal wounds and inspire courage. 
+    Separated from her beloved Kinnara during the Shadow's attack, she 
+    searches for him while spreading hope through her music.
+  _fullBiography: |
+    In the Himaphan Forest, where the sky meets the clouds, live the Kinnara - 
+    beings of pure beauty with human torsos and bird wings. Among them, Kinnari's 
+    voice was said to be the most beautiful sound in all creation.
+    
+    She and her partner, a male Kinnara named Manohra's brother Rathasena, 
+    lived in perfect harmony. Their duets could make flowers bloom and storms 
+    calm. They were inseparable - until the Shadow Serpent came.
+    
+    The darkness scattered the Kinnara flock. In the chaos, Kinnari was 
+    separated from Rathasena. She searched the skies for days, her songs 
+    turning from joy to mourning, until she collapsed from exhaustion in 
+    Funan territory.
+    
+    Champa found her and nursed her back to health. Now Kinnari travels with 
+    the guardians, using her healing songs to aid their quest while secretly 
+    hoping each new horizon will reunite her with her lost love.
+    
+    Despite her grief, Kinnari never stops singing. "Music," she says, "is 
+    how we prove that beauty still exists in dark times."
+    
+  _role: Support
+  _element: Light
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 1, g: 0.9, b: 0.7, a: 1}
+  _accentColor: {r: 0.9, g: 0.4, b: 0.6, a: 1}
+
+  # BASE STATS (Support - High healing, utility)
+  _baseHealth: 75
+  _baseAttack: 18
+  _baseDefense: 15
+  _baseSpeed: 32
+  _baseStamina: 120
+  _attackRange: 8.0
+  _moveSpeed: 6.0
+  
+  _healthGrowth: 8
+  _attackGrowth: 2
+  _defenseGrowth: 1.5
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: kinnari_feather_dart
+    abilityName: Golden Feathers
+    description: Launches sharp golden feathers that seek out enemies.
+    damage: 15
+    cooldown: 0
+    staminaCost: 3
+    range: 10
+    type: Ranged
+    element: Light
+
+  _specialAbility:
+    abilityId: kinnari_healing_song
+    abilityName: Song of Restoration
+    description: |
+      Kinnari sings a beautiful melody that heals all allies in range over 
+      time and removes negative status effects. The longer she sings, the 
+      more powerful the healing becomes.
+    damage: 0
+    cooldown: 15
+    staminaCost: 40
+    range: 10
+    type: Heal
+    element: Light
+    statusEffects:
+      - heal_over_time_5s
+      - cleanse_debuffs
+
+  _ultimateAbility:
+    abilityId: kinnari_phoenix_aria
+    abilityName: Phoenix Aria
+    description: |
+      Kinnari unleashes her most powerful song - the Phoenix Aria. This 
+      legendary melody fully heals all allies, grants them temporary 
+      invincibility, and can even revive recently fallen teammates.
+    damage: 0
+    cooldown: 90
+    staminaCost: 100
+    range: 15
+    type: Heal
+    element: Light
+    statusEffects:
+      - full_heal
+      - invincibility_3s
+      - revive_allies
+
+  _passiveAbility:
+    abilityId: kinnari_inspiring_presence
+    abilityName: Inspiring Melody
+    description: |
+      Kinnari constantly hums soft melodies that gradually heal nearby 
+      allies and increase their stamina regeneration. Her presence makes 
+      everyone feel more hopeful.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 8
+    type: Buff
+    element: Light
+
+  _comboMoves:
+    - abilityId: kinnari_lullaby
+      abilityName: Dreamtime Lullaby
+      description: A soothing song that puts enemies to sleep briefly.
+      damage: 0
+      cooldown: 0
+      staminaCost: 25
+      type: Debuff
+      statusEffects:
+        - sleep_3s
+      
+    - abilityId: kinnari_war_song
+      abilityName: Battle Hymn
+      description: An inspiring song that increases all allies' attack power.
+      damage: 0
+      cooldown: 18
+      staminaCost: 30
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 60
+    kindness: 95
+    wisdom: 70
+    humor: 55
+    loyalty: 90
+    curiosity: 65
+
+  _likes:
+    - Singing at sunrise and sunset
+    - Helping others feel better
+    - Beautiful flowers
+    - Stories of true love
+    - High places with good acoustics
+
+  _dislikes:
+    - Silence (it feels empty)
+    - Cruelty
+    - Those who mock love
+    - Being grounded
+    - Discordant sounds
+
+  _favoriteFood: Honey-glazed fruits and flower nectar
+  _hobby: Composing new songs and teaching others to sing
+  _fear: Never finding Rathasena again
+  _dream: To reunite with her love and sing together once more
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Hello, dear friend! Shall I sing you a song?"
+      - type: Greeting
+        text: "*hums a cheerful melody* Oh! You're here!"
+      - type: Selection
+        text: "My voice is yours to command!"
+      - type: Selection
+        text: "Let's make beautiful music together!"
+      - type: BattleStart
+        text: "I'll sing of our victory before it even happens!"
+      - type: BattleStart
+        text: "My songs will protect you all!"
+      - type: Attack
+        text: "A sharp note for you!"
+      - type: Attack
+        text: "This melody bites!"
+      - type: SpecialAttack
+        text: "Let my song heal your wounds!"
+      - type: Ultimate
+        text: "Rise, my friends! PHOENIX ARIA!"
+      - type: Hurt
+        text: "My song... falters..."
+      - type: LowHealth
+        text: "I must... keep... singing..."
+      - type: Victory
+        text: "A song of triumph for us all!"
+      - type: Victory
+        text: "We did it! Group harmony!"
+      - type: Defeat
+        text: "The music... fades..."
+      - type: LevelUp
+        text: "My voice reaches new heights!"
+      - type: Idle
+        text: "*sings a wistful melody about a lost love*"
+      - type: Idle
+        text: "Rathasena... I'll find you..."
+      - type: InteractFriendly
+        text: "Your spirit makes my heart sing!"
+      - type: InteractRival
+        text: "Even you have a song inside. I can hear it."
+      - type: Funny
+        text: "Why do birds sing? Because we can't whistle! Wait, we can... um, never mind!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: mealea_apsara
+      characterName: Mealea
+      type: BestFriend
+      affinity: 95
+      relationshipDescription: |
+        Two celestial performers who understand the power of art. Mealea 
+        dances while Kinnari sings, creating performances of legendary 
+        beauty. They share everything, including their heartaches.
+      specialDialogue:
+        - "Mealea! Let's practice our duet!"
+        - "She understands what it means to exist for beauty."
+        - "Dancing and singing - we complete each other."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Champa saved Kinnari when she collapsed from exhaustion. Kinnari 
+        is eternally grateful and sings special songs just for her.
+      specialDialogue:
+        - "Champa saved me. My songs will always protect her."
+        - "She has the kindest heart I've ever encountered."
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Kavi's chaotic energy clashes with Kinnari's melodic nature, but 
+        she finds his antics endearing. She's trying to teach him to carry 
+        a tune.
+      specialDialogue:
+        - "Kavi, that's... not quite the right note..."
+        - "He makes me laugh when I want to cry."
+
+  # BACKSTORY
+  _birthplace: The Himaphan Forest, among the clouds
+  _occupation: Celestial Singer / Healer
+  _familyBackground: |
+    Born to a flock of Kinnara. Her parents were renowned singers. 
+    Rathasena, her partner, is still lost somewhere in the world.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "My first duet with Rathasena - our voices harmonized perfectly."
+    - "The terror of the Shadow scattering our flock."
+    - "Calling Rathasena's name until my voice gave out."
+    - "Champa finding me, broken and voiceless, and nursing me back."
+    - "The first time I sang again, and felt hope return."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_himaphan_journey
+  _isStarterCharacter: false
+  _unlockLevel: 12
+
+  # COSTUMES
+  _costumes:
+    - costumeId: kinnari_default
+      costumeName: Forest Songbird
+      description: Traditional Kinnara attire with golden feathers.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: kinnari_concert
+      costumeName: Royal Performer
+      description: Elegant robes for performing at the divine courts.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: kinnari_phoenix
+      costumeName: Phoenix Plumage
+      description: Feathers of flame and rebirth.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 900
+
+    - costumeId: kinnari_celestial
+      costumeName: Heavenly Diva
+      description: Ultimate form for performing before the gods.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: kinnari_sing
+      emoteName: Quick Melody
+      isDefault: true
+
+    - emoteId: kinnari_bow
+      emoteName: Performance Bow
+      isDefault: true
+
+    - emoteId: kinnari_flutter
+      emoteName: Wing Flutter
+      isDefault: false
+
+    - emoteId: kinnari_duet
+      emoteName: Duet Pose
+      isDefault: false
+
+

@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: PreahKo_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # PREAH KO - THE SACRED BULL
+  # Guardian of Temples, Bearer of Divine Will
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: preahko_bull
+  _displayName: Preah Ko
+  _title: The Sacred Bull of Shiva
+  _species: Divine Bull (Nandi)
+  _shortDescription: |
+    A sacred bull who has guarded the temples of Funan for a thousand years. 
+    Stoic, patient, and impossibly strong, Preah Ko speaks little but acts 
+    with absolute conviction when innocents are threatened.
+  _fullBiography: |
+    When the first temple was built in Funan, the gods sent a guardian to 
+    protect it. That guardian was Preah Ko - a white bull of impossible 
+    purity, blessed by Shiva himself to watch over sacred places.
+    
+    For centuries, Preah Ko stood silent vigil at temple gates. Pilgrims 
+    would touch his stone form for blessings, never knowing that the 
+    statue could move, think, and feel. He watched generations come and go, 
+    learning patience that only eternity can teach.
+    
+    He was there when kings were crowned and when they fell. He was there 
+    when temples were built and when they crumbled. Through it all, Preah Ko 
+    remained - steadfast, silent, eternal.
+    
+    When the Shadow Serpent defiled the sacred temples, Preah Ko finally 
+    moved. His stone form cracked as he stepped from his pedestal for the 
+    first time in centuries, revealing living muscle beneath. The Shadow's 
+    minions learned that some guardians never truly sleep.
+    
+    Now Preah Ko walks among the living once more. He struggles to understand 
+    this new world - its noise, its haste, its strange customs. But his 
+    purpose remains unchanged: protect the sacred, guard the innocent.
+    
+  _role: Tank
+  _element: Earth
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 0.9, g: 0.9, b: 0.95, a: 1}
+  _accentColor: {r: 0.8, g: 0.7, b: 0.2, a: 1}
+
+  # BASE STATS (Tank - Extremely High Defense)
+  _baseHealth: 200
+  _baseAttack: 25
+  _baseDefense: 45
+  _baseSpeed: 8
+  _baseStamina: 150
+  _attackRange: 2.0
+  _moveSpeed: 3.5
+  
+  _healthGrowth: 22
+  _attackGrowth: 2
+  _defenseGrowth: 5
+  _speedGrowth: 0.3
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: preahko_horn_thrust
+    abilityName: Sacred Horns
+    description: A powerful thrust with divinely blessed horns.
+    damage: 28
+    cooldown: 0
+    staminaCost: 4
+    range: 2.5
+    type: Melee
+    element: Earth
+
+  _specialAbility:
+    abilityId: preahko_stone_wall
+    abilityName: Temple Wall
+    description: |
+      Preah Ko plants himself and becomes immovable, creating a barrier 
+      that allies can hide behind. He takes drastically reduced damage 
+      and reflects a portion back at attackers.
+    damage: 0
+    cooldown: 14
+    staminaCost: 35
+    range: 0
+    type: Buff
+    element: Earth
+    statusEffects:
+      - immovable_6s
+      - damage_reduction_80
+      - damage_reflect_30
+
+  _ultimateAbility:
+    abilityId: preahko_divine_charge
+    abilityName: Wrath of the Guardian
+    description: |
+      After centuries of stillness, Preah Ko MOVES. He charges across the 
+      battlefield with unstoppable force, trampling all enemies in his path 
+      and ending with a devastating horn attack that sends foes flying.
+    damage: 130
+    cooldown: 50
+    staminaCost: 70
+    range: 15
+    type: Melee
+    element: Earth
+    statusEffects:
+      - unstoppable
+      - knockback_massive
+      - stun_3s
+
+  _passiveAbility:
+    abilityId: preahko_steadfast
+    abilityName: Eternal Vigil
+    description: |
+      Preah Ko cannot be knocked back, pulled, or displaced. Standing still 
+      gradually increases his defense. Nearby allies gain a small shield 
+      that regenerates when near him.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 5
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: preahko_stomp
+      abilityName: Ground Sanctification
+      description: Stomps the ground, creating a shockwave and blessed terrain.
+      damage: 35
+      cooldown: 0
+      staminaCost: 15
+      type: AoE
+      
+    - abilityId: preahko_headbutt
+      abilityName: Stone Headbutt
+      description: A devastating headbutt that can break through shields.
+      damage: 55
+      cooldown: 10
+      staminaCost: 25
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 90
+    kindness: 70
+    wisdom: 95
+    humor: 15
+    loyalty: 100
+    curiosity: 40
+
+  _likes:
+    - Silence
+    - Temples and sacred places
+    - Incense and offerings
+    - Patient, respectful people
+    - The smell of rain on stone
+
+  _dislikes:
+    - Loud noises
+    - Disrespect toward sacred things
+    - Unnecessary haste
+    - Those who forget tradition
+    - Being touched without permission
+
+  _favoriteFood: Does not eat - but appreciates offerings of flowers
+  _hobby: Standing perfectly still and observing
+  _fear: That the sacred places he guards will be forgotten
+  _dream: To see the temples restored to their former glory
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "......"
+      - type: Greeting
+        text: "*nods slowly in acknowledgment*"
+      - type: Selection
+        text: "The guardian... answers."
+      - type: Selection
+        text: "...I will protect."
+      - type: BattleStart
+        text: "Desecrators... will be... punished."
+      - type: BattleStart
+        text: "Stand... behind me."
+      - type: Attack
+        text: "..."
+      - type: Attack
+        text: "*snorts*"
+      - type: SpecialAttack
+        text: "None... shall pass."
+      - type: Ultimate
+        text: "THE GUARDIAN... MOVES!!!"
+      - type: Hurt
+        text: "...stone... endures..."
+      - type: LowHealth
+        text: "I have... guarded... for centuries... I will not... stop now..."
+      - type: Victory
+        text: "The sacred... is protected."
+      - type: Victory
+        text: "*returns to stillness*"
+      - type: Defeat
+        text: "The temple... I have... failed..."
+      - type: LevelUp
+        text: "...stronger..."
+      - type: Idle
+        text: "*stands perfectly still, watching everything*"
+      - type: Idle
+        text: "...the stones... remember..."
+      - type: InteractFriendly
+        text: "...you have... a good heart. Rare."
+      - type: InteractRival
+        text: "...learn... respect."
+      - type: Funny
+        text: "...that was... a joke? I see. ...ha."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Champa's gentleness reminds Preah Ko of peaceful temple days. 
+        He guards her with special care, seeing in her the spirit of 
+        the devoted pilgrims he watched over for centuries.
+      specialDialogue:
+        - "Princess... your heart... is a temple itself."
+        - "I will stand... between you... and all harm."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: BestFriend
+      affinity: 90
+      relationshipDescription: |
+        Two ancient guardians who understand each other without words. 
+        They often stand together in comfortable silence, sharing the 
+        weight of eternity.
+      specialDialogue:
+        - "Brother guardian... we endure."
+        - "*stands beside Prohm in companionable silence*"
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Acquaintance
+      affinity: 40
+      relationshipDescription: |
+        Kavi's chaos bewilders and slightly annoys Preah Ko. But he sees 
+        the good heart beneath the pranks and tolerates the monkey's 
+        antics... mostly.
+      specialDialogue:
+        - "Monkey... please... be still... for one moment."
+        - "...why do you vibrate so much?"
+
+  # BACKSTORY
+  _birthplace: Manifested at the first Funan temple
+  _occupation: Temple Guardian
+  _familyBackground: |
+    Created by Shiva as a guardian spirit. Has no family in the traditional 
+    sense, but considers all temple caretakers throughout history his kin.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The first pilgrim who touched my form and wept with joy."
+    - "Watching King Jayavarman II's coronation from my eternal post."
+    - "The silence of the temple at night, filled with sacred energy."
+    - "The day the Shadow touched my temple... and I finally moved."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_awaken_guardian
+  _isStarterCharacter: false
+  _unlockLevel: 18
+
+  # COSTUMES
+  _costumes:
+    - costumeId: preahko_default
+      costumeName: Temple Guardian
+      description: White stone form, partially cracked to reveal life within.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: preahko_stone
+      costumeName: Pure Stone
+      description: Fully encased in sacred stone, as he appeared for centuries.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: preahko_golden
+      costumeName: Golden Bull
+      description: Gilded form for the most sacred ceremonies.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1000
+
+    - costumeId: preahko_divine
+      costumeName: Nandi Prime
+      description: Full divine form as Shiva's personal mount.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: preahko_nod
+      emoteName: Solemn Nod
+      isDefault: true
+
+    - emoteId: preahko_stand
+      emoteName: Vigilant Stance
+      isDefault: true
+
+    - emoteId: preahko_stomp_emote
+      emoteName: Ground Stomp
+      isDefault: false
+
+    - emoteId: preahko_bless
+      emoteName: Blessing Gesture
+      isDefault: false
+
+

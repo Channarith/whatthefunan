@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: PreahThorani_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # PREAH THORANI - THE EARTH MOTHER
+  # Goddess of the Ground, Witness of All Deeds
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: thorani_earth
+  _displayName: Preah Thorani
+  _title: Mother Earth, The Witness
+  _species: Deva (Earth Goddess)
+  _shortDescription: |
+    The goddess of the earth who once saved the Buddha from demons by 
+    wringing flood waters from her hair. She witnesses all good deeds 
+    and remembers every act of kindness ever performed.
+  _fullBiography: |
+    When the Buddha sat beneath the Bodhi tree, the demon Mara sent his 
+    armies to stop enlightenment. The Buddha had no defenders - or so 
+    Mara thought. He called upon the earth itself to witness his countless 
+    lifetimes of good deeds.
+    
+    And the earth answered.
+    
+    Preah Thorani rose from the ground, beautiful and terrible. She wrung 
+    her long hair, and from it poured all the water from all the offerings 
+    of all the Buddha's previous lives. The flood swept away Mara's demons 
+    like leaves in a monsoon.
+    
+    That was her greatest act, but not her only one. Thorani IS the earth. 
+    She feels every footstep, absorbs every tear, remembers every kindness. 
+    She is the silent witness to all of history.
+    
+    The Shadow Serpent's corruption is an infection in her very body. It 
+    HURTS. For the first time since Mara, Thorani has risen fully, taking 
+    physical form to fight a threat to all who walk upon her.
+    
+    She is patient, ancient, and infinitely powerful - but she doesn't 
+    enjoy fighting. Every enemy she defeats was once a child who played 
+    upon her. She remembers them all.
+    
+  _role: Support
+  _element: Earth
+  _rarity: Legendary
+
+  # VISUALS
+  _themeColor: {r: 0.45, g: 0.35, b: 0.25, a: 1}
+  _accentColor: {r: 0.3, g: 0.6, b: 0.4, a: 1}
+
+  # BASE STATS (Support - Incredibly durable, strong healing)
+  _baseHealth: 160
+  _baseAttack: 20
+  _baseDefense: 35
+  _baseSpeed: 20
+  _baseStamina: 150
+  _attackRange: 8.0
+  _moveSpeed: 5.0
+  
+  _healthGrowth: 18
+  _attackGrowth: 2
+  _defenseGrowth: 4
+  _speedGrowth: 1
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: thorani_earth_pulse
+    abilityName: Earth's Touch
+    description: Sends healing energy through the ground to allies or damaging tremors to enemies.
+    damage: 20
+    cooldown: 0
+    staminaCost: 4
+    range: 10
+    type: Ranged
+    element: Earth
+
+  _specialAbility:
+    abilityId: thorani_blessing
+    abilityName: Mother's Blessing
+    description: |
+      Thorani blesses the ground beneath her allies, creating zones of 
+      healing earth. Allies standing on blessed ground regenerate health 
+      rapidly and cannot be knocked down.
+    damage: 0
+    cooldown: 15
+    staminaCost: 40
+    range: 12
+    type: Heal
+    element: Earth
+    statusEffects:
+      - heal_zone_8s
+      - stability_buff
+
+  _ultimateAbility:
+    abilityId: thorani_flood
+    abilityName: Wringing of Hair
+    description: |
+      Thorani wrings her legendary hair, releasing all the offerings of 
+      compassion ever given to the earth. A massive flood sweeps the 
+      battlefield, healing allies to full and washing away all enemies.
+    damage: 180
+    cooldown: 90
+    staminaCost: 100
+    range: 30
+    type: AoE
+    element: Earth
+    statusEffects:
+      - full_heal_allies
+      - massive_knockback_enemies
+      - cleanse_all_debuffs
+      - purify_corruption
+
+  _passiveAbility:
+    abilityId: thorani_witness
+    abilityName: Eternal Witness
+    description: |
+      Thorani remembers every good deed. Allies who have been kind in 
+      battle (healing, protecting, buffing) gain stacking bonuses. She 
+      also cannot be surprised - the earth tells her everything.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: thorani_mudslide
+      abilityName: Mudslide
+      description: Commands the earth to flow, carrying enemies away.
+      damage: 40
+      cooldown: 0
+      staminaCost: 20
+      type: AoE
+      
+    - abilityId: thorani_garden
+      abilityName: Instant Garden
+      description: Creates a small garden that heals allies who enter it.
+      damage: 0
+      cooldown: 20
+      staminaCost: 35
+      type: Heal
+
+  # PERSONALITY
+  _personality:
+    bravery: 80
+    kindness: 100
+    wisdom: 100
+    humor: 40
+    loyalty: 90
+    curiosity: 60
+
+  _likes:
+    - Acts of kindness (she feels them all)
+    - Rain (it tickles)
+    - Gardens and farms
+    - Children playing
+    - Offerings left at shrines
+
+  _dislikes:
+    - Pollution
+    - Cruelty
+    - Those who forget to be grateful
+    - Unnecessary destruction
+    - The Shadow's corruption (it HURTS)
+
+  _favoriteFood: She doesn't eat, but appreciates offerings of rice and flowers
+  _hobby: Watching over all living things and remembering their stories
+  _fear: That one day, kindness might disappear from the world
+  _dream: A world where every being treats others and the earth with respect
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "I have watched you from the moment you first touched the ground."
+      - type: Greeting
+        text: "Child of the earth, you are always welcome."
+      - type: Selection
+        text: "The earth moves at your command."
+      - type: Selection
+        text: "I will support you, as I support all who walk upon me."
+      - type: BattleStart
+        text: "You stand upon me. I will not let you fall."
+      - type: BattleStart
+        text: "The earth remembers every cruelty. Face her judgment."
+      - type: Attack
+        text: "Return to the soil."
+      - type: Attack
+        text: "The earth reclaims."
+      - type: SpecialAttack
+        text: "Feel mother earth's blessing!"
+      - type: Ultimate
+        text: "BY ALL THE KINDNESS EVER SHOWN... BE WASHED AWAY!"
+      - type: Hurt
+        text: "The earth... endures..."
+      - type: LowHealth
+        text: "I have stood for millions of years... I will not fall now..."
+      - type: Victory
+        text: "Peace returns to the land. For now."
+      - type: Victory
+        text: "I will remember your bravery. Always."
+      - type: Defeat
+        text: "The earth... cannot fall... the earth... persists..."
+      - type: LevelUp
+        text: "My roots grow deeper. My reach grows wider."
+      - type: Idle
+        text: "*listens to the stories of a million footsteps*"
+      - type: Idle
+        text: "I remember when this land was young..."
+      - type: InteractFriendly
+        text: "Your kindness echoes through the earth. I have felt it."
+      - type: InteractRival
+        text: "You have hurt the earth. But she forgives. Will you change?"
+      - type: Funny
+        text: "I'm not 'down to earth.' I AM the earth. ...That was a joke."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: neangkangrei_bamboo
+      characterName: Neang Kangrei
+      type: Family
+      affinity: 95
+      relationshipDescription: |
+        Kangrei is Thorani's daughter in spirit - born from her body, the 
+        earth. They share a deep connection that transcends words.
+      specialDialogue:
+        - "My precious child, born from my forests."
+        - "She feels my pain when the land is hurt."
+        - "We are one, in a way others cannot understand."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 90
+      relationshipDescription: |
+        Thorani has witnessed every one of Champa's good deeds. She loves 
+        the elephant princess like her own child.
+      specialDialogue:
+        - "Princess, I have counted every flower you spared."
+        - "Your kindness makes the earth sing."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: BestFriend
+      affinity: 100
+      relationshipDescription: |
+        Prohm has walked on Thorani since before recorded history. They 
+        are the oldest of friends - two ancients who understand eternity.
+      specialDialogue:
+        - "Old friend, we have seen eons together."
+        - "When all others forget, we remember each other."
+
+  # BACKSTORY
+  _birthplace: She IS the birthplace - the earth itself
+  _occupation: Earth Goddess / Eternal Witness
+  _familyBackground: |
+    The physical embodiment of the earth. Mother to all nature spirits, 
+    witness to all history, bearer of all who walk upon her.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The first life forms touching my surface, billions of years ago."
+    - "Rising to witness the Buddha's enlightenment - my proudest moment."
+    - "Wringing the flood from my hair to defeat Mara's demons."
+    - "Feeling the Shadow's corruption spread through my body... the agony."
+    - "Rising again, after millennia of rest, to protect my children."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_earth_awakening
+  _isStarterCharacter: false
+  _unlockLevel: 35
+
+  # COSTUMES
+  _costumes:
+    - costumeId: thorani_default
+      costumeName: Earth Mother
+      description: Robes made of living plants and ancient soil.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: thorani_bodhi
+      costumeName: Bodhi Witness
+      description: How she appeared when she saved the Buddha.
+      rarity: Legendary
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: thorani_harvest
+      costumeName: Harvest Blessing
+      description: Adorned with the fruits of a grateful earth.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1500
+
+    - costumeId: thorani_primordial
+      costumeName: Primordial Earth
+      description: Her ancient form from before life itself existed.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: thorani_bless
+      emoteName: Earth Blessing
+      isDefault: true
+
+    - emoteId: thorani_listen
+      emoteName: Listening to Earth
+      isDefault: true
+
+    - emoteId: thorani_hair
+      emoteName: Hair Wring (mini)
+      isDefault: false
+
+    - emoteId: thorani_garden
+      emoteName: Grow Flowers
+      isDefault: false
+
+

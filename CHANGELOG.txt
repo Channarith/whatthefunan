@@ -240,6 +240,112 @@ NEXT STEPS
 - [ ] Submit to soft launch markets
 
 ================================================================================
+VERSION 0.5.0 - Extended Character Roster Update
+================================================================================
+Date: December 15, 2024
+
+CHARACTER PROFILES EXPANDED FROM 7 TO 21
+----------------------------------------
+Each profile includes:
+- Full biography and backstory
+- Base stats with growth rates
+- 4 abilities (basic, special, ultimate, passive) + combo moves
+- Personality traits (bravery, kindness, wisdom, humor, loyalty, curiosity)
+- Likes/Dislikes/Fear/Dream
+- 30+ unique voice lines per character
+- Relationships with other characters
+- Key memories
+- 4-5 costumes with unlock methods
+- 5 emotes
+
+ORIGINAL 7 GUARDIANS (Starters):
+--------------------------------
+1. CHAMPA - Elephant Princess (Tank, Earth)
+2. KAVI - Monkey Trickster (Speedster, Wind)
+3. NAGA PRINCE - Seven-Headed Serpent (Support, Water)
+4. MEALEA - Celestial Dancer/Apsara (Support, Light)
+5. MAKARA - Sea Dragon Chef (DPS, Fire)
+6. PROHM - Ancient Guardian/Dinosaur (Tank, Earth)
+7. SINGHA - Guardian Lion (AllRounder, None)
+
+NEW 14 GUARDIANS:
+-----------------
+8. GARUDA - Divine Eagle (DPS, Wind)
+   - King of Birds, former enemy of Nagas seeking redemption
+   - Unlocks: Quest (Sky Temple), Level 15
+
+9. HANUMAN - Immortal Warrior (DPS, Wind)
+   - Legendary monkey champion blessed with immortality
+   - Unlocks: Quest (Immortal Mountain), Level 25
+
+10. REAHU - Eclipse Demon (DPS, Shadow)
+    - Reformed demon who swallows light, seeking atonement
+    - Unlocks: Quest (Eclipse Redemption), Level 30
+
+11. PREAH KO - Sacred Bull (Tank, Earth)
+    - Temple guardian who stood vigil for centuries
+    - Unlocks: Quest (Awaken Guardian), Level 18
+
+12. KINNARI - Bird Maiden (Support, Light)
+    - Celestial songbird searching for lost love
+    - Unlocks: Quest (Himaphan Journey), Level 12
+
+13. YAK - Gentle Giant (Tank, Earth)
+    - Misunderstood temple giant with heart of gold
+    - Unlocks: Quest (Temple Gate), Level 10
+
+14. MONI MEKHALA - Lightning Goddess (DPS, Light)
+    - Playful goddess who creates lightning storms
+    - Unlocks: Quest (Storm Dance), Level 20
+
+15. REAM EYSO - Thunder Giant (DPS, Wind)
+    - Eternal pursuer of Mekhala, creates thunder
+    - Unlocks: Quest (Thunder Mountain), Level 20
+
+16. NEANG KANGREI - Bamboo Spirit (Support, Earth)
+    - Forest guardian who speaks to plants
+    - Unlocks: Quest (Bamboo Grove), Level 14
+
+17. VORVONG - Exiled Prince (AllRounder, None)
+    - Elder twin warrior seeking justice
+    - Unlocks: Quest (Twin Princes), Level 16
+
+18. SORVONG - Shadow Prince (Speedster, Shadow)
+    - Younger twin who fights from the shadows
+    - Unlocks: Quest (Twin Princes), Level 16
+
+19. PREAH THORANI - Earth Mother (Support, Earth)
+    - Goddess of earth who saved Buddha from demons
+    - Unlocks: Quest (Earth Awakening), Level 35
+
+20. KRITING - Chimera Guardian (AllRounder, Earth)
+    - Lion-elephant hybrid bridging two worlds
+    - Unlocks: Quest (Temple Threshold), Level 22
+
+21. HAMSA - Sacred Swan (Support, Light)
+    - Divine vehicle of wisdom goddess
+    - Unlocks: Quest (Celestial Lake), Level 24
+
+CHARACTER RELATIONSHIPS WEB
+---------------------------
+- Champa & Kavi: Best Friends (sibling-like bond)
+- Garuda & Naga Prince: Rivals (ancient enemies becoming allies)
+- Hanuman & Kavi: Mentor/Student
+- Moni Mekhala & Ream Eyso: Eternal Dance Partners
+- Vorvong & Sorvong: Twin Brothers (Family bond)
+- Preah Thorani & Neang Kangrei: Mother/Daughter spirits
+- Yak & Kavi: Best Friends (first acceptance)
+- Kinnari & Mealea: Best Friends (celestial performers)
+- Kriting & Champa: Best Friends (elephant connection)
+- Prohm & Preah Ko: Ancient guardians bond
+- Reahu & Mealea: Light vs Shadow tension
+
+TOTAL CHARACTER PROFILES: 21
+TOTAL VOICE LINES: 630+ (30+ per character)
+TOTAL COSTUMES: 90+ (4-5 per character)
+TOTAL EMOTES: 105 (5 per character)
+
+================================================================================
 REMINDER: Check code into GitLab weekly!
 ================================================================================
 

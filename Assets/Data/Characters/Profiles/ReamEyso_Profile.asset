@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: ReamEyso_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # REAM EYSO - THE THUNDER GIANT
+  # Master of Thunder, Wielder of the Divine Axe
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: reameyso_thunder
+  _displayName: Ream Eyso
+  _title: Lord of Thunder
+  _species: Giant (Yeak/Asura)
+  _shortDescription: |
+    A towering giant who commands thunder with his magical axe. His eternal 
+    pursuit of Moni Mekhala creates the storms Cambodia needs. Grumpy on 
+    the outside, but secretly enjoys the chase.
+  _fullBiography: |
+    Ream Eyso was the hermit sage's other student - a giant of immense 
+    strength but limited patience. When the sage gave him the thunder axe, 
+    Ream Eyso was initially pleased... until he saw Mekhala's crystal ball 
+    shine brighter than the sun.
+    
+    "That should be mine," he growled. "My thunder deserves the best light."
+    
+    And so began millennia of chasing. Ream Eyso convinced himself he was 
+    angry, that he wanted the crystal out of greed. But after thousands of 
+    years, even he must admit - if Mekhala ever let him catch her, he 
+    wouldn't know what to do.
+    
+    The chase IS the point. The thunder wouldn't mean anything without 
+    lightning to chase. The storms wouldn't bring rain without their 
+    dance. Deep down, Ream Eyso knows this. He'd never admit it.
+    
+    When the Shadow threatened Mekhala, Ream Eyso's rage was genuine - not 
+    because someone might take the crystal, but because someone might hurt 
+    HER. That realization shook him more than any thunder.
+    
+    Now they fight alongside each other, and Ream Eyso is learning that 
+    partnership might be more satisfying than pursuit... though he still 
+    grumbles about wanting that crystal.
+    
+  _role: DPS
+  _element: Wind
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 0.3, g: 0.3, b: 0.4, a: 1}
+  _accentColor: {r: 0.9, g: 0.7, b: 0.1, a: 1}
+
+  # BASE STATS (DPS - Slow but massive damage)
+  _baseHealth: 140
+  _baseAttack: 50
+  _baseDefense: 25
+  _baseSpeed: 15
+  _baseStamina: 110
+  _attackRange: 4.0
+  _moveSpeed: 4.5
+  
+  _healthGrowth: 15
+  _attackGrowth: 5.5
+  _defenseGrowth: 2.5
+  _speedGrowth: 0.8
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: reameyso_axe_swing
+    abilityName: Thunder Cleave
+    description: A devastating axe swing that creates a thunderclap on impact.
+    damage: 45
+    cooldown: 0
+    staminaCost: 6
+    range: 4.5
+    type: Melee
+    element: Wind
+
+  _specialAbility:
+    abilityId: reameyso_axe_throw
+    abilityName: Thunder Axe Toss
+    description: |
+      Ream Eyso hurls his divine axe across the battlefield. It spins 
+      through enemies before returning to his hand, creating thunder 
+      shockwaves along its path.
+    damage: 70
+    cooldown: 12
+    staminaCost: 35
+    range: 20
+    type: Ranged
+    element: Wind
+    statusEffects:
+      - shockwave_path
+      - stun_chance_30
+
+  _ultimateAbility:
+    abilityId: reameyso_thunder_strike
+    abilityName: Wrath of the Storm King
+    description: |
+      Ream Eyso leaps into the sky and brings his axe down with all his 
+      might, creating the loudest thunderclap in existence. The impact 
+      creates a massive crater and stuns all enemies on the field.
+    damage: 200
+    cooldown: 60
+    staminaCost: 85
+    range: 12
+    type: AoE
+    element: Wind
+    statusEffects:
+      - global_stun_2s
+      - crater_creation
+      - deafen_5s
+
+  _passiveAbility:
+    abilityId: reameyso_stubborn
+    abilityName: Unstoppable Pursuit
+    description: |
+      Ream Eyso's determination cannot be stopped. He's immune to slows 
+      and gains movement speed when moving toward Mekhala (or any enemy 
+      who has damaged him).
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Wind
+
+  _comboMoves:
+    - abilityId: reameyso_ground_slam
+      abilityName: Thunder Slam
+      description: Slams the axe into the ground, creating a thunder shockwave.
+      damage: 55
+      cooldown: 0
+      staminaCost: 20
+      type: AoE
+      
+    - abilityId: reameyso_roar
+      abilityName: Thunder Roar
+      description: A roar that sounds like thunder, intimidating nearby enemies.
+      damage: 25
+      cooldown: 15
+      staminaCost: 15
+      type: Debuff
+
+  # PERSONALITY
+  _personality:
+    bravery: 90
+    kindness: 45
+    wisdom: 50
+    humor: 30
+    loyalty: 85
+    curiosity: 35
+
+  _likes:
+    - The sound of thunder
+    - Proving he's strong
+    - When plans actually work
+    - Respectable opponents
+    - ...watching Mekhala dance (secretly)
+
+  _dislikes:
+    - Being teased
+    - Losing to Mekhala AGAIN
+    - People who talk too much
+    - Being called slow
+    - Admitting he's wrong
+
+  _favoriteFood: Roasted boar with thunder-charred vegetables
+  _hobby: Training with his axe and planning how to finally catch Mekhala
+  _fear: What happens if he actually catches Mekhala? What then?
+  _dream: To be respected as her equal, not just her pursuer
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Hmph. What do you want?"
+      - type: Greeting
+        text: "*thunder rumbles* ...that was my stomach. Don't ask."
+      - type: Selection
+        text: "Fine. Let's get this over with."
+      - type: Selection
+        text: "You want the Thunder Lord? You got him."
+      - type: BattleStart
+        text: "FINALLY! Something to hit!"
+      - type: BattleStart
+        text: "Let's see how you like THUNDER!"
+      - type: Attack
+        text: "THUNDER!"
+      - type: Attack
+        text: "Feel my wrath!"
+      - type: Attack
+        text: "BOOM!"
+      - type: SpecialAttack
+        text: "Axe! STRIKE THEM DOWN!"
+      - type: Ultimate
+        text: "WITNESS THE WRATH OF THE STORM KING! THUNDER!!!"
+      - type: Hurt
+        text: "Grr... not bad..."
+      - type: LowHealth
+        text: "I won't... fall... not yet..."
+      - type: Victory
+        text: "Hmph. As expected."
+      - type: Victory
+        text: "Was there ever any doubt? ...Don't answer that."
+      - type: Defeat
+        text: "Impossible... I am... thunder itself..."
+      - type: LevelUp
+        text: "My thunder grows louder. GOOD."
+      - type: Idle
+        text: "*grumbles about Mekhala* She's just lucky..."
+      - type: Idle
+        text: "Where did she go now? Not that I care."
+      - type: InteractFriendly
+        text: "You're... not as annoying as most. That's a compliment."
+      - type: InteractRival
+        text: "MEKHALA! Get back here with that crystal!"
+      - type: Funny
+        text: "I don't DO jokes. ...Why is everyone laughing?"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: mekhala_lightning
+      characterName: Moni Mekhala
+      type: Rival
+      affinity: 65
+      relationshipDescription: |
+        Millennia of chasing her, and he still can't catch her. He tells 
+        himself he wants the crystal, but when she was in danger, he 
+        realized the truth: the chase means nothing without her.
+      specialDialogue:
+        - "One day I WILL catch you! ...probably!"
+        - "Your tricks won't work forever!"
+        - "...she was in danger and I... I couldn't bear it."
+
+    - characterId: hanuman_warrior
+      characterName: Hanuman
+      type: Friend
+      affinity: 70
+      relationshipDescription: |
+        Two powerful warriors who respect each other's strength. They 
+        often spar, creating storms that shake the land.
+      specialDialogue:
+        - "Monkey! You're one of the few who can take a real hit!"
+        - "Our battles are... satisfying."
+
+    - characterId: yak_giant
+      characterName: Yak
+      type: Acquaintance
+      affinity: 55
+      relationshipDescription: |
+        Fellow giants, but Ream Eyso doesn't understand Yak's gentle nature. 
+        He's slowly learning that strength isn't everything.
+      specialDialogue:
+        - "You could crush them all... why don't you?"
+        - "...kindness as strength? Strange concept."
+
+  # BACKSTORY
+  _birthplace: The Mountain of Echoes
+  _occupation: Thunder God / Eternal Pursuer
+  _familyBackground: |
+    Born a giant of great power. Trained by the hermit sage who saw 
+    potential in his strength. His "rivalry" with Mekhala defines him.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Receiving my axe and feeling its thunder course through me."
+    - "The first time I threw it at Mekhala... and missed."
+    - "Countless storms created in our chase, bringing life to the land."
+    - "Seeing the Shadow reach for her crystal... and my rage awakening."
+    - "Fighting BESIDE her instead of chasing her... it felt... right."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_thunder_mountain
+  _isStarterCharacter: false
+  _unlockLevel: 20
+
+  # COSTUMES
+  _costumes:
+    - costumeId: reameyso_default
+      costumeName: Thunder Giant
+      description: Traditional giant warrior attire with his divine axe.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: reameyso_storm
+      costumeName: Storm King
+      description: Armor crackling with perpetual lightning.
+      rarity: Epic
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: reameyso_ancient
+      costumeName: Young Pursuer
+      description: How he appeared when the chase began.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 800
+
+    - costumeId: reameyso_harmony
+      costumeName: Storm Partner
+      description: Matching attire with Mekhala. He denies liking it.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: reameyso_thunder
+      emoteName: Thunder Flex
+      isDefault: true
+
+    - emoteId: reameyso_grumble
+      emoteName: Annoyed Grumble
+      isDefault: true
+
+    - emoteId: reameyso_axe_spin
+      emoteName: Axe Flourish
+      isDefault: false
+
+    - emoteId: reameyso_blush
+      emoteName: Embarrassed (about Mekhala)
+      isDefault: false
+
+

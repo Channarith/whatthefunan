@@ -1,0 +1,328 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Hanuman_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # HANUMAN - THE IMMORTAL WARRIOR
+  # Son of the Wind, Champion of Heroes
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: hanuman_warrior
+  _displayName: Hanuman
+  _title: The Immortal Champion
+  _species: Divine Monkey (Vanara)
+  _shortDescription: |
+    The legendary warrior-monkey who once helped defeat the demon king. 
+    Blessed with immortality, he now mentors a new generation of heroes 
+    while searching for a purpose in an age that has forgotten the old ways.
+  _fullBiography: |
+    In the age of legends, Hanuman was the greatest warrior the world had 
+    ever known. Son of the Wind God himself, he possessed strength enough 
+    to move mountains, speed to outrace thought, and devotion that could 
+    shake the heavens.
+    
+    He served the divine prince Rama with absolute loyalty, crossing oceans 
+    in a single leap, setting demon cities ablaze with his burning tail, and 
+    carrying an entire mountain of healing herbs to save a dying friend.
+    
+    When the war ended, Rama blessed Hanuman with immortality - a gift that 
+    has become both blessing and curse. Hanuman has watched civilizations 
+    rise and fall, friends age and die, while he remains unchanged.
+    
+    Now, in the shadow of a new threat, Hanuman has emerged from his 
+    mountain meditation. He sees in young Kavi a spirit like his own - wild, 
+    brave, and fiercely loyal. Perhaps mentoring this young monkey will 
+    give his eternal life new meaning.
+    
+  _role: DPS
+  _element: Wind
+  _rarity: Legendary
+
+  # VISUALS
+  _themeColor: {r: 0.9, g: 0.7, b: 0.4, a: 1}
+  _accentColor: {r: 0.8, g: 0.1, b: 0.1, a: 1}
+
+  # BASE STATS (DPS - Extremely High Attack and Speed)
+  _baseHealth: 110
+  _baseAttack: 48
+  _baseDefense: 22
+  _baseSpeed: 42
+  _baseStamina: 130
+  _attackRange: 2.5
+  _moveSpeed: 8.0
+  
+  _healthGrowth: 12
+  _attackGrowth: 5.5
+  _defenseGrowth: 2
+  _speedGrowth: 2.8
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: hanuman_divine_fist
+    abilityName: Divine Fist
+    description: Punches infused with the power of the wind that can shatter stone.
+    damage: 38
+    cooldown: 0
+    staminaCost: 4
+    range: 2.0
+    type: Melee
+    element: Wind
+
+  _specialAbility:
+    abilityId: hanuman_grow
+    abilityName: Mountain Giant
+    description: |
+      Hanuman grows to enormous size, dramatically increasing his attack 
+      range and damage. In this form, each attack creates shockwaves that 
+      hit multiple enemies.
+    damage: 60
+    cooldown: 15
+    staminaCost: 40
+    range: 5
+    type: Buff
+    element: Wind
+    statusEffects:
+      - size_increase_10s
+      - attack_range_bonus
+      - aoe_attacks
+
+  _ultimateAbility:
+    abilityId: hanuman_burning_tail
+    abilityName: Lanka's Flame
+    description: |
+      Hanuman's tail ignites with divine fire as he spins through the 
+      battlefield, leaving a trail of devastating flames. Enemies caught 
+      in the path are launched into the air and burned.
+    damage: 180
+    cooldown: 60
+    staminaCost: 80
+    range: 15
+    type: AoE
+    element: Wind
+    statusEffects:
+      - burn_5s
+      - knockup
+
+  _passiveAbility:
+    abilityId: hanuman_immortal
+    abilityName: Immortal Spirit
+    description: |
+      Hanuman's divine blessing grants him immunity to instant-kill effects 
+      and allows him to survive fatal damage once per battle with 1 HP. 
+      Additionally, he inspires nearby allies with increased courage.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 8
+    type: Buff
+    element: Wind
+
+  _comboMoves:
+    - abilityId: hanuman_leap
+      abilityName: Ocean Leap
+      description: Leaps across the entire battlefield, crashing down on enemies.
+      damage: 70
+      cooldown: 0
+      staminaCost: 25
+      type: Melee
+      
+    - abilityId: hanuman_mace_spin
+      abilityName: Gada Cyclone
+      description: Spins his divine mace in a devastating 360-degree attack.
+      damage: 85
+      cooldown: 8
+      staminaCost: 35
+      type: AoE
+
+  # PERSONALITY
+  _personality:
+    bravery: 100
+    kindness: 80
+    wisdom: 90
+    humor: 55
+    loyalty: 100
+    curiosity: 45
+
+  _likes:
+    - Training worthy students
+    - Tales of heroic deeds
+    - Devotion and loyalty
+    - Mangoes (a weakness)
+    - Sunrise meditation
+
+  _dislikes:
+    - Betrayal
+    - Arrogance without ability
+    - Those who harm the innocent
+    - Being called old
+    - Modern things he doesn't understand
+
+  _favoriteFood: Fresh mangoes - he can eat hundreds
+  _hobby: Training, meditating, telling stories of the old wars
+  _fear: That his eternal life has no more purpose
+  _dream: To find a worthy successor and finally rest
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "I am Hanuman. I have fought since before your ancestors were born."
+      - type: Greeting
+        text: "Young one, do you seek wisdom or strength? I offer both."
+      - type: Selection
+        text: "The immortal champion answers your call."
+      - type: Selection
+        text: "Let us write another legend together."
+      - type: BattleStart
+        text: "I have toppled demon kings. You are nothing."
+      - type: BattleStart
+        text: "Face the son of the Wind God!"
+      - type: Attack
+        text: "Feel divine wrath!"
+      - type: Attack
+        text: "JAI SHRI RAM!"
+      - type: SpecialAttack
+        text: "Witness my true form! GROW!"
+      - type: Ultimate
+        text: "Remember Lanka? BURN LIKE THE DEMON CITY!"
+      - type: Hurt
+        text: "A worthy blow..."
+      - type: LowHealth
+        text: "I... cannot fall... not yet..."
+      - type: Victory
+        text: "Another battle won. Another day eternal."
+      - type: Victory
+        text: "You fought well. Train harder."
+      - type: Defeat
+        text: "Impossible... I am... immortal..."
+      - type: LevelUp
+        text: "Even infinite strength can be honed further."
+      - type: Idle
+        text: "*reminisces about battles from a thousand years ago*"
+      - type: Idle
+        text: "I have stood here before... or somewhere like it..."
+      - type: InteractFriendly
+        text: "You remind me of friends long gone. Fight beside me."
+      - type: InteractRival
+        text: "Your form is sloppy. Let me show you true technique."
+      - type: Funny
+        text: "In my day, demons were MUCH more impressive. Kids these days..."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Mentor
+      affinity: 85
+      relationshipDescription: |
+        Hanuman sees his younger self in Kavi - the same wild energy, the same 
+        fierce loyalty. He's hard on Kavi because he knows the young monkey's 
+        potential. Their training sessions are legendary (and destructive).
+      specialDialogue:
+        - "Kavi! Your form is terrible! Again!"
+        - "That prank... heh. I did something similar once. To a demon king."
+        - "You have the spark, young one. Fan it into a flame."
+
+    - characterId: garuda_eagle
+      characterName: Garuda
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Two ancient beings who have witnessed the rise and fall of empires. 
+        They share an understanding that transcends words.
+      specialDialogue:
+        - "Eagle, we are relics of a forgotten age."
+        - "At least we are not alone in our eternity."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Champa's pure heart reminds Hanuman why he continues to fight. 
+        He sees in her the nobility that made his old master great.
+      specialDialogue:
+        - "Princess, your kindness is a rare treasure. Guard it well."
+        - "You would have made a fine warrior in the old days."
+
+  # BACKSTORY
+  _birthplace: The Celestial Mountain of the Wind God
+  _occupation: Immortal Warrior / Mentor
+  _familyBackground: |
+    Son of Vayu (Wind God) and Anjana (a celestial nymph). Blessed by 
+    multiple gods in his youth, making him nearly invincible.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Leaping across the ocean to find Sita in Lanka."
+    - "Setting the demon city ablaze with my burning tail."
+    - "Carrying the mountain of healing herbs to save Lakshmana."
+    - "Rama's blessing of immortality... and the weight of forever."
+    - "The first time I saw Kavi - and recognized my own spirit."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_immortal_mountain
+  _isStarterCharacter: false
+  _unlockLevel: 25
+
+  # COSTUMES
+  _costumes:
+    - costumeId: hanuman_default
+      costumeName: Eternal Warrior
+      description: Battle-worn armor that has seen a thousand wars.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: hanuman_young
+      costumeName: Young Champion
+      description: How Hanuman appeared in the age of Rama.
+      rarity: Epic
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: hanuman_sage
+      costumeName: Mountain Sage
+      description: Simple robes from centuries of meditation.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 800
+
+    - costumeId: hanuman_divine
+      costumeName: Divine Avatar
+      description: Full divine regalia, burning with celestial power.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: hanuman_flex
+      emoteName: Show of Strength
+      isDefault: true
+
+    - emoteId: hanuman_meditate
+      emoteName: Meditation Pose
+      isDefault: true
+
+    - emoteId: hanuman_roar
+      emoteName: Battle Cry
+      isDefault: false
+
+    - emoteId: hanuman_grow_emote
+      emoteName: Giant Form
+      isDefault: false
+
+

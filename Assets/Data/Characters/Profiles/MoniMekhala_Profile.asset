@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: MoniMekhala_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # MONI MEKHALA - GODDESS OF LIGHTNING
+  # The Storm Dancer, Keeper of the Crystal Ball
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: mekhala_lightning
+  _displayName: Moni Mekhala
+  _title: Goddess of the Sea and Lightning
+  _species: Deva (Goddess)
+  _shortDescription: |
+    A playful goddess who controls lightning through her magical crystal 
+    ball. Her eternal game of keep-away with Ream Eyso creates the storms 
+    that bring life-giving rain to Cambodia.
+  _fullBiography: |
+    Long ago, the hermit sage taught two students the ultimate magic. To 
+    Moni Mekhala, he gave a crystal ball that could create lightning. To 
+    Ream Eyso, he gave an axe that could summon thunder. When they used 
+    their gifts together, rain would fall.
+    
+    But Ream Eyso grew jealous of Mekhala's crystal - its light was more 
+    beautiful than his thunder. He demanded she give it to him. She refused. 
+    And so began their eternal chase across the sky.
+    
+    To Mekhala, this is all a grand game. She dances through clouds, her 
+    laughter echoing with each lightning flash. When Ream Eyso throws his 
+    axe in frustration, she reflects it with her crystal - creating the 
+    spectacular storms that Cambodians celebrate.
+    
+    The Shadow Serpent threatened to end their game permanently. It sought 
+    to swallow both the crystal and the axe, ending all storms. For the 
+    first time, Mekhala and Ream Eyso had to work together instead of 
+    against each other.
+    
+    Now Mekhala brings her lightning to the battle against darkness, though 
+    she still can't resist teasing her eternal rival. "All work and no play," 
+    she says, "makes for very boring thunderstorms!"
+    
+  _role: DPS
+  _element: Light
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 0.7, g: 0.85, b: 1, a: 1}
+  _accentColor: {r: 1, g: 1, b: 0.4, a: 1}
+
+  # BASE STATS (DPS - Burst damage, high mobility)
+  _baseHealth: 85
+  _baseAttack: 45
+  _baseDefense: 15
+  _baseSpeed: 40
+  _baseStamina: 95
+  _attackRange: 12.0
+  _moveSpeed: 7.0
+  
+  _healthGrowth: 9
+  _attackGrowth: 5
+  _defenseGrowth: 1.5
+  _speedGrowth: 2.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: mekhala_lightning_bolt
+    abilityName: Crystal Lightning
+    description: Fires bolts of lightning from her crystal ball at enemies.
+    damage: 30
+    cooldown: 0
+    staminaCost: 4
+    range: 14
+    type: Ranged
+    element: Light
+
+  _specialAbility:
+    abilityId: mekhala_chain_lightning
+    abilityName: Dancing Storm
+    description: |
+      Lightning arcs from Mekhala's crystal, jumping between enemies. 
+      Each jump deals slightly less damage but can hit up to 7 targets.
+      Mekhala dances with each strike.
+    damage: 55
+    cooldown: 10
+    staminaCost: 30
+    range: 15
+    type: Ranged
+    element: Light
+    statusEffects:
+      - chain_7_targets
+      - stun_chance_20
+
+  _ultimateAbility:
+    abilityId: mekhala_storm_dance
+    abilityName: Monsoon's Fury
+    description: |
+      Mekhala performs her legendary storm dance, calling down a massive 
+      lightning storm over the entire battlefield. Rain falls, empowering 
+      water allies while lightning strikes all enemies repeatedly.
+    damage: 180
+    cooldown: 55
+    staminaCost: 75
+    range: 20
+    type: AoE
+    element: Light
+    statusEffects:
+      - water_ally_boost
+      - continuous_lightning_5s
+      - rain_field
+
+  _passiveAbility:
+    abilityId: mekhala_playful
+    abilityName: Playful Evasion
+    description: |
+      Mekhala's playful nature makes her incredibly hard to pin down. 
+      She has a chance to dodge attacks while moving, and her dodges 
+      leave behind small lightning fields.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Light
+
+  _comboMoves:
+    - abilityId: mekhala_flash_step
+      abilityName: Lightning Step
+      description: Teleport in a flash of lightning, damaging enemies at both points.
+      damage: 40
+      cooldown: 0
+      staminaCost: 18
+      type: Melee
+      
+    - abilityId: mekhala_crystal_reflect
+      abilityName: Crystal Mirror
+      description: Reflects projectiles back at enemies with added lightning damage.
+      damage: 0
+      cooldown: 8
+      staminaCost: 22
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 85
+    kindness: 65
+    wisdom: 60
+    humor: 95
+    loyalty: 70
+    curiosity: 80
+
+  _likes:
+    - Dancing in storms
+    - Games and competitions
+    - Teasing Ream Eyso
+    - The smell of rain
+    - Shiny objects (especially her crystal)
+
+  _dislikes:
+    - Being bored
+    - Losing games
+    - When Ream Eyso sulks too long
+    - Drought
+    - Anyone trying to take her crystal
+
+  _favoriteFood: Dew drops collected from lotus flowers at dawn
+  _hobby: Creating miniature light shows and inventing new games
+  _fear: What if Ream Eyso actually catches her one day?
+  _dream: An eternal game that never ends, forever dancing through storms
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Catch me if you can! Oh wait, you can't! Hehe!"
+      - type: Greeting
+        text: "*flash of lightning* Did I scare you? Good!"
+      - type: Selection
+        text: "Ooh, a new playmate!"
+      - type: Selection
+        text: "Let's make some storms together!"
+      - type: BattleStart
+        text: "Finally! I was SO bored!"
+      - type: BattleStart
+        text: "Try to keep up, slowpokes!"
+      - type: Attack
+        text: "Zap!"
+      - type: Attack
+        text: "Bzzt! Bzzt!"
+      - type: Attack
+        text: "Lightning kiss!"
+      - type: SpecialAttack
+        text: "Dance with my lightning! CHAIN STORM!"
+      - type: Ultimate
+        text: "Let the monsoon DANCE! STORM'S FURY!"
+      - type: Hurt
+        text: "Hey! That's not fair!"
+      - type: LowHealth
+        text: "Okay, okay... I'll take this seriously now..."
+      - type: Victory
+        text: "I win I win I WIN! Was there ever any doubt?"
+      - type: Victory
+        text: "That was fun! Let's do it again!"
+      - type: Defeat
+        text: "Whaaat? I lost? ...Best two out of three?"
+      - type: LevelUp
+        text: "More power for MORE FUN!"
+      - type: Idle
+        text: "*juggles lightning balls* Bored bored bored..."
+      - type: Idle
+        text: "I wonder what Ream Eyso is doing... probably pouting."
+      - type: InteractFriendly
+        text: "Ooh, you're fun! Let's be storm buddies!"
+      - type: InteractRival
+        text: "Aww, don't be such a grump! Lighten up! Get it? LIGHTEN?"
+      - type: Funny
+        text: "Why did the lightning bolt break up with the thunder? Too much noise, not enough flash! Ha!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: reameyso_thunder
+      characterName: Ream Eyso
+      type: Rival
+      affinity: 60
+      relationshipDescription: |
+        Their eternal chase creates Cambodia's storms. She loves teasing him, 
+        but secretly cares about him deeply. If anyone else tried to hurt 
+        him, she'd be furious.
+      specialDialogue:
+        - "Still chasing me after all these millennia? How romantic!"
+        - "Your thunder is cute when it rumbles angrily."
+        - "We work better together than apart... don't tell him I said that!"
+
+    - characterId: naga_serpent
+      characterName: Naga Prince
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Mekhala controls the waters above, the Nagas below. They respect 
+        each other's domains and often create beautiful displays together.
+      specialDialogue:
+        - "Prince! Let's make a water show!"
+        - "Rain from above, waves from below - perfect harmony!"
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Two hyperactive souls who understand each other perfectly. Their 
+        combined chaos is legendary... and terrifying for everyone else.
+      specialDialogue:
+        - "Kavi! Prank war! GO!"
+        - "He's the only one who can keep up with me!"
+
+  # BACKSTORY
+  _birthplace: The Sky Palace above the clouds
+  _occupation: Goddess of Lightning and Sea / Eternal Game Player
+  _familyBackground: |
+    Trained by the hermit sage alongside Ream Eyso. She sees the world as 
+    her playground and all beings as potential playmates.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Receiving my crystal ball from the sage - love at first sight!"
+    - "The first time I made Ream Eyso chase me - he was SO mad!"
+    - "Creating my first monsoon and seeing the rice fields flourish."
+    - "The Shadow nearly swallowing my crystal - genuinely scared for once."
+    - "Working WITH Ream Eyso for the first time... it felt strange. Good strange."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_storm_dance
+  _isStarterCharacter: false
+  _unlockLevel: 20
+
+  # COSTUMES
+  _costumes:
+    - costumeId: mekhala_default
+      costumeName: Storm Dancer
+      description: Traditional celestial attire with her precious crystal ball.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: mekhala_monsoon
+      costumeName: Monsoon Queen
+      description: Robes made of living rainclouds.
+      rarity: Epic
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: mekhala_festival
+      costumeName: Water Festival
+      description: Colorful outfit for Bon Om Touk celebrations.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 800
+
+    - costumeId: mekhala_supreme
+      costumeName: Supreme Storm
+      description: Ultimate goddess form with crown of pure lightning.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: mekhala_spin
+      emoteName: Lightning Spin
+      isDefault: true
+
+    - emoteId: mekhala_tease
+      emoteName: Playful Taunt
+      isDefault: true
+
+    - emoteId: mekhala_crystal
+      emoteName: Crystal Show
+      isDefault: false
+
+    - emoteId: mekhala_victory_dance
+      emoteName: Victory Dance
+      isDefault: false
+
+

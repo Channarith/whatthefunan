@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Kriting_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # KRITING - THE CHIMERA GUARDIAN
+  # Lion-Elephant Hybrid, Noble Beast of Two Worlds
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: kriting_chimera
+  _displayName: Kriting
+  _title: The Noble Chimera
+  _species: Kirtimukha/Kriting (Lion-Elephant Hybrid)
+  _shortDescription: |
+    A magnificent creature with an elephant's head and a lion's body, 
+    combining the wisdom of one with the courage of the other. Kriting 
+    guards the boundary between the mortal and divine realms.
+  _fullBiography: |
+    The Kriting are rare - creatures born when destiny requires a bridge 
+    between two worlds. This Kriting emerged from a sacred temple carving 
+    that had been prayed to for centuries. So many wished for protection 
+    that the stone itself came alive.
+    
+    With an elephant's patient wisdom and a lion's fierce courage, Kriting 
+    embodies the best of both noble beasts. Elephants taught him compassion; 
+    lions taught him to fight without hesitation when innocents are threatened.
+    
+    He doesn't fully belong to either world. Elephants see him as too 
+    fierce; lions see him as too gentle. This isolation made him thoughtful 
+    and observant. He learned to appreciate connections with those who 
+    accept him as he is.
+    
+    When Champa first met Kriting, she saw not a monster but a kindred 
+    spirit - another creature misunderstood because of appearance. She 
+    trumpeted a greeting in elephant-speech, and for the first time in 
+    his existence, Kriting felt truly seen.
+    
+    Now he guards the guardians themselves, using both natures in perfect 
+    harmony. In battle, he can shift between elephant patience (defense) 
+    and lion aggression (attack) as needed.
+    
+  _role: AllRounder
+  _element: Earth
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 0.7, g: 0.5, b: 0.3, a: 1}
+  _accentColor: {r: 0.9, g: 0.7, b: 0.2, a: 1}
+
+  # BASE STATS (AllRounder - Can shift between offensive and defensive)
+  _baseHealth: 130
+  _baseAttack: 35
+  _baseDefense: 30
+  _baseSpeed: 25
+  _baseStamina: 110
+  _attackRange: 2.5
+  _moveSpeed: 5.5
+  
+  _healthGrowth: 14
+  _attackGrowth: 3.5
+  _defenseGrowth: 3
+  _speedGrowth: 1.5
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: kriting_hybrid_strike
+    abilityName: Chimera Strike
+    description: Combines trunk swing with claw slash for a devastating combo.
+    damage: 32
+    cooldown: 0
+    staminaCost: 5
+    range: 3.0
+    type: Melee
+    element: Earth
+
+  _specialAbility:
+    abilityId: kriting_form_shift
+    abilityName: Nature's Balance
+    description: |
+      Kriting shifts his dominant nature. In Elephant Form, he gains 
+      massive defense and can shield allies. In Lion Form, he gains 
+      attack speed and critical chance. Can switch forms freely.
+    damage: 0
+    cooldown: 8
+    staminaCost: 25
+    range: 0
+    type: Buff
+    element: Earth
+    statusEffects:
+      - elephant_form_defense
+      - or_lion_form_offense
+
+  _ultimateAbility:
+    abilityId: kriting_perfect_fusion
+    abilityName: True Chimera
+    description: |
+      Kriting achieves perfect balance between both natures simultaneously. 
+      For a duration, he has the full benefits of BOTH forms - impenetrable 
+      defense AND devastating offense - becoming an unstoppable force.
+    damage: 140
+    cooldown: 60
+    staminaCost: 80
+    range: 5
+    type: Buff
+    element: Earth
+    statusEffects:
+      - both_forms_active_10s
+      - increased_size
+      - fear_aura
+
+  _passiveAbility:
+    abilityId: kriting_dual_nature
+    abilityName: Dual Nature
+    description: |
+      Kriting's hybrid nature makes him resistant to crowd control. He 
+      recovers from stuns, roots, and slows faster than normal. His 
+      presence inspires both elephants and felines to fight harder.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 8
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: kriting_trunk_roar
+      abilityName: Thunderous Proclamation
+      description: A roar amplified by his trunk that damages and intimidates.
+      damage: 50
+      cooldown: 0
+      staminaCost: 18
+      type: AoE
+      
+    - abilityId: kriting_pounce
+      abilityName: Noble Pounce
+      description: Leaps onto an enemy with lion grace and elephant weight.
+      damage: 60
+      cooldown: 10
+      staminaCost: 25
+      type: Melee
+
+  # PERSONALITY
+  _personality:
+    bravery: 85
+    kindness: 70
+    wisdom: 80
+    humor: 45
+    loyalty: 90
+    curiosity: 65
+
+  _likes:
+    - Being accepted as he is
+    - Protecting sacred places
+    - Both savanna and jungle
+    - Champa's trunk-greetings
+    - Sunbathing
+
+  _dislikes:
+    - Being called a freak or monster
+    - Having to choose between natures
+    - Those who harm the innocent
+    - Being misunderstood
+    - Cages
+
+  _favoriteFood: Fruit (elephant side) AND meat (lion side) - he needs both
+  _hobby: Meditating at temple thresholds, watching over travelers
+  _fear: Being forever caught between worlds, belonging to neither
+  _dream: To find others like himself, or to fully accept his uniqueness
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "I stand at the threshold. Welcome, traveler."
+      - type: Greeting
+        text: "*trumpet-roar* That's my greeting. It's... complicated."
+      - type: Selection
+        text: "Both natures serve you now."
+      - type: Selection
+        text: "I am two, but I fight as one."
+      - type: BattleStart
+        text: "Face the chimera - wisdom AND fury combined!"
+      - type: BattleStart
+        text: "I protect what I love with BOTH hearts!"
+      - type: Attack
+        text: "Lion strikes!"
+      - type: Attack
+        text: "Elephant endures!"
+      - type: SpecialAttack
+        text: "Shifting forms! Adapt or fall!"
+      - type: Ultimate
+        text: "I AM BOTH! TRUE CHIMERA AWAKENS!"
+      - type: Hurt
+        text: "I feel it twice... in both natures..."
+      - type: LowHealth
+        text: "Neither nature... will let me fall..."
+      - type: Victory
+        text: "Balance is preserved."
+      - type: Victory
+        text: "The threshold is safe once more."
+      - type: Defeat
+        text: "Two hearts... both fail..."
+      - type: LevelUp
+        text: "Both natures grow stronger together."
+      - type: Idle
+        text: "*elephant ear flap combined with lion tail swish*"
+      - type: Idle
+        text: "Sometimes I wonder what I would be if I were just one..."
+      - type: InteractFriendly
+        text: "You see me, not just what I am. Thank you."
+      - type: InteractRival
+        text: "I have twice the patience. And twice the fury. Choose wisely."
+      - type: Funny
+        text: "I'm not having an identity crisis. I'm having TWO identity crises!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: BestFriend
+      affinity: 95
+      relationshipDescription: |
+        Champa was the first to greet Kriting in elephant-speech. That 
+        simple act of acceptance created an unbreakable bond. She's the 
+        only one who fully understands his elephant half.
+      specialDialogue:
+        - "When she trumpeted to me... I finally felt like I belonged somewhere."
+        - "She doesn't see a monster. She sees family."
+        - "My elephant heart beats stronger near her."
+
+    - characterId: singha_lion
+      characterName: Singha
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Singha understands Kriting's lion nature. They hunt together 
+        sometimes, and Singha teaches him to embrace his fierce side.
+      specialDialogue:
+        - "The lion understands my rage. He helps me control it."
+        - "We speak in roars. It's... simpler."
+
+    - characterId: yak_giant
+      characterName: Yak
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Two misunderstood creatures who found friendship in shared 
+        experience. Both know what it's like to be judged by appearance.
+      specialDialogue:
+        - "Yak understands being feared for what you look like."
+        - "We don't need to talk about it. We just... know."
+
+  # BACKSTORY
+  _birthplace: Emerged from a temple carving at Banteay Srei
+  _occupation: Threshold Guardian / Sacred Protector
+  _familyBackground: |
+    Born from stone and prayer, he has no traditional family. He considers 
+    the guardians his family now - especially Champa and Singha who 
+    understand his two natures.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "My first breath as stone became flesh. The confusion of two minds."
+    - "Years of isolation, watching travelers pray to my statue while I stood silent."
+    - "Champa's trunk-greeting - the first time anyone spoke to my elephant self."
+    - "Singha's accepting roar - the first time my lion self felt kinship."
+    - "Achieving perfect balance for the first time - both natures as one."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_temple_threshold
+  _isStarterCharacter: false
+  _unlockLevel: 22
+
+  # COSTUMES
+  _costumes:
+    - costumeId: kriting_default
+      costumeName: Temple Guardian
+      description: Natural hybrid form with sacred markings.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: kriting_stone
+      costumeName: Living Statue
+      description: His original stone form, now animate.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: kriting_gilded
+      costumeName: Golden Chimera
+      description: Gilded ceremonial form for sacred occasions.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 1100
+
+    - costumeId: kriting_perfect
+      costumeName: Perfect Balance
+      description: Both natures visible and glowing in harmony.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: kriting_dual_cry
+      emoteName: Trumpet-Roar
+      isDefault: true
+
+    - emoteId: kriting_guard
+      emoteName: Guardian Stance
+      isDefault: true
+
+    - emoteId: kriting_shift
+      emoteName: Nature Shift
+      isDefault: false
+
+    - emoteId: kriting_both
+      emoteName: Perfect Harmony
+      isDefault: false
+
+

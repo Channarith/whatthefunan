@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Sorvong_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # SORVONG - THE SHADOW PRINCE
+  # Twin Warrior, Master of Stealth
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: sorvong_prince
+  _displayName: Sorvong
+  _title: The Phantom Prince
+  _species: Human (Royal Lineage)
+  _shortDescription: |
+    The younger twin, born seven minutes after Vorvong. Where his brother 
+    is the shield, Sorvong is the blade in the dark. He uses stealth and 
+    cunning to complement his brother's direct approach.
+  _fullBiography: |
+    Being born second defined Sorvong's life. Even by seven minutes, he 
+    would never be king. Some would resent this - Sorvong embraced it. 
+    "You be the hero," he told Vorvong. "I'll be the shadow that makes 
+    heroes possible."
+    
+    While Vorvong trained in honorable combat, Sorvong studied stealth, 
+    infiltration, and the art of striking from darkness. Not because he 
+    was dishonorable, but because he understood: sometimes justice requires 
+    a blade that no one sees coming.
+    
+    When they were exiled, Sorvong didn't cry. He planned. His network of 
+    informants across the kingdom began that very night. While Vorvong 
+    protected villages openly, Sorvong worked in shadows - sabotaging 
+    bandits before they could attack, spreading truth to counter their 
+    stepmother's lies.
+    
+    Sorvong hides his pain behind humor and wit. He deflects with jokes 
+    because acknowledging the hurt of exile might break him. Only Vorvong 
+    sees past the mask to the wounded prince beneath.
+    
+    He would die for his brother. More importantly, he would kill for him. 
+    That's what being the shadow means.
+    
+  _role: Speedster
+  _element: Shadow
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.15, g: 0.15, b: 0.25, a: 1}
+  _accentColor: {r: 0.5, g: 0.2, b: 0.5, a: 1}
+
+  # BASE STATS (Speedster - Fast, stealth-focused)
+  _baseHealth: 85
+  _baseAttack: 38
+  _baseDefense: 15
+  _baseSpeed: 42
+  _baseStamina: 100
+  _attackRange: 1.8
+  _moveSpeed: 7.5
+  
+  _healthGrowth: 9
+  _attackGrowth: 4
+  _defenseGrowth: 1.5
+  _speedGrowth: 2.8
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: sorvong_shadow_strike
+    abilityName: Shadow Blade
+    description: Swift dagger strikes from unexpected angles.
+    damage: 25
+    cooldown: 0
+    staminaCost: 3
+    range: 2.0
+    type: Melee
+    element: Shadow
+
+  _specialAbility:
+    abilityId: sorvong_vanish
+    abilityName: Phantom Step
+    description: |
+      Sorvong vanishes into shadows, becoming invisible and untargetable. 
+      His next attack from stealth deals massive bonus damage and stuns 
+      the target.
+    damage: 60
+    cooldown: 12
+    staminaCost: 28
+    range: 0
+    type: Buff
+    element: Shadow
+    statusEffects:
+      - invisibility_5s
+      - next_attack_bonus_200
+      - stun_on_hit
+
+  _ultimateAbility:
+    abilityId: sorvong_assassin_dance
+    abilityName: Dance of Shadows
+    description: |
+      Sorvong becomes one with the darkness, dashing between all enemies 
+      on the battlefield, striking each one. If Vorvong is present, he 
+      coordinates with his brother for devastating finishing blows.
+    damage: 150
+    cooldown: 55
+    staminaCost: 70
+    range: 20
+    type: AoE
+    element: Shadow
+    statusEffects:
+      - hits_all_enemies
+      - twin_finisher_if_together
+
+  _passiveAbility:
+    abilityId: sorvong_shadows_embrace
+    abilityName: Shadow's Embrace
+    description: |
+      Sorvong moves faster in darkness and takes reduced damage when 
+      attacking from behind. His critical hit chance increases dramatically 
+      against enemies who are unaware of him.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Shadow
+
+  _comboMoves:
+    - abilityId: sorvong_backstab
+      abilityName: Traitor's End
+      description: A devastating backstab that deals triple damage from behind.
+      damage: 45
+      cooldown: 0
+      staminaCost: 18
+      type: Melee
+      
+    - abilityId: sorvong_smoke_bomb
+      abilityName: Smoke Screen
+      description: Throws a smoke bomb, blinding enemies and enabling escape.
+      damage: 10
+      cooldown: 15
+      staminaCost: 20
+      type: Debuff
+
+  # PERSONALITY
+  _personality:
+    bravery: 80
+    kindness: 65
+    wisdom: 75
+    humor: 90
+    loyalty: 100
+    curiosity: 70
+
+  _likes:
+    - Making Vorvong laugh (rare achievement)
+    - Outsmarting enemies
+    - Night time operations
+    - Proving people wrong about him
+    - His brother's cooking
+
+  _dislikes:
+    - Being underestimated
+    - People who hurt Vorvong
+    - Their stepmother (deep hatred)
+    - Unnecessary cruelty
+    - Being forced into the spotlight
+
+  _favoriteFood: Stolen palace desserts (he learned to make them in exile)
+  _hobby: Gathering information, playing pranks, knife juggling
+  _fear: Vorvong dying and leaving him alone
+  _dream: To see Vorvong take the throne he deserves
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "You saw me? I must be slipping. Just kidding - I let you see me."
+      - type: Greeting
+        text: "Sorvong. You've probably never heard of me. That's the point."
+      - type: Selection
+        text: "Need something done quietly? I'm your prince."
+      - type: Selection
+        text: "Where Vorvong goes, I follow. In the shadows."
+      - type: BattleStart
+        text: "They won't see me coming. They never do."
+      - type: BattleStart
+        text: "I'll handle the ones Vorvong misses!"
+      - type: Attack
+        text: "Boo."
+      - type: Attack
+        text: "Behind you!"
+      - type: Attack
+        text: "Surprise!"
+      - type: SpecialAttack
+        text: "Now you see me... now you don't!"
+      - type: Ultimate
+        text: "Shadows take them! DANCE OF SHADOWS!"
+      - type: Hurt
+        text: "Lucky shot..."
+      - type: LowHealth
+        text: "Vorvong... don't worry about me..."
+      - type: Victory
+        text: "That was too easy. Disappointing, really."
+      - type: Victory
+        text: "Nice work, brother. Couldn't have done it without me."
+      - type: Defeat
+        text: "I'm sorry... brother..."
+      - type: LevelUp
+        text: "More shadows to work with. Excellent."
+      - type: Idle
+        text: "*juggles daggers while humming*"
+      - type: Idle
+        text: "Vorvong worries too much. That's MY job... from the shadows."
+      - type: InteractFriendly
+        text: "You're alright. I'll watch your back."
+      - type: InteractRival
+        text: "Keep talking. It helps me find your weak points."
+      - type: Funny
+        text: "I'm not the evil twin. I'm the FUN twin. There's a difference!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: vorvong_prince
+      characterName: Vorvong
+      type: Family
+      affinity: 100
+      relationshipDescription: |
+        His twin, his hero, his reason for living. Sorvong would burn the 
+        world to ash to protect Vorvong. Everything he does in shadows is 
+        to support his brother in the light.
+      specialDialogue:
+        - "You take the front, I'll take... everywhere else."
+        - "Stop looking so worried. I've got your back. Always."
+        - "He's the better man. I'm just better at dirty work."
+
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Two tricksters who understand each other perfectly. Their combined 
+        pranks are legendary. Vorvong dreads when they team up.
+      specialDialogue:
+        - "Kavi! You distract them, I'll steal everything!"
+        - "Finally, someone who appreciates a good prank!"
+
+    - characterId: reahu_eclipse
+      characterName: Reahu
+      type: Acquaintance
+      affinity: 55
+      relationshipDescription: |
+        Both work in darkness, but for different reasons. Sorvong is wary 
+        of Reahu but respects his choice to change.
+      specialDialogue:
+        - "We both know shadows. Yours are just... older."
+        - "Redemption, huh? Hope it works out for you."
+
+  # BACKSTORY
+  _birthplace: The Royal Palace (seven minutes after Vorvong)
+  _occupation: Exiled Prince / Shadow Operative
+  _familyBackground: |
+    Twin brother of Vorvong. Born second, trained in shadows by choice. 
+    His information network spans the kingdom.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "Choosing the shadows while Vorvong chose the light."
+    - "Our stepmother's smug smile as we were exiled. I'll never forget it."
+    - "Building my first spy network from nothing but determination."
+    - "The first time Vorvong laughed again after exile. Worth everything."
+    - "Learning our kingdom was in danger - and knowing we had to go back."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_twin_princes
+  _isStarterCharacter: false
+  _unlockLevel: 16
+
+  # COSTUMES
+  _costumes:
+    - costumeId: sorvong_default
+      costumeName: Shadow Prince
+      description: Dark traveling gear designed for stealth.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: sorvong_assassin
+      costumeName: Night Blade
+      description: Professional infiltration gear.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: sorvong_royal
+      costumeName: Second Son
+      description: His original palace attire, rarely worn.
+      rarity: Epic
+      unlockMethod: Purchase
+      unlockCost: 700
+
+    - costumeId: sorvong_phantom
+      costumeName: The Phantom
+      description: Legendary assassin garb that seems to absorb light.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: sorvong_vanish
+      emoteName: Quick Vanish
+      isDefault: true
+
+    - emoteId: sorvong_juggle
+      emoteName: Dagger Juggle
+      isDefault: true
+
+    - emoteId: sorvong_bow_dramatic
+      emoteName: Dramatic Bow
+      isDefault: false
+
+    - emoteId: sorvong_twin_pose
+      emoteName: Twin Stance (with Vorvong)
+      isDefault: false
+
+

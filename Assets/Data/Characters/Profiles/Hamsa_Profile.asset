@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Hamsa_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # HAMSA - THE SACRED SWAN
+  # Divine Vehicle, Symbol of Purity and Wisdom
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: hamsa_swan
+  _displayName: Hamsa
+  _title: The Divine Swan
+  _species: Hamsa (Celestial Swan)
+  _shortDescription: |
+    A sacred swan who serves as the vehicle of the goddess of knowledge. 
+    Hamsa has the legendary ability to separate milk from water - 
+    symbolizing the wisdom to discern truth from illusion.
+  _fullBiography: |
+    In the celestial realm, Hamsa was the mount of Saraswati, goddess of 
+    wisdom, knowledge, and the arts. For eons, he carried her across the 
+    cosmos, absorbing divine wisdom with every journey.
+    
+    Hamsa's legendary power is separation - he can drink milk mixed with 
+    water and separate the pure from the diluted. This extends beyond the 
+    literal: Hamsa can see through lies, pierce illusions, and discern 
+    truth in all things.
+    
+    When Saraswati sensed the Shadow Serpent's corruption spreading through 
+    mortal lands, she sent her beloved Hamsa to aid the guardians. "They 
+    fight with strength," she told him. "Give them wisdom to match."
+    
+    Hamsa finds the mortal world fascinating but chaotic. He speaks in 
+    riddles and metaphors, often frustrating those who want simple answers. 
+    But those who listen carefully find profound truth in his words.
+    
+    He's not a warrior by nature - Hamsa prefers to guide, illuminate, and 
+    reveal. But when wisdom fails and battle is unavoidable, his wings 
+    become blades of pure light, cutting through darkness with surgical 
+    precision.
+    
+  _role: Support
+  _element: Light
+  _rarity: Epic
+
+  # VISUALS
+  _themeColor: {r: 1, g: 1, b: 0.95, a: 1}
+  _accentColor: {r: 1, g: 0.9, b: 0.4, a: 1}
+
+  # BASE STATS (Support - Revelation and protection focused)
+  _baseHealth: 85
+  _baseAttack: 25
+  _baseDefense: 20
+  _baseSpeed: 35
+  _baseStamina: 130
+  _attackRange: 10.0
+  _moveSpeed: 6.5
+  
+  _healthGrowth: 9
+  _attackGrowth: 2.5
+  _defenseGrowth: 2
+  _speedGrowth: 2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: hamsa_feather_light
+    abilityName: Feathers of Truth
+    description: Sacred feathers that pierce through darkness and reveal weaknesses.
+    damage: 20
+    cooldown: 0
+    staminaCost: 3
+    range: 12
+    type: Ranged
+    element: Light
+
+  _specialAbility:
+    abilityId: hamsa_reveal
+    abilityName: Piercing Wisdom
+    description: |
+      Hamsa reveals the true nature of things. Enemy stealth is broken, 
+      weaknesses are exposed (increasing damage taken), and hidden traps 
+      become visible. Allies gain clarity, removing confusion effects.
+    damage: 0
+    cooldown: 12
+    staminaCost: 30
+    range: 15
+    type: Debuff
+    element: Light
+    statusEffects:
+      - reveal_stealth
+      - expose_weakness_30
+      - remove_confusion
+      - show_traps
+
+  _ultimateAbility:
+    abilityId: hamsa_cosmic_truth
+    abilityName: Light of Pure Knowledge
+    description: |
+      Hamsa channels Saraswati's wisdom, bathing the battlefield in 
+      absolute truth. All illusions shatter, all lies are exposed, all 
+      enemies are revealed and weakened. Allies are granted temporary 
+      immunity to deception and massively increased critical hit chance.
+    damage: 80
+    cooldown: 65
+    staminaCost: 85
+    range: 25
+    type: AoE
+    element: Light
+    statusEffects:
+      - absolute_revelation
+      - ally_truth_sight_10s
+      - ally_crit_boost_50
+      - enemy_defense_reduction
+
+  _passiveAbility:
+    abilityId: hamsa_discernment
+    abilityName: Sacred Discernment
+    description: |
+      Hamsa automatically detects incoming attacks and warns allies, 
+      giving them a chance to dodge. He can see invisible enemies and 
+      cannot be fooled by illusions or decoys.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 15
+    type: Buff
+    element: Light
+
+  _comboMoves:
+    - abilityId: hamsa_wing_blade
+      abilityName: Wings of Light
+      description: Slashes with wings of concentrated light.
+      damage: 35
+      cooldown: 0
+      staminaCost: 15
+      type: Melee
+      
+    - abilityId: hamsa_separation
+      abilityName: Milk from Water
+      description: Separates buffs from enemies, transferring them to allies.
+      damage: 0
+      cooldown: 25
+      staminaCost: 40
+      type: Buff
+
+  # PERSONALITY
+  _personality:
+    bravery: 65
+    kindness: 85
+    wisdom: 100
+    humor: 55
+    loyalty: 80
+    curiosity: 75
+
+  _likes:
+    - Philosophical discussions
+    - Clear lakes and pure water
+    - Students who ask good questions
+    - Music and poetry
+    - Dawn (when truth is clearest)
+
+  _dislikes:
+    - Lies and deception
+    - Those who refuse to learn
+    - Murky water (literally and metaphorically)
+    - Rushed decisions
+    - Willful ignorance
+
+  _favoriteFood: Lotus seeds and pure water
+  _hobby: Contemplating cosmic truths and composing riddles
+  _fear: A world too dark for truth to shine through
+  _dream: To spread wisdom until lies can no longer survive
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "Seek truth, and you will find me already there."
+      - type: Greeting
+        text: "The wise ask questions. What do you seek to know?"
+      - type: Selection
+        text: "Wisdom guides your choice. Good."
+      - type: Selection
+        text: "I shall illuminate your path."
+      - type: BattleStart
+        text: "Darkness cannot survive the light of truth."
+      - type: BattleStart
+        text: "Let me show you what you truly face."
+      - type: Attack
+        text: "Truth cuts deep."
+      - type: Attack
+        text: "See clearly!"
+      - type: SpecialAttack
+        text: "All is revealed! Nothing can hide!"
+      - type: Ultimate
+        text: "KNOW ABSOLUTE TRUTH! LIGHT OF PURE KNOWLEDGE!"
+      - type: Hurt
+        text: "Pain too... is a teacher..."
+      - type: LowHealth
+        text: "Even fading... the light... persists..."
+      - type: Victory
+        text: "Truth prevails, as it always must."
+      - type: Victory
+        text: "The lesson is learned. Move forward wiser."
+      - type: Defeat
+        text: "Darkness wins this battle... but not the war of truth..."
+      - type: LevelUp
+        text: "Wisdom deepens. Understanding expands."
+      - type: Idle
+        text: "Every answer leads to better questions..."
+      - type: Idle
+        text: "*contemplates the nature of existence*"
+      - type: InteractFriendly
+        text: "Your spirit seeks truth. This pleases me."
+      - type: InteractRival
+        text: "You hide from truth. It will find you regardless."
+      - type: Funny
+        text: "A riddle: What speaks without a mouth? ...Time. It tells all."
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: mealea_apsara
+      characterName: Mealea
+      type: Friend
+      affinity: 90
+      relationshipDescription: |
+        Both serve celestial beings, both embody divine qualities. Hamsa 
+        finds Mealea's dance a perfect expression of truth through art.
+      specialDialogue:
+        - "Dancer, your movements speak truths words cannot."
+        - "We both carry pieces of heaven to earth."
+
+    - characterId: kinnari_bird
+      characterName: Kinnari
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Fellow celestial birds who share the sky. Hamsa's wisdom 
+        complements Kinnari's artistry beautifully.
+      specialDialogue:
+        - "Your songs carry truth in every note."
+        - "We understand the weight of divine gifts."
+
+    - characterId: reahu_eclipse
+      characterName: Reahu
+      type: Acquaintance
+      affinity: 35
+      relationshipDescription: |
+        Hamsa's light-nature conflicts with Reahu's darkness. Yet Hamsa 
+        sees the truth of Reahu's redemption attempt and cautiously supports it.
+      specialDialogue:
+        - "I see your truth, shadow-one. It is... complicated."
+        - "Redemption is possible for all who truly seek it."
+
+  # BACKSTORY
+  _birthplace: The Celestial Lakes of Saraswati's realm
+  _occupation: Divine Vehicle / Wisdom Guide
+  _familyBackground: |
+    Created by the gods as a perfect vessel of wisdom. Served Saraswati for 
+    countless eons before being sent to the mortal realm.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "My first flight carrying Saraswati across the cosmic ocean."
+    - "Learning to separate milk from water - understanding true discernment."
+    - "Saraswati's blessing as she sent me to help mortals."
+    - "The first mortal who truly understood one of my riddles."
+    - "Seeing the Shadow's lies and knowing I could pierce them."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_celestial_lake
+  _isStarterCharacter: false
+  _unlockLevel: 24
+
+  # COSTUMES
+  _costumes:
+    - costumeId: hamsa_default
+      costumeName: Divine Swan
+      description: Pure white plumage with golden accents.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: hamsa_saraswati
+      costumeName: Saraswati's Mount
+      description: Adorned with the goddess's ceremonial decorations.
+      rarity: Legendary
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: hamsa_lake
+      costumeName: Lake Guardian
+      description: Reflected colors of sacred waters.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 900
+
+    - costumeId: hamsa_cosmic
+      costumeName: Cosmic Hamsa
+      description: Feathers containing the light of stars.
+      rarity: Epic
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: hamsa_ponder
+      emoteName: Deep Thought
+      isDefault: true
+
+    - emoteId: hamsa_preen
+      emoteName: Elegant Preen
+      isDefault: true
+
+    - emoteId: hamsa_riddle
+      emoteName: Ask a Riddle
+      isDefault: false
+
+    - emoteId: hamsa_glow
+      emoteName: Radiant Truth
+      isDefault: false
+
+

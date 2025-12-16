@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: Yak_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # YAK - THE GENTLE GIANT
+  # Yaksha Warrior with a Heart of Gold
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: yak_giant
+  _displayName: Yak
+  _title: The Misunderstood Guardian
+  _species: Yaksha (Temple Giant)
+  _shortDescription: |
+    A massive temple giant who appears terrifying but is actually incredibly 
+    gentle. Yak guards temple gates and struggles with how his fearsome 
+    appearance scares the children he wants to protect.
+  _fullBiography: |
+    The Yaksha are temple guardians - massive beings with fearsome faces 
+    designed to frighten away evil spirits. Yak was carved from sacred 
+    stone and given life by ancient prayers. His face was made terrifying 
+    on purpose... but nobody told him he didn't have to FEEL terrifying.
+    
+    For centuries, Yak stood at temple gates, watching children run 
+    screaming from his appearance. He would reach out to comfort them, 
+    only for his massive clawed hands to frighten them more. Each tear 
+    broke his heart a little more.
+    
+    He tried to smile. His smile was somehow worse.
+    
+    Yak became convinced he was a monster. He stopped trying to interact 
+    with anyone, standing perfectly still, pretending to be just a statue. 
+    Inside, he dreamed of someone looking past his face to see his heart.
+    
+    That someone was Kavi. The fearless monkey landed on Yak's head, 
+    mistaking him for a climbing structure. When Yak moved, Kavi didn't 
+    scream - he laughed. "Cool! A living statue!"
+    
+    For the first time in centuries, someone wasn't afraid. Yak cried 
+    tears that could fill rivers. Now he follows the guardians, finally 
+    accepted, still learning that he can be more than what he looks like.
+    
+  _role: Tank
+  _element: Earth
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.2, g: 0.5, b: 0.3, a: 1}
+  _accentColor: {r: 0.9, g: 0.2, b: 0.2, a: 1}
+
+  # BASE STATS (Tank - Massive HP, Slow)
+  _baseHealth: 250
+  _baseAttack: 35
+  _baseDefense: 40
+  _baseSpeed: 5
+  _baseStamina: 140
+  _attackRange: 3.0
+  _moveSpeed: 3.0
+  
+  _healthGrowth: 25
+  _attackGrowth: 3
+  _defenseGrowth: 4
+  _speedGrowth: 0.2
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: yak_gentle_smash
+    abilityName: Careful Smash
+    description: Yak tries to hit enemies gently. It's still devastating.
+    damage: 40
+    cooldown: 0
+    staminaCost: 6
+    range: 3.5
+    type: Melee
+    element: Earth
+
+  _specialAbility:
+    abilityId: yak_scary_face
+    abilityName: Terrifying Visage
+    description: |
+      Yak makes his scariest face (he doesn't like doing this). Enemies are 
+      terrified, fleeing in random directions. He apologizes afterward.
+    damage: 0
+    cooldown: 18
+    staminaCost: 25
+    range: 8
+    type: Debuff
+    element: Earth
+    statusEffects:
+      - fear_4s
+      - attack_reduction_30
+
+  _ultimateAbility:
+    abilityId: yak_protective_embrace
+    abilityName: Guardian's Embrace
+    description: |
+      Yak scoops up all nearby allies and shields them with his body, 
+      taking ALL damage meant for them. While embracing, he slowly 
+      regenerates everyone's health through sheer protective love.
+    damage: 0
+    cooldown: 60
+    staminaCost: 80
+    range: 6
+    type: Buff
+    element: Earth
+    statusEffects:
+      - ally_invincibility_5s
+      - self_damage_absorption
+      - party_heal_over_time
+
+  _passiveAbility:
+    abilityId: yak_big_heart
+    abilityName: Heart of Gold
+    description: |
+      Despite his scary appearance, Yak's gentle nature means he takes 
+      reduced damage from enemies who aren't "truly evil." He also 
+      generates aggro passively, as enemies focus on the biggest target.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: yak_ground_pound
+      abilityName: Oops Stomp
+      description: Yak trips and accidentally creates an earthquake.
+      damage: 60
+      cooldown: 0
+      staminaCost: 20
+      type: AoE
+      
+    - abilityId: yak_boulder_throw
+      abilityName: Gentle Toss
+      description: Throws a boulder at enemies. "Gently."
+      damage: 75
+      cooldown: 12
+      staminaCost: 30
+      type: Ranged
+
+  # PERSONALITY
+  _personality:
+    bravery: 70
+    kindness: 100
+    wisdom: 50
+    humor: 45
+    loyalty: 95
+    curiosity: 60
+
+  _likes:
+    - Children (from a safe distance)
+    - Flowers (he tries to pick them but crushes them)
+    - Being told he's not scary
+    - Gentle music
+    - Butterflies landing on him
+
+  _dislikes:
+    - Screaming (he thinks he caused it)
+    - Mirrors
+    - Being called a monster
+    - Small doorways
+    - His own reflection
+
+  _favoriteFood: He can eat, but prefers to share food with others
+  _hobby: Trying to make himself look less scary (it never works)
+  _fear: That everyone will always be afraid of him
+  _dream: To make a child smile without them running away first
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "H-hello... please don't run away..."
+      - type: Greeting
+        text: "I... I'm friendly! I promise!"
+      - type: Selection
+        text: "You... you want ME? Really?"
+      - type: Selection
+        text: "I won't let you down! Thank you for choosing me!"
+      - type: BattleStart
+        text: "I-I'll protect everyone! Even if I'm scary!"
+      - type: BattleStart
+        text: "Stay behind me! It's okay to be scared of me if it keeps you safe!"
+      - type: Attack
+        text: "Sorry! Sorry! Sorry!"
+      - type: Attack
+        text: "I don't want to hurt you but I will!"
+      - type: SpecialAttack
+        text: "Don't look at my face! It's scary! I'm sorry!"
+      - type: Ultimate
+        text: "EVERYONE GET BEHIND ME! I'LL TAKE IT ALL!"
+      - type: Hurt
+        text: "It's okay... I'm big... I can take it..."
+      - type: LowHealth
+        text: "I can't... fall... they're counting... on me..."
+      - type: Victory
+        text: "We won! And... and nobody ran away from me!"
+      - type: Victory
+        text: "I helped! I actually helped!"
+      - type: Defeat
+        text: "I'm sorry... I tried to be useful..."
+      - type: LevelUp
+        text: "Maybe I can protect even more people now!"
+      - type: Idle
+        text: "*tries to smile at a butterfly, scares it away* ...oh..."
+      - type: Idle
+        text: "*whispers* I just want someone to not be afraid..."
+      - type: InteractFriendly
+        text: "You... you're not scared of me? *happy tears*"
+      - type: InteractRival
+        text: "I don't want to fight... but I'll protect my friends."
+      - type: Funny
+        text: "I tried to high-five once. I broke a wall. By accident!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: kavi_monkey
+      characterName: Kavi
+      type: BestFriend
+      affinity: 100
+      relationshipDescription: |
+        Kavi was the first person in centuries who wasn't afraid of Yak. 
+        The monkey uses Yak as a jungle gym, sleeps on his shoulder, and 
+        constantly tells him he's "the coolest giant ever."
+      specialDialogue:
+        - "Kavi... you were the first to not run away... *sniff*"
+        - "He says I'm cool! ME! Cool!"
+        - "I would do anything for my small loud friend."
+
+    - characterId: champa_elephant
+      characterName: Champa
+      type: Friend
+      affinity: 85
+      relationshipDescription: |
+        Champa sees past Yak's appearance immediately. Her gentle kindness 
+        helps him believe he might not be a monster after all.
+      specialDialogue:
+        - "She... she called me gentle. Nobody ever..."
+        - "Princess Champa makes me feel... like it's okay to be me."
+
+    - characterId: singha_lion
+      characterName: Singha
+      type: Friend
+      affinity: 75
+      relationshipDescription: |
+        Two temple guardians who understand the burden of always being 
+        seen as intimidating. They share quiet solidarity.
+      specialDialogue:
+        - "Lion friend also guards temples. He understands."
+        - "We don't need words. We just... guard together."
+
+  # BACKSTORY
+  _birthplace: Carved at Angkor Wat's East Gate
+  _occupation: Temple Gate Guardian
+  _familyBackground: |
+    Created from sacred stone by master sculptors. Other Yaksha exist at 
+    different temples, but Yak has never met them. He considers the 
+    guardians his first real family.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "The first child who screamed at my face... I only wanted to say hello."
+    - "Centuries of standing still, pretending I wasn't alive."
+    - "Kavi landing on my head and laughing instead of screaming."
+    - "Champa calling me 'gentle.' I cried for three hours."
+    - "The first group picture where I was included. I treasure it."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_temple_gate
+  _isStarterCharacter: false
+  _unlockLevel: 10
+
+  # COSTUMES
+  _costumes:
+    - costumeId: yak_default
+      costumeName: Temple Guardian
+      description: Traditional Yaksha appearance with scary face.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: yak_flowers
+      costumeName: Flower Crown
+      description: Yak wearing flowers he tried to pick. Slightly crushed.
+      rarity: Uncommon
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: yak_friendly
+      costumeName: Friendly Face
+      description: A mask that makes him look less scary. He loves it.
+      rarity: Rare
+      unlockMethod: Purchase
+      unlockCost: 600
+
+    - costumeId: yak_golden
+      costumeName: Golden Guardian
+      description: Gilded armor for ceremonial occasions.
+      rarity: Epic
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: yak_wave
+      emoteName: Shy Wave
+      isDefault: true
+
+    - emoteId: yak_cry_happy
+      emoteName: Happy Tears
+      isDefault: true
+
+    - emoteId: yak_flex
+      emoteName: Gentle Flex
+      isDefault: false
+
+    - emoteId: yak_hug_attempt
+      emoteName: Hug Offer
+      isDefault: false
+
+

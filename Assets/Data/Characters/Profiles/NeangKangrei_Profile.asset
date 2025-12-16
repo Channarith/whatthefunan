@@ -1,0 +1,338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: PLACEHOLDER_GUID, type: 3}
+  m_Name: NeangKangrei_Profile
+  m_EditorClassIdentifier: 
+
+  # ============================================================================
+  # NEANG KANGREI - THE BAMBOO SPIRIT
+  # Guardian of the Forest, Voice of Nature
+  # ============================================================================
+
+  # IDENTITY
+  _characterId: kangrei_bamboo
+  _displayName: Neang Kangrei
+  _title: Spirit of the Bamboo Grove
+  _species: Forest Spirit (Nature Guardian)
+  _shortDescription: |
+    A gentle spirit who emerged from a magical bamboo grove. She speaks 
+    to plants, commands the forest's creatures, and fights to protect 
+    nature from those who would destroy it.
+  _fullBiography: |
+    In the heart of Cambodia's oldest bamboo forest, where sunlight filters 
+    through green canopy and wind makes the stalks sing, a spirit was born 
+    from the land's love for itself.
+    
+    Neang Kangrei doesn't remember a time before she existed - she simply 
+    WAS, the same way the forest simply IS. She tends to every plant, knows 
+    every creature by name, and feels physical pain when trees are cut down.
+    
+    For centuries, she avoided humans. She watched them from the shadows, 
+    curious but cautious. Some respected the forest; others destroyed it. 
+    She learned that humans were... complicated.
+    
+    When loggers came with machines, Kangrei revealed herself to stop them. 
+    Not with violence - she made the forest itself protect them. Vines that 
+    gently restrained. Trees that blocked paths. Animals that led them in 
+    circles until they gave up.
+    
+    The Shadow Serpent's corruption was different. It KILLED the forest. 
+    Trees withered, animals fled, the very soil turned to ash. For the 
+    first time, Kangrei felt true rage.
+    
+    Now she fights alongside the guardians, learning that some battles 
+    require more than gentle redirection. But she never kills if she can 
+    help it - even enemies are part of nature, somewhere deep down.
+    
+  _role: Support
+  _element: Earth
+  _rarity: Rare
+
+  # VISUALS
+  _themeColor: {r: 0.4, g: 0.7, b: 0.3, a: 1}
+  _accentColor: {r: 0.6, g: 0.4, b: 0.2, a: 1}
+
+  # BASE STATS (Support - Healing and crowd control)
+  _baseHealth: 90
+  _baseAttack: 20
+  _baseDefense: 20
+  _baseSpeed: 28
+  _baseStamina: 115
+  _attackRange: 10.0
+  _moveSpeed: 5.5
+  
+  _healthGrowth: 10
+  _attackGrowth: 2
+  _defenseGrowth: 2
+  _speedGrowth: 1.8
+
+  # ABILITIES
+  _basicAttack:
+    abilityId: kangrei_vine_lash
+    abilityName: Vine Whip
+    description: Commands vines to strike enemies from a distance.
+    damage: 18
+    cooldown: 0
+    staminaCost: 3
+    range: 12
+    type: Ranged
+    element: Earth
+
+  _specialAbility:
+    abilityId: kangrei_entangle
+    abilityName: Nature's Embrace
+    description: |
+      Vines erupt from the ground, entangling all enemies in an area. 
+      Entangled enemies take damage over time and cannot move. Allies 
+      standing in the area are healed.
+    damage: 30
+    cooldown: 14
+    staminaCost: 35
+    range: 8
+    type: AoE
+    element: Earth
+    statusEffects:
+      - root_4s
+      - damage_over_time
+      - ally_heal_zone
+
+  _ultimateAbility:
+    abilityId: kangrei_forest_awakens
+    abilityName: The Forest Awakens
+    description: |
+      Kangrei calls upon the full power of nature. Trees spring from the 
+      ground, animals rush to defend allies, and the entire battlefield 
+      transforms into a living forest that fights for her.
+    damage: 100
+    cooldown: 70
+    staminaCost: 90
+    range: 25
+    type: AoE
+    element: Earth
+    statusEffects:
+      - summon_forest_spirits
+      - terrain_transformation
+      - massive_heal_zone
+
+  _passiveAbility:
+    abilityId: kangrei_one_with_nature
+    abilityName: One with Nature
+    description: |
+      Kangrei heals when standing on natural ground. She can sense enemies 
+      through plants and cannot be surprised in forests. Animals refuse to 
+      attack her.
+    damage: 0
+    cooldown: 0
+    staminaCost: 0
+    range: 0
+    type: Buff
+    element: Earth
+
+  _comboMoves:
+    - abilityId: kangrei_thorn_burst
+      abilityName: Thorn Burst
+      description: Thorny vines explode from the ground around enemies.
+      damage: 40
+      cooldown: 0
+      staminaCost: 18
+      type: AoE
+      
+    - abilityId: kangrei_seed_bomb
+      abilityName: Bloom Bomb
+      description: Throws a seed that explodes into flowers, healing allies.
+      damage: 0
+      cooldown: 10
+      staminaCost: 25
+      type: Heal
+
+  # PERSONALITY
+  _personality:
+    bravery: 65
+    kindness: 95
+    wisdom: 80
+    humor: 40
+    loyalty: 85
+    curiosity: 75
+
+  _likes:
+    - Plants of all kinds
+    - Gentle rain
+    - People who respect nature
+    - Teaching others about the forest
+    - Sunrise through leaves
+
+  _dislikes:
+    - Destruction of nature
+    - Fire (terrifying)
+    - Pollution
+    - Caged animals
+    - Concrete and stone cities
+
+  _favoriteFood: Morning dew and flower pollen
+  _hobby: Growing new plants and talking to trees
+  _fear: Fire - it destroys everything she loves
+  _dream: A world where humans and nature live in harmony
+
+  # VOICE LINES
+  _voiceLines:
+    lines:
+      - type: Greeting
+        text: "The forest whispers your name. Welcome."
+      - type: Greeting
+        text: "*a flower blooms in her hand* For you."
+      - type: Selection
+        text: "The spirits of nature answer your call."
+      - type: Selection
+        text: "I will protect you as I protect my forest."
+      - type: BattleStart
+        text: "You threaten nature's children? Then face nature's wrath."
+      - type: BattleStart
+        text: "The forest fights back."
+      - type: Attack
+        text: "Grow!"
+      - type: Attack
+        text: "Nature strikes!"
+      - type: SpecialAttack
+        text: "Let the vines embrace you... tightly!"
+      - type: Ultimate
+        text: "HEAR ME, ANCIENT FOREST! AWAKEN!"
+      - type: Hurt
+        text: "The forest... feels my pain..."
+      - type: LowHealth
+        text: "I cannot... fall... the forest needs me..."
+      - type: Victory
+        text: "Life always finds a way."
+      - type: Victory
+        text: "The forest celebrates with us."
+      - type: Defeat
+        text: "The flowers... wilt... no..."
+      - type: LevelUp
+        text: "My roots grow deeper, my branches higher."
+      - type: Idle
+        text: "*listens to a tree* Yes, I understand..."
+      - type: Idle
+        text: "Can you hear it? The forest is singing."
+      - type: InteractFriendly
+        text: "Your soul is like spring - full of growth."
+      - type: InteractRival
+        text: "Even weeds have their place in nature. Even you."
+      - type: Funny
+        text: "I'm not a tree hugger. Trees hug ME. There's a difference!"
+
+  # RELATIONSHIPS
+  _relationships:
+    - characterId: champa_elephant
+      characterName: Champa
+      type: BestFriend
+      affinity: 95
+      relationshipDescription: |
+        Elephants have always been friends of the forest. Kangrei and 
+        Champa share a deep bond, often walking through forests together 
+        in comfortable silence.
+      specialDialogue:
+        - "Champa understands. The forest loves her too."
+        - "When she walks, she's careful of every flower."
+        - "We don't need words. We feel the same things."
+
+    - characterId: prohm_dino
+      characterName: Prohm
+      type: Friend
+      affinity: 80
+      relationshipDescription: |
+        Prohm has lived among trees for millennia. Kangrei tends to the 
+        moss and vines that grow on him, and he tells her stories of 
+        forests long gone.
+      specialDialogue:
+        - "Ancient one, tell me of the old forests..."
+        - "He carries a garden on his back. Beautiful."
+
+    - characterId: makara_dragon
+      characterName: Makara
+      type: Acquaintance
+      affinity: 50
+      relationshipDescription: |
+        Makara's fire makes Kangrei nervous, but she respects that he 
+        controls it carefully. They maintain a cautious friendship.
+      specialDialogue:
+        - "Please... keep your flames controlled."
+        - "Fire can renew the forest too... I'm learning to accept that."
+
+  # BACKSTORY
+  _birthplace: The Ancient Bamboo Grove of Prey Lang
+  _occupation: Forest Guardian / Nature Spirit
+  _familyBackground: |
+    Born from the forest itself. She considers all plants her family and 
+    all animals her children. Other forest spirits exist, but she is the 
+    strongest in her region.
+  _backstory: |
+    See full biography above.
+  _keyMemories:
+    - "My first memory: sunlight through bamboo, feeling alive."
+    - "A child who got lost in my forest - I guided her home. Her smile."
+    - "The day the loggers came. My first experience of rage."
+    - "Seeing the Shadow's corruption spread... watching trees die..."
+    - "Meeting Champa - finally, someone who understands."
+
+  # UNLOCK
+  _unlockMethod: Quest
+  _unlockQuestId: quest_bamboo_grove
+  _isStarterCharacter: false
+  _unlockLevel: 14
+
+  # COSTUMES
+  _costumes:
+    - costumeId: kangrei_default
+      costumeName: Forest Spirit
+      description: Woven bamboo and living vines.
+      rarity: Common
+      isDefault: true
+
+    - costumeId: kangrei_spring
+      costumeName: Spring Bloom
+      description: Covered in cherry blossoms and new growth.
+      rarity: Rare
+      unlockMethod: Quest
+      unlockCost: 0
+
+    - costumeId: kangrei_autumn
+      costumeName: Autumn Guardian
+      description: Draped in golden leaves and harvest colors.
+      rarity: Uncommon
+      unlockMethod: Purchase
+      unlockCost: 500
+
+    - costumeId: kangrei_ancient
+      costumeName: Primordial Grove
+      description: The oldest forest's avatar, moss and ancient bark.
+      rarity: Legendary
+      unlockMethod: Achievement
+      unlockCost: 0
+
+  # EMOTES
+  _emotes:
+    - emoteId: kangrei_grow
+      emoteName: Flower Bloom
+      isDefault: true
+
+    - emoteId: kangrei_listen
+      emoteName: Listening to Trees
+      isDefault: true
+
+    - emoteId: kangrei_dance
+      emoteName: Forest Dance
+      isDefault: false
+
+    - emoteId: kangrei_animal_call
+      emoteName: Animal Friends
+      isDefault: false
+
+
