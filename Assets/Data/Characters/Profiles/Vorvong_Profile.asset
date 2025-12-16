@@ -75,11 +75,13 @@ MonoBehaviour:
   _defenseGrowth: 2.5
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: vorvong_sword_strike
-    abilityName: Royal Blade
-    description: Precise sword strikes trained in royal academies.
+    abilityId: vorvong_dramatic_swing
+    abilityName: Overly Dramatic Swing
+    description: |
+      Vorvong swings his sword with TOO MUCH dramatic flair! SWOOSH! 
+      "For HONOR! For JUSTICE! For-- Sorvong, stop laughing!"
     damage: 28
     cooldown: 0
     staminaCost: 4
@@ -88,46 +90,48 @@ MonoBehaviour:
     element: None
 
   _specialAbility:
-    abilityId: vorvong_twin_assault
-    abilityName: Twin Assault
+    abilityId: vorvong_twin_trip
+    abilityName: TWIN TRIP UP
     description: |
-      Vorvong and Sorvong attack in perfect synchronization, striking 
-      from opposite directions. If Sorvong is in the party, damage is 
-      doubled and enemies are confused.
+      Vorvong and Sorvong try to do a synchronized attack but TRIP 
+      over each other! "You go left!" "No YOU go left!" BONK! 
+      They crash into enemies accidentally! It still works somehow!
     damage: 50
     cooldown: 10
     staminaCost: 30
     range: 4
-    type: Melee
+    type: AoE
     element: None
     statusEffects:
-      - twin_sync_bonus
-      - confusion_2s
+      - twin_confusion
+      - accidental_damage
+      - embarrassed_princes
 
   _ultimateAbility:
-    abilityId: vorvong_princes_justice
-    abilityName: The Princes' Justice
+    abilityId: vorvong_sibling_argument
+    abilityName: EPIC SIBLING ARGUMENT
     description: |
-      Vorvong unleashes years of frustration and determination in a 
-      devastating combo. If Sorvong is present, they perform their 
-      legendary "Twin Dragon" technique that devastates the battlefield.
+      Vorvong and Sorvong start ARGUING mid-battle! "You ALWAYS mess 
+      up!" "YOU'RE not the boss of me!" Their fighting accidentally 
+      devastates the battlefield! Enemies are caught in the crossfire!
     damage: 160
     cooldown: 55
     staminaCost: 75
-    range: 6
-    type: Melee
+    range: 8
+    type: AoE
     element: None
     statusEffects:
-      - twin_dragon_if_together
-      - justice_mark
+      - caught_in_argument
+      - sibling_chaos
+      - accidentally_effective
 
   _passiveAbility:
-    abilityId: vorvong_elder_burden
-    abilityName: Elder's Burden
+    abilityId: vorvong_worried_brother
+    abilityName: Helicopter Big Brother
     description: |
-      Vorvong's protective instincts activate when allies are in danger. 
-      He gains increased defense when nearby allies are low on health 
-      and deals bonus damage to enemies who have hurt his friends.
+      Vorvong is SO WORRIED about Sorvong that he gets distracted! 
+      "Be CAREFUL! Watch your left! Did you EAT today?!" It's annoying 
+      but also kinda sweet! Sorvong gets defense bonus AND embarrassment!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -136,21 +140,25 @@ MonoBehaviour:
     element: None
 
   _comboMoves:
-    - abilityId: vorvong_quick_draw
-      abilityName: Flash Draw
-      description: Lightning-fast slash that can hit multiple enemies in a line.
+    - abilityId: vorvong_trip_stumble
+      abilityName: Royal Trip and Stumble
+      description: |
+        Vorvong trips on his fancy cape and stumbles into enemies! 
+        "This cape looked cool in the CATALOG!" CRASH!
       damage: 35
       cooldown: 0
       staminaCost: 15
       type: Melee
       
-    - abilityId: vorvong_parry_strike
-      abilityName: Royal Riposte
-      description: Perfect parry followed by devastating counter.
+    - abilityId: vorvong_princely_pout
+      abilityName: Princely Pout
+      description: |
+        Vorvong pouts SO HARD that enemies feel guilty! "This is 
+        NOT how a prince should be TREATED!" It's weaponized guilt!
       damage: 55
       cooldown: 8
       staminaCost: 22
-      type: Melee
+      type: Debuff
 
   # PERSONALITY
   _personality:

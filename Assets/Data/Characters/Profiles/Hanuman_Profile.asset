@@ -68,11 +68,13 @@ MonoBehaviour:
   _defenseGrowth: 2
   _speedGrowth: 2.8
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: hanuman_divine_fist
-    abilityName: Divine Fist
-    description: Punches infused with the power of the wind that can shatter stone.
+    abilityId: hanuman_old_monkey_slap
+    abilityName: Grumpy Old Monkey Slap
+    description: |
+      Hanuman slaps enemies while complaining about "kids these days"! 
+      SLAP! "Back in MY day, demons were SCARY! You're just SAD!"
     damage: 38
     cooldown: 0
     staminaCost: 4
@@ -81,30 +83,30 @@ MonoBehaviour:
     element: Wind
 
   _specialAbility:
-    abilityId: hanuman_grow
-    abilityName: Mountain Giant
+    abilityId: hanuman_super_wedgie
+    abilityName: LEGENDARY WEDGIE
     description: |
-      Hanuman grows to enormous size, dramatically increasing his attack 
-      range and damage. In this form, each attack creates shockwaves that 
-      hit multiple enemies.
+      Hanuman sneaks behind enemies and gives them an IMMORTAL WEDGIE! 
+      "I learned this move 10,000 years ago! CLASSIC NEVER DIES!" 
+      Enemies walk funny for the rest of the fight!
     damage: 60
     cooldown: 15
     staminaCost: 40
-    range: 5
-    type: Buff
+    range: 3
+    type: Melee
     element: Wind
     statusEffects:
-      - size_increase_10s
-      - attack_range_bonus
-      - aoe_attacks
+      - wedgie_walk_10s
+      - humiliation_debuff
+      - can't_sit_down
 
   _ultimateAbility:
-    abilityId: hanuman_burning_tail
-    abilityName: Lanka's Flame
+    abilityId: hanuman_banana_avalanche
+    abilityName: 10,000 YEAR BANANA HOARD
     description: |
-      Hanuman's tail ignites with divine fire as he spins through the 
-      battlefield, leaving a trail of devastating flames. Enemies caught 
-      in the path are launched into the air and burned.
+      Hanuman has been SAVING bananas for TEN THOUSAND YEARS! He dumps 
+      his ENTIRE collection on enemies! "I knew these would come in handy! 
+      ...Some are a bit ripe... MILLION YEAR OLD BANANA ATTACK!"
     damage: 180
     cooldown: 60
     staminaCost: 80
@@ -112,16 +114,17 @@ MonoBehaviour:
     type: AoE
     element: Wind
     statusEffects:
-      - burn_5s
-      - knockup
+      - banana_slip_everywhere
+      - ancient_banana_stink
+      - monkey_snack_time
 
   _passiveAbility:
-    abilityId: hanuman_immortal
-    abilityName: Immortal Spirit
+    abilityId: hanuman_cant_die
+    abilityName: TOO STUBBORN TO DIE
     description: |
-      Hanuman's divine blessing grants him immunity to instant-kill effects 
-      and allows him to survive fatal damage once per battle with 1 HP. 
-      Additionally, he inspires nearby allies with increased courage.
+      Hanuman is SO STUBBORN he refuses to die! "I'm NOT done 
+      lecturing you about the OLD DAYS!" Even fatal damage just 
+      makes him ANGRIER and GRUMPIER!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -130,17 +133,21 @@ MonoBehaviour:
     element: Wind
 
   _comboMoves:
-    - abilityId: hanuman_leap
-      abilityName: Ocean Leap
-      description: Leaps across the entire battlefield, crashing down on enemies.
+    - abilityId: hanuman_tail_noogie
+      abilityName: Tail Noogie
+      description: |
+        Hanuman grabs enemies with his tail and gives them NOOGIES! 
+        "This is how we did it in the GOLDEN AGE!" NOOGIE NOOGIE!
       damage: 70
       cooldown: 0
       staminaCost: 25
       type: Melee
       
-    - abilityId: hanuman_mace_spin
-      abilityName: Gada Cyclone
-      description: Spins his divine mace in a devastating 360-degree attack.
+    - abilityId: hanuman_old_man_spin
+      abilityName: Get Off My Lawn Spin
+      description: |
+        Hanuman spins his mace while yelling "GET OFF MY MOUNTAIN!" 
+        It's very effective because he's REALLY ANGRY about youngsters!
       damage: 85
       cooldown: 8
       staminaCost: 35

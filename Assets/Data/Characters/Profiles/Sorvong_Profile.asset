@@ -73,11 +73,13 @@ MonoBehaviour:
   _defenseGrowth: 1.5
   _speedGrowth: 2.8
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: sorvong_shadow_strike
-    abilityName: Shadow Blade
-    description: Swift dagger strikes from unexpected angles.
+    abilityId: sorvong_sneaky_poke
+    abilityName: Sneaky Poke
+    description: |
+      Sorvong pokes enemies and hides! POKE! "Wasn't me!" POKE! 
+      "Look over there!" POKE! "Still wasn't me!" So immature!
     damage: 25
     cooldown: 0
     staminaCost: 3
@@ -86,30 +88,30 @@ MonoBehaviour:
     element: Shadow
 
   _specialAbility:
-    abilityId: sorvong_vanish
-    abilityName: Phantom Step
+    abilityId: sorvong_shadow_wedgie
+    abilityName: SHADOW WEDGIE
     description: |
-      Sorvong vanishes into shadows, becoming invisible and untargetable. 
-      His next attack from stealth deals massive bonus damage and stuns 
-      the target.
+      Sorvong appears from the shadows to give enemies MEGA WEDGIES! 
+      "Shadow techniques passed down for generations! ...Wedgie style!" 
+      He disappears before they can retaliate! So dishonorable! So effective!
     damage: 60
     cooldown: 12
     staminaCost: 28
-    range: 0
-    type: Buff
+    range: 3
+    type: Melee
     element: Shadow
     statusEffects:
-      - invisibility_5s
-      - next_attack_bonus_200
-      - stun_on_hit
+      - wedgie_debuff_5s
+      - can't_run_properly
+      - dignity_damage
 
   _ultimateAbility:
-    abilityId: sorvong_assassin_dance
-    abilityName: Dance of Shadows
+    abilityId: sorvong_prank_spree
+    abilityName: ULTIMATE PRANK SPREE
     description: |
-      Sorvong becomes one with the darkness, dashing between all enemies 
-      on the battlefield, striking each one. If Vorvong is present, he 
-      coordinates with his brother for devastating finishing blows.
+      Sorvong goes on a PRANK RAMPAGE! Wedgies! Wet willies! Shoe 
+      untying! Pants pulling! "I learned this from KAVI! BEST 
+      TEACHER EVER!" It's chaos! It's juvenile! It WORKS!
     damage: 150
     cooldown: 55
     staminaCost: 70
@@ -117,16 +119,17 @@ MonoBehaviour:
     type: AoE
     element: Shadow
     statusEffects:
-      - hits_all_enemies
-      - twin_finisher_if_together
+      - prank_chaos
+      - maximum_embarrassment
+      - vorvong_disappointed
 
   _passiveAbility:
-    abilityId: sorvong_shadows_embrace
-    abilityName: Shadow's Embrace
+    abilityId: sorvong_annoying_brother
+    abilityName: Annoying Little Brother
     description: |
-      Sorvong moves faster in darkness and takes reduced damage when 
-      attacking from behind. His critical hit chance increases dramatically 
-      against enemies who are unaware of him.
+      Sorvong is an EXPERT at being annoying! He learned from being a 
+      little brother! "I'm not TOUCHING you! I'm not TOUCHING you!" 
+      Enemies get SO annoyed they miss attacks!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,17 +138,21 @@ MonoBehaviour:
     element: Shadow
 
   _comboMoves:
-    - abilityId: sorvong_backstab
-      abilityName: Traitor's End
-      description: A devastating backstab that deals triple damage from behind.
+    - abilityId: sorvong_wet_willy
+      abilityName: Shadow Wet Willy
+      description: |
+        Sorvong appears and gives enemies a WET WILLY! Finger in 
+        ear! "GOTCHA! Hehe!" SO gross! SO effective!
       damage: 45
       cooldown: 0
       staminaCost: 18
       type: Melee
       
-    - abilityId: sorvong_smoke_bomb
-      abilityName: Smoke Screen
-      description: Throws a smoke bomb, blinding enemies and enabling escape.
+    - abilityId: sorvong_smoke_stink
+      abilityName: Stink Bomb
+      description: |
+        It's not just smoke... it's a STINK BOMB! "Oops! That 
+        one had some EXTRA ingredients! My bad! Not sorry!"
       damage: 10
       cooldown: 15
       staminaCost: 20

@@ -75,11 +75,13 @@ MonoBehaviour:
   _defenseGrowth: 3
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: singha_claw_combo
-    abilityName: Guardian's Claws
-    description: Disciplined claw strikes with perfect form.
+    abilityId: singha_cat_scratch
+    abilityName: Big Kitty Scratches
+    description: |
+      Singha scratches enemies like a cat scratching furniture! 
+      SCRITCH SCRATCH! "This is NOT undignified! It's COMBAT!"
     damage: 28
     cooldown: 0
     staminaCost: 5
@@ -88,11 +90,12 @@ MonoBehaviour:
     element: None
 
   _specialAbility:
-    abilityId: singha_roar
-    abilityName: Lion's Roar
+    abilityId: singha_lion_yawn
+    abilityName: CONTAGIOUS LION YAWN
     description: |
-      Singha unleashes a powerful roar that inspires allies and terrifies 
-      enemies. Allies gain increased attack, enemies are feared and flee.
+      Singha yawns SO WIDE and SO LONG that it's contagious! 
+      Everyone starts yawning! Enemies can't attack while yawning!
+      "YAAAWWWN... wait, now YOU'RE yawning! YAWN ATTACK!"
     damage: 20
     cooldown: 12
     staminaCost: 30
@@ -100,33 +103,35 @@ MonoBehaviour:
     type: Debuff
     element: None
     statusEffects:
-      - ally_attack_up_20
-      - enemy_fear_3s
+      - contagious_yawn_4s
+      - sleepy_debuff
+      - lion_nap_time
 
   _ultimateAbility:
-    abilityId: singha_guardian_form
-    abilityName: Temple Guardian Awakening
+    abilityId: singha_hairball_fury
+    abilityName: LEGENDARY HAIRBALL
     description: |
-      Singha channels the spirits of all guardian lions before him. He becomes 
-      golden, invincible, and his attacks deal massive damage. For his 
-      ancestors. For his duty. FOR FUNAN!
+      Singha hacks up the BIGGEST HAIRBALL in recorded history! 
+      Years of grooming result in a MASSIVE fur-ball projectile! 
+      "HACK HACK HACK... BLEEEURGH!" It's disgusting AND devastating!
     damage: 200
     cooldown: 55
     staminaCost: 70
-    range: 3
-    type: Buff
+    range: 10
+    type: Ranged
     element: None
     statusEffects:
-      - invincible_5s
-      - damage_triple
-      - speed_double
+      - hairball_impact
+      - gross_out_debuff
+      - fur_everywhere
 
   _passiveAbility:
-    abilityId: singha_vigilance
-    abilityName: Eternal Vigilance
+    abilityId: singha_cat_curiosity
+    abilityName: Distracted by Movement
     description: |
-      Singha is always alert. Cannot be ambushed or surprised. Also receives 
-      less damage when protecting an ally (standing between them and enemy).
+      Singha can't help but chase anything that moves quickly! 
+      He pounces on enemies who try to run! "I am a DIGNIFIED 
+      guardian! I do NOT chase... okay maybe just this once..."
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,21 +140,25 @@ MonoBehaviour:
     element: None
 
   _comboMoves:
-    - abilityId: singha_pounce
-      abilityName: Guardian Pounce
-      description: Leap at an enemy with claws extended.
+    - abilityId: singha_mane_shake
+      abilityName: Dramatic Mane Shake
+      description: |
+        Singha shakes his glorious mane and loose FUR flies everywhere! 
+        Enemies get fur in their eyes, mouth, and everywhere! "Fabulous!"
       damage: 45
       cooldown: 0
       staminaCost: 18
-      type: Melee
+      type: AoE
       
-    - abilityId: singha_shield_stance
-      abilityName: Defensive Stance
-      description: Reduce incoming damage and protect nearby allies.
+    - abilityId: singha_butt_wiggle
+      abilityName: Pounce Preparation Wiggle
+      description: |
+        Before pouncing, Singha does that adorable cat butt-wiggle! 
+        It's SO distracting enemies forget to defend! *wiggle wiggle*
       damage: 0
       cooldown: 10
       staminaCost: 20
-      type: Buff
+      type: Debuff
 
   # PERSONALITY
   _personality:

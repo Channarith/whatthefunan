@@ -71,11 +71,13 @@ MonoBehaviour:
   _defenseGrowth: 1
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: reahu_void_bite
-    abilityName: Void Bite
-    description: Reahu's massive jaws chomp down, draining life from enemies.
+    abilityId: reahu_chomp_miss
+    abilityName: Chompy Chomp (Misses Body)
+    description: |
+      Reahu tries to bite but his food just... falls through his severed 
+      neck! "I hate being just a head! I'm SO HUNGRY but I CAN'T EAT!"
     damage: 35
     cooldown: 0
     staminaCost: 5
@@ -83,32 +85,32 @@ MonoBehaviour:
     type: Melee
     element: Shadow
     statusEffects:
-      - lifesteal_10_percent
+      - frustration_damage
 
   _specialAbility:
-    abilityId: reahu_darkness_pulse
-    abilityName: Pulse of the Void
+    abilityId: reahu_darkness_burp
+    abilityName: VOID BURP
     description: |
-      Reahu releases a wave of pure darkness that damages enemies and 
-      creates zones of shadow. Enemies in shadow take continuous damage 
-      and have reduced vision.
+      Reahu burps up PURE DARKNESS from millions of years ago! 
+      "EXCUSE ME! That was the Buddha's first century! Very vintage!" 
+      The ancient burp smells like COSMIC DESPAIR!
     damage: 45
     cooldown: 12
     staminaCost: 35
-    range: 7
+    range: 8
     type: AoE
     element: Shadow
     statusEffects:
-      - darkness_zone_5s
-      - blind_3s
+      - ancient_burp_cloud
+      - existential_dread_debuff
 
   _ultimateAbility:
-    abilityId: reahu_eclipse
-    abilityName: Total Eclipse
+    abilityId: reahu_eclipse_tantrum
+    abilityName: ECLIPSE TANTRUM
     description: |
-      Reahu swallows the very light of the battlefield, creating a total 
-      eclipse. All enemies are trapped in darkness, taking massive damage 
-      over time while Reahu becomes invisible and empowered.
+      Reahu is SO MAD about being just a head that he throws a COSMIC 
+      TANTRUM! He swallows the sun AND moon while screaming "IT'S NOT 
+      FAIR! I JUST WANTED A DRINK!" Total eclipse of PURE RAGE!
     damage: 200
     cooldown: 65
     staminaCost: 85
@@ -116,17 +118,17 @@ MonoBehaviour:
     type: AoE
     element: Shadow
     statusEffects:
-      - total_darkness_8s
-      - self_invisible
-      - damage_boost_50
+      - tantrum_darkness_8s
+      - screaming_void
+      - everyone_uncomfortable
 
   _passiveAbility:
-    abilityId: reahu_hunger
-    abilityName: Eternal Hunger
+    abilityId: reahu_just_a_head
+    abilityName: It's Just a Head
     description: |
-      Reahu heals when standing in darkness or shadow. Killing enemies 
-      grants a stacking damage buff. However, he takes increased damage 
-      from Light-element attacks.
+      Reahu is JUST A HEAD. Enemies keep trying to attack his body 
+      and missing! "HA! Where are you hitting? DOWN THERE? I don't 
+      HAVE a down there anymore! Joke's on YOU!"
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,17 +137,21 @@ MonoBehaviour:
     element: Shadow
 
   _comboMoves:
-    - abilityId: reahu_shadow_dash
-      abilityName: Through the Dark
-      description: Dash through shadows, appearing behind the target.
+    - abilityId: reahu_floating_headbutt
+      abilityName: Floating Headbutt
+      description: |
+        Reahu headbutts enemies! It's ALL he can do! "At least I still 
+        have my HEAD! Get it? Because that's all... never mind."
       damage: 40
       cooldown: 0
       staminaCost: 18
       type: Melee
       
-    - abilityId: reahu_devour
-      abilityName: Consume
-      description: Attempt to swallow a weakened enemy whole, executing if low HP.
+    - abilityId: reahu_bite_ankle
+      abilityName: Ankle Biter
+      description: |
+        Reahu floats low and bites ankles! "I used to swallow the SUN! 
+        Now I bite ANKLES! How far I've fallen!" CHOMP!
       damage: 100
       cooldown: 20
       staminaCost: 45

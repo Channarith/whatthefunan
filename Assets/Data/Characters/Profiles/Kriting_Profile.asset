@@ -73,11 +73,13 @@ MonoBehaviour:
   _defenseGrowth: 3
   _speedGrowth: 1.5
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: kriting_hybrid_strike
-    abilityName: Chimera Strike
-    description: Combines trunk swing with claw slash for a devastating combo.
+    abilityId: kriting_confused_attack
+    abilityName: Wait What Am I?
+    description: |
+      Kriting tries to attack but can't decide HOW! Trunk? Claw? BOTH?! 
+      "Am I biting or stomping?! IDENTITY CRISIS!" BONK SCRATCH STOMP!
     damage: 32
     cooldown: 0
     staminaCost: 5
@@ -86,47 +88,48 @@ MonoBehaviour:
     element: Earth
 
   _specialAbility:
-    abilityId: kriting_form_shift
-    abilityName: Nature's Balance
+    abilityId: kriting_chimera_chimes
+    abilityName: CHIMERA CHIMES
     description: |
-      Kriting shifts his dominant nature. In Elephant Form, he gains 
-      massive defense and can shield allies. In Lion Form, he gains 
-      attack speed and critical chance. Can switch forms freely.
-    damage: 0
+      Kriting tries to trumpet AND roar at the same time! The result 
+      is a BIZARRE sound! TROOOAR! ROOOOMP! "What sound DO I make?!" 
+      It's so weird enemies are stunned by confusion!
+    damage: 40
     cooldown: 8
     staminaCost: 25
-    range: 0
-    type: Buff
+    range: 8
+    type: AoE
     element: Earth
     statusEffects:
-      - elephant_form_defense
-      - or_lion_form_offense
+      - confusion_chimera_sound
+      - what_was_that_debuff
+      - everyone_confused
 
   _ultimateAbility:
-    abilityId: kriting_perfect_fusion
-    abilityName: True Chimera
+    abilityId: kriting_identity_crisis
+    abilityName: FULL IDENTITY CRISIS
     description: |
-      Kriting achieves perfect balance between both natures simultaneously. 
-      For a duration, he has the full benefits of BOTH forms - impenetrable 
-      defense AND devastating offense - becoming an unstoppable force.
+      Kriting has a COMPLETE breakdown! "Am I an ELEPHANT?! Am I a 
+      LION?! WHY DO I EXIST?!" He flails WILDLY, trunk flapping, 
+      mane shaking, tail swishing! It's chaos! It's devastating!
     damage: 140
     cooldown: 60
     staminaCost: 80
-    range: 5
-    type: Buff
+    range: 8
+    type: AoE
     element: Earth
     statusEffects:
-      - both_forms_active_10s
-      - increased_size
-      - fear_aura
+      - existential_flailing
+      - crying_chimera
+      - sympathy_damage
 
   _passiveAbility:
-    abilityId: kriting_dual_nature
-    abilityName: Dual Nature
+    abilityId: kriting_double_confused
+    abilityName: Twice the Confusion
     description: |
-      Kriting's hybrid nature makes him resistant to crowd control. He 
-      recovers from stuns, roots, and slows faster than normal. His 
-      presence inspires both elephants and felines to fight harder.
+      Kriting's TWO natures mean he's ALWAYS a little confused! 
+      "Do I eat meat or plants? Do I roar or trumpet? WHY AM I LIKE 
+      THIS?!" His confusion is contagious! Enemies get confused too!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,17 +138,21 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: kriting_trunk_roar
-      abilityName: Thunderous Proclamation
-      description: A roar amplified by his trunk that damages and intimidates.
+    - abilityId: kriting_trunk_roar_fail
+      abilityName: Trumpet-Roar Combo Fail
+      description: |
+        Kriting tries to trumpet and roar at once and it comes out 
+        as a SQUEAK! "That's not-- I meant to-- UGH!" So embarrassing!
       damage: 50
       cooldown: 0
       staminaCost: 18
       type: AoE
       
-    - abilityId: kriting_pounce
-      abilityName: Noble Pounce
-      description: Leaps onto an enemy with lion grace and elephant weight.
+    - abilityId: kriting_clumsy_pounce
+      abilityName: Clumsy Chimera Pounce
+      description: |
+        Kriting pounces but his elephant half is NOT graceful! 
+        CRASH! "Lions are graceful! I'm... not!" SPLAT!
       damage: 60
       cooldown: 10
       staminaCost: 25

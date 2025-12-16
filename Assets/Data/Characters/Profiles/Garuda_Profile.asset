@@ -68,11 +68,13 @@ MonoBehaviour:
   _defenseGrowth: 1.5
   _speedGrowth: 2.5
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: garuda_talon_strike
-    abilityName: Divine Talons
-    description: Razor-sharp talons infused with celestial light tear through enemies.
+    abilityId: garuda_angry_peck
+    abilityName: Angry Bird Peck
+    description: |
+      Garuda pecks enemies REALLY aggressively like an angry bird! 
+      PECK PECK PECK! "I'm NOT a chicken! Stop calling me birdbrain!"
     damage: 32
     cooldown: 0
     staminaCost: 5
@@ -81,46 +83,48 @@ MonoBehaviour:
     element: Wind
 
   _specialAbility:
-    abilityId: garuda_wind_shear
-    abilityName: Typhoon Wings
+    abilityId: garuda_bird_pooper
+    abilityName: TACTICAL BIRD POOP
     description: |
-      Garuda beats his mighty wings, creating a devastating wind shear that 
-      damages all enemies in a cone and pushes them back. Airborne enemies 
-      take double damage.
+      Garuda flies overhead and... well... BOMBS enemies from above! 
+      "This is a STRATEGIC maneuver! Very dignified! NOT gross at all!"
+      It's super effective and super embarrassing for everyone!
     damage: 55
     cooldown: 10
     staminaCost: 30
-    range: 8
-    type: AoE
-    element: Wind
-    statusEffects:
-      - knockback_strong
-      - airborne_bonus_damage
-
-  _ultimateAbility:
-    abilityId: garuda_solar_dive
-    abilityName: Wrath of the Sun
-    description: |
-      Garuda soars into the sky and becomes wreathed in solar flames, then 
-      dives at terminal velocity into the battlefield. The impact creates a 
-      massive explosion of light and wind that devastates all enemies.
-    damage: 150
-    cooldown: 55
-    staminaCost: 75
     range: 10
     type: AoE
     element: Wind
     statusEffects:
-      - burn_3s
-      - blind_2s
+      - pooped_on_debuff
+      - embarrassment_5s
+      - slip_chance
+
+  _ultimateAbility:
+    abilityId: garuda_molting_mayhem
+    abilityName: EXPLOSIVE MOLTING
+    description: |
+      Garuda molts ALL his feathers at once in a MASSIVE explosion! 
+      Feathers FLY EVERYWHERE! "I'm not losing feathers, it's FASHION! 
+      Also, don't look at me, I'm NAKED!" *feather explosion*
+    damage: 150
+    cooldown: 55
+    staminaCost: 75
+    range: 12
+    type: AoE
+    element: Wind
+    statusEffects:
+      - feather_blind_5s
+      - itchy_feathers
+      - garuda_embarrassed
 
   _passiveAbility:
-    abilityId: garuda_sky_sovereign
-    abilityName: Sovereign of the Sky
+    abilityId: garuda_dramatic_eagle
+    abilityName: Dramatic Entrance
     description: |
-      Garuda takes reduced damage while airborne and deals bonus damage to 
-      enemies below him. His presence intimidates serpentine enemies, 
-      reducing their attack power.
+      Garuda can't help but pose dramatically! Every time he enters 
+      battle, there's a spotlight and wind effect! Enemies are SO 
+      distracted by his fabulousness! "I can't help being THIS majestic!"
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -129,17 +133,21 @@ MonoBehaviour:
     element: Wind
 
   _comboMoves:
-    - abilityId: garuda_aerial_combo
-      abilityName: Sky Rend
-      description: A flurry of aerial slashes that juggles enemies in the air.
+    - abilityId: garuda_screech_attack
+      abilityName: Early Morning SCREECH
+      description: |
+        Garuda screeches at enemies like a rooster at 5 AM! 
+        CA-CAWWW! "WAKE UP! TIME FOR BATTLE! NO SLEEPING!"
       damage: 65
       cooldown: 0
       staminaCost: 22
-      type: Melee
+      type: AoE
       
-    - abilityId: garuda_feather_storm
-      abilityName: Golden Feather Storm
-      description: Launches razor-sharp golden feathers in all directions.
+    - abilityId: garuda_nest_head
+      abilityName: Nest Hair Attack
+      description: |
+        Garuda's feathers are SO messy they form a NEST on his head! 
+        Birds fly out and attack enemies! "They're freeloaders!"
       damage: 45
       cooldown: 12
       staminaCost: 28

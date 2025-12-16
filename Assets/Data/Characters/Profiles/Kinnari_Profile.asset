@@ -70,11 +70,13 @@ MonoBehaviour:
   _defenseGrowth: 1.5
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: kinnari_feather_dart
-    abilityName: Golden Feathers
-    description: Launches sharp golden feathers that seek out enemies.
+    abilityId: kinnari_off_key
+    abilityName: Off-Key Note Attack
+    description: |
+      Kinnari sings a note SO OFF-KEY that enemies wince in pain! 
+      "La la la-- SQUAWK!" Even she cringes! "Oops! Voice crack!"
     damage: 15
     cooldown: 0
     staminaCost: 3
@@ -83,47 +85,48 @@ MonoBehaviour:
     element: Light
 
   _specialAbility:
-    abilityId: kinnari_healing_song
-    abilityName: Song of Restoration
+    abilityId: kinnari_earworm_song
+    abilityName: ANNOYING EARWORM
     description: |
-      Kinnari sings a beautiful melody that heals all allies in range over 
-      time and removes negative status effects. The longer she sings, the 
-      more powerful the healing becomes.
+      Kinnari sings a tune SO CATCHY it gets STUCK in everyone's head! 
+      Enemies can't concentrate because they keep humming it! 
+      "It's a small world after all~ You're welcome!"
     damage: 0
     cooldown: 15
     staminaCost: 40
-    range: 10
-    type: Heal
+    range: 12
+    type: Debuff
     element: Light
     statusEffects:
-      - heal_over_time_5s
-      - cleanse_debuffs
+      - earworm_5s
+      - humming_distraction
+      - can't_focus
 
   _ultimateAbility:
-    abilityId: kinnari_phoenix_aria
-    abilityName: Phoenix Aria
+    abilityId: kinnari_opera_screech
+    abilityName: OPERA BIRD SCREECH
     description: |
-      Kinnari unleashes her most powerful song - the Phoenix Aria. This 
-      legendary melody fully heals all allies, grants them temporary 
-      invincibility, and can even revive recently fallen teammates.
-    damage: 0
+      Kinnari hits a note SO HIGH that glass SHATTERS! Her bird nature 
+      takes over and it becomes a full SCREECH! "AAAAAA--SQUAAWK!" 
+      Beautiful? Horrifying? YES!
+    damage: 80
     cooldown: 90
     staminaCost: 100
     range: 15
-    type: Heal
+    type: AoE
     element: Light
     statusEffects:
-      - full_heal
-      - invincibility_3s
-      - revive_allies
+      - ear_ring_10s
+      - glass_shatter
+      - bird_screech_fear
 
   _passiveAbility:
-    abilityId: kinnari_inspiring_presence
-    abilityName: Inspiring Melody
+    abilityId: kinnari_humming_annoying
+    abilityName: Constant Humming
     description: |
-      Kinnari constantly hums soft melodies that gradually heal nearby 
-      allies and increase their stamina regeneration. Her presence makes 
-      everyone feel more hopeful.
+      Kinnari hums CONSTANTLY and it's either healing or annoying! 
+      Allies are healed but also going a little crazy! "Hmm hmm hmm~ 
+      What? I CAN'T HELP IT! It's a bird thing!"
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -132,23 +135,27 @@ MonoBehaviour:
     element: Light
 
   _comboMoves:
-    - abilityId: kinnari_lullaby
-      abilityName: Dreamtime Lullaby
-      description: A soothing song that puts enemies to sleep briefly.
-      damage: 0
+    - abilityId: kinnari_feather_sneeze
+      abilityName: Feather Allergy Sneeze
+      description: |
+        Kinnari is allergic to her OWN feathers! AH-CHOO! Feathers 
+        fly everywhere! "I'm a BIRD allergic to FEATHERS!"
+      damage: 30
       cooldown: 0
       staminaCost: 25
-      type: Debuff
+      type: AoE
       statusEffects:
-        - sleep_3s
+        - feather_blind
       
-    - abilityId: kinnari_war_song
-      abilityName: Battle Hymn
-      description: An inspiring song that increases all allies' attack power.
+    - abilityId: kinnari_bird_brain
+      abilityName: Bird Brain Moment
+      description: |
+        Kinnari has a "bird brain moment" and gets distracted mid-song! 
+        But it's SO random enemies get confused too! "Ooh shiny!"
       damage: 0
       cooldown: 18
       staminaCost: 30
-      type: Buff
+      type: Debuff
 
   # PERSONALITY
   _personality:

@@ -71,41 +71,44 @@ MonoBehaviour:
   _defenseGrowth: 2.5
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: naga_water_whip
-    abilityName: Tidal Whip
-    description: A tendril of water lashes out at enemies with serpentine grace.
+    abilityId: naga_spit_take
+    abilityName: Seven-Way Spit Take
+    description: |
+      All seven heads spit water at once like a broken sprinkler! 
+      PTOO PTOO PTOO! "We couldn't agree on ONE direction!"
     damage: 22
     cooldown: 0
     staminaCost: 5
-    range: 3.5
+    range: 4.0
     type: Ranged
     element: Water
 
   _specialAbility:
-    abilityId: naga_healing_rain
-    abilityName: Monsoon Blessing
+    abilityId: naga_shed_attack
+    abilityName: Shedding Season Surprise
     description: |
-      The Prince calls upon the rain spirits to heal all allies in an area. 
-      The rain also slows enemies caught within.
-    damage: 0
+      The Naga Prince sheds his skin ALL AT ONCE and flings the gross, 
+      slimy scales everywhere! "Sorry! It's that time of year! Ew ew ew!"
+      Enemies slip on the scales and get grossed out!
+    damage: 30
     cooldown: 10
     staminaCost: 35
     range: 8
-    type: Heal
+    type: AoE
     element: Water
     statusEffects:
-      - heal_over_time_5s
-      - enemy_slow_30
+      - slip_chance_50
+      - gross_out_debuff
 
   _ultimateAbility:
-    abilityId: naga_tidal_wave
-    abilityName: Wrath of Seven Tides
+    abilityId: naga_seven_head_sneeze
+    abilityName: SEVEN-HEAD SIMULTANEOUS SNEEZE
     description: |
-      All seven heads combine their power to summon a massive tidal wave 
-      that crashes through the battlefield. Enemies are swept away and 
-      allies ride the wave to safety.
+      All seven heads sneeze at the EXACT same time! The combined snot 
+      tsunami floods the entire battlefield! "AH-AH-AH-CHOOOO x7!" 
+      It's disgusting AND hilarious!
     damage: 100
     cooldown: 55
     staminaCost: 80
@@ -113,15 +116,17 @@ MonoBehaviour:
     type: AoE
     element: Water
     statusEffects:
-      - knockback_large
-      - ally_reposition
+      - snot_flood_10s
+      - slip_and_slide
+      - everyone_grossed_out
 
   _passiveAbility:
-    abilityId: naga_water_affinity
-    abilityName: Child of the Waters
+    abilityId: naga_arguing_heads
+    abilityName: Seven Heads, Seven Opinions
     description: |
-      Near water sources, the Prince's abilities are enhanced. He can also 
-      breathe underwater (obviously) and swim at incredible speeds.
+      The seven heads argue CONSTANTLY! "Go left!" "No, RIGHT!" "UP!" 
+      Enemies get so distracted watching the argument they forget to 
+      attack. Sometimes allies get distracted too...
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -130,21 +135,25 @@ MonoBehaviour:
     element: Water
 
   _comboMoves:
-    - abilityId: naga_coil_strike
-      abilityName: Serpent's Coil
-      description: Wrap an enemy in water and squeeze, dealing damage over time.
+    - abilityId: naga_tail_tickle
+      abilityName: Tail Tickle Attack
+      description: |
+        The Naga Prince wraps enemies and tickles them mercilessly with 
+        his tail tip! "TICKLE TICKLE! SAY UNCLE!"
       damage: 40
       cooldown: 0
       staminaCost: 20
       type: Melee
       
-    - abilityId: naga_water_shield
-      abilityName: Bubble Guard
-      description: Encase an ally in a protective water bubble.
-      damage: 0
+    - abilityId: naga_hiss_fit
+      abilityName: Hissy Fit
+      description: |
+        All seven heads throw a tantrum at once! Hissing, spitting, 
+        dramatic swooning! "This is SO UNFAIR! HISSSS!"
+      damage: 20
       cooldown: 12
       staminaCost: 25
-      type: Buff
+      type: AoE
 
   # PERSONALITY
   _personality:

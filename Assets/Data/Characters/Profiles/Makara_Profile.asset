@@ -70,78 +70,88 @@ MonoBehaviour:
   _defenseGrowth: 2
   _speedGrowth: 1.5
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: makara_claw_swipe
-    abilityName: Dragon Claw
-    description: A devastating claw swipe that leaves burning marks.
+    abilityId: makara_spicy_breath
+    abilityName: Spicy Breath
+    description: |
+      Makara ate TOO MANY CHILI PEPPERS and now his breath is LETHAL! 
+      "Excuse me! I had extra spicy for lunch! HOOO HOOO!"
     damage: 35
     cooldown: 0
     staminaCost: 6
-    range: 2
-    type: Melee
+    range: 3.0
+    type: Ranged
     element: Fire
     statusEffects:
-      - burn_damage_3s
+      - spicy_burn_3s
 
   _specialAbility:
-    abilityId: makara_fire_breath
-    abilityName: Flame Breath
+    abilityId: makara_fire_fart
+    abilityName: FIRE FART
     description: |
-      Makara unleashes a cone of searing flames. The longer he breathes, 
-      the hotter it gets! Hold to charge, release to fire.
+      Makara turns around and lets out a MASSIVE flaming fart! 
+      FWOOOOSH! "Sorry! The beans were a bad idea!" Creates a fire 
+      trail and makes everyone within range cry from the smell AND heat!
     damage: 60
     cooldown: 10
     staminaCost: 35
     range: 8
-    type: Ranged
-    element: Fire
-    statusEffects:
-      - burn_damage_5s
-      - armor_melt
-
-  _ultimateAbility:
-    abilityId: makara_volcanic_eruption
-    abilityName: Volcanic Fury
-    description: |
-      Makara channels the power of underwater volcanoes, erupting in a 
-      massive explosion of fire and steam. Creates a zone of constant 
-      fire damage that lasts for several seconds.
-    damage: 150
-    cooldown: 50
-    staminaCost: 75
-    range: 12
     type: AoE
     element: Fire
     statusEffects:
-      - fire_zone_8s
-      - steam_blind
+      - burn_3s
+      - stink_debuff_5s
+      - watering_eyes
+
+  _ultimateAbility:
+    abilityId: makara_explosive_indigestion
+    abilityName: EXPLOSIVE INDIGESTION
+    description: |
+      Makara ate something REALLY bad and now he's about to EXPLODE! 
+      He burps fire, farts flames, and his tummy rumbles like a volcano! 
+      "I TOLD you not to feed me dairy! BLAAARGH!"
+    damage: 150
+    cooldown: 50
+    staminaCost: 75
+    range: 15
+    type: AoE
+    element: Fire
+    statusEffects:
+      - fire_everywhere
+      - rumbling_aftershocks
+      - makara_embarrassed
 
   _passiveAbility:
-    abilityId: makara_thick_scales
-    abilityName: Ancient Scales
+    abilityId: makara_hot_flash
+    abilityName: Hot Flashes
     description: |
-      Makara's legendary scales provide natural armor and fire immunity. 
-      The more damage he takes, the hotter his attacks become!
+      Makara randomly has HOT FLASHES! He fans himself dramatically, 
+      creating waves of heat that damage nearby enemies! "Is it hot 
+      in here or is it just ME?! *fans face furiously*"
     damage: 0
     cooldown: 0
     staminaCost: 0
-    range: 0
+    range: 3
     type: Buff
     element: Fire
 
   _comboMoves:
-    - abilityId: makara_tail_slam
-      abilityName: Tail Devastation
-      description: Massive tail slam that causes shockwaves.
+    - abilityId: makara_scale_dandruff
+      abilityName: Scale Dandruff Shower
+      description: |
+        Makara scratches himself and HOT BURNING SCALES rain down 
+        like fiery dandruff! "Ugh, dry season is the WORST!"
       damage: 55
       cooldown: 0
       staminaCost: 22
       type: AoE
       
-    - abilityId: makara_fire_chomp
-      abilityName: Inferno Bite
-      description: Grab an enemy in flaming jaws. Extra crispy!
+    - abilityId: makara_tongue_lick
+      abilityName: Gross Dragon Lick
+      description: |
+        Makara licks enemies with his SUPER HOT and SUPER GROSS 
+        dragon tongue! "You taste like chicken! Bleh!"
       damage: 70
       cooldown: 8
       staminaCost: 30

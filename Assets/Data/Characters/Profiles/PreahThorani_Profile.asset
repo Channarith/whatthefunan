@@ -74,11 +74,13 @@ MonoBehaviour:
   _defenseGrowth: 4
   _speedGrowth: 1
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: thorani_earth_pulse
-    abilityName: Earth's Touch
-    description: Sends healing energy through the ground to allies or damaging tremors to enemies.
+    abilityId: thorani_dirt_throw
+    abilityName: Mom's Dirt Throw
+    description: |
+      Thorani throws dirt at enemies like a disappointed mom! 
+      "You're DIRTY! Let me make you DIRTIER!" It's maternal aggression!
     damage: 20
     cooldown: 0
     staminaCost: 4
@@ -87,29 +89,30 @@ MonoBehaviour:
     element: Earth
 
   _specialAbility:
-    abilityId: thorani_blessing
-    abilityName: Mother's Blessing
+    abilityId: thorani_mom_lecture
+    abilityName: DISAPPOINTED MOM LECTURE
     description: |
-      Thorani blesses the ground beneath her allies, creating zones of 
-      healing earth. Allies standing on blessed ground regenerate health 
-      rapidly and cannot be knocked down.
+      Thorani gives enemies a FULL MOM LECTURE! "I'm not ANGRY, I'm 
+      DISAPPOINTED! The EARTH is disappointed! Do you know how LONG 
+      I've been watching you?!" Enemies feel SO BAD they stop fighting!
     damage: 0
     cooldown: 15
     staminaCost: 40
-    range: 12
-    type: Heal
+    range: 15
+    type: Debuff
     element: Earth
     statusEffects:
-      - heal_zone_8s
-      - stability_buff
+      - guilt_trip_5s
+      - mom_disappointment
+      - existential_shame
 
   _ultimateAbility:
-    abilityId: thorani_flood
-    abilityName: Wringing of Hair
+    abilityId: thorani_hair_flood
+    abilityName: WET HAIR EVERYWHERE
     description: |
-      Thorani wrings her legendary hair, releasing all the offerings of 
-      compassion ever given to the earth. A massive flood sweeps the 
-      battlefield, healing allies to full and washing away all enemies.
+      Thorani wrings out her SOAKING WET hair and it goes EVERYWHERE! 
+      "Sorry! I have A LOT of hair! It holds A LOT of water!" 
+      SPLASH! The battlefield floods! Everyone's wet! She's embarrassed!
     damage: 180
     cooldown: 90
     staminaCost: 100
@@ -117,18 +120,17 @@ MonoBehaviour:
     type: AoE
     element: Earth
     statusEffects:
-      - full_heal_allies
-      - massive_knockback_enemies
-      - cleanse_all_debuffs
-      - purify_corruption
+      - hair_water_flood
+      - wet_and_uncomfortable
+      - thorani_embarrassed
 
   _passiveAbility:
-    abilityId: thorani_witness
-    abilityName: Eternal Witness
+    abilityId: thorani_gossip
+    abilityName: The Earth Is A Gossip
     description: |
-      Thorani remembers every good deed. Allies who have been kind in 
-      battle (healing, protecting, buffing) gain stacking bonuses. She 
-      also cannot be surprised - the earth tells her everything.
+      The earth tells Thorani EVERYTHING! "The ground says you've been 
+      littering. The soil knows about your SECRETS. The rocks have 
+      OPINIONS about your life choices." Earth-mom knows ALL!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -137,21 +139,25 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: thorani_mudslide
-      abilityName: Mudslide
-      description: Commands the earth to flow, carrying enemies away.
+    - abilityId: thorani_mud_pie
+      abilityName: Earth's Mud Pie
+      description: |
+        Thorani throws a MUD PIE at enemies! "Eat your VEGETABLES! 
+        Okay this is MUD but SAME THING!" SPLAT!
       damage: 40
       cooldown: 0
       staminaCost: 20
-      type: AoE
+      type: Ranged
       
-    - abilityId: thorani_garden
-      abilityName: Instant Garden
-      description: Creates a small garden that heals allies who enter it.
+    - abilityId: thorani_grounding
+      abilityName: YOU'RE GROUNDED
+      description: |
+        Thorani GROUNDS enemies to the earth! "You're GROUNDED! 
+        No moving until you THINK about what you DID!" They can't move!
       damage: 0
       cooldown: 20
       staminaCost: 35
-      type: Heal
+      type: Debuff
 
   # PERSONALITY
   _personality:

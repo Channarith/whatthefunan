@@ -75,42 +75,46 @@ MonoBehaviour:
   _defenseGrowth: 5
   _speedGrowth: 0.5
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: prohm_tail_sweep
-    abilityName: Ancient Tail Sweep
-    description: A slow but devastating tail swipe that hits multiple enemies.
+    abilityId: prohm_old_man_sneeze
+    abilityName: Ancient Sneeze
+    description: |
+      Prohm sneezes like a REALLY old dinosaur - dust, cobwebs, and 
+      FOSSILS fly out! "Ah... AH... ACHOOOOO!" *bones everywhere*
     damage: 30
     cooldown: 0
     staminaCost: 8
-    range: 3
-    type: Melee
+    range: 4
+    type: AoE
     element: Earth
 
   _specialAbility:
-    abilityId: prohm_stone_form
-    abilityName: Stone Guardian
+    abilityId: prohm_nap_attack
+    abilityName: Accidental Nap
     description: |
-      Prohm becomes like stone - immovable and nearly invincible. While active, 
-      enemies who attack him take damage from his sharp back plates.
-    damage: 0
+      Prohm is SO OLD he accidentally falls asleep mid-battle! 
+      His snoring creates EARTHQUAKE vibrations! "ZZZZZ... huh? 
+      What? I wasn't sleeping!" SNOOORE RUMBLE!
+    damage: 40
     cooldown: 15
     staminaCost: 40
-    range: 0
-    type: Buff
+    range: 8
+    type: AoE
     element: Earth
     statusEffects:
-      - damage_reduction_90
-      - reflect_damage_50
-      - immobile
+      - snore_quake_5s
+      - prohm_rested_buff
+      - enemies_shaken
 
   _ultimateAbility:
-    abilityId: prohm_earth_shatter
-    abilityName: Primordial Quake
+    abilityId: prohm_fossil_funk
+    abilityName: PREHISTORIC FUNK
     description: |
-      Prohm channels the power of the ancient earth itself. The ground 
-      shatters, creating massive fissures that swallow enemies and 
-      raise protective stone walls for allies.
+      Prohm unleashes millions of years of built-up GAS! The ancient 
+      fart is so old it's basically FOSSILIZED! Enemies are stunned 
+      by the historic stench! "Oops... that's been brewing since 
+      the Jurassic era! Pardon me!"
     damage: 90
     cooldown: 60
     staminaCost: 80
@@ -118,40 +122,44 @@ MonoBehaviour:
     type: AoE
     element: Earth
     statusEffects:
-      - terrain_destruction
-      - ally_stone_walls
-      - stun_3s
+      - prehistoric_stink_10s
+      - fossilized_fart_stun
+      - embarrassed_dino
 
   _passiveAbility:
-    abilityId: prohm_ancient_endurance
-    abilityName: Eternal Patience
+    abilityId: prohm_old_bones
+    abilityName: Creaky Old Bones
     description: |
-      Prohm has waited millennia. He can wait a bit more. Regenerates health 
-      slowly over time, and cannot be killed in one hit - will always 
-      survive with 1 HP from a fatal blow (once per battle).
+      Prohm's joints crack SO LOUD it startles enemies! *CRACK CRACK* 
+      "Ooh, that's my back!" Every time he moves, enemies flinch at 
+      the bone-crunching sounds! It's gross but effective!
     damage: 0
     cooldown: 0
     staminaCost: 0
-    range: 0
+    range: 5
     type: Buff
     element: Earth
 
   _comboMoves:
-    - abilityId: prohm_headbutt
-      abilityName: Mountain Headbutt
-      description: A slow charge that knocks enemies into next week.
+    - abilityId: prohm_tail_trip
+      abilityName: Oops Tail Trip
+      description: |
+        Prohm forgets his tail is there and trips enemies with it! 
+        "Oh! Was that MY tail? Sorry! It's hard being this big!"
       damage: 65
       cooldown: 0
       staminaCost: 25
       type: Melee
       
-    - abilityId: prohm_plate_shield
-      abilityName: Plate Shelter
-      description: Prohm crouches, creating a shelter for allies behind him.
+    - abilityId: prohm_dino_dad_joke
+      abilityName: Dinosaur Dad Joke
+      description: |
+        Prohm tells a joke SO OLD and SO BAD that enemies groan in 
+        pain! "Why did the T-Rex cross the road? ...I forgot. I'm old."
       damage: 0
       cooldown: 18
       staminaCost: 30
-      type: Buff
+      type: Debuff
 
   # PERSONALITY
   _personality:

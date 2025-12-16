@@ -74,11 +74,13 @@ MonoBehaviour:
   _defenseGrowth: 2.5
   _speedGrowth: 0.8
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: reameyso_axe_swing
-    abilityName: Thunder Cleave
-    description: A devastating axe swing that creates a thunderclap on impact.
+    abilityId: reameyso_grumpy_swing
+    abilityName: Grumpy Axe Swing
+    description: |
+      Ream Eyso swings his axe while GRUMBLING! "Stupid Mekhala! 
+      Stupid chase! Stupid EVERYTHING!" BONK! He's SO frustrated!
     damage: 45
     cooldown: 0
     staminaCost: 6
@@ -87,47 +89,48 @@ MonoBehaviour:
     element: Wind
 
   _specialAbility:
-    abilityId: reameyso_axe_throw
-    abilityName: Thunder Axe Toss
+    abilityId: reameyso_thunder_fart
+    abilityName: THUNDER FART
     description: |
-      Ream Eyso hurls his divine axe across the battlefield. It spins 
-      through enemies before returning to his hand, creating thunder 
-      shockwaves along its path.
+      Ream Eyso's farts are LITERAL THUNDER! BOOOOM! "That's NOT 
+      a fart! It's THUNDER! TOTALLY different! ...okay maybe a little 
+      bit fart." The smell AND sound create shockwaves!
     damage: 70
     cooldown: 12
     staminaCost: 35
-    range: 20
-    type: Ranged
-    element: Wind
-    statusEffects:
-      - shockwave_path
-      - stun_chance_30
-
-  _ultimateAbility:
-    abilityId: reameyso_thunder_strike
-    abilityName: Wrath of the Storm King
-    description: |
-      Ream Eyso leaps into the sky and brings his axe down with all his 
-      might, creating the loudest thunderclap in existence. The impact 
-      creates a massive crater and stuns all enemies on the field.
-    damage: 200
-    cooldown: 60
-    staminaCost: 85
-    range: 12
+    range: 10
     type: AoE
     element: Wind
     statusEffects:
-      - global_stun_2s
-      - crater_creation
-      - deafen_5s
+      - thunder_stink_wave
+      - embarrassed_giant
+      - deafening_gas
+
+  _ultimateAbility:
+    abilityId: reameyso_tantrum_slam
+    abilityName: GIANT TANTRUM SLAM
+    description: |
+      Ream Eyso throws a MASSIVE TANTRUM about not catching Mekhala! 
+      He slams the ground repeatedly! "IT'S! NOT! FAIR! SHE'S! TOO! 
+      FAST!" SLAM SLAM SLAM! The ground SHATTERS from his frustration!
+    damage: 200
+    cooldown: 60
+    staminaCost: 85
+    range: 15
+    type: AoE
+    element: Wind
+    statusEffects:
+      - tantrum_quake
+      - crying_thunder
+      - embarrassed_rage
 
   _passiveAbility:
-    abilityId: reameyso_stubborn
-    abilityName: Unstoppable Pursuit
+    abilityId: reameyso_mekhala_radar
+    abilityName: WHERE IS SHE?!
     description: |
-      Ream Eyso's determination cannot be stopped. He's immune to slows 
-      and gains movement speed when moving toward Mekhala (or any enemy 
-      who has damaged him).
+      Ream Eyso is OBSESSED with catching Mekhala! He gets a speed 
+      boost when chasing ANYONE because he thinks they might be her!
+      "MEKHALA?! ...oh. You're not her. ...I'll still chase you though."
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -136,17 +139,21 @@ MonoBehaviour:
     element: Wind
 
   _comboMoves:
-    - abilityId: reameyso_ground_slam
-      abilityName: Thunder Slam
-      description: Slams the axe into the ground, creating a thunder shockwave.
+    - abilityId: reameyso_axe_fumble
+      abilityName: Oops Dropped My Axe
+      description: |
+        Ream Eyso fumbles his axe and it BOUNCES everywhere! 
+        "I MEANT to do that! TACTICAL FUMBLE!" BONK BONK BONK!
       damage: 55
       cooldown: 0
       staminaCost: 20
       type: AoE
       
-    - abilityId: reameyso_roar
-      abilityName: Thunder Roar
-      description: A roar that sounds like thunder, intimidating nearby enemies.
+    - abilityId: reameyso_whine_roar
+      abilityName: Frustrated Whine-Roar
+      description: |
+        Ream Eyso tries to roar but it comes out as a WHINE! 
+        "ROOAA-wahhh she's so MEAN to me!" It's pathetic AND loud!
       damage: 25
       cooldown: 15
       staminaCost: 15

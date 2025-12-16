@@ -65,58 +65,61 @@ MonoBehaviour:
   _defenseGrowth: 4
   _speedGrowth: 0.8
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: champa_trunk_strike
-    abilityName: Trunk Strike
-    description: A powerful swing of Champa's trunk that sends enemies flying.
+    abilityId: champa_trunk_sneeze
+    abilityName: Trunk Sneeze
+    description: |
+      Champa sneezes through her trunk, launching a massive snot rocket 
+      at enemies. "ACHOO!" She always apologizes afterward.
     damage: 25
     cooldown: 0
     staminaCost: 5
-    range: 2.5
-    type: Melee
+    range: 4.0
+    type: Ranged
     element: Earth
 
   _specialAbility:
-    abilityId: champa_lotus_shield
-    abilityName: Lotus Shield
+    abilityId: champa_ear_flap_hurricane
+    abilityName: Ear Flap Hurricane
     description: |
-      Champa summons a magical lotus barrier that absorbs damage for herself 
-      and nearby allies. The shield blooms brighter with each hit absorbed.
-    damage: 0
+      Champa flaps her enormous ears SO fast she creates a mini hurricane! 
+      Enemies get blown around like leaves while she giggles uncontrollably.
+    damage: 30
     cooldown: 12
     staminaCost: 30
-    range: 5
-    type: Buff
-    element: Earth
-    statusEffects:
-      - shield_50_percent
-      - damage_reduction_3s
-
-  _ultimateAbility:
-    abilityId: champa_earthquake_stomp
-    abilityName: Earthquake Stomp
-    description: |
-      Champa leaps into the air and crashes down with earth-shaking force, 
-      stunning all enemies in a massive area and creating healing flowers 
-      for allies standing in the affected zone.
-    damage: 80
-    cooldown: 45
-    staminaCost: 60
-    range: 8
+    range: 6
     type: AoE
     element: Earth
     statusEffects:
-      - stun_2s
-      - ally_heal_over_time
+      - knockback_silly
+      - dizzy_3s
+
+  _ultimateAbility:
+    abilityId: champa_belly_flop_quake
+    abilityName: THE BIG BELLY FLOP
+    description: |
+      Champa jumps as high as she can (which isn't very high) and 
+      belly-flops onto the ground! The impact is SO ridiculous that 
+      enemies fall over laughing while the ground shakes!
+    damage: 80
+    cooldown: 45
+    staminaCost: 60
+    range: 10
+    type: AoE
+    element: Earth
+    statusEffects:
+      - laugh_stun_3s
+      - ground_shake
+      - champa_dizzy_1s
 
   _passiveAbility:
-    abilityId: champa_gentle_giant
-    abilityName: Gentle Giant
+    abilityId: champa_adorable_aura
+    abilityName: Too Cute to Hit
     description: |
-      Champa's kindness inspires allies. Nearby teammates gain increased 
-      defense, and enemies who attack Champa sometimes become "confused" 
-      by her gentle nature, reducing their damage.
+      Champa is SO adorable that enemies sometimes just... can't bring 
+      themselves to attack her. They lower their weapons and go "awww" 
+      instead. Works better when she makes puppy eyes.
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -125,17 +128,21 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: champa_trunk_slam
-      abilityName: Trunk Slam
-      description: Two quick trunk strikes followed by an overhead slam.
+    - abilityId: champa_trunk_blow
+      abilityName: Elephant Nose Blow
+      description: |
+        Champa blows her trunk like a trumpet SO LOUD that enemies 
+        cover their ears! BRAAAAP! "Sorry, I have a cold!"
       damage: 45
       cooldown: 0
       staminaCost: 15
-      type: Melee
+      type: AoE
       
-    - abilityId: champa_charge
-      abilityName: Noble Charge
-      description: Champa charges forward, pushing enemies back gently but firmly.
+    - abilityId: champa_butt_bump
+      abilityName: Oops Butt Bump
+      description: |
+        Champa "accidentally" backs into enemies with her BIG elephant 
+        butt! "Oh my! Excuse me! Pardon! Coming through!"
       damage: 35
       cooldown: 8
       staminaCost: 25

@@ -74,11 +74,13 @@ MonoBehaviour:
   _defenseGrowth: 4
   _speedGrowth: 0.2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: yak_gentle_smash
-    abilityName: Careful Smash
-    description: Yak tries to hit enemies gently. It's still devastating.
+    abilityId: yak_nervous_swat
+    abilityName: Nervous Giant Swat
+    description: |
+      Yak swats enemies while apologizing profusely! BONK! "Sorry! 
+      Sorry! Are you okay?! I didn't mean to! Please don't be scared!"
     damage: 40
     cooldown: 0
     staminaCost: 6
@@ -87,46 +89,48 @@ MonoBehaviour:
     element: Earth
 
   _specialAbility:
-    abilityId: yak_scary_face
-    abilityName: Terrifying Visage
+    abilityId: yak_sad_cry
+    abilityName: BIG SAD CRY
     description: |
-      Yak makes his scariest face (he doesn't like doing this). Enemies are 
-      terrified, fleeing in random directions. He apologizes afterward.
-    damage: 0
+      Yak starts crying GIANT TEARS because someone called him scary! 
+      The tears flood the battlefield! "WAAAAAH! I'm NOT a monster! 
+      I just want to be FRIENDS!" Enemies slip in the tear puddles!
+    damage: 30
     cooldown: 18
     staminaCost: 25
-    range: 8
-    type: Debuff
+    range: 10
+    type: AoE
     element: Earth
     statusEffects:
-      - fear_4s
-      - attack_reduction_30
+      - tear_flood_5s
+      - guilt_debuff
+      - slip_everywhere
 
   _ultimateAbility:
-    abilityId: yak_protective_embrace
-    abilityName: Guardian's Embrace
+    abilityId: yak_big_hug
+    abilityName: OVERWHELMING HUG OF LOVE
     description: |
-      Yak scoops up all nearby allies and shields them with his body, 
-      taking ALL damage meant for them. While embracing, he slowly 
-      regenerates everyone's health through sheer protective love.
-    damage: 0
+      Yak just wants a HUG! He grabs EVERYONE (friends AND enemies) 
+      in a MASSIVE group hug! "I LOVE YOU ALL! Even you, Mr. Bad Guy!" 
+      Allies heal, enemies are CRUSHED by love (and giant arms)!
+    damage: 100
     cooldown: 60
     staminaCost: 80
-    range: 6
-    type: Buff
+    range: 8
+    type: AoE
     element: Earth
     statusEffects:
-      - ally_invincibility_5s
-      - self_damage_absorption
-      - party_heal_over_time
+      - hug_crush_damage
+      - ally_love_heal
+      - everyone_uncomfortable
 
   _passiveAbility:
-    abilityId: yak_big_heart
-    abilityName: Heart of Gold
+    abilityId: yak_ugly_cute
+    abilityName: So Ugly It's Cute
     description: |
-      Despite his scary appearance, Yak's gentle nature means he takes 
-      reduced damage from enemies who aren't "truly evil." He also 
-      generates aggro passively, as enemies focus on the biggest target.
+      Yak is SO pathetically adorable that enemies sometimes feel 
+      TOO BAD to attack him! His big sad eyes and quivering lip 
+      make hardened warriors go "awww...!"
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,21 +139,25 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: yak_ground_pound
-      abilityName: Oops Stomp
-      description: Yak trips and accidentally creates an earthquake.
+    - abilityId: yak_booger_sneeze
+      abilityName: Giant Booger Sneeze
+      description: |
+        Yak sneezes and a GIANT BOOGER flies out! "Oh no! That's so 
+        embarrassing! I'm so sorry!" SPLAT! It's huge and gross!
       damage: 60
       cooldown: 0
       staminaCost: 20
-      type: AoE
+      type: Ranged
       
-    - abilityId: yak_boulder_throw
-      abilityName: Gentle Toss
-      description: Throws a boulder at enemies. "Gently."
+    - abilityId: yak_belly_bounce
+      abilityName: Friendly Belly Bounce
+      description: |
+        Yak bounces enemies off his big belly! BOING! "Hehe! That 
+        tickles! Want to go again?!" It's like a trampoline!
       damage: 75
       cooldown: 12
       staminaCost: 30
-      type: Ranged
+      type: Melee
 
   # PERSONALITY
   _personality:

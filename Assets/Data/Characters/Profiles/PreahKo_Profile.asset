@@ -72,61 +72,63 @@ MonoBehaviour:
   _defenseGrowth: 5
   _speedGrowth: 0.3
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: preahko_horn_thrust
-    abilityName: Sacred Horns
-    description: A powerful thrust with divinely blessed horns.
+    abilityId: preahko_bull_snot
+    abilityName: Bull Snot Rocket
+    description: |
+      Preah Ko snorts and launches a MASSIVE snot rocket from his 
+      nostrils! SNOOORT PTOO! "...... (silence) ...gross? ...sorry."
     damage: 28
     cooldown: 0
     staminaCost: 4
-    range: 2.5
-    type: Melee
+    range: 4.0
+    type: Ranged
     element: Earth
 
   _specialAbility:
-    abilityId: preahko_stone_wall
-    abilityName: Temple Wall
+    abilityId: preahko_cow_patty
+    abilityName: SACRED COW PATTY
     description: |
-      Preah Ko plants himself and becomes immovable, creating a barrier 
-      that allies can hide behind. He takes drastically reduced damage 
-      and reflects a portion back at attackers.
+      Preah Ko drops a BLESSED cow patty! It's sacred! It's divine! 
+      It's... still a cow patty! Enemies slip on holy dung! 
+      "......consecrated fertilizer."
     damage: 0
     cooldown: 14
     staminaCost: 35
-    range: 0
-    type: Buff
+    range: 6
+    type: AoE
     element: Earth
     statusEffects:
-      - immovable_6s
-      - damage_reduction_80
-      - damage_reflect_30
+      - sacred_slip_zone
+      - holy_stink
+      - blessed_gross_out
 
   _ultimateAbility:
-    abilityId: preahko_divine_charge
-    abilityName: Wrath of the Guardian
+    abilityId: preahko_moo_attack
+    abilityName: ULTIMATE MOO-SICAL ATTACK
     description: |
-      After centuries of stillness, Preah Ko MOVES. He charges across the 
-      battlefield with unstoppable force, trampling all enemies in his path 
-      and ending with a devastating horn attack that sends foes flying.
+      Preah Ko MOOS at enemies SO LOUD the ground shakes! But he's 
+      been silent for centuries so his voice CRACKS embarrassingly!
+      "MOOO-oo-OOO-oo!" *voice crack* It's devastating AND awkward!
     damage: 130
     cooldown: 50
     staminaCost: 70
     range: 15
-    type: Melee
+    type: AoE
     element: Earth
     statusEffects:
-      - unstoppable
-      - knockback_massive
-      - stun_3s
+      - voice_crack_stun
+      - embarrassed_bull
+      - deafened_enemies
 
   _passiveAbility:
-    abilityId: preahko_steadfast
-    abilityName: Eternal Vigil
+    abilityId: preahko_statue_prank
+    abilityName: Playing Statue
     description: |
-      Preah Ko cannot be knocked back, pulled, or displaced. Standing still 
-      gradually increases his defense. Nearby allies gain a small shield 
-      that regenerates when near him.
+      Preah Ko pretends to be a statue when enemies approach! 
+      Then he MOVES and they FREAK OUT! "...boo. ...that's a joke. 
+      ...I'm trying. ...was it funny?"
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -135,21 +137,25 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: preahko_stomp
-      abilityName: Ground Sanctification
-      description: Stomps the ground, creating a shockwave and blessed terrain.
+    - abilityId: preahko_tail_swat
+      abilityName: Fly Swatter Tail
+      description: |
+        Preah Ko swats enemies with his tail like they're flies! 
+        SWAT SWAT! "...shoo. ...go away. ...I said shoo."
       damage: 35
       cooldown: 0
       staminaCost: 15
       type: AoE
       
-    - abilityId: preahko_headbutt
-      abilityName: Stone Headbutt
-      description: A devastating headbutt that can break through shields.
+    - abilityId: preahko_grass_chew
+      abilityName: Cud Chewing Distraction
+      description: |
+        Preah Ko starts chewing cud and it's SO BORING enemies 
+        get distracted! *chew chew chew* "......what?"
       damage: 55
       cooldown: 10
       staminaCost: 25
-      type: Melee
+      type: Debuff
 
   # PERSONALITY
   _personality:

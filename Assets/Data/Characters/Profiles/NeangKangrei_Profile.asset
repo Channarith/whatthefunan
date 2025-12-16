@@ -75,11 +75,13 @@ MonoBehaviour:
   _defenseGrowth: 2
   _speedGrowth: 1.8
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: kangrei_vine_lash
-    abilityName: Vine Whip
-    description: Commands vines to strike enemies from a distance.
+    abilityId: kangrei_vine_slap
+    abilityName: Wet Noodle Vine Slap
+    description: |
+      Kangrei slaps enemies with a vine that's... kinda limp! SLAP! 
+      "Grow STRONGER! More RIGID! Ugh, it's humid today..." SPLAT!
     damage: 18
     cooldown: 0
     staminaCost: 3
@@ -88,30 +90,30 @@ MonoBehaviour:
     element: Earth
 
   _specialAbility:
-    abilityId: kangrei_entangle
-    abilityName: Nature's Embrace
+    abilityId: kangrei_pollen_explosion
+    abilityName: ALLERGY ATTACK
     description: |
-      Vines erupt from the ground, entangling all enemies in an area. 
-      Entangled enemies take damage over time and cannot move. Allies 
-      standing in the area are healed.
+      Kangrei releases a MASSIVE cloud of pollen! Everyone starts 
+      SNEEZING! AH-CHOO AH-CHOO! "Sorry! It's spring! ACHOO!" 
+      Even Kangrei is sneezing! The whole battlefield is sneezing!
     damage: 30
     cooldown: 14
     staminaCost: 35
-    range: 8
+    range: 10
     type: AoE
     element: Earth
     statusEffects:
-      - root_4s
-      - damage_over_time
-      - ally_heal_zone
+      - sneezing_fit_5s
+      - watery_eyes
+      - runny_nose
 
   _ultimateAbility:
-    abilityId: kangrei_forest_awakens
-    abilityName: The Forest Awakens
+    abilityId: kangrei_humidity_sweat
+    abilityName: FOREST HUMIDITY & SWEAT
     description: |
-      Kangrei calls upon the full power of nature. Trees spring from the 
-      ground, animals rush to defend allies, and the entire battlefield 
-      transforms into a living forest that fights for her.
+      Kangrei makes it SO HUMID everyone starts SWEATING! Armor gets 
+      sticky! Hair gets frizzy! "It's NATURAL moisture! EMBRACE IT!" 
+      Enemies slip on their own sweat! It's gross AND effective!
     damage: 100
     cooldown: 70
     staminaCost: 90
@@ -119,17 +121,17 @@ MonoBehaviour:
     type: AoE
     element: Earth
     statusEffects:
-      - summon_forest_spirits
-      - terrain_transformation
-      - massive_heal_zone
+      - sweat_slip_zone
+      - frizzy_hair_debuff
+      - uncomfortable_humidity
 
   _passiveAbility:
-    abilityId: kangrei_one_with_nature
-    abilityName: One with Nature
+    abilityId: kangrei_talking_trees
+    abilityName: The Trees Are Gossips
     description: |
-      Kangrei heals when standing on natural ground. She can sense enemies 
-      through plants and cannot be surprised in forests. Animals refuse to 
-      attack her.
+      Kangrei can hear trees GOSSIP! They tell her EVERYTHING! 
+      "The oak says you're hiding behind it. The birch thinks your 
+      armor looks tacky. The fern says... rude things I won't repeat."
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -138,21 +140,25 @@ MonoBehaviour:
     element: Earth
 
   _comboMoves:
-    - abilityId: kangrei_thorn_burst
-      abilityName: Thorn Burst
-      description: Thorny vines explode from the ground around enemies.
+    - abilityId: kangrei_sap_splat
+      abilityName: Sticky Sap Splat
+      description: |
+        Kangrei throws STICKY SAP at enemies! They get stuck to 
+        everything! "Nature's glue! Also gets in your hair! Hehe!"
       damage: 40
       cooldown: 0
       staminaCost: 18
-      type: AoE
+      type: Ranged
       
-    - abilityId: kangrei_seed_bomb
-      abilityName: Bloom Bomb
-      description: Throws a seed that explodes into flowers, healing allies.
+    - abilityId: kangrei_stink_flower
+      abilityName: Stink Flower Bloom
+      description: |
+        Kangrei grows a CORPSE FLOWER! It smells like DEATH! 
+        "It's BEAUTIFUL! ...okay it smells bad. REALLY bad. Sorry."
       damage: 0
       cooldown: 10
       staminaCost: 25
-      type: Heal
+      type: Debuff
 
   # PERSONALITY
   _personality:

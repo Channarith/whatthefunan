@@ -68,11 +68,13 @@ MonoBehaviour:
   _defenseGrowth: 1
   _speedGrowth: 3
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: kavi_quick_slap
-    abilityName: Monkey Slap Combo
-    description: Rapid slaps that build up combo meter. More hits = more damage!
+    abilityId: kavi_face_slap
+    abilityName: Monkey Slap-a-thon
+    description: |
+      Kavi slaps enemies with both hands SO FAST it sounds like applause! 
+      SLAP SLAP SLAP SLAP! "Thank you, I'll be here all week!"
     damage: 12
     cooldown: 0
     staminaCost: 3
@@ -81,45 +83,47 @@ MonoBehaviour:
     element: Wind
 
   _specialAbility:
-    abilityId: kavi_banana_barrage
-    abilityName: Banana Barrage
+    abilityId: kavi_armpit_symphony
+    abilityName: Armpit Symphony
     description: |
-      Kavi throws a volley of enchanted bananas that bounce between enemies, 
-      causing chaos and confusion. Enemies hit have a chance to slip and fall!
+      Kavi pumps his arms to make the LOUDEST armpit farts in history! 
+      The smell AND sound combo makes enemies run away crying! 
+      "That's my signature move! Pfffttt pfffttt!"
     damage: 35
     cooldown: 8
     staminaCost: 25
-    range: 10
-    type: Ranged
-    element: Wind
-    statusEffects:
-      - slip_chance_30
-      - confusion_2s
-
-  _ultimateAbility:
-    abilityId: kavi_monkey_mayhem
-    abilityName: Monkey King Mayhem
-    description: |
-      Kavi creates multiple wind clones of himself that attack all enemies 
-      simultaneously. It's absolute chaos! Enemies can't tell which Kavi 
-      is real until it's too late.
-    damage: 120
-    cooldown: 50
-    staminaCost: 70
-    range: 12
+    range: 8
     type: AoE
     element: Wind
     statusEffects:
-      - clone_distraction
-      - speed_boost_ally
+      - stink_cloud_3s
+      - laugh_disable_2s
+
+  _ultimateAbility:
+    abilityId: kavi_monkey_laugh_attack
+    abilityName: ULTIMATE MONKEY LAUGH
+    description: |
+      Kavi starts laughing SO HARD that it's contagious! Enemies start 
+      laughing too and can't stop! They drop their weapons, hold their 
+      bellies, and some even pee a little! "AHAHAHA! STOP! I CAN'T!"
+    damage: 120
+    cooldown: 50
+    staminaCost: 70
+    range: 15
+    type: AoE
+    element: Wind
+    statusEffects:
+      - uncontrollable_laughter_5s
+      - weapon_drop
+      - tears_of_joy
 
   _passiveAbility:
-    abilityId: kavi_slippery
-    abilityName: Can't Touch This
+    abilityId: kavi_annoying
+    abilityName: SO ANNOYING
     description: |
-      Kavi's ridiculous agility gives him a chance to completely dodge 
-      any attack. Dodging successfully builds his combo meter and makes 
-      him faster temporarily.
+      Kavi is SO annoying that enemies focus on him instead of allies! 
+      He makes faces, does rude gestures, and yells "NYAH NYAH!" 
+      constantly. Enemies get a debuff just from being near him.
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -128,17 +132,21 @@ MonoBehaviour:
     element: Wind
 
   _comboMoves:
-    - abilityId: kavi_spin_attack
-      abilityName: Tail Tornado
-      description: Kavi spins rapidly, hitting all nearby enemies multiple times.
+    - abilityId: kavi_booger_bomb
+      abilityName: Booger Bomb
+      description: |
+        Kavi picks his nose and FLICKS a giant booger at enemies! 
+        "Catch! Hehehe!" It's gross but surprisingly effective!
       damage: 50
       cooldown: 0
       staminaCost: 20
-      type: AoE
+      type: Ranged
       
-    - abilityId: kavi_aerial_dive
-      abilityName: Cannonball!
-      description: Leap high into the air and crash down on enemies. BONK!
+    - abilityId: kavi_butt_slam
+      abilityName: Monkey Butt Slam
+      description: |
+        Kavi jumps up and slams his red monkey butt on enemies' heads! 
+        "INCOMING! Butt first!" BONK!
       damage: 40
       cooldown: 6
       staminaCost: 18

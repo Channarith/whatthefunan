@@ -71,58 +71,62 @@ MonoBehaviour:
   _defenseGrowth: 1.5
   _speedGrowth: 2.5
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: mealea_ribbon_strike
-    abilityName: Silk Ribbon Dance
-    description: Graceful ribbon attacks that flow from one enemy to the next.
+    abilityId: mealea_hair_whip
+    abilityName: Dramatic Hair Whip
+    description: |
+      Mealea whips her SUPER long celestial hair at enemies! 
+      *WHOOSH* "Ooh, did I get hair in your mouth? Sorry not sorry!"
     damage: 15
     cooldown: 0
     staminaCost: 4
-    range: 3
-    type: Melee
+    range: 5.0
+    type: Ranged
     element: Light
 
   _specialAbility:
-    abilityId: mealea_healing_dance
-    abilityName: Dance of Restoration
+    abilityId: mealea_feather_tickler
+    abilityName: Feather Tickler Tornado
     description: |
-      Mealea performs a sacred dance that heals all allies and removes negative 
-      status effects. The more injured the ally, the more they're healed.
+      Mealea spins and her celestial feathers tickle EVERYONE in range! 
+      Even allies start giggling! "Tee-hee! Oops, friendly fire!"
+      Enemies can't attack while laughing!
     damage: 0
     cooldown: 14
     staminaCost: 40
     range: 10
-    type: Heal
+    type: AoE
     element: Light
     statusEffects:
-      - heal_percentage_30
-      - cleanse_debuffs
+      - tickle_laugh_4s
+      - ally_giggle_heal
 
   _ultimateAbility:
-    abilityId: mealea_divine_performance
-      abilityName: Divine Apsara Performance
+    abilityId: mealea_divine_trip
+    abilityName: THE GRACEFUL TRIP
     description: |
-      Mealea ascends and performs the legendary Dance of Creation. Time seems 
-      to slow as lotus petals rain down. All allies are fully healed and 
-      empowered, while enemies are mesmerized, unable to attack.
-    damage: 0
+      Mealea attempts her most beautiful dance but TRIPS spectacularly! 
+      She tumbles, flails, and crashes into enemies! It's SO embarrassing 
+      that enemies feel bad and take pity damage! "I MEANT to do that!"
+    damage: 80
     cooldown: 60
     staminaCost: 90
-    range: 20
-    type: Buff
+    range: 15
+    type: AoE
     element: Light
     statusEffects:
-      - full_heal_allies
-      - attack_boost_50
-      - enemy_mesmerize_4s
+      - embarrassment_aura
+      - pity_damage
+      - sympathy_heal_allies
 
   _passiveAbility:
-    abilityId: mealea_grace
-    abilityName: Celestial Grace
+    abilityId: mealea_diva
+    abilityName: Drama Queen
     description: |
-      Mealea's divine nature means she floats slightly above ground and cannot 
-      be slowed. Her mere presence gradually heals nearby allies.
+      Mealea gasps dramatically at EVERYTHING! The louder her gasp, 
+      the more distracted enemies become. "OH MY! How DARE you!"
+      Sometimes she faints dramatically. It's all an act.
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -131,21 +135,25 @@ MonoBehaviour:
     element: Light
 
   _comboMoves:
-    - abilityId: mealea_petal_storm
-      abilityName: Lotus Petal Storm
-      description: Razor-sharp flower petals spin around Mealea, damaging nearby enemies.
+    - abilityId: mealea_perfume_cloud
+      abilityName: Overwhelming Perfume
+      description: |
+        Mealea sprays SO MUCH celestial perfume that enemies' eyes 
+        water and they can't see! "It's designer! From HEAVEN!"
       damage: 35
       cooldown: 0
       staminaCost: 18
       type: AoE
       
-    - abilityId: mealea_blessing
-      abilityName: Individual Blessing
-      description: Touch an ally to grant them temporary invincibility.
+    - abilityId: mealea_crocodile_tears
+      abilityName: Crocodile Tears
+      description: |
+        Mealea fake-cries SO convincingly that enemies feel guilty 
+        and stop attacking! "You're SO MEAN! *sniff sniff*"
       damage: 0
       cooldown: 20
       staminaCost: 35
-      type: Buff
+      type: Debuff
 
   # PERSONALITY
   _personality:

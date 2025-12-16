@@ -72,11 +72,13 @@ MonoBehaviour:
   _defenseGrowth: 2
   _speedGrowth: 2
 
-  # ABILITIES
+  # ABILITIES (COMICAL)
   _basicAttack:
-    abilityId: hamsa_feather_light
-    abilityName: Feathers of Truth
-    description: Sacred feathers that pierce through darkness and reveal weaknesses.
+    abilityId: hamsa_honk_attack
+    abilityName: ANGRY HONK
+    description: |
+      Hamsa honks at enemies REALLY AGGRESSIVELY! HONK HONK HONK! 
+      "That's not just any honk! It's a WISDOM HONK!" Sure it is, buddy.
     damage: 20
     cooldown: 0
     staminaCost: 3
@@ -85,12 +87,12 @@ MonoBehaviour:
     element: Light
 
   _specialAbility:
-    abilityId: hamsa_reveal
-    abilityName: Piercing Wisdom
+    abilityId: hamsa_annoying_riddles
+    abilityName: CONFUSING RIDDLE ATTACK
     description: |
-      Hamsa reveals the true nature of things. Enemy stealth is broken, 
-      weaknesses are exposed (increasing damage taken), and hidden traps 
-      become visible. Allies gain clarity, removing confusion effects.
+      Hamsa asks enemies riddles SO CONFUSING they stop fighting to 
+      think! "What walks on four legs, then two, then-- Wait where are 
+      you going?! I'm not DONE!" Enemies are too confused to attack!
     damage: 0
     cooldown: 12
     staminaCost: 30
@@ -98,19 +100,17 @@ MonoBehaviour:
     type: Debuff
     element: Light
     statusEffects:
-      - reveal_stealth
-      - expose_weakness_30
-      - remove_confusion
-      - show_traps
+      - riddle_confusion_5s
+      - overthinking_debuff
+      - headache
 
   _ultimateAbility:
-    abilityId: hamsa_cosmic_truth
-    abilityName: Light of Pure Knowledge
+    abilityId: hamsa_pretentious_wisdom
+    abilityName: INSUFFERABLE WISDOM LECTURE
     description: |
-      Hamsa channels Saraswati's wisdom, bathing the battlefield in 
-      absolute truth. All illusions shatter, all lies are exposed, all 
-      enemies are revealed and weakened. Allies are granted temporary 
-      immunity to deception and massively increased critical hit chance.
+      Hamsa lectures enemies about the MEANING OF LIFE! It's SO 
+      pretentious and SO long that enemies fall asleep or flee! 
+      "Actually, the answer is quite simple if you consider--" ZZZ!
     damage: 80
     cooldown: 65
     staminaCost: 85
@@ -118,18 +118,17 @@ MonoBehaviour:
     type: AoE
     element: Light
     statusEffects:
-      - absolute_revelation
-      - ally_truth_sight_10s
-      - ally_crit_boost_50
-      - enemy_defense_reduction
+      - bored_to_death
+      - pretentious_damage
+      - wisdom_overload
 
   _passiveAbility:
-    abilityId: hamsa_discernment
-    abilityName: Sacred Discernment
+    abilityId: hamsa_know_it_all
+    abilityName: Annoying Know-It-All
     description: |
-      Hamsa automatically detects incoming attacks and warns allies, 
-      giving them a chance to dodge. He can see invisible enemies and 
-      cannot be fooled by illusions or decoys.
+      Hamsa ALWAYS has to correct everyone! "Actually, your sword 
+      technique is inefficient. According to ancient texts--" 
+      It's helpful but SO ANNOYING! Enemies attack HIM just to shut him up!
     damage: 0
     cooldown: 0
     staminaCost: 0
@@ -138,21 +137,25 @@ MonoBehaviour:
     element: Light
 
   _comboMoves:
-    - abilityId: hamsa_wing_blade
-      abilityName: Wings of Light
-      description: Slashes with wings of concentrated light.
+    - abilityId: hamsa_feather_duster
+      abilityName: Feather Duster Slap
+      description: |
+        Hamsa slaps enemies with his wings like a feather duster! 
+        "I'm CLEANING your attitude! THWAP THWAP!" So undignified!
       damage: 35
       cooldown: 0
       staminaCost: 15
       type: Melee
       
-    - abilityId: hamsa_separation
-      abilityName: Milk from Water
-      description: Separates buffs from enemies, transferring them to allies.
-      damage: 0
+    - abilityId: hamsa_wisdom_wedgie
+      abilityName: Wisdom Wedgie
+      description: |
+        Hamsa gives enemies a WISE wedgie! "The ancient texts FORETOLD 
+        this wedgie! It is PROPHESIED!" It's just a wedgie, Hamsa.
+      damage: 50
       cooldown: 25
       staminaCost: 40
-      type: Buff
+      type: Melee
 
   # PERSONALITY
   _personality:
