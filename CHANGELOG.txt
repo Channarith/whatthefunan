@@ -2,6 +2,74 @@
 WHAT THE FUNAN - CHANGELOG
 ================================================================================
 
+VERSION 0.6.1 (Enhanced Daily Challenges) - December 15, 2024
+================================================================================
+
+ENHANCED DAILY CHALLENGE SYSTEM
+-------------------------------
+[Daily Challenge System]
+- DailyChallengeSystem: Comprehensive daily challenge management
+- Fresh challenges generated every day at midnight UTC
+- Challenge pools by difficulty: Easy, Medium, Hard
+- Special pools: Silly, Social, Mystery challenges
+- Estimated completion time for each challenge
+
+[Challenge Categories]
+- 🗺️ Exploration: Visit areas, find secrets
+- 📦 Collection: Gather flowers, resources
+- 🎮 Mini-Games: Fishing, cooking, dancing, racing
+- 🏗️ Building: Place decorations, build structures
+- 💕 Social: Send gifts, visit friends, help others
+- ⚔️ Combat: Defeat enemies, boss battles
+- 📜 Quest: Complete quests
+- 📚 Education: Read codex entries
+- 🎨 Creative: Photos, music creation
+- 🤪 Silly: Fun ridiculous challenges!
+- ❓ Mystery: Hidden bonus challenges
+
+[Themed Days]
+- 💪 Motivation Monday: Easy challenges to start the week
+- 🔥 Try-Hard Tuesday: Bonus hard challenge available
+- 🤪 Wacky Wednesday: Silly challenges for maximum fun
+- 📚 Thoughtful Thursday: Educational focus
+- 💕 Friend Friday: Social challenge emphasis
+- 🎉 Super Saturday: Double challenges!
+- ☀️ Sunny Sunday: Extra relaxed challenges
+
+[Streak System]
+- Track consecutive daily play
+- Daily streak bonus (up to +100 coins)
+- Milestone rewards:
+  * 3-Day Streak: 100 coins, 10 gems
+  * 7-Day (Week Warrior): 300 coins, 30 gems, badge
+  * 14-Day (Two Week Titan): 500 coins, 50 gems, crown
+  * 30-Day (Monthly Master): 1000 coins, 100 gems, trophy
+
+[Mystery Challenges]
+- Hidden challenges unlocked by completing ALL dailies
+- Special rewards including unique items
+- Examples: Golden Fish hunt, Secret Dance, Naga's Treasure
+
+[Silly Challenges] 🤪
+- 💨 Fart Fighter: Use 5 fart-based attacks!
+- 🤕 Clumsy Today: Fall down 10 times!
+- 🌀 Dizzy Spinner: Spin until dizzy 3 times!
+- 😂 Comedy Hour: Make 5 characters laugh!
+- 🐘 ACHOO!: Make Champa sneeze!
+- 🍌 Banana Bonanza: Feed Kavi 10 bananas!
+- 🐱 Hairball Hero: Use Sena's Legendary Hairball!
+
+[Daily Challenge UI]
+- DailyChallengeUI: Full interface for daily challenges
+- Progress tracking with visual progress bars
+- Countdown timer to daily reset
+- Streak display with fire animation
+- Milestone progress visualization
+- Celebration animations for completions
+- Mystery challenge reveal effect
+
+================================================================================
+
 VERSION 0.6.0 (Rotating Challenges System) - December 15, 2024
 ================================================================================
 
