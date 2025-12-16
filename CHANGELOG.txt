@@ -2,6 +2,102 @@
 WHAT THE FUNAN - CHANGELOG
 ================================================================================
 
+VERSION 0.8.0 (Robot Building & Real Robot Integration) - December 15, 2024
+================================================================================
+
+ROBOT BUILDING & BATTLE SYSTEM! 🤖⚔️
+-------------------------------------
+Build custom fighting robots inspired by Khmer mythology!
+Export to REAL physical robots via Bluetooth/WiFi!
+
+[Robot Core System]
+- RobotData: Complete robot data structure designed for both game and real robots
+- RobotCoreStats: Power, Speed, Defense, Intelligence, Energy, Precision (0-100 scale)
+- RobotCombatStats: Melee/Ranged/Magic affinity, armor, shields, evasion, crits
+- ElementalAffinity: 8 Khmer elements (Water, Fire, Earth, Wind, Lightning, Nature, Celestial, Shadow)
+- RobotAIConfig: Fighting styles, behavior parameters, learning configuration
+- RobotPhysicalConfig: Servo/motor/sensor configurations for real robots!
+- RobotAbility: Abilities with action sequences for real robot execution
+- RobotBattleHistory: Stats tracking and learned patterns
+
+[Robot Templates] 🇰🇭
+Each template based on Khmer mythology characters:
+- 🐍 Naga Bot: Serpentine, Water element, Technical fighting
+- 🐘 Champa Bot: Quadruped tank, Earth element, devastating charge
+- 🐒 Kavi Bot: Agile humanoid, Wind element, unpredictable attacks
+- 💃 Mealea Bot: Flying graceful, Celestial element, elegant combat
+- 🔥 Makara Bot: Hybrid dragon, Fire/Water dual element
+- 🦅 Garuda Bot: Aerial assassin, Wind element, divine attacks
+- 🦁 Sena Bot: Powerful humanoid, Fire element, royal majesty
+- ⚔️ Hanuman Bot: Legendary warrior, Physical mastery
+- 🌑 Reahu Bot: Shadow master, illusions and stealth
+- 🦕 Prohm Bot: Ancient hexapod, regeneration
+- 👹 Yak Bot: Giant tank, overwhelming power
+- 🎵 Kinnari Bot: Musical support, sound-based attacks
+- ⚡ Ream Eyso Bot: Thunder god, lightning devastation
+- 💎 Moni Mekhala Bot: Crystal goddess, projectile reflection
+- 🌍 Thorani Bot: Earth mother, nature healing
+
+[Robot Builder]
+- Create from templates or fully custom
+- Stat allocation with point limits
+- Chassis type selection
+- Fighting style configuration
+- AI behavior tuning
+- Visual customization with Khmer decorations
+
+[Robot Battle System]
+- Round-based combat (best of 3/5)
+- Real-time AI decision making
+- Elemental advantage/weakness system
+- Ability cooldowns and energy management
+- Battle history and ranking system
+
+[Robot Data Export] 📤
+DESIGNED FOR REAL ROBOT INTEGRATION!
+- JSON Export: Human-readable, great for web APIs
+- Binary Export: Compact format for Bluetooth/WiFi transfer
+- Arduino/ESP32 Header: C code for microcontroller firmware
+- MicroPython Export: Python code for Raspberry Pi/ESP32
+
+[Robot Connectivity] 📡
+CONNECT TO REAL PHYSICAL ROBOTS!
+- Bluetooth Low Energy (BLE): Nordic UART Service compatible
+- WiFi Direct: TCP socket communication
+- Device discovery and pairing
+- Real-time robot control commands
+- Robot data transfer with progress tracking
+- Movement commands (walk, run, strafe, turn)
+- Ability execution commands
+- Status polling
+
+[Real Robot Protocol]
+Custom protocol for game-to-robot communication:
+- Magic bytes: "WTF" (What The Funan!)
+- Chunked transfer for large data
+- Checksum verification
+- Movement commands (forward, strafe, rotation)
+- Ability trigger commands
+- Status request/response
+
+[Robot Parts Database]
+- Chassis Types: Humanoid, Quadruped, Serpentine, Flying, Hexapod, Wheeled
+- Arms: Basic, Power, Precision, Claw, Naga Tail
+- Legs: Basic, Speed, Tank, Wheels, Elephant
+- Weapons: Fists, Swords, Hammers, Spears, Launchers, Beams, Shields, Flamethrowers
+- Heads: Basic sensors, Advanced (LiDAR), Naga Seven-Head, Reahu Eclipse
+- Decorations: Naga Crest, Angkor Armor, Apsara Wings, Sena Mane, Garuda Feathers
+- Servo Presets: Standard Humanoid (16 servos), Naga Serpent (14 servos)
+
+[Future Real Robot Vision] 🔮
+The system is designed so that when real robots are available:
+1. Build your robot in the game
+2. Export robot data via Bluetooth/WiFi
+3. Physical robot receives the same stats, AI, and abilities
+4. Robot behaves exactly like the game version!
+
+================================================================================
+
 VERSION 0.7.0 (Physical Mobile Challenges) - December 15, 2024
 ================================================================================
 

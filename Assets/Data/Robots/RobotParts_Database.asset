@@ -1,0 +1,482 @@
+// ==============================================================
+// WHAT THE FUNAN - ROBOT PARTS DATABASE
+// All components for building custom robots!
+// ==============================================================
+
+DATABASE_VERSION: 1.0
+LAST_UPDATED: 2024-12-15
+
+// ==============================================================
+// CHASSIS TYPES
+// ==============================================================
+
+[CHASSIS]
+{
+    // HUMANOID - Human-like bipedal
+    id: "chassis_humanoid_basic"
+    name: "Basic Humanoid Frame"
+    type: Humanoid
+    arms: 2
+    legs: 2
+    weight_capacity: 2000g
+    stat_bonus: { intelligence: +5 }
+    unlock_cost: 0
+}
+
+{
+    id: "chassis_humanoid_warrior"
+    name: "Warrior Humanoid Frame"
+    type: Humanoid
+    arms: 2
+    legs: 2
+    weight_capacity: 3000g
+    stat_bonus: { power: +10, defense: +5 }
+    unlock_cost: 500
+}
+
+{
+    id: "chassis_humanoid_swift"
+    name: "Swift Humanoid Frame"
+    type: Humanoid
+    arms: 2
+    legs: 2
+    weight_capacity: 1500g
+    stat_bonus: { speed: +15 }
+    unlock_cost: 500
+}
+
+{
+    // QUADRUPED - Four-legged animal style
+    id: "chassis_quadruped_basic"
+    name: "Basic Quadruped Frame"
+    type: Quadruped
+    arms: 0
+    legs: 4
+    weight_capacity: 3500g
+    stat_bonus: { defense: +10 }
+    unlock_cost: 300
+}
+
+{
+    id: "chassis_quadruped_champa"
+    name: "Champa Elephant Frame"
+    type: Quadruped
+    arms: 1  // Trunk counts as arm!
+    legs: 4
+    weight_capacity: 5000g
+    stat_bonus: { power: +15, defense: +10 }
+    special: "Trunk_Attack"
+    unlock_cost: 1000
+}
+
+{
+    // SERPENTINE - Snake-like, no limbs
+    id: "chassis_serpentine_naga"
+    name: "Naga Serpent Frame"
+    type: Serpentine
+    arms: 0
+    legs: 0
+    segments: 7
+    weight_capacity: 2500g
+    stat_bonus: { speed: +10, precision: +10 }
+    special: "Seven_Heads"
+    unlock_cost: 1500
+}
+
+{
+    // FLYING - Wings for aerial combat
+    id: "chassis_flying_garuda"
+    name: "Garuda Wing Frame"
+    type: Flying
+    arms: 2
+    legs: 2
+    wings: true
+    weight_capacity: 1500g
+    stat_bonus: { speed: +20, evasion: +15 }
+    special: "Permanent_Flight"
+    unlock_cost: 2000
+}
+
+{
+    // HEXAPOD - Six legs
+    id: "chassis_hexapod_prohm"
+    name: "Prohm Ancient Frame"
+    type: Hexapod
+    arms: 2
+    legs: 6
+    weight_capacity: 4000g
+    stat_bonus: { defense: +20, energy: +10 }
+    special: "Regeneration"
+    unlock_cost: 1800
+}
+
+// ==============================================================
+// ARM PARTS
+// ==============================================================
+
+[ARMS]
+{
+    id: "arm_basic"
+    name: "Basic Arm"
+    type: Standard
+    servos: 3  // Shoulder, elbow, wrist
+    damage_bonus: 0
+    weight: 150g
+    unlock_cost: 0
+}
+
+{
+    id: "arm_power"
+    name: "Power Arm"
+    type: Heavy
+    servos: 3
+    damage_bonus: +20%
+    weight: 300g
+    stat_bonus: { power: +5 }
+    unlock_cost: 400
+}
+
+{
+    id: "arm_precision"
+    name: "Precision Arm"
+    type: Light
+    servos: 5  // Extra finger joints
+    damage_bonus: +5%
+    weight: 100g
+    stat_bonus: { precision: +10 }
+    unlock_cost: 400
+}
+
+{
+    id: "arm_naga_tail"
+    name: "Naga Tail Arm"
+    type: Serpentine
+    servos: 7  // Flexible segments
+    damage_bonus: +10%
+    weight: 200g
+    special: "Constrict"
+    unlock_cost: 800
+}
+
+{
+    id: "arm_claw"
+    name: "Sena Claw Arm"
+    type: Claw
+    servos: 4
+    damage_bonus: +25%
+    weight: 250g
+    special: "Rending_Strike"
+    unlock_cost: 600
+}
+
+// ==============================================================
+// LEG PARTS
+// ==============================================================
+
+[LEGS]
+{
+    id: "leg_basic"
+    name: "Basic Leg"
+    type: Standard
+    servos: 3  // Hip, knee, ankle
+    speed_bonus: 0
+    weight: 200g
+    unlock_cost: 0
+}
+
+{
+    id: "leg_speed"
+    name: "Speed Leg"
+    type: Light
+    servos: 3
+    speed_bonus: +20%
+    weight: 150g
+    stat_bonus: { speed: +5 }
+    unlock_cost: 400
+}
+
+{
+    id: "leg_tank"
+    name: "Tank Leg"
+    type: Heavy
+    servos: 3
+    speed_bonus: -10%
+    weight: 350g
+    stat_bonus: { defense: +10 }
+    unlock_cost: 400
+}
+
+{
+    id: "leg_wheels"
+    name: "Wheel Assembly"
+    type: Wheeled
+    motors: 2
+    speed_bonus: +40%
+    weight: 400g
+    special: "No_Jump"
+    unlock_cost: 500
+}
+
+{
+    id: "leg_champa"
+    name: "Champa Elephant Leg"
+    type: Elephant
+    servos: 4
+    speed_bonus: -15%
+    weight: 500g
+    stat_bonus: { defense: +15 }
+    special: "Earthquake_Stomp"
+    unlock_cost: 1000
+}
+
+// ==============================================================
+// WEAPONS
+// ==============================================================
+
+[WEAPONS]
+{
+    id: "weapon_fist"
+    name: "Basic Fist"
+    type: Melee
+    damage: 20
+    range: 1m
+    weight: 50g
+    unlock_cost: 0
+}
+
+{
+    id: "weapon_sword"
+    name: "Temple Sword"
+    type: Melee
+    damage: 35
+    range: 1.5m
+    weight: 150g
+    special: "Slash_Combo"
+    unlock_cost: 300
+}
+
+{
+    id: "weapon_hammer"
+    name: "Yak Hammer"
+    type: Melee
+    damage: 50
+    range: 1.2m
+    weight: 400g
+    special: "Ground_Pound"
+    stat_bonus: { power: +5 }
+    unlock_cost: 600
+}
+
+{
+    id: "weapon_spear"
+    name: "Hanuman Spear"
+    type: Melee
+    damage: 30
+    range: 2m
+    weight: 200g
+    special: "Pierce"
+    unlock_cost: 500
+}
+
+{
+    id: "weapon_launcher"
+    name: "Projectile Launcher"
+    type: Ranged
+    damage: 25
+    range: 10m
+    weight: 250g
+    ammo: 10
+    unlock_cost: 700
+}
+
+{
+    id: "weapon_beam"
+    name: "Energy Beam"
+    type: Ranged
+    damage: 20
+    range: 15m
+    weight: 200g
+    energy_cost: 10
+    element: Celestial
+    unlock_cost: 1000
+}
+
+{
+    id: "weapon_shield"
+    name: "Temple Guardian Shield"
+    type: Defense
+    damage: 10
+    block_percent: 50%
+    weight: 300g
+    unlock_cost: 400
+}
+
+{
+    id: "weapon_flame"
+    name: "Makara Flame Thrower"
+    type: Ranged
+    damage: 15/sec
+    range: 5m
+    weight: 350g
+    element: Fire
+    special: "Burn"
+    unlock_cost: 1200
+}
+
+// ==============================================================
+// HEADS / SENSORS
+// ==============================================================
+
+[HEADS]
+{
+    id: "head_basic"
+    name: "Basic Sensor Head"
+    type: Standard
+    sensors: [camera, infrared]
+    weight: 100g
+    unlock_cost: 0
+}
+
+{
+    id: "head_advanced"
+    name: "Advanced Sensor Head"
+    type: Advanced
+    sensors: [camera, infrared, ultrasonic, lidar]
+    weight: 150g
+    stat_bonus: { intelligence: +10, precision: +5 }
+    unlock_cost: 800
+}
+
+{
+    id: "head_naga"
+    name: "Naga Seven-Head Module"
+    type: Multi
+    heads: 7
+    sensors: [camera x7]
+    weight: 500g
+    stat_bonus: { precision: +20 }
+    special: "360_Vision"
+    unlock_cost: 2000
+}
+
+{
+    id: "head_reahu"
+    name: "Reahu Eclipse Head"
+    type: Shadow
+    sensors: [camera, infrared, night_vision]
+    weight: 120g
+    stat_bonus: { intelligence: +15 }
+    special: "Darkness_Detection"
+    unlock_cost: 1500
+}
+
+// ==============================================================
+// DECORATIONS (Khmer Style!)
+// ==============================================================
+
+[DECORATIONS]
+{
+    id: "deco_naga_crest"
+    name: "Naga Crest Crown"
+    slot: Head
+    weight: 30g
+    visual: true
+    element_affinity: Water +10
+    unlock_cost: 200
+}
+
+{
+    id: "deco_angkor_armor"
+    name: "Angkor Temple Armor"
+    slot: Body
+    weight: 100g
+    defense_bonus: +5%
+    visual: Angkor_Patterns
+    unlock_cost: 500
+}
+
+{
+    id: "deco_apsara_wings"
+    name: "Apsara Celestial Wings"
+    slot: Back
+    weight: 80g
+    visual: true
+    element_affinity: Celestial +10
+    unlock_cost: 600
+}
+
+{
+    id: "deco_sena_mane"
+    name: "Sena Lion Mane"
+    slot: Head
+    weight: 50g
+    intimidation: +15%
+    visual: Golden_Mane
+    unlock_cost: 400
+}
+
+{
+    id: "deco_garuda_feathers"
+    name: "Garuda Divine Feathers"
+    slot: Arms
+    weight: 40g
+    speed_bonus: +3%
+    element_affinity: Wind +10
+    unlock_cost: 500
+}
+
+// ==============================================================
+// SERVO CONFIGURATIONS (For Real Robots!)
+// ==============================================================
+
+[SERVO_PRESETS]
+{
+    id: "servo_humanoid_standard"
+    name: "Standard Humanoid Servo Set"
+    total_servos: 16
+    servos: [
+        { joint: "left_shoulder_yaw", min: -90, max: 90, default: 0 },
+        { joint: "left_shoulder_pitch", min: -90, max: 180, default: 0 },
+        { joint: "left_elbow", min: 0, max: 135, default: 0 },
+        { joint: "left_wrist", min: -90, max: 90, default: 0 },
+        { joint: "right_shoulder_yaw", min: -90, max: 90, default: 0 },
+        { joint: "right_shoulder_pitch", min: -90, max: 180, default: 0 },
+        { joint: "right_elbow", min: 0, max: 135, default: 0 },
+        { joint: "right_wrist", min: -90, max: 90, default: 0 },
+        { joint: "left_hip_yaw", min: -45, max: 45, default: 0 },
+        { joint: "left_hip_pitch", min: -90, max: 90, default: 0 },
+        { joint: "left_knee", min: 0, max: 135, default: 0 },
+        { joint: "left_ankle", min: -45, max: 45, default: 0 },
+        { joint: "right_hip_yaw", min: -45, max: 45, default: 0 },
+        { joint: "right_hip_pitch", min: -90, max: 90, default: 0 },
+        { joint: "right_knee", min: 0, max: 135, default: 0 },
+        { joint: "right_ankle", min: -45, max: 45, default: 0 }
+    ]
+}
+
+{
+    id: "servo_naga_serpent"
+    name: "Naga Serpent Servo Set"
+    total_servos: 14
+    servos: [
+        { joint: "head_0_pitch", min: -45, max: 45, default: 0 },
+        { joint: "head_0_yaw", min: -90, max: 90, default: 0 },
+        { joint: "segment_1", min: -30, max: 30, default: 0 },
+        { joint: "segment_2", min: -30, max: 30, default: 0 },
+        { joint: "segment_3", min: -30, max: 30, default: 0 },
+        { joint: "segment_4", min: -30, max: 30, default: 0 },
+        { joint: "segment_5", min: -30, max: 30, default: 0 },
+        { joint: "segment_6", min: -30, max: 30, default: 0 },
+        { joint: "segment_7", min: -30, max: 30, default: 0 },
+        { joint: "tail_1", min: -45, max: 45, default: 0 },
+        { joint: "tail_2", min: -45, max: 45, default: 0 },
+        { joint: "tail_3", min: -45, max: 45, default: 0 },
+        { joint: "tail_4", min: -45, max: 45, default: 0 },
+        { joint: "tail_5", min: -45, max: 45, default: 0 }
+    ]
+}
+
+// ==============================================================
+// END OF DATABASE
+// ==============================================================
+
